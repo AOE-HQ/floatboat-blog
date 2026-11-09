@@ -4,7 +4,14 @@ import { ALL_FEATURED_SKILLS } from "@/lib/skills/featured-skills";
 import { ALL_PROJECTS } from "@/lib/projects/project-pages";
 
 const text = z.string().trim().min(1);
-const copy = z.object({ title: text, description: text, inputLabel: text, inputHint: text, outcome: text, example: text.optional() }).strict();
+const copy = z.object({ title: text, description: text, inputLabel: text, inputHint: text, outcome: text, example: text.optional() }).strict().superRefine((task, ctx) => {
+  const normalize = (value: string) => value.replace(/\s+/g, "").toLowerCase();
+  const description = normalize(task.description);
+  if ((task.example && description === normalize(task.example))
+    || description === normalize(task.inputHint + task.outcome)) {
+    ctx.addIssue({ code: "custom", path: ["description"], message: "Task introduction must add information beyond the example, input hint, and outcome" });
+  }
+});
 const tasks = z.record(z.object({ en: copy, zh: copy }).strict()).parse(data);
 const resources = [...ALL_FEATURED_SKILLS.map((skill) => `${skill.authorHandle}/${skill.slug}`), ...ALL_PROJECTS.map((project) => `${project.author}/${project.slug}`)];
 for (const id of resources) if (!tasks[id]) throw new Error(`Missing page-specific conversion task: ${id}`);

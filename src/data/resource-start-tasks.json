@@ -162,18 +162,18 @@
   "vercel-labs/agent-browser": {
     "en": {
       "title": "Check one interface path",
-      "description": "Name the control, expected transition, and test account. An action sequence with snapshots, observed state, and a reproducible discrepancy if any.",
+      "description": "A filter-count check tests whether snapshots and element references remain usable after a state change. It gives a concrete baseline for later multi-step browser work.",
       "inputLabel": "Development URL and assertion",
-      "inputHint": "Name the control, expected transition, and test account.",
-      "outcome": "An action sequence with snapshots, observed state, and a reproducible discrepancy if any.",
+      "inputHint": "Test URL, initial filter state, target filter value, expected count, and configured CLI session.",
+      "outcome": "An action sequence with snapshots, observed state, and a reproducible discrepancy if any. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use agent-browser on my local test URL. Read the current core instructions, take a snapshot, exercise the filter I specify, and compare visible results with the expected count. Re-snapshot after changes."
     },
     "zh": {
       "title": "检查一条界面路径",
-      "description": "写明控件、预期变化与测试账号。 动作序列、快照、实际状态及可复现差异。",
+      "description": "筛选数量检查能验证页面变化后快照与元素引用是否仍然可用，为后续多步任务建立具体基线。",
       "inputLabel": "开发 URL 与断言",
-      "inputHint": "写明控件、预期变化与测试账号。",
-      "outcome": "动作序列、快照、实际状态及可复现差异。",
+      "inputHint": "测试网址、初始筛选状态、目标筛选值、预期数量与已配置 CLI 会话。",
+      "outcome": "动作序列、快照、实际状态及可复现差异。证据不足时列出失败步骤与未解决问题。",
       "example": "在我的本地测试 URL 使用 agent-browser，读取当前核心指引并获取快照，操作指定筛选器，将可见结果与预期数量对照，页面变化后重新取快照。"
     }
   },
@@ -1266,234 +1266,234 @@
   "skyvern-ai/skyvern": {
     "en": {
       "title": "Review a one-record workflow",
-      "description": "Use the configured Skyvern backend to prepare one test record in the approved form. Verify all fields against the input, report errors, and stop before final submission. Keep session and workflow identifiers in the report.",
+      "description": "Run one existing workflow or one direct browser task first. This reveals missing inputs without silently turning a test into workflow-authoring work.",
       "inputLabel": "Form and sample record",
-      "inputHint": "Supply a staging form, field values, and the stop point.",
-      "outcome": "A one-record run with field comparison, errors, and a submission checkpoint.",
+      "inputHint": "Test URL and records, requested fields, cloud/local connection, and existing workflow ID or direct-browser-only mode.",
+      "outcome": "A one-record run with field comparison, errors, and a submission checkpoint. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use the configured Skyvern backend to prepare one test record in the approved form. Verify all fields against the input, report errors, and stop before final submission. Keep session and workflow identifiers in the report."
     },
     "zh": {
       "title": "复核单条记录流程",
-      "description": "使用已配置 Skyvern 后端，在获准表单准备一条测试记录，对照输入检查全部字段并报告错误，在最终提交前停止，报告中保留会话与流程标识。",
+      "description": "先运行一个已有流程或一次直接浏览器任务，暴露缺失输入，避免将测试默默扩大为编写新流程。",
       "inputLabel": "表单与样例记录",
-      "inputHint": "提供测试表单、字段值与停止位置。",
-      "outcome": "包含字段对照、错误与提交检查点的单条运行。",
+      "inputHint": "测试网址与记录、目标字段、云端或本地连接，以及已有 workflow ID，或明确只使用直接浏览器操作。",
+      "outcome": "包含字段对照、错误与提交检查点的单条运行。证据不足时列出失败步骤与未解决问题。",
       "example": "使用已配置 Skyvern 后端，在获准表单准备一条测试记录，对照输入检查全部字段并报告错误，在最终提交前停止，报告中保留会话与流程标识。"
     }
   },
   "steel-dev/steel-browser": {
     "en": {
       "title": "Inspect a hosted browser session",
-      "description": "Use the configured Steel connection to open the public test page and extract the specified table fields. Record the session, verify sampled values, and release the session when finished. Do not use saved private profiles.",
+      "description": "A short extraction checks the full session lifecycle, including cleanup. A useful result records whether the session was released as well as what the page contained.",
       "inputLabel": "Target URL and session objective",
-      "inputHint": "Specify the Steel service path and the fields to collect.",
-      "outcome": "A session record with source values, connection evidence, and cleanup status.",
-      "example": "Use the configured Steel connection to open my public test page and extract the specified table fields. Record the session, verify sampled values, and release the session when finished. Do not use saved private profiles."
+      "inputHint": "Configured connection name, source URL, fields, browser-session limit, and maximum session duration.",
+      "outcome": "A session record with source values, connection evidence, and cleanup status. Include failed steps and unresolved questions when evidence is insufficient.",
+      "example": "Use the named configured Steel connection to extract the requested fields from the supplied URL. Keep concurrent sessions and elapsed duration within the supplied limits; ask for limits if absent. Record the session identifier, save the result, and release the session even after a failed attempt, reporting any cleanup failure."
     },
     "zh": {
       "title": "检查托管浏览器会话",
-      "description": "通过已配置 Steel 连接打开公开测试页并提取指定表格字段，记录会话、抽查数值并在结束后释放会话，不使用保存的私有配置。",
+      "description": "短时提取用于检查包括清理在内的会话生命周期，结果不仅记录页面内容，也应说明会话是否已经释放。",
       "inputLabel": "目标 URL 与会话目标",
-      "inputHint": "说明 Steel 服务路径及待收集字段。",
-      "outcome": "包含来源值、连接证据及清理状态的会话记录。",
-      "example": "通过已配置 Steel 连接打开公开测试页并提取指定表格字段，记录会话、抽查数值并在结束后释放会话，不使用保存的私有配置。"
+      "inputHint": "已配置连接名称、来源网址、字段、浏览器会话数量上限与最长持续时间。",
+      "outcome": "包含来源值、连接证据及清理状态的会话记录。证据不足时列出失败步骤与未解决问题。",
+      "example": "使用指定的已配置 Steel 连接，从给定网址提取所需字段。并发会话数量和持续时间不得超过提供的上限，缺少上限时先询问。记录会话标识、保存结果，并在尝试失败后仍释放会话，报告任何清理失败。"
     }
   },
   "brightdata/brightdata-mcp": {
     "en": {
       "title": "Choose the right web-data path",
-      "description": "Using the configured Bright Data tools, choose fetch, extraction, or browser access for these public URLs. Collect the requested fields from a small sample, note missing values and usage, and do not purchase datasets.",
+      "description": "A limited sample shows which service surface fits the input and what usage information is available before committing to a larger data job.",
       "inputLabel": "Research question and source URLs",
-      "inputHint": "Include required fields, freshness, and the allowed sample size.",
-      "outcome": "A small sourced result with the chosen service path and usage considerations.",
-      "example": "Using the configured Bright Data tools, choose fetch, extraction, or browser access for these public URLs. Collect the requested fields from a small sample, note missing values and usage, and do not purchase datasets."
+      "inputHint": "Sample URLs, requested fields, permitted service products, configured account, and spending or usage ceiling.",
+      "outcome": "A small sourced result with the chosen service path and usage considerations. Include failed steps and unresolved questions when evidence is insufficient.",
+      "example": "Select a Bright Data tool for the supplied sample URLs and fields, using only permitted service products. Respect the supplied spending or usage ceiling; if no ceiling is provided, propose the tool and cost-check plan without calling a billable service. Report sources and available usage evidence."
     },
     "zh": {
       "title": "选择适合的网页数据路径",
-      "description": "使用已配置 Bright Data 工具，为这些公开 URL 选择获取、提取或浏览器路径。先小样本收集所需字段，说明缺失项与用量，不购买数据集。",
+      "description": "小样本用于判断哪种服务入口适合当前输入，并了解可取得哪些用量信息，再决定是否开展更大的数据任务。",
       "inputLabel": "调查问题与来源 URL",
-      "inputHint": "说明字段、新鲜度及允许样本量。",
-      "outcome": "附来源、所选服务路径和用量说明的小规模结果。",
-      "example": "使用已配置 Bright Data 工具，为这些公开 URL 选择获取、提取或浏览器路径。先小样本收集所需字段，说明缺失项与用量，不购买数据集。"
+      "inputHint": "样本网址、目标字段、允许使用的服务产品、已配置账号及费用或用量上限。",
+      "outcome": "附来源、所选服务路径和用量说明的小规模结果。证据不足时列出失败步骤与未解决问题。",
+      "example": "为给定样本网址与字段选择 Bright Data 工具，仅使用允许的服务产品，遵守提供的费用或用量上限。未给上限时只提出工具及费用核查方案，不调用计费服务。返回来源与可取得的用量证据。"
     }
   },
   "lightpanda-io/lightpanda": {
     "en": {
       "title": "Test page compatibility before switching",
-      "description": "Use Lightpanda’s configured MCP on these public pages to extract the fields I list. Compare sampled output with the supplied browser reference, note unsupported behavior, and do not claim visual layout verification.",
+      "description": "Compare required page behavior against a supplied reference before adopting the engine. A mismatch can justify a full-browser fallback rather than a speculative extraction rule.",
       "inputLabel": "Public pages and required fields",
-      "inputHint": "List the interactions or APIs the task depends on.",
-      "outcome": "A compatibility table with sampled values and unsupported features.",
+      "inputHint": "At most three URLs, required fields and page features, configured engine, and reference text or full-browser results.",
+      "outcome": "A compatibility table with sampled values and unsupported features. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use Lightpanda’s configured MCP on these public pages to extract the fields I list. Compare sampled output with the supplied browser reference, note unsupported behavior, and do not claim visual layout verification."
     },
     "zh": {
       "title": "切换前验证页面兼容性",
-      "description": "使用已配置 Lightpanda MCP 从这些公开页面提取指定字段，与提供的浏览器参考抽查对照，记录不支持行为，不将结果称为视觉布局验收。",
+      "description": "采用引擎前，先把必需页面行为与给定参考比较。发现差异时可以据此改用完整浏览器，而不是猜测新的提取规则。",
       "inputLabel": "公开页面与必需字段",
-      "inputHint": "列出任务依赖的交互或 API。",
-      "outcome": "包含抽样值与不支持特性的兼容表。",
+      "inputHint": "最多三个网址、必需字段与页面功能、已配置引擎，以及参考文本或完整浏览器结果。",
+      "outcome": "包含抽样值与不支持特性的兼容表。证据不足时列出失败步骤与未解决问题。",
       "example": "使用已配置 Lightpanda MCP 从这些公开页面提取指定字段，与提供的浏览器参考抽查对照，记录不支持行为，不将结果称为视觉布局验收。"
     }
   },
   "unclecode/crawl4ai": {
     "en": {
       "title": "Extract a bounded research sample",
-      "description": "Use the configured Crawl4AI service to collect a small sample from the supplied URLs. Stay within the allowed sites, extract the listed fields, preserve source URLs, and flag missing or malformed values before expanding the crawl.",
+      "description": "A three-page sample separates source omissions from loading and extraction errors. Use those findings to revise the field definition before expanding collection.",
       "inputLabel": "Seed URLs and required fields",
-      "inputHint": "Specify allowed sites and a small page limit.",
-      "outcome": "A sourced sample with required fields, missing content, and extraction errors.",
-      "example": "Use the configured Crawl4AI service to collect a small sample from my supplied URLs. Stay within the allowed sites, extract the listed fields, preserve source URLs, and flag missing or malformed values before expanding the crawl."
+      "inputHint": "Starting URL, allowed domain, at most three non-recursive pages, required fields, configured endpoint, and JSON/CSV/Markdown output choice.",
+      "outcome": "A sourced sample with required fields, missing content, and extraction errors. Include failed steps and unresolved questions when evidence is insufficient.",
+      "example": "Using the configured Crawl4AI endpoint, collect at most three supplied pages within the allowed domain, without recursion. Extract the requested fields in the selected JSON, CSV, or Markdown format. Retain source URLs and distinguish missing source values, loading errors, and extraction errors."
     },
     "zh": {
       "title": "提取有限研究样本",
-      "description": "使用已配置 Crawl4AI 服务，从提供的 URL 收集小样本，限定在允许网站，提取指定字段并保留来源，扩大抓取前标明缺失和格式错误。",
+      "description": "三页样本用于区分源页面缺项、加载失败和提取错误，再据此调整字段定义，而不是立即扩大采集。",
       "inputLabel": "起始 URL 与必需字段",
-      "inputHint": "说明允许网站与较小页面上限。",
-      "outcome": "带来源、必需字段、缺失内容及提取错误的样本。",
-      "example": "使用已配置 Crawl4AI 服务，从提供的 URL 收集小样本，限定在允许网站，提取指定字段并保留来源，扩大抓取前标明缺失和格式错误。"
+      "inputHint": "起始网址、允许域名、最多三页且不递归、必需字段、已配置端点，以及 JSON／CSV／Markdown 输出格式。",
+      "outcome": "带来源、必需字段、缺失内容及提取错误的样本。证据不足时列出失败步骤与未解决问题。",
+      "example": "使用已配置 Crawl4AI 端点，在允许域名内最多采集三个给定页面，不递归。按选择的 JSON、CSV 或 Markdown 格式提取指定字段，保留来源网址，区分原页缺项、加载错误和提取错误。"
     }
   },
   "citrolabs/ego-lite": {
     "en": {
       "title": "Summarize an approved portal section",
-      "description": "Name the account and the rows needed for the report. A sourced summary with the inspected account and missing values.",
+      "description": "A small portal summary checks whether the task Space uses the intended account and preserves useful sources before delegating a larger report.",
       "inputLabel": "Portal section and report fields",
-      "inputHint": "Name the account and the rows needed for the report.",
-      "outcome": "A sourced summary with the inspected account and missing values.",
+      "inputHint": "Portal URL, account/workspace, task Space, date range, fields, and desired report format.",
+      "outcome": "A sourced summary with the inspected account and missing values. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use Ego Lite through ego-browser to read the approved portal section in a task Space. Confirm the account, collect only the fields I specify, and return source links without modifying records."
     },
     "zh": {
       "title": "整理获准门户区域",
-      "description": "写明账号与报告需要的数据行。 带来源、已核对账号及缺失项的摘要。",
+      "description": "先整理一份小型门户摘要，确认任务 Space 使用正确账号并保留有效来源，再交付更大的报表任务。",
       "inputLabel": "门户区域与报告字段",
-      "inputHint": "写明账号与报告需要的数据行。",
-      "outcome": "带来源、已核对账号及缺失项的摘要。",
+      "inputHint": "门户网址、账号与工作区、任务 Space、日期范围、所需字段与报告格式。",
+      "outcome": "带来源、已核对账号及缺失项的摘要。证据不足时列出失败步骤与未解决问题。",
       "example": "通过 ego-browser 使用 Ego Lite，在任务 Space 读取获准门户区域。先确认账号，只收集指定字段，返回来源链接，不修改记录。"
     }
   },
   "browseros-ai/browseros": {
     "en": {
       "title": "Verify a BrowserOS connection",
-      "description": "Provide the current MCP address and a public page to verify. A connection check with visible tools, page title, and one observed interaction.",
+      "description": "A connection check should prove that the agent sees and can act on the intended page, rather than merely reporting that an endpoint was configured.",
       "inputLabel": "Browser endpoint and test page",
-      "inputHint": "Provide the current MCP address and a public page to verify.",
-      "outcome": "A connection check with visible tools, page title, and one observed interaction.",
-      "example": "Use the configured BrowserOS neo MCP endpoint. Open the public test page, report its title, and inspect the control I name. Confirm the observed state before opening any signed-in account."
+      "inputHint": "Test URL, neo MCP connection, target control, expected page state, and the specific permitted action or an explicit read-only inspection limit.",
+      "outcome": "A connection check with visible tools, page title, and one observed interaction. Include failed steps and unresolved questions when evidence is insufficient.",
+      "example": "Using the configured BrowserOS neo connection, open the supplied test URL, inspect the named control, and perform only the permitted action. Compare the resulting page state with the supplied expectation; report connection or observation failures without changing account settings."
     },
     "zh": {
       "title": "验证 BrowserOS 连接",
-      "description": "提供当前 MCP 地址与用于验证的公开页。 包含可见工具、页面标题与一次交互的连接检查。",
+      "description": "接入检查应证明 Agent 能读到目标页面并操作指定控件，而不只是确认端点配置已填写。",
       "inputLabel": "浏览器端点与测试页",
-      "inputHint": "提供当前 MCP 地址与用于验证的公开页。",
-      "outcome": "包含可见工具、页面标题与一次交互的连接检查。",
-      "example": "使用已配置的 BrowserOS neo MCP 端点，打开公开测试页、报告标题并检查指定控件。先确认实际状态，再访问任何已登录账号。"
+      "inputHint": "测试网址、neo MCP 连接、指定控件、预期页面状态，以及允许的具体操作；如不允许操作，明确仅作只读检查。",
+      "outcome": "包含可见工具、页面标题与一次交互的连接检查。证据不足时列出失败步骤与未解决问题。",
+      "example": "使用已配置的 BrowserOS neo 连接打开给定测试网址，检查指定控件，只执行获准操作，将结果与提供的预期状态比较；连接或观察失败时如实报告，不修改账号设置。"
     }
   },
   "browsermcp/browser-mcp": {
     "en": {
       "title": "Read one signed-in report",
-      "description": "Use Browser MCP with the paired test Chrome profile to read the specified report. Confirm the account and period, collect only approved fields, and do not alter settings or submit forms.",
+      "description": "A read-only report lookup checks pairing and account context without changing business records. Use it to decide whether the existing Chrome session fits later tasks.",
       "inputLabel": "Report page and approved fields",
-      "inputHint": "Specify the account, period, and fields to read.",
-      "outcome": "A report summary with account context, selected period, and source pages.",
+      "inputHint": "Report URL, Chrome profile, account, date range, fields, and expected units.",
+      "outcome": "A report summary with account context, selected period, and source pages. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use Browser MCP with my paired test Chrome profile to read the specified report. Confirm the account and period, collect only approved fields, and do not alter settings or submit forms."
     },
     "zh": {
       "title": "读取一份登录报表",
-      "description": "通过 Browser MCP 使用已配对测试 Chrome 配置读取指定报表，先确认账号与周期，仅收集获准字段，不修改设置或提交表单。",
+      "description": "只读报表查询可以检查配对与账号环境，同时避免修改业务记录，据此判断已有 Chrome 会话是否适合后续任务。",
       "inputLabel": "报表页与获准字段",
-      "inputHint": "说明账号、周期及允许读取的字段。",
-      "outcome": "包含账号、周期和来源页的报告摘要。",
+      "inputHint": "报表网址、Chrome 配置、账号、日期范围、字段与计量单位。",
+      "outcome": "包含账号、周期和来源页的报告摘要。证据不足时列出失败步骤与未解决问题。",
       "example": "通过 Browser MCP 使用已配对测试 Chrome 配置读取指定报表，先确认账号与周期，仅收集获准字段，不修改设置或提交表单。"
     }
   },
   "pinchtab/pinchtab": {
     "en": {
       "title": "Run an isolated report lookup",
-      "description": "Use PinchTab on the selected local profile to read the approved report page. Record the instance and tab, verify the period, and return the requested totals. Pause for any login or consent step.",
+      "description": "Recording profile, instance, and tab separately makes a report lookup traceable when several browser tasks run at once.",
       "inputLabel": "Profile, page, and requested values",
-      "inputHint": "Name the intended profile and the read-only report task.",
-      "outcome": "A lookup record with profile, tab, period, and source values.",
+      "inputHint": "Report URL, target profile, date range, total fields, aggregation rules, and configured connection.",
+      "outcome": "A lookup record with profile, tab, period, and source values. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use PinchTab on the selected local profile to read my approved report page. Record the instance and tab, verify the period, and return the requested totals. Pause for any login or consent step."
     },
     "zh": {
       "title": "执行独立报表查询",
-      "description": "在选定本地配置中使用 PinchTab 读取获准报表，记录实例与标签、核对周期并返回指定汇总。遇到登录或同意步骤时暂停交接。",
+      "description": "分别记录配置、实例和标签页，让多项浏览器任务同时运行时的一次报表查询仍可追溯。",
       "inputLabel": "配置、页面与所需数值",
-      "inputHint": "写明目标配置与只读报表任务。",
-      "outcome": "记录配置、标签、周期及来源数值的查询结果。",
+      "inputHint": "报表网址、目标配置、日期范围、汇总字段、统计口径与已配置连接。",
+      "outcome": "记录配置、标签、周期及来源数值的查询结果。证据不足时列出失败步骤与未解决问题。",
       "example": "在选定本地配置中使用 PinchTab 读取获准报表，记录实例与标签、核对周期并返回指定汇总。遇到登录或同意步骤时暂停交接。"
     }
   },
   "browser-use/browser-use": {
     "en": {
       "title": "Compare sourced product facts",
-      "description": "Provide three public URLs and the exact facts to compare. A comparison with source URLs, missing fields, and observed values.",
+      "description": "Compare prices under the same regional conditions before deciding whether a browser-driven lookup can replace manual research.",
       "inputLabel": "Product URLs and fields",
-      "inputHint": "Provide three public URLs and the exact facts to compare.",
-      "outcome": "A comparison with source URLs, missing fields, and observed values.",
+      "inputHint": "Three URLs, pricing fields, region/currency, comparison date, and the configured CLI/MCP connection.",
+      "outcome": "A comparison with source URLs, missing fields, and observed values. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use Browser Use to compare the pricing units and trial restrictions on the three URLs I provide. Choose the installed CLI/MCP path, read only, and return each value with its source. Do not create accounts."
     },
     "zh": {
       "title": "比较有来源的产品事实",
-      "description": "提供三个公开 URL 及需要比较的具体事实。 附来源、缺失项和实际值的比较表。",
+      "description": "先在同一地区与币种条件下比较价格，判断浏览器查询能否替代手工调研。",
       "inputLabel": "产品 URL 与比较字段",
-      "inputHint": "提供三个公开 URL 及需要比较的具体事实。",
-      "outcome": "附来源、缺失项和实际值的比较表。",
+      "inputHint": "三个网址、计费字段、地区与币种、比较日期，以及已配置的 CLI／MCP 连接。",
+      "outcome": "附来源、缺失项和实际值的比较表。证据不足时列出失败步骤与未解决问题。",
       "example": "用 Browser Use 比较我提供的三个 URL 上的计费单位与试用限制。使用已配置的 CLI／MCP，只读访问，逐项返回数值与来源，不注册账号。"
     }
   },
   "browserbase/stagehand": {
     "en": {
       "title": "Inspect a changing portal interaction",
-      "description": "Identify the stable navigation and the action that varies. A step-by-step browser flow with observed states and an isolated dynamic action.",
+      "description": "Separate stable navigation from changing controls before investing in an SDK implementation. The first deliverable is a version-matched implementation proposal, not an automatically tested application.",
       "inputLabel": "Portal URL and expected state",
-      "inputHint": "Identify the stable navigation and the action that varies.",
-      "outcome": "A step-by-step browser flow with observed states and an isolated dynamic action.",
+      "inputHint": "Test portal URL, fixed navigation, changing action, expected state, installed version, and SDK language; specify that no form may be submitted.",
+      "outcome": "A version-matched SDK implementation proposal with observed page states and unresolved assumptions.",
       "example": "Use Stagehand browse to inspect the approved test portal. Identify fixed navigation and the changing action, capture the resulting state, and propose a version-matched SDK flow. Do not submit the form."
     },
     "zh": {
       "title": "检查会变化的门户操作",
-      "description": "说明固定导航和会变化的动作。 包含实际状态并单独处理动态动作的浏览器流程。",
+      "description": "先区分稳定导航与变化控件，再决定是否投入 SDK 实现。首次交付是匹配版本的实现草案，不代表应用已经测试通过。",
       "inputLabel": "门户地址与预期状态",
-      "inputHint": "说明固定导航和会变化的动作。",
-      "outcome": "包含实际状态并单独处理动态动作的浏览器流程。",
+      "inputHint": "测试门户网址、固定导航、变化动作、预期状态、安装版本与 SDK 语言；说明不允许提交表单。",
+      "outcome": "匹配安装版本的 SDK 实现草案，附实际页面状态及尚未验证的假设。",
       "example": "用 Stagehand browse 检查获准测试门户，识别固定导航与变化动作，记录结果状态，并提出与当前版本匹配的 SDK 流程，不提交表单。"
     }
   },
   "microsoft/playwright-mcp": {
     "en": {
       "title": "Reproduce one staged browser failure",
-      "description": "Include the starting page, actions, and expected validation. Reproduction steps with observed states and a proposed regression assertion.",
+      "description": "A bounded validation failure is easier to reproduce than an entire checkout journey. The report should support a regression assertion even when the cause remains unresolved.",
       "inputLabel": "Staging URL and expected behavior",
-      "inputHint": "Include the starting page, actions, and expected validation.",
-      "outcome": "Reproduction steps with observed states and a proposed regression assertion.",
+      "inputHint": "Test URL, test records, reproduction steps, expected validation message, and the last permitted action.",
+      "outcome": "Reproduction steps with observed states and a proposed regression assertion. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use the configured Playwright MCP to reproduce the validation issue on my staging form. Inspect a snapshot, follow the supplied steps, and report expected versus actual state. Do not submit a real order."
     },
     "zh": {
       "title": "复现一处测试网页故障",
-      "description": "说明初始页面、操作和预期校验。 带实际状态的复现步骤与建议回归断言。",
+      "description": "先复现一个有边界的校验错误，比检查完整结账流程更容易定位。即使根因未明确，报告也应能支持编写回归断言。",
       "inputLabel": "测试 URL 与预期行为",
-      "inputHint": "说明初始页面、操作和预期校验。",
-      "outcome": "带实际状态的复现步骤与建议回归断言。",
+      "inputHint": "测试网址、测试记录、复现步骤、预期校验提示，以及允许执行的最后一步。",
+      "outcome": "带实际状态的复现步骤与建议回归断言。证据不足时列出失败步骤与未解决问题。",
       "example": "使用已配置的 Playwright MCP 复现测试表单校验问题，读取快照并按给定步骤操作，报告预期与实际状态，不提交真实订单。"
     }
   },
   "chromedevtools/chrome-devtools-mcp": {
     "en": {
       "title": "Explain a failed web request",
-      "description": "Include the visible error and the steps that trigger it. A request/console timeline with evidence-backed causes and a verification plan.",
+      "description": "A failed save can originate in the request, server response, or page handling. Collecting those observations together helps distinguish evidence from a plausible explanation.",
       "inputLabel": "Test URL and failing interaction",
-      "inputHint": "Include the visible error and the steps that trigger it.",
-      "outcome": "A request/console timeline with evidence-backed causes and a verification plan.",
+      "inputHint": "Test URL, failed save steps, test input, expected response, and the configured Chrome connection.",
+      "outcome": "A request/console timeline with evidence-backed causes and a verification plan. Include failed steps and unresolved questions when evidence is insufficient.",
       "example": "Use Chrome DevTools MCP to reproduce the failed save action on my test page. Inspect the related request and console errors, distinguish client and server failures, and report evidence before suggesting code changes."
     },
     "zh": {
       "title": "解释失败的网页请求",
-      "description": "说明可见错误及触发步骤。 请求与控制台时间线、有证据的原因及验证计划。",
+      "description": "保存失败可能来自请求、服务端响应或页面处理。把这些观察放在一起，可以区分已有证据与尚需验证的解释。",
       "inputLabel": "测试 URL 与失败交互",
-      "inputHint": "说明可见错误及触发步骤。",
-      "outcome": "请求与控制台时间线、有证据的原因及验证计划。",
+      "inputHint": "测试网址、保存失败步骤、测试输入、预期响应与已配置 Chrome 连接。",
+      "outcome": "请求与控制台时间线、有证据的原因及验证计划。证据不足时列出失败步骤与未解决问题。",
       "example": "用 Chrome DevTools MCP 复现测试页面保存失败，检查相关请求与控制台错误，区分客户端和服务端问题，先报告证据再建议代码修改。"
     }
   }
