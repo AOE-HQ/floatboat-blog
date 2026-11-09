@@ -8,12 +8,12 @@
         "name": "agent-browser",
         "url": "https://github.com/vercel-labs/agent-browser",
         "en": {
-          "kind": "Browser CLI",
-          "description": "Automate browser tasks with an agent-focused CLI for navigating pages, interacting with elements, and inspecting results."
+          "kind": "Browser CLI for coding agents",
+          "description": "Open a page, read a compact accessibility snapshot, and act on element references from the terminal. agent-browser keeps the browser session available across commands."
         },
         "zh": {
-          "kind": "浏览器 CLI",
-          "description": "面向 Agent 的浏览器自动化工具，通过命令行完成页面导航、元素交互与结果检查。"
+          "kind": "编码 Agent 浏览器 CLI",
+          "description": "从终端打开页面、读取精简的可访问性快照，并通过元素引用执行操作。agent-browser 可在多次命令之间保留浏览器会话。"
         }
       },
       {
@@ -1459,6 +1459,18 @@
         "zh": {
           "kind": "编程语言",
           "description": "为 JavaScript 项目加入类型系统，通过编译检查和编辑器工具改善代码理解、重构与应用开发。"
+        }
+      },
+      {
+        "name": "Playwright MCP",
+        "url": "https://github.com/microsoft/playwright-mcp",
+        "en": {
+          "kind": "Browser automation MCP server",
+          "description": "Connect a coding agent to Playwright through MCP for navigation, accessibility snapshots, and browser interactions. Compare the persistent MCP workflow with the separate Playwright CLI and its official Skill."
+        },
+        "zh": {
+          "kind": "浏览器自动化 MCP 服务",
+          "description": "通过 MCP 将编码 Agent 连接到 Playwright，执行导航、可访问性快照和浏览器交互，并比较持续会话与独立 Playwright CLI／官方 Skill 的使用方式。"
         }
       }
     ],

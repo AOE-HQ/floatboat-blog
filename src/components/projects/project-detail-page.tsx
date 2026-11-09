@@ -35,6 +35,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     { label: zh ? "官方文档" : "Official documentation", href: project.documentation },
     { label: zh ? "GitHub 源码" : "GitHub repository", href: project.repository },
     { label: zh ? `源码许可 · ${project.license}` : `Source license · ${project.license}`, href: project.licenseUrl },
+    ...(project.sourceLinks ?? []).map((link) => ({ href: link.href, label: link.label[locale] })),
   ];
   const jsonLd = {
     "@context": "https://schema.org", "@type": "WebPage", name: t.seoTitle, description: t.description, url: canonical, inLanguage: zh ? "zh-CN" : "en-US",

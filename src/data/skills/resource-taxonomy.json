@@ -460,13 +460,13 @@
     },
     "project:github.com/vercel-labs/agent-browser": {
       "categories": [
-        "deployment-browser"
+        "deployment-browser",
+        "browser-automation"
       ],
       "tags": [
         "browser-automation",
         "tool-connections"
-      ],
-      "guide": "vercel-labs/agent-browser"
+      ]
     },
     "project:github.com/vercel-labs/json-render": {
       "categories": [
@@ -871,15 +871,6 @@
         "vercel",
         "performance",
         "debugging"
-      ]
-    },
-    "vercel-labs/agent-browser": {
-      "categories": [
-        "deployment-browser"
-      ],
-      "tags": [
-        "browser-automation",
-        "tool-connections"
       ]
     },
     "anthropics/frontend-design": {
@@ -1768,6 +1759,149 @@
       ],
       "tags": [
         "browser-automation",
+        "testing",
+        "debugging"
+      ]
+    },
+    "project:github.com/skyvern-ai/skyvern": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/steel-dev/steel-browser": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/brightdata/brightdata-mcp": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "project:github.com/lightpanda-io/browser": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "project:github.com/unclecode/crawl4ai": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "project:github.com/citrolabs/ego-lite": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation"
+      ]
+    },
+    "project:github.com/browseros-ai/browseros": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/browsermcp/mcp": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/pinchtab/pinchtab": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/browser-use/browser-use": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
+        "data-extraction",
+        "web-research"
+      ]
+    },
+    "project:github.com/browserbase/stagehand": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp"
+      ]
+    },
+    "project:github.com/microsoft/playwright-mcp": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation",
+        "testing-debugging"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
+        "testing",
+        "debugging"
+      ]
+    },
+    "project:github.com/chromedevtools/chrome-devtools-mcp": {
+      "categories": [
+        "deployment-browser",
+        "browser-automation",
+        "testing-debugging"
+      ],
+      "tags": [
+        "browser-automation",
+        "mcp",
         "testing",
         "debugging"
       ]

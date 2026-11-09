@@ -10,6 +10,14 @@ const repositoryReview = z.object({
     archived: z.boolean(),
     private: z.boolean(),
     projectBackgroundReason: z.string().trim().min(1).optional(),
+    projectApproval: z.object({
+      scope: z.literal("vertical-agent-project"),
+      reviewedAt: z.string().date(),
+      reason: z.string().trim().min(1),
+      userRequest: z.string().trim().min(1),
+      evidence: z.array(z.string().url()).min(2),
+      hosts: z.array(z.enum(["cursor", "codex", "mcp-client"])).min(1),
+    }).optional(),
   })),
 }).parse(data);
 
@@ -21,6 +29,7 @@ export function isMarketplaceRepository(source: string, kind: "project" | "skill
   const key = `${owner}/${repository.replace(/\.git$/i, "")}`.toLowerCase();
   const review = repositoryReview.repositories[key];
   return Boolean(review && !review.fork && !review.archived && !review.private
-    && review.stars >= repositoryReview.minimumStars
+    && (review.stars >= repositoryReview.minimumStars
+      || (kind === "project" && review.projectApproval?.scope === "vertical-agent-project"))
     && !(kind === "project" && review.projectBackgroundReason));
 }

@@ -136,7 +136,8 @@
       "repositories": [
         "microsoft/TypeScript",
         "microsoft/azure-skills",
-        "microsoft/vscode"
+        "microsoft/vscode",
+        "microsoft/playwright-mcp"
       ]
     },
     "open.feishu.cn": {
@@ -1155,6 +1156,150 @@
       "repositories": [
         "hashicorp/agent-skills",
         "hashicorp/terraform"
+      ]
+    },
+    "skyvern-ai": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "Skyvern-AI/skyvern",
+      "stars": 23367,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "Skyvern-AI/skyvern"
+      ]
+    },
+    "steel-dev": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "steel-dev/steel-browser",
+      "stars": 7939,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "steel-dev/steel-browser"
+      ]
+    },
+    "brightdata": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "brightdata/brightdata-mcp",
+      "stars": 2717,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "brightdata/brightdata-mcp"
+      ]
+    },
+    "lightpanda-io": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "lightpanda-io/browser",
+      "stars": 41654,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "lightpanda-io/browser"
+      ]
+    },
+    "unclecode": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "unclecode/crawl4ai",
+      "stars": 87132,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "unclecode/crawl4ai"
+      ]
+    },
+    "citrolabs": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "citrolabs/ego-lite",
+      "stars": 22256,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "citrolabs/ego-lite"
+      ]
+    },
+    "browseros-ai": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "browseros-ai/BrowserOS",
+      "stars": 14289,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "browseros-ai/BrowserOS"
+      ]
+    },
+    "browsermcp": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "BrowserMCP/mcp",
+      "stars": 7319,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "BrowserMCP/mcp"
+      ]
+    },
+    "pinchtab": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "pinchtab/pinchtab",
+      "stars": 10565,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "pinchtab/pinchtab"
+      ]
+    },
+    "browser-use": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "browser-use/browser-use",
+      "stars": 120399,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "browser-use/browser-use"
+      ]
+    },
+    "browserbase": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "browserbase/stagehand",
+      "stars": 25990,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "browserbase/stagehand"
+      ]
+    },
+    "chromedevtools": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "ChromeDevTools/chrome-devtools-mcp",
+      "stars": 55008,
+      "fork": false,
+      "archived": false,
+      "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
+      "repositories": [
+        "ChromeDevTools/chrome-devtools-mcp"
       ]
     }
   }
