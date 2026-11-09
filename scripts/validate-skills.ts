@@ -10,7 +10,7 @@ import { getRelatedPages } from "../src/lib/related-pages";
 // Data schemas validate bilingual completeness; these checks cover cross-page integration.
 const catalog = getSkillCatalog("en");
 const publicPaths = new Set(getStoreCatalog("en").map((entry) => entry.href));
-const ingress = readFileSync(new URL("../k8s/ingress-main.yaml", import.meta.url), "utf8");
+const ingress = readFileSync(new URL("../k8s/ingress-main.yaml", import.meta.url), "utf8").replace(/\r\n/g, "\n");
 for (const skill of FEATURED_SKILLS) {
   const id = `${skill.authorHandle}/${skill.slug}`;
   const publisher = getPublisherProfile(skill.authorHandle);
