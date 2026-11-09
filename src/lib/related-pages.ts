@@ -2,7 +2,7 @@ import relatedPages from "@/data/related-pages.json";
 import additionalRelatedPages from "@/data/skills/additional-related-pages.json";
 import { ALL_FEATURED_SKILLS, FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
 import { getStoreCatalog, getSkillCategory, skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
-import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, isOrganizationProfilePublisher, publisherProfilePath, PUBLISHER_PROFILE_HANDLES, KNOWN_PUBLISHER_HANDLES } from "@/lib/skills/publisher-profiles";
 import { reviewedRelatedLinks } from "@/lib/reviewed-related-links";
 import { ALL_PROJECTS, PROJECTS, getProject, projectPath } from "@/lib/projects/project-pages";
 import { CORE_FEATURE_SLUGS, featurePath, getCoreFeaturePage, type CoreFeatureSlug } from "@/lib/landing/core-feature-pages";
@@ -42,7 +42,7 @@ const catalog = getStoreCatalog("en");
 const catalogPublishers = new Set(catalog.map((entry) => entry.authorHandle));
 const catalogHrefs = new Set(catalog.map((entry) => entry.href));
 const marketplaceTargets = {
-  publishers: knownIds.publishers.filter((id) => catalogPublishers.has(id)),
+  publishers: knownIds.publishers.filter((id) => catalogPublishers.has(id) || isOrganizationProfilePublisher(id)),
   skills: FEATURED_SKILLS.filter((skill) => catalogHrefs.has(skillPath("en", skill.authorHandle, skill.slug))).map((skill) => `${skill.authorHandle}/${skill.slug}`),
   projects: PROJECTS.filter((project) => catalogHrefs.has(projectPath("en", project.author, project.slug))).map((project) => `${project.author}/${project.slug}`),
 };

@@ -1,0 +1,2161 @@
+{
+  "adobe": {
+    "name": "Adobe",
+    "type": "Organization",
+    "profileUrl": "https://github.com/adobe",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/adobe",
+        "label": {
+          "en": "Adobe on GitHub",
+          "zh": "Adobe GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.adobe.com/",
+        "label": {
+          "en": "Adobe website",
+          "zh": "Adobe 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/adobe/skills",
+        "label": {
+          "en": "Skills repository",
+          "zh": "Skills 来源仓库"
+        }
+      },
+      {
+        "href": "https://github.com/adobe/react-spectrum",
+        "label": {
+          "en": "React Spectrum libraries",
+          "zh": "React Spectrum 组件库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Adobe: Creative Skills and React Spectrum Developer Resources",
+      "seoDescription": "Adobe publishes creative-tool Skills and React Spectrum libraries, connecting product-specific agent guidance with accessible interface development.",
+      "heroTitle": "Adobe",
+      "heroDescription": "Explore Adobe’s product-specific agent instructions alongside React Spectrum’s accessible interface libraries. Choose a source by the work you need to do, from creative-product workflows to React component development.",
+      "aboutTitle": "About Adobe",
+      "about": "Adobe maintains the adobe GitHub organization. Its skills repository collects instructions for AI coding agents working with Adobe products, while React Spectrum contains libraries for accessible React interfaces. These are different kinds of work: instructions can depend on Adobe connectors or product access; component libraries are software dependencies. Follow the linked repository for the relevant product, license and supported setup.",
+      "overview": {
+        "title": "About Adobe",
+        "paragraphs": [
+          "Adobe maintains the adobe GitHub organization. Its skills repository collects instructions for AI coding agents working with Adobe products, while React Spectrum contains libraries for accessible React interfaces.",
+          "These are different kinds of work: instructions can depend on Adobe connectors or product access; component libraries are software dependencies. Follow the linked repository for the relevant product, license and supported setup."
+        ]
+      },
+      "projectsTitle": "Adobe Projects",
+      "skillsTitle": "Adobe Skills",
+      "skillsIntro": "Consult the linked Adobe source repositories for task instructions.",
+      "faqTitle": "Adobe FAQ",
+      "faq": [
+        {
+          "question": "Which GitHub organization owns these repositories?",
+          "answer": "Both skills and react-spectrum are owned by adobe. The organization profile links to Adobe’s website."
+        },
+        {
+          "question": "Is Adobe Skills the same as React Spectrum?",
+          "answer": "No. Skills provide agent instructions; React Spectrum provides interface libraries and tooling."
+        },
+        {
+          "question": "Do Adobe Skills include product access?",
+          "answer": "The instruction files do not grant a subscription or connector authorization. Check the requirements of the selected Adobe workflow."
+        },
+        {
+          "question": "Where can I follow interface-library changes?",
+          "answer": "Use react-spectrum releases, issues and the linked React Spectrum documentation rather than the creative-product Skills catalog."
+        },
+        {
+          "question": "Does one license cover every Adobe product?",
+          "answer": "Repository licenses cover the specified source files. Adobe services and third-party assets can have separate terms."
+        },
+        {
+          "question": "Which source should I use for accessible React components?",
+          "answer": "Use React Spectrum’s libraries and documentation, including React Aria, rather than the product-specific creative Skills."
+        }
+      ],
+      "ctaTitle": "Follow Adobe on GitHub",
+      "ctaDescription": "Follow creative-product instructions in adobe/skills or interface-library changes in react-spectrum.",
+      "ctaPrimary": {
+        "label": "Visit Adobe on GitHub",
+        "href": "https://github.com/adobe"
+      }
+    },
+    "zh": {
+      "seoTitle": "Adobe：创意 Skills 与 React Spectrum 开发资源",
+      "seoDescription": "发布创意工具 Skills 与 React Spectrum 组件库，分别面向 Adobe 产品操作和无障碍界面开发。",
+      "heroTitle": "Adobe",
+      "heroDescription": "了解 Adobe 产品相关的 Agent 指引和 React Spectrum 无障碍组件库，按创意产品操作或 React 界面开发任务选择对应来源。",
+      "aboutTitle": "关于 Adobe",
+      "about": "Adobe 以 adobe 为 GitHub 组织账号。其 skills 仓库收集面向 Adobe 产品的 Agent 指引，React Spectrum 则提供无障碍 React 界面相关组件与工具。 产品操作指引与组件库各有用途：前者可能需要 Adobe 连接器或产品权限，后者作为软件依赖参与界面开发。使用时应分别核对所属产品、许可和环境要求。",
+      "overview": {
+        "title": "关于 Adobe",
+        "paragraphs": [
+          "Adobe 以 adobe 为 GitHub 组织账号。其 skills 仓库收集面向 Adobe 产品的 Agent 指引，React Spectrum 则提供无障碍 React 界面相关组件与工具。",
+          "产品操作指引与组件库各有用途：前者可能需要 Adobe 连接器或产品权限，后者作为软件依赖参与界面开发。使用时应分别核对所属产品、许可和环境要求。"
+        ]
+      },
+      "projectsTitle": "Adobe 项目",
+      "skillsTitle": "Adobe Skills",
+      "skillsIntro": "通过所列 Adobe 来源仓库查看任务指引。",
+      "faqTitle": "Adobe 常见问题",
+      "faq": [
+        {
+          "question": "这些仓库属于哪个 GitHub 组织？",
+          "answer": "skills 和 react-spectrum 的 owner 均为 adobe，其组织主页关联 Adobe 官网。"
+        },
+        {
+          "question": "Adobe Skills 和 React Spectrum 是同一种资源吗？",
+          "answer": "不是。Skills 提供 Agent 指令，React Spectrum 提供界面组件库及工具。"
+        },
+        {
+          "question": "安装 Skills 会获得 Adobe 产品使用权吗？",
+          "answer": "指令文件不授予订阅或连接器权限，具体要求以所选 Adobe 工作流的说明为准。"
+        },
+        {
+          "question": "去哪里跟进界面组件库的变化？",
+          "answer": "查看 react-spectrum 的发布记录、问题列表及文档，不要以创意产品 Skills 目录代替组件库说明。"
+        },
+        {
+          "question": "同一份许可证适用于所有 Adobe 产品吗？",
+          "answer": "仓库许可证针对其注明的源文件，Adobe 服务及第三方素材可能适用其他条款。"
+        },
+        {
+          "question": "无障碍 React 组件应查看哪个来源？",
+          "answer": "应查看 React Spectrum 组件库及文档，包括 React Aria，而不是创意产品相关的 Skills。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Adobe",
+      "ctaDescription": "创意产品指引查看 adobe/skills，界面组件库变化查看 react-spectrum。",
+      "ctaPrimary": {
+        "label": "访问 Adobe GitHub",
+        "href": "https://github.com/adobe"
+      }
+    }
+  },
+  "aws": {
+    "name": "Amazon Web Services",
+    "type": "Organization",
+    "profileUrl": "https://github.com/aws",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/aws",
+        "label": {
+          "en": "Amazon Web Services on GitHub",
+          "zh": "Amazon Web Services GitHub 组织"
+        }
+      },
+      {
+        "href": "https://aws.amazon.com/",
+        "label": {
+          "en": "Amazon Web Services website",
+          "zh": "Amazon Web Services 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/aws/agent-toolkit-for-aws",
+        "label": {
+          "en": "Skills, MCP and plugin toolkit",
+          "zh": "Skills、MCP 与插件工具包"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "AWS: Official Agent Toolkit, Skills, MCP Servers, and Plugins",
+      "seoDescription": "AWS maintains an agent toolkit combining cloud-development instructions, MCP servers and plugins for working with AWS services.",
+      "heroTitle": "Amazon Web Services",
+      "heroDescription": "Find the official AWS toolkit for agent-assisted cloud development. Its Skills, MCP servers and plugins have different setup requirements; follow the package that matches your AWS task.",
+      "aboutTitle": "About Amazon Web Services",
+      "about": "Amazon Web Services maintains the aws GitHub organization. The agent-toolkit-for-aws repository supplies AWS-supported skills, MCP servers and plugins for cloud-development tasks. A toolkit installation and access to an AWS account are separate. Check each plugin’s runtime, credentials and service permissions. AWS Labs maintains a separate awslabs organization, so check each repository’s owner when following experimental work.",
+      "overview": {
+        "title": "About Amazon Web Services",
+        "paragraphs": [
+          "Amazon Web Services maintains the aws GitHub organization. The agent-toolkit-for-aws repository supplies AWS-supported skills, MCP servers and plugins for cloud-development tasks.",
+          "A toolkit installation and access to an AWS account are separate. Check each plugin’s runtime, credentials and service permissions. AWS Labs maintains a separate awslabs organization, so check each repository’s owner when following experimental work."
+        ]
+      },
+      "projectsTitle": "Amazon Web Services Projects",
+      "skillsTitle": "Amazon Web Services Skills",
+      "skillsIntro": "Consult the linked Amazon Web Services source repositories for task instructions.",
+      "faqTitle": "Amazon Web Services FAQ",
+      "faq": [
+        {
+          "question": "Who owns agent-toolkit-for-aws?",
+          "answer": "Its repository owner is aws, the Amazon Web Services organization, not awslabs."
+        },
+        {
+          "question": "Are all toolkit entries Skills?",
+          "answer": "No. The repository also contains MCP servers and plugins. Read the selected package’s documentation to understand its components."
+        },
+        {
+          "question": "Does the toolkit provide an AWS account?",
+          "answer": "No. Cloud access requires an account and the credentials or authorization specified by the selected tool."
+        },
+        {
+          "question": "Are cloud operations included for free?",
+          "answer": "Source-code availability does not include AWS service usage. Review the services and resources a workflow creates."
+        },
+        {
+          "question": "How is AWS Labs represented?",
+          "answer": "awslabs is a separate GitHub organization. A shared company does not change the owner of its repositories."
+        },
+        {
+          "question": "Where should I check supported installation?",
+          "answer": "Follow the official toolkit README and the documentation of the plugin or MCP server you intend to use."
+        }
+      ],
+      "ctaTitle": "Follow Amazon Web Services on GitHub",
+      "ctaDescription": "Track AWS toolkit packages and their installation documentation from the aws organization.",
+      "ctaPrimary": {
+        "label": "Visit Amazon Web Services on GitHub",
+        "href": "https://github.com/aws"
+      }
+    },
+    "zh": {
+      "seoTitle": "AWS：官方 Agent 工具包、Skills、MCP 与插件",
+      "seoDescription": "维护面向云开发的 Agent 工具包，包含 AWS 服务操作指引、MCP 服务与插件。",
+      "heroTitle": "Amazon Web Services",
+      "heroDescription": "查找 AWS 官方 Agent 云开发工具包，区分 Skills、MCP 服务与插件，按实际云任务核对相应包的配置要求。",
+      "aboutTitle": "关于 Amazon Web Services",
+      "about": "Amazon Web Services 维护 aws GitHub 组织，agent-toolkit-for-aws 仓库提供由 AWS 支持的 Skills、MCP 服务和插件，服务于云开发任务。 安装工具包与取得 AWS 账号权限是两回事，需按插件核对运行环境、凭证与服务权限。AWS Labs 使用独立的 awslabs 组织，查看实验项目时应核对各仓库的实际 owner。",
+      "overview": {
+        "title": "关于 Amazon Web Services",
+        "paragraphs": [
+          "Amazon Web Services 维护 aws GitHub 组织，agent-toolkit-for-aws 仓库提供由 AWS 支持的 Skills、MCP 服务和插件，服务于云开发任务。",
+          "安装工具包与取得 AWS 账号权限是两回事，需按插件核对运行环境、凭证与服务权限。AWS Labs 使用独立的 awslabs 组织，查看实验项目时应核对各仓库的实际 owner。"
+        ]
+      },
+      "projectsTitle": "Amazon Web Services 项目",
+      "skillsTitle": "Amazon Web Services Skills",
+      "skillsIntro": "通过所列 Amazon Web Services 来源仓库查看任务指引。",
+      "faqTitle": "Amazon Web Services 常见问题",
+      "faq": [
+        {
+          "question": "agent-toolkit-for-aws 由谁维护？",
+          "answer": "仓库 owner 为 Amazon Web Services 的 aws 组织，而不是 awslabs。"
+        },
+        {
+          "question": "工具包中的条目都是 Skill 吗？",
+          "answer": "不是。仓库还包含 MCP 服务和插件，需要按具体包的文档区分组成。"
+        },
+        {
+          "question": "工具包会提供 AWS 账号吗？",
+          "answer": "不会。云服务访问需要账号及所选工具要求的凭证或授权。"
+        },
+        {
+          "question": "云操作费用包含在工具包内吗？",
+          "answer": "源代码可用不包含 AWS 服务用量，需要检查工作流会创建和使用哪些资源。"
+        },
+        {
+          "question": "AWS Labs 与此页是什么关系？",
+          "answer": "awslabs 是独立 GitHub 组织，同属一家公司的关系不改变仓库的实际 owner。"
+        },
+        {
+          "question": "去哪里核对支持的安装方式？",
+          "answer": "查看官方工具包 README，再阅读准备使用的插件或 MCP 服务文档。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Amazon Web Services",
+      "ctaDescription": "从 aws 组织跟进官方工具包及各包的安装文档。",
+      "ctaPrimary": {
+        "label": "访问 Amazon Web Services GitHub",
+        "href": "https://github.com/aws"
+      }
+    }
+  },
+  "google-gemini": {
+    "name": "Google Gemini",
+    "type": "Organization",
+    "profileUrl": "https://github.com/google-gemini",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/google-gemini",
+        "label": {
+          "en": "Google Gemini on GitHub",
+          "zh": "Google Gemini GitHub 组织"
+        }
+      },
+      {
+        "href": "https://ai.google.dev/",
+        "label": {
+          "en": "Google Gemini website",
+          "zh": "Google Gemini 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/google-gemini/gemini-skills",
+        "label": {
+          "en": "Gemini API Skills source",
+          "zh": "Gemini API Skills 来源"
+        }
+      },
+      {
+        "href": "https://github.com/google-gemini/gemini-cli",
+        "label": {
+          "en": "Gemini CLI software",
+          "zh": "Gemini CLI 软件仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Google Gemini: API Skills, SDK Guidance, and Gemini CLI Sources",
+      "seoDescription": "The google-gemini organization publishes Gemini API Skills and Gemini CLI, separating reusable API guidance from the terminal agent.",
+      "heroTitle": "Google Gemini",
+      "heroDescription": "Build with Gemini using API and SDK instructions, or inspect the separate Gemini CLI application. This organization provides the upstream sources for both paths.",
+      "aboutTitle": "About Google Gemini",
+      "about": "The google-gemini GitHub organization publishes resources for building with the Gemini API. gemini-skills contains API, SDK and model-interaction instructions; gemini-cli contains the terminal agent’s software. This profile follows those repository owners. Stitch Skills belong to google-labs-code, Firebase Skills to firebase, and Workspace resources have their own publisher page. Model access and API credentials remain specific to the chosen environment.",
+      "overview": {
+        "title": "About Google Gemini",
+        "paragraphs": [
+          "The google-gemini GitHub organization publishes resources for building with the Gemini API. gemini-skills contains API, SDK and model-interaction instructions; gemini-cli contains the terminal agent’s software.",
+          "This profile follows those repository owners. Stitch Skills belong to google-labs-code, Firebase Skills to firebase, and Workspace resources have their own publisher page. Model access and API credentials remain specific to the chosen environment."
+        ]
+      },
+      "projectsTitle": "Google Gemini Projects",
+      "skillsTitle": "Google Gemini Skills",
+      "skillsIntro": "Consult the linked Google Gemini source repositories for task instructions.",
+      "faqTitle": "Google Gemini FAQ",
+      "faq": [
+        {
+          "question": "Is google-gemini the general google account?",
+          "answer": "They are separate GitHub organizations. These repositories have google-gemini as their actual owner."
+        },
+        {
+          "question": "Are Gemini Skills and Gemini CLI interchangeable?",
+          "answer": "Skills are task instructions; Gemini CLI is an agent application. Their installation and release histories differ."
+        },
+        {
+          "question": "Where do Stitch instructions belong?",
+          "answer": "The stitch-skills repository belongs to google-labs-code and is represented by that organization."
+        },
+        {
+          "question": "Does reading the API Skills activate Gemini access?",
+          "answer": "No. The relevant API or client still requires its documented account, credentials and model availability."
+        },
+        {
+          "question": "How does this differ from Google Workspace?",
+          "answer": "This profile concerns Gemini developer repositories; Workspace concerns its own productivity-tool resources and maintenance sources."
+        },
+        {
+          "question": "Which source should I use for API changes?",
+          "answer": "Use Gemini API documentation together with gemini-skills and the SDK version used by your application."
+        }
+      ],
+      "ctaTitle": "Follow Google Gemini on GitHub",
+      "ctaDescription": "Follow Gemini API instructions in gemini-skills and terminal-agent releases in gemini-cli.",
+      "ctaPrimary": {
+        "label": "Visit Google Gemini on GitHub",
+        "href": "https://github.com/google-gemini"
+      }
+    },
+    "zh": {
+      "seoTitle": "Google Gemini：API Skills、SDK 指引与 Gemini CLI 来源",
+      "seoDescription": "发布 Gemini API Skills 和 Gemini CLI，分别提供 API 开发指引与终端 Agent。",
+      "heroTitle": "Google Gemini",
+      "heroDescription": "通过 API 与 SDK 指引开发 Gemini 应用，或查看独立的 Gemini CLI 终端软件；本组织提供这两条路径的上游来源。",
+      "aboutTitle": "关于 Google Gemini",
+      "about": "google-gemini GitHub 组织发布 Gemini API 开发资源。gemini-skills 提供 API、SDK 与模型交互指引，gemini-cli 则维护终端 Agent 软件。 本页按实际仓库归属整理内容。Stitch Skills 属于 google-labs-code，Firebase Skills 属于 firebase，Workspace 资源已有独立发布者页。模型访问及 API 凭证要求取决于具体环境。",
+      "overview": {
+        "title": "关于 Google Gemini",
+        "paragraphs": [
+          "google-gemini GitHub 组织发布 Gemini API 开发资源。gemini-skills 提供 API、SDK 与模型交互指引，gemini-cli 则维护终端 Agent 软件。",
+          "本页按实际仓库归属整理内容。Stitch Skills 属于 google-labs-code，Firebase Skills 属于 firebase，Workspace 资源已有独立发布者页。模型访问及 API 凭证要求取决于具体环境。"
+        ]
+      },
+      "projectsTitle": "Google Gemini 项目",
+      "skillsTitle": "Google Gemini Skills",
+      "skillsIntro": "通过所列 Google Gemini 来源仓库查看任务指引。",
+      "faqTitle": "Google Gemini 常见问题",
+      "faq": [
+        {
+          "question": "google-gemini 就是 google 主组织吗？",
+          "answer": "两者是不同的 GitHub 组织，本页所列仓库的实际 owner 为 google-gemini。"
+        },
+        {
+          "question": "Gemini Skills 和 Gemini CLI 可以相互替代吗？",
+          "answer": "Skills 是任务指令，Gemini CLI 是 Agent 应用，两者安装方式和发布记录不同。"
+        },
+        {
+          "question": "Stitch 指引属于哪里？",
+          "answer": "stitch-skills 仓库属于 google-labs-code，应由对应组织页表示。"
+        },
+        {
+          "question": "读取 API Skills 就能使用 Gemini 吗？",
+          "answer": "不能。API 或客户端仍需满足其文档规定的账号、凭证及模型可用条件。"
+        },
+        {
+          "question": "这与 Google Workspace 页面有什么不同？",
+          "answer": "本页面向 Gemini 开发者仓库，Workspace 页面面向其办公工具资源及维护来源。"
+        },
+        {
+          "question": "API 变化应以哪个来源为准？",
+          "answer": "结合 Gemini API 官方文档、gemini-skills 和应用实际使用的 SDK 版本核对。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Google Gemini",
+      "ctaDescription": "API 指引查看 gemini-skills，终端 Agent 发行版查看 gemini-cli。",
+      "ctaPrimary": {
+        "label": "访问 Google Gemini GitHub",
+        "href": "https://github.com/google-gemini"
+      }
+    }
+  },
+  "google-labs-code": {
+    "name": "Google Labs Code",
+    "type": "Organization",
+    "profileUrl": "https://github.com/google-labs-code",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/google-labs-code",
+        "label": {
+          "en": "Google Labs Code on GitHub",
+          "zh": "Google Labs Code GitHub 组织"
+        }
+      },
+      {
+        "href": "https://stitch.withgoogle.com/",
+        "label": {
+          "en": "Google Labs Code website",
+          "zh": "Google Labs Code 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/google-labs-code/stitch-skills",
+        "label": {
+          "en": "Stitch Skills and plugins",
+          "zh": "Stitch Skills 与插件来源"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Google Labs Code: Stitch Design Skills and Agent Plugins",
+      "seoDescription": "Google Labs Code maintains Stitch design Skills and plugins, with host-specific setup documented in its own repositories.",
+      "heroTitle": "Google Labs Code",
+      "heroDescription": "Find Stitch design instructions and agent plugins maintained by Google Labs Code. Check the repository’s client-specific distribution before connecting a design workflow.",
+      "aboutTitle": "About Google Labs Code",
+      "about": "Google Labs Code is the GitHub organization that owns stitch-skills. Its repository packages design-oriented instructions and plugins for Google Stitch rather than the Gemini terminal agent. The README lists installation paths for different coding agents. Those paths describe instruction and plugin delivery; access to Stitch and any required tool connection must be checked separately. Other Google organizations keep their own publisher identities. The repository states that this is not an officially supported Google product.",
+      "overview": {
+        "title": "About Google Labs Code",
+        "paragraphs": [
+          "Google Labs Code is the GitHub organization that owns stitch-skills. Its repository packages design-oriented instructions and plugins for Google Stitch rather than the Gemini terminal agent.",
+          "The README lists installation paths for different coding agents. Those paths describe instruction and plugin delivery; access to Stitch and any required tool connection must be checked separately. Other Google organizations keep their own publisher identities. The repository states that this is not an officially supported Google product."
+        ]
+      },
+      "projectsTitle": "Google Labs Code Projects",
+      "skillsTitle": "Google Labs Code Skills",
+      "skillsIntro": "Consult the linked Google Labs Code source repositories for task instructions.",
+      "faqTitle": "Google Labs Code FAQ",
+      "faq": [
+        {
+          "question": "Which organization owns stitch-skills?",
+          "answer": "The repository owner is google-labs-code, whose display name is Google Labs Code."
+        },
+        {
+          "question": "Does this page include Gemini CLI?",
+          "answer": "No. Gemini CLI belongs to google-gemini and has a different software and release lifecycle."
+        },
+        {
+          "question": "Are the Stitch packages only raw instructions?",
+          "answer": "The repository includes Skills and plugin distribution. Follow the installation method listed for the intended client."
+        },
+        {
+          "question": "Is Stitch Skills an officially supported Google product?",
+          "answer": "The repository explicitly says it is not an officially supported Google product and is not eligible for Google’s Open Source Software Vulnerability Rewards Program."
+        },
+        {
+          "question": "Where can I find current Stitch setup details?",
+          "answer": "Start with stitch-skills and the linked Stitch product, using the README for the version you install."
+        },
+        {
+          "question": "How are Stitch instructions distributed to different clients?",
+          "answer": "The README describes plugins for supported clients and manual copying for other setups. Use the path documented for your client rather than assuming every client loads the same package."
+        }
+      ],
+      "ctaTitle": "Follow Google Labs Code on GitHub",
+      "ctaDescription": "Read stitch-skills for the current Stitch instruction catalog and client plugin setup.",
+      "ctaPrimary": {
+        "label": "Visit Google Labs Code on GitHub",
+        "href": "https://github.com/google-labs-code"
+      }
+    },
+    "zh": {
+      "seoTitle": "Google Labs Code：Stitch 设计 Skills 与 Agent 插件",
+      "seoDescription": "维护 Stitch 设计 Skills 与插件，由独立仓库说明各 Agent 宿主的安装方式。",
+      "heroTitle": "Google Labs Code",
+      "heroDescription": "查看 Google Labs Code 维护的 Stitch 设计指引与 Agent 插件，连接设计工作流前先核对对应客户端的分发方式。",
+      "aboutTitle": "关于 Google Labs Code",
+      "about": "Google Labs Code 是 stitch-skills 的 GitHub 所属组织，仓库围绕 Google Stitch 整理设计指引与插件，不是 Gemini 终端 Agent 的软件仓库。 README 分别列出不同编程 Agent 的安装入口，说明的是指令和插件的分发方式；Stitch 的访问条件及工具连接仍需单独核对。其他 Google 组织保留各自的发布者身份。 仓库明确说明这不是 Google 正式支持的产品。",
+      "overview": {
+        "title": "关于 Google Labs Code",
+        "paragraphs": [
+          "Google Labs Code 是 stitch-skills 的 GitHub 所属组织，仓库围绕 Google Stitch 整理设计指引与插件，不是 Gemini 终端 Agent 的软件仓库。",
+          "README 分别列出不同编程 Agent 的安装入口，说明的是指令和插件的分发方式；Stitch 的访问条件及工具连接仍需单独核对。其他 Google 组织保留各自的发布者身份。 仓库明确说明这不是 Google 正式支持的产品。"
+        ]
+      },
+      "projectsTitle": "Google Labs Code 项目",
+      "skillsTitle": "Google Labs Code Skills",
+      "skillsIntro": "通过所列 Google Labs Code 来源仓库查看任务指引。",
+      "faqTitle": "Google Labs Code 常见问题",
+      "faq": [
+        {
+          "question": "stitch-skills 属于哪个组织？",
+          "answer": "仓库 owner 为 google-labs-code，组织展示名称为 Google Labs Code。"
+        },
+        {
+          "question": "此页包含 Gemini CLI 吗？",
+          "answer": "不包含。Gemini CLI 属于 google-gemini，其软件与发布记录应分别查看。"
+        },
+        {
+          "question": "Stitch 包只有指令文件吗？",
+          "answer": "仓库包含 Skills 和插件分发配置，应遵循目标客户端对应的安装说明。"
+        },
+        {
+          "question": "Stitch Skills 是 Google 正式支持的产品吗？",
+          "answer": "仓库明确说明这不是 Google 正式支持的产品，也不符合 Google 开源软件漏洞奖励计划的参与条件。"
+        },
+        {
+          "question": "去哪里查看当前 Stitch 配置？",
+          "answer": "从 stitch-skills 与 Stitch 产品入口开始，以所安装版本的 README 为准。"
+        },
+        {
+          "question": "Stitch 指令如何分发到不同客户端？",
+          "answer": "README 分别说明支持客户端的插件及其他环境的手动复制方式，应选择对应客户端的路径，不假定所有客户端加载相同包。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Google Labs Code",
+      "ctaDescription": "通过 stitch-skills 查看现行 Stitch 指令目录与客户端插件配置。",
+      "ctaPrimary": {
+        "label": "访问 Google Labs Code GitHub",
+        "href": "https://github.com/google-labs-code"
+      }
+    }
+  },
+  "firebase": {
+    "name": "Firebase",
+    "type": "Organization",
+    "profileUrl": "https://github.com/firebase",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/firebase",
+        "label": {
+          "en": "Firebase on GitHub",
+          "zh": "Firebase GitHub 组织"
+        }
+      },
+      {
+        "href": "https://firebase.google.com/",
+        "label": {
+          "en": "Firebase website",
+          "zh": "Firebase 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/firebase/agent-skills",
+        "label": {
+          "en": "Firebase Skills source",
+          "zh": "Firebase Skills 来源仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Firebase: Official Agent Skills and App Development Guidance",
+      "seoDescription": "Firebase publishes product-specific agent instructions for building applications, with official documentation linking to its agent-skills repository.",
+      "heroTitle": "Firebase",
+      "heroDescription": "Locate Firebase’s official agent instructions for application development. Start from its AI-assistance documentation, then check the project and service setup needed for your task.",
+      "aboutTitle": "About Firebase",
+      "about": "Firebase maintains the firebase GitHub organization. Its official AI-assistance documentation links to agent-skills, a repository of Firebase-specific instructions and workflows for coding agents. The Skills belong to Firebase, not to google-gemini or google-labs-code. Application services, project configuration and data-access rules still need their own setup; instruction files do not provision a Firebase project or grant access to its data.",
+      "overview": {
+        "title": "About Firebase",
+        "paragraphs": [
+          "Firebase maintains the firebase GitHub organization. Its official AI-assistance documentation links to agent-skills, a repository of Firebase-specific instructions and workflows for coding agents.",
+          "The Skills belong to Firebase, not to google-gemini or google-labs-code. Application services, project configuration and data-access rules still need their own setup; instruction files do not provision a Firebase project or grant access to its data."
+        ]
+      },
+      "projectsTitle": "Firebase Projects",
+      "skillsTitle": "Firebase Skills",
+      "skillsIntro": "Consult the linked Firebase source repositories for task instructions.",
+      "faqTitle": "Firebase FAQ",
+      "faq": [
+        {
+          "question": "How is the Firebase Skills source confirmed?",
+          "answer": "Firebase’s own agent-skills documentation links to the firebase/agent-skills repository."
+        },
+        {
+          "question": "Is Firebase maintained under google-gemini?",
+          "answer": "No. The checked repository owner is firebase. Gemini API instructions belong to google-gemini, while Stitch instructions belong to google-labs-code."
+        },
+        {
+          "question": "Do Skills create a configured Firebase project?",
+          "answer": "No. A workflow still needs the relevant Firebase project, enabled services and authenticated tools."
+        },
+        {
+          "question": "Do the instructions replace data-access rules?",
+          "answer": "No. Application access is governed by the relevant Firebase service configuration and permissions."
+        },
+        {
+          "question": "Where should I check supported distribution?",
+          "answer": "Use the Firebase AI-assistance documentation and repository README for the client you plan to use."
+        },
+        {
+          "question": "Do Skills replace current Firebase service documentation?",
+          "answer": "No. Check the official documentation for the Firebase service and configuration you use when validating an agent’s suggestion, especially if an instruction references an older setup."
+        }
+      ],
+      "ctaTitle": "Follow Firebase on GitHub",
+      "ctaDescription": "Use Firebase documentation and agent-skills together when checking supported setup.",
+      "ctaPrimary": {
+        "label": "Visit Firebase on GitHub",
+        "href": "https://github.com/firebase"
+      }
+    },
+    "zh": {
+      "seoTitle": "Firebase：官方 Agent Skills 与应用开发指引",
+      "seoDescription": "发布应用开发相关的 Agent 指引，官方文档明确链接 firebase/agent-skills 来源仓库。",
+      "heroTitle": "Firebase",
+      "heroDescription": "查找 Firebase 官方应用开发 Agent 指引，从 AI 辅助开发文档进入，核对具体任务需要的项目和服务配置。",
+      "aboutTitle": "关于 Firebase",
+      "about": "Firebase 使用 firebase GitHub 组织。官方 AI 辅助开发文档链接到 agent-skills，仓库提供面向 Firebase 的编程 Agent 指令与工作流。 这些 Skills 的仓库归属为 Firebase，不是 google-gemini 或 google-labs-code。应用服务、项目配置和数据访问规则仍需实际设置，指令文件不会自动创建项目或授予数据权限。",
+      "overview": {
+        "title": "关于 Firebase",
+        "paragraphs": [
+          "Firebase 使用 firebase GitHub 组织。官方 AI 辅助开发文档链接到 agent-skills，仓库提供面向 Firebase 的编程 Agent 指令与工作流。",
+          "这些 Skills 的仓库归属为 Firebase，不是 google-gemini 或 google-labs-code。应用服务、项目配置和数据访问规则仍需实际设置，指令文件不会自动创建项目或授予数据权限。"
+        ]
+      },
+      "projectsTitle": "Firebase 项目",
+      "skillsTitle": "Firebase Skills",
+      "skillsIntro": "通过所列 Firebase 来源仓库查看任务指引。",
+      "faqTitle": "Firebase 常见问题",
+      "faq": [
+        {
+          "question": "如何确认 Firebase Skills 的官方来源？",
+          "answer": "Firebase 官方 agent-skills 文档直接链接 firebase/agent-skills 仓库。"
+        },
+        {
+          "question": "Firebase 由 google-gemini 维护吗？",
+          "answer": "不是。所核查仓库的 owner 为 firebase；Gemini API 指引属于 google-gemini，Stitch 指引属于 google-labs-code。"
+        },
+        {
+          "question": "Skills 会自动提供配置好的 Firebase 项目吗？",
+          "answer": "不会。工作流仍需要相应项目、已启用服务和经过认证的工具。"
+        },
+        {
+          "question": "指令能代替数据访问规则吗？",
+          "answer": "不能。应用访问仍由相关 Firebase 服务配置与权限控制。"
+        },
+        {
+          "question": "去哪里核对分发与安装方式？",
+          "answer": "按准备使用的客户端，查看 Firebase AI 辅助开发文档及仓库 README。"
+        },
+        {
+          "question": "Skills 会代替 Firebase 当前服务文档吗？",
+          "answer": "不会。验证 Agent 建议时应核对所用 Firebase 服务及配置的官方文档，尤其是指令引用了旧配置的情况。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Firebase",
+      "ctaDescription": "核对支持的配置方式时，结合 Firebase 官方文档与 agent-skills。",
+      "ctaPrimary": {
+        "label": "访问 Firebase GitHub",
+        "href": "https://github.com/firebase"
+      }
+    }
+  },
+  "huggingface": {
+    "name": "Hugging Face",
+    "type": "Organization",
+    "profileUrl": "https://github.com/huggingface",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/huggingface",
+        "label": {
+          "en": "Hugging Face on GitHub",
+          "zh": "Hugging Face GitHub 组织"
+        }
+      },
+      {
+        "href": "https://huggingface.co/",
+        "label": {
+          "en": "Hugging Face website",
+          "zh": "Hugging Face 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/huggingface/skills",
+        "label": {
+          "en": "AI and ML Skills source",
+          "zh": "AI 与机器学习 Skills 来源"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Hugging Face: Agent Skills for Datasets, Training, and Evaluation",
+      "seoDescription": "Hugging Face publishes AI and ML task Skills covering dataset creation, model training, evaluation and Hub operations.",
+      "heroTitle": "Hugging Face",
+      "heroDescription": "Explore agent instructions for datasets, training, evaluation and Hub operations. Hugging Face’s task collection helps you identify the required tools and resources before starting an AI or ML workflow.",
+      "aboutTitle": "About Hugging Face",
+      "about": "Hugging Face publishes its Skills in the huggingface GitHub organization. The repository describes AI and machine-learning tasks such as dataset creation, model training and evaluation, with instructions and supporting resources packaged per task. The README distinguishes Hub operations through the hf-cli bootstrap path from additional workflow Skills. Dataset rights, model licenses, account access and compute requirements remain specific to each task; the publisher profile is not a grant of training capacity.",
+      "overview": {
+        "title": "About Hugging Face",
+        "paragraphs": [
+          "Hugging Face publishes its Skills in the huggingface GitHub organization. The repository describes AI and machine-learning tasks such as dataset creation, model training and evaluation, with instructions and supporting resources packaged per task.",
+          "The README distinguishes Hub operations through the hf-cli bootstrap path from additional workflow Skills. Dataset rights, model licenses, account access and compute requirements remain specific to each task; the publisher profile is not a grant of training capacity."
+        ]
+      },
+      "projectsTitle": "Hugging Face Projects",
+      "skillsTitle": "Hugging Face Skills",
+      "skillsIntro": "Consult the linked Hugging Face source repositories for task instructions.",
+      "faqTitle": "Hugging Face FAQ",
+      "faq": [
+        {
+          "question": "Where are the Hugging Face Skills maintained?",
+          "answer": "The upstream source is huggingface/skills, owned by the Hugging Face GitHub organization."
+        },
+        {
+          "question": "What distinguishes this collection from a coding-only pack?",
+          "answer": "Its tasks include datasets, model training and evaluation, alongside Hub operations and their supporting tools."
+        },
+        {
+          "question": "How do Hub bootstrap instructions differ from workflow Skills?",
+          "answer": "The README presents hf-cli as a bootstrap path for core Hub operations, while additional task workflows can be installed or discovered separately."
+        },
+        {
+          "question": "Does installing a Skill provide compute?",
+          "answer": "No. Training and evaluation still need an appropriate runtime, hardware or hosted job resources."
+        },
+        {
+          "question": "Do all models and datasets share the Skills license?",
+          "answer": "No. Review each model and dataset’s terms independently of the instruction repository."
+        },
+        {
+          "question": "Where should I follow workflow updates?",
+          "answer": "Read the Skills README and the individual task instructions alongside the relevant Hub documentation."
+        }
+      ],
+      "ctaTitle": "Follow Hugging Face on GitHub",
+      "ctaDescription": "Inspect the Hugging Face Skills catalog and the task-specific files before preparing a training or evaluation job.",
+      "ctaPrimary": {
+        "label": "Visit Hugging Face on GitHub",
+        "href": "https://github.com/huggingface"
+      }
+    },
+    "zh": {
+      "seoTitle": "Hugging Face：数据集、训练与评估 Agent Skills",
+      "seoDescription": "发布数据集创建、模型训练、评估及 Hub 操作相关的 AI 与机器学习任务 Skills。",
+      "heroTitle": "Hugging Face",
+      "heroDescription": "探索数据集、训练、评估与 Hub 操作指引，先明确 AI 或机器学习工作流需要的工具、资料和运行资源。",
+      "aboutTitle": "关于 Hugging Face",
+      "about": "Hugging Face 在 huggingface GitHub 组织发布 Skills。仓库围绕数据集创建、模型训练与评估等 AI 和机器学习任务，将指令及配套资源按任务组织。 README 区分了以 hf-cli 为起点的 Hub 操作与其他工作流 Skills。数据集权利、模型许可、账号访问及算力要求取决于具体任务，发布者介绍不包含训练资源额度。",
+      "overview": {
+        "title": "关于 Hugging Face",
+        "paragraphs": [
+          "Hugging Face 在 huggingface GitHub 组织发布 Skills。仓库围绕数据集创建、模型训练与评估等 AI 和机器学习任务，将指令及配套资源按任务组织。",
+          "README 区分了以 hf-cli 为起点的 Hub 操作与其他工作流 Skills。数据集权利、模型许可、账号访问及算力要求取决于具体任务，发布者介绍不包含训练资源额度。"
+        ]
+      },
+      "projectsTitle": "Hugging Face 项目",
+      "skillsTitle": "Hugging Face Skills",
+      "skillsIntro": "通过所列 Hugging Face 来源仓库查看任务指引。",
+      "faqTitle": "Hugging Face 常见问题",
+      "faq": [
+        {
+          "question": "Hugging Face Skills 在哪里维护？",
+          "answer": "上游来源是 Hugging Face GitHub 组织所属的 huggingface/skills。"
+        },
+        {
+          "question": "这与纯编程指引包有什么区别？",
+          "answer": "任务涵盖数据集、模型训练、评估与 Hub 操作，以及相应配套工具。"
+        },
+        {
+          "question": "Hub 基础操作入口与工作流 Skills 有什么区别？",
+          "answer": "README 以 hf-cli 作为 Hub 基础操作入口，其他任务工作流可单独安装或发现。"
+        },
+        {
+          "question": "安装 Skill 会获得算力吗？",
+          "answer": "不会。训练与评估仍需匹配的运行环境、硬件或托管任务资源。"
+        },
+        {
+          "question": "模型和数据集都适用 Skills 的许可证吗？",
+          "answer": "不是。模型和数据集各自的条款需要与指令仓库分开核对。"
+        },
+        {
+          "question": "去哪里跟进工作流更新？",
+          "answer": "结合 Skills README、单项任务指令与相应 Hub 文档查看。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Hugging Face",
+      "ctaDescription": "准备训练或评估任务前，查看 Hugging Face Skills 目录及单项任务文件。",
+      "ctaPrimary": {
+        "label": "访问 Hugging Face GitHub",
+        "href": "https://github.com/huggingface"
+      }
+    }
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "type": "Organization",
+    "profileUrl": "https://github.com/mongodb",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/mongodb",
+        "label": {
+          "en": "MongoDB on GitHub",
+          "zh": "MongoDB GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.mongodb.com/",
+        "label": {
+          "en": "MongoDB website",
+          "zh": "MongoDB 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/mongodb/agent-skills",
+        "label": {
+          "en": "Official MongoDB Skills",
+          "zh": "MongoDB 官方 Skills"
+        }
+      },
+      {
+        "href": "https://github.com/mongodb/mongo",
+        "label": {
+          "en": "Database server source",
+          "zh": "数据库服务端源码"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "MongoDB: Official Skills, Atlas Workflows, and Database Sources",
+      "seoDescription": "MongoDB maintains database software and official agent Skills, with separate Atlas and self-managed connection paths.",
+      "heroTitle": "MongoDB",
+      "heroDescription": "Find MongoDB’s official database instructions and distinguish Atlas from self-managed connections. Use the publisher’s sources to compare the task guidance, database software and access requirements.",
+      "aboutTitle": "About MongoDB",
+      "about": "The mongodb organization owns both the mongo database source and agent-skills. Official MongoDB documentation identifies the latter as reusable instructions for common database tasks, including queries, schemas and optimization. The Skills README separates an Atlas plugin using a hosted MCP server and OAuth from the setup for self-managed deployments. Database server licensing, instruction licensing and hosted service terms are separate decisions.",
+      "overview": {
+        "title": "About MongoDB",
+        "paragraphs": [
+          "The mongodb organization owns both the mongo database source and agent-skills. Official MongoDB documentation identifies the latter as reusable instructions for common database tasks, including queries, schemas and optimization.",
+          "The Skills README separates an Atlas plugin using a hosted MCP server and OAuth from the setup for self-managed deployments. Database server licensing, instruction licensing and hosted service terms are separate decisions."
+        ]
+      },
+      "projectsTitle": "MongoDB Projects",
+      "skillsTitle": "MongoDB Skills",
+      "skillsIntro": "Consult the linked MongoDB source repositories for task instructions.",
+      "faqTitle": "MongoDB FAQ",
+      "faq": [
+        {
+          "question": "Is agent-skills an official MongoDB repository?",
+          "answer": "Its owner is mongodb and MongoDB’s official Agent Skills documentation links to it."
+        },
+        {
+          "question": "Is the mongo repository a Skill collection?",
+          "answer": "No. It contains database server source. Agent instructions are maintained in agent-skills."
+        },
+        {
+          "question": "How does the Atlas connection differ?",
+          "answer": "The documented Atlas plugin uses MongoDB’s hosted MCP server and OAuth; self-managed deployments have separate instructions."
+        },
+        {
+          "question": "Does the Skills license cover the database server?",
+          "answer": "No. The mongo README identifies SSPL terms for community server files; consult the license applicable to each component."
+        },
+        {
+          "question": "Does installing instructions authorize database access?",
+          "answer": "No. Database or Atlas access still depends on authentication and the permissions of the connected account."
+        },
+        {
+          "question": "Where should I check current connection requirements?",
+          "answer": "Use the official Agent Skills docs and the README for the Atlas or self-managed plugin you select."
+        }
+      ],
+      "ctaTitle": "Follow MongoDB on GitHub",
+      "ctaDescription": "Track database releases in mongo and connection instructions in agent-skills.",
+      "ctaPrimary": {
+        "label": "Visit MongoDB on GitHub",
+        "href": "https://github.com/mongodb"
+      }
+    },
+    "zh": {
+      "seoTitle": "MongoDB：官方 Skills、Atlas 工作流与数据库来源",
+      "seoDescription": "维护数据库软件与官方 Agent Skills，分别说明 Atlas 和自管理部署的连接方式。",
+      "heroTitle": "MongoDB",
+      "heroDescription": "查找 MongoDB 官方数据库指引，区分 Atlas 与自管理部署的连接方式，分别了解任务指引、数据库软件及访问条件。",
+      "aboutTitle": "关于 MongoDB",
+      "about": "mongodb 组织同时拥有 mongo 数据库源码与 agent-skills。MongoDB 官方文档将后者介绍为常见数据库任务的可复用指令，涉及查询、Schema 与优化。 Skills README 区分了使用托管 MCP 服务及 OAuth 的 Atlas 插件，与自管理部署的配置方式。数据库服务端许可、指令许可和托管服务条款需要分别判断。",
+      "overview": {
+        "title": "关于 MongoDB",
+        "paragraphs": [
+          "mongodb 组织同时拥有 mongo 数据库源码与 agent-skills。MongoDB 官方文档将后者介绍为常见数据库任务的可复用指令，涉及查询、Schema 与优化。",
+          "Skills README 区分了使用托管 MCP 服务及 OAuth 的 Atlas 插件，与自管理部署的配置方式。数据库服务端许可、指令许可和托管服务条款需要分别判断。"
+        ]
+      },
+      "projectsTitle": "MongoDB 项目",
+      "skillsTitle": "MongoDB Skills",
+      "skillsIntro": "通过所列 MongoDB 来源仓库查看任务指引。",
+      "faqTitle": "MongoDB 常见问题",
+      "faq": [
+        {
+          "question": "agent-skills 是 MongoDB 官方仓库吗？",
+          "answer": "仓库 owner 为 mongodb，且 MongoDB 官方 Agent Skills 文档直接链接该仓库。"
+        },
+        {
+          "question": "mongo 仓库是 Skill 集合吗？",
+          "answer": "不是。它是数据库服务端源码，Agent 指令在 agent-skills 维护。"
+        },
+        {
+          "question": "Atlas 的连接方式有什么不同？",
+          "answer": "文档中的 Atlas 插件使用 MongoDB 托管 MCP 服务及 OAuth，自管理部署另有配置说明。"
+        },
+        {
+          "question": "Skills 许可证也覆盖数据库服务端吗？",
+          "answer": "不覆盖。mongo README 说明社区服务端文件适用 SSPL 等条款，应按组件核对许可。"
+        },
+        {
+          "question": "安装指令会授权数据库访问吗？",
+          "answer": "不会。数据库或 Atlas 访问仍取决于认证及连接账号的权限。"
+        },
+        {
+          "question": "去哪里查看当前连接要求？",
+          "answer": "查看官方 Agent Skills 文档，以及所选 Atlas 或自管理插件的 README。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 MongoDB",
+      "ctaDescription": "数据库发行版查看 mongo，连接与任务指引查看 agent-skills。",
+      "ctaPrimary": {
+        "label": "访问 MongoDB GitHub",
+        "href": "https://github.com/mongodb"
+      }
+    }
+  },
+  "redis": {
+    "name": "Redis",
+    "type": "Organization",
+    "profileUrl": "https://github.com/redis",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/redis",
+        "label": {
+          "en": "Redis on GitHub",
+          "zh": "Redis GitHub 组织"
+        }
+      },
+      {
+        "href": "https://redis.io/",
+        "label": {
+          "en": "Redis website",
+          "zh": "Redis 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/redis/agent-skills",
+        "label": {
+          "en": "Redis Skills source",
+          "zh": "Redis Skills 来源"
+        }
+      },
+      {
+        "href": "https://github.com/redis/redis",
+        "label": {
+          "en": "Redis software source",
+          "zh": "Redis 软件源码"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Redis: Agent Skills, Data Structures, and Redis Software Sources",
+      "seoDescription": "Redis publishes server software and agent instructions for data structures, key design, memory, expiration and related application decisions.",
+      "heroTitle": "Redis",
+      "heroDescription": "Review Redis agent guidance for data structures, key design and messaging choices. Keep the instruction collection separate from the Redis server and the deployment you intend to use.",
+      "aboutTitle": "About Redis",
+      "about": "Redis maintains the redis GitHub organization. The redis repository contains software source and build information, while agent-skills packages instructions for agents working with Redis. The Skills catalog addresses topics such as key naming, memory and TTL, atomic primitives, and Streams versus Pub/Sub. Those instructions do not create a running Redis instance. Server versions, deployment choices and licenses should be checked independently.",
+      "overview": {
+        "title": "About Redis",
+        "paragraphs": [
+          "Redis maintains the redis GitHub organization. The redis repository contains software source and build information, while agent-skills packages instructions for agents working with Redis.",
+          "The Skills catalog addresses topics such as key naming, memory and TTL, atomic primitives, and Streams versus Pub/Sub. Those instructions do not create a running Redis instance. Server versions, deployment choices and licenses should be checked independently."
+        ]
+      },
+      "projectsTitle": "Redis Projects",
+      "skillsTitle": "Redis Skills",
+      "skillsIntro": "Consult the linked Redis source repositories for task instructions.",
+      "faqTitle": "Redis FAQ",
+      "faq": [
+        {
+          "question": "Where can I find redis-core instructions?",
+          "answer": "Open redis/agent-skills and follow the redis-core entry in its catalog to the task’s source directory. The owner is redis; the software server is maintained in redis/redis."
+        },
+        {
+          "question": "Are the Skills a Redis server?",
+          "answer": "No. They provide instructions; the redis software or a hosted deployment supplies the running database."
+        },
+        {
+          "question": "What decisions do the instructions address?",
+          "answer": "The catalog includes key naming, expiration, memory, data structures and messaging patterns such as Streams and Pub/Sub."
+        },
+        {
+          "question": "Can I infer the server license from agent-skills?",
+          "answer": "No. Check the Redis release and its license files; the instruction repository has its own licensing."
+        },
+        {
+          "question": "Do instructions include Redis Cloud credentials?",
+          "answer": "No. Hosted access and database authentication must be supplied through the chosen deployment’s supported setup."
+        },
+        {
+          "question": "Where do I follow server changes?",
+          "answer": "Use redis/redis releases and Redis documentation; use agent-skills for changes to the instruction collection."
+        }
+      ],
+      "ctaTitle": "Follow Redis on GitHub",
+      "ctaDescription": "Use agent-skills for Redis task guidance and redis for software release information.",
+      "ctaPrimary": {
+        "label": "Visit Redis on GitHub",
+        "href": "https://github.com/redis"
+      }
+    },
+    "zh": {
+      "seoTitle": "Redis：Agent Skills、数据结构与软件来源",
+      "seoDescription": "发布 Redis 软件及 Agent 指引，涉及数据结构、键设计、内存、过期策略与应用选型。",
+      "heroTitle": "Redis",
+      "heroDescription": "查看 Redis 数据结构、键设计与消息模式相关指引，并分别核对指令集合、Redis 服务端及准备使用的部署。",
+      "aboutTitle": "关于 Redis",
+      "about": "Redis 维护 redis GitHub 组织。redis 仓库提供软件源码与构建资料，agent-skills 则整理 Agent 使用 Redis 时的任务指引。 Skills 目录涉及键命名、内存与 TTL、原子操作，以及 Streams 与 Pub/Sub 等选择。这些指令不提供运行中的 Redis 实例，服务端版本、部署方式和许可仍需分别核对。",
+      "overview": {
+        "title": "关于 Redis",
+        "paragraphs": [
+          "Redis 维护 redis GitHub 组织。redis 仓库提供软件源码与构建资料，agent-skills 则整理 Agent 使用 Redis 时的任务指引。",
+          "Skills 目录涉及键命名、内存与 TTL、原子操作，以及 Streams 与 Pub/Sub 等选择。这些指令不提供运行中的 Redis 实例，服务端版本、部署方式和许可仍需分别核对。"
+        ]
+      },
+      "projectsTitle": "Redis 项目",
+      "skillsTitle": "Redis Skills",
+      "skillsIntro": "通过所列 Redis 来源仓库查看任务指引。",
+      "faqTitle": "Redis 常见问题",
+      "faq": [
+        {
+          "question": "去哪里查找 redis-core 指引？",
+          "answer": "进入 redis/agent-skills，通过目录中的 redis-core 条目查看任务源目录。仓库 owner 为 redis，服务端软件则在 redis/redis 维护。"
+        },
+        {
+          "question": "Skills 本身就是 Redis 服务端吗？",
+          "answer": "不是。Skills 提供指令，运行中的数据库来自 Redis 软件或托管部署。"
+        },
+        {
+          "question": "指引关注哪些选择？",
+          "answer": "目录涉及键命名、过期、内存、数据结构，以及 Streams 和 Pub/Sub 等消息模式。"
+        },
+        {
+          "question": "能由 agent-skills 推断服务端许可证吗？",
+          "answer": "不能。应检查 Redis 具体发行版与许可文件，指令仓库适用自己的许可证。"
+        },
+        {
+          "question": "指令包含 Redis Cloud 凭证吗？",
+          "answer": "不包含。托管访问与数据库认证需按所选部署的配置方式提供。"
+        },
+        {
+          "question": "服务端变化应去哪里查看？",
+          "answer": "服务端查看 redis/redis 发布记录和 Redis 文档，指令集合变化查看 agent-skills。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Redis",
+      "ctaDescription": "Redis 任务指引查看 agent-skills，软件发行信息查看 redis。",
+      "ctaPrimary": {
+        "label": "访问 Redis GitHub",
+        "href": "https://github.com/redis"
+      }
+    }
+  },
+  "stripe": {
+    "name": "Stripe",
+    "type": "Organization",
+    "profileUrl": "https://github.com/stripe",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/stripe",
+        "label": {
+          "en": "Stripe on GitHub",
+          "zh": "Stripe GitHub 组织"
+        }
+      },
+      {
+        "href": "https://stripe.com/",
+        "label": {
+          "en": "Stripe website",
+          "zh": "Stripe 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/stripe/ai",
+        "label": {
+          "en": "Agent plugins and Skills",
+          "zh": "Agent 插件与 Skills 来源"
+        }
+      },
+      {
+        "href": "https://github.com/stripe/stripe-node",
+        "label": {
+          "en": "Node.js SDK source",
+          "zh": "Node.js SDK 软件仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Stripe: Payment Agent Skills, Plugins, and API Developer Sources",
+      "seoDescription": "Stripe publishes agent plugins and Skills alongside payment SDKs; integration instructions, API clients and hosted services have distinct roles.",
+      "heroTitle": "Stripe",
+      "heroDescription": "Navigate Stripe’s agent plugins, Skills and payment SDKs. Check current integration sources, package migration notes and the account mode before choosing a payment-development workflow.",
+      "aboutTitle": "About Stripe",
+      "about": "Stripe’s stripe GitHub organization owns the ai repository and payment client libraries such as stripe-node. The ai README brings together agent plugins, Skills and benchmarks for products built on Stripe. Some older toolkit packages are directed to current Stripe MCP or billing documentation. Use the current upstream instructions rather than copying an old integration recipe. Live payments, account authorization and service fees remain separate from the source repositories.",
+      "overview": {
+        "title": "About Stripe",
+        "paragraphs": [
+          "Stripe’s stripe GitHub organization owns the ai repository and payment client libraries such as stripe-node. The ai README brings together agent plugins, Skills and benchmarks for products built on Stripe.",
+          "Some older toolkit packages are directed to current Stripe MCP or billing documentation. Use the current upstream instructions rather than copying an old integration recipe. Live payments, account authorization and service fees remain separate from the source repositories."
+        ]
+      },
+      "projectsTitle": "Stripe Projects",
+      "skillsTitle": "Stripe Skills",
+      "skillsIntro": "Consult the linked Stripe source repositories for task instructions.",
+      "faqTitle": "Stripe FAQ",
+      "faq": [
+        {
+          "question": "Who publishes the Stripe AI resources?",
+          "answer": "The ai repository is owned by stripe, as are official client libraries such as stripe-node."
+        },
+        {
+          "question": "Is stripe-node a Skill?",
+          "answer": "No. It is the Node.js API client library; Skills and agent plugins are described in stripe/ai."
+        },
+        {
+          "question": "Should I use every package named in older tutorials?",
+          "answer": "Check the ai README first. It redirects some older packages to native MCP support or current billing documentation."
+        },
+        {
+          "question": "Does installing a Skill enable live payments?",
+          "answer": "No. Payment access depends on the Stripe account, credentials and mode used by the integration."
+        },
+        {
+          "question": "Are test and live environments interchangeable?",
+          "answer": "No. Check which account and mode a tool uses before acting on customers, subscriptions or payments."
+        },
+        {
+          "question": "Where can I follow API-client releases?",
+          "answer": "Use the relevant SDK repository and Stripe API documentation, rather than treating the Skills collection as an SDK changelog."
+        }
+      ],
+      "ctaTitle": "Follow Stripe on GitHub",
+      "ctaDescription": "Check stripe/ai for agent integration changes and stripe-node for Node.js client releases.",
+      "ctaPrimary": {
+        "label": "Visit Stripe on GitHub",
+        "href": "https://github.com/stripe"
+      }
+    },
+    "zh": {
+      "seoTitle": "Stripe：支付 Agent Skills、插件与 API 开发资源",
+      "seoDescription": "发布 Agent 插件、Skills 与支付 SDK，分别承担集成指引、API 调用及服务接入职责。",
+      "heroTitle": "Stripe",
+      "heroDescription": "查找 Stripe Agent 插件、Skills 与支付 SDK，选择开发路径前先核对当前集成来源、包迁移说明及账号模式。",
+      "aboutTitle": "关于 Stripe",
+      "about": "Stripe 的 stripe GitHub 组织拥有 ai 仓库，以及 stripe-node 等支付客户端库。ai README 汇集面向 Stripe 产品开发的 Agent 插件、Skills 与评测资料。 部分旧工具包已在 README 中指向现行 Stripe MCP 或计费文档，集成时应使用当前说明。真实支付、账号授权及服务费用与源代码仓库分别管理。",
+      "overview": {
+        "title": "关于 Stripe",
+        "paragraphs": [
+          "Stripe 的 stripe GitHub 组织拥有 ai 仓库，以及 stripe-node 等支付客户端库。ai README 汇集面向 Stripe 产品开发的 Agent 插件、Skills 与评测资料。",
+          "部分旧工具包已在 README 中指向现行 Stripe MCP 或计费文档，集成时应使用当前说明。真实支付、账号授权及服务费用与源代码仓库分别管理。"
+        ]
+      },
+      "projectsTitle": "Stripe 项目",
+      "skillsTitle": "Stripe Skills",
+      "skillsIntro": "通过所列 Stripe 来源仓库查看任务指引。",
+      "faqTitle": "Stripe 常见问题",
+      "faq": [
+        {
+          "question": "Stripe AI 资源由谁发布？",
+          "answer": "ai 仓库属于 stripe，stripe-node 等官方客户端库也由该组织维护。"
+        },
+        {
+          "question": "stripe-node 是 Skill 吗？",
+          "answer": "不是。它是 Node.js API 客户端库，Skills 与 Agent 插件见 stripe/ai。"
+        },
+        {
+          "question": "旧教程提到的包都应继续使用吗？",
+          "answer": "先检查 ai README，部分旧包已被引导至原生 MCP 支持或现行计费文档。"
+        },
+        {
+          "question": "安装 Skill 就能进行真实支付吗？",
+          "answer": "不能。支付访问取决于 Stripe 账号、凭证及集成使用的模式。"
+        },
+        {
+          "question": "测试环境与正式环境可以混用吗？",
+          "answer": "不应混用。操作客户、订阅或支付前，需要确认工具连接的账号和模式。"
+        },
+        {
+          "question": "去哪里跟进 API 客户端发行版？",
+          "answer": "查看相应 SDK 仓库及 Stripe API 文档，不以 Skills 集合代替 SDK 变更记录。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Stripe",
+      "ctaDescription": "Agent 集成变化查看 stripe/ai，Node.js 客户端发行版查看 stripe-node。",
+      "ctaPrimary": {
+        "label": "访问 Stripe GitHub",
+        "href": "https://github.com/stripe"
+      }
+    }
+  },
+  "shopify": {
+    "name": "Shopify",
+    "type": "Organization",
+    "profileUrl": "https://github.com/Shopify",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/Shopify",
+        "label": {
+          "en": "Shopify on GitHub",
+          "zh": "Shopify GitHub 组织"
+        }
+      },
+      {
+        "href": "https://shopify.dev/",
+        "label": {
+          "en": "Shopify website",
+          "zh": "Shopify 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/Shopify/Shopify-AI-Toolkit",
+        "label": {
+          "en": "AI Toolkit plugin source",
+          "zh": "AI Toolkit 插件来源"
+        }
+      },
+      {
+        "href": "https://github.com/Shopify/cli",
+        "label": {
+          "en": "Shopify CLI software",
+          "zh": "Shopify CLI 软件仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Shopify: AI Toolkit, Agent Guidance, and Commerce Developer Tools",
+      "seoDescription": "Shopify’s AI Toolkit connects agents to developer documentation, API schemas and code validation, alongside separate Shopify CLI tooling.",
+      "heroTitle": "Shopify",
+      "heroDescription": "Explore Shopify’s AI Toolkit and CLI sources for commerce development. Separate documentation and code-validation access from authenticated actions on a merchant’s store.",
+      "aboutTitle": "About Shopify",
+      "about": "Shopify maintains the Shopify GitHub organization. Its AI Toolkit plugin gives agents access to Shopify documentation, API schemas and code validation for application development, while Shopify CLI has its own software repository. The toolkit also documents store-management access through the CLI’s store execute capabilities. That capability depends on authenticated store access and supported permissions; having the plugin source does not authorize a merchant account.",
+      "overview": {
+        "title": "About Shopify",
+        "paragraphs": [
+          "Shopify maintains the Shopify GitHub organization. Its AI Toolkit plugin gives agents access to Shopify documentation, API schemas and code validation for application development, while Shopify CLI has its own software repository.",
+          "The toolkit also documents store-management access through the CLI’s store execute capabilities. That capability depends on authenticated store access and supported permissions; having the plugin source does not authorize a merchant account."
+        ]
+      },
+      "projectsTitle": "Shopify Projects",
+      "skillsTitle": "Shopify Skills",
+      "skillsIntro": "Consult the linked Shopify source repositories for task instructions.",
+      "faqTitle": "Shopify FAQ",
+      "faq": [
+        {
+          "question": "Which organization owns the toolkit?",
+          "answer": "Its repository owner is Shopify. The canonical repository name is Shopify-AI-Toolkit."
+        },
+        {
+          "question": "Is the AI Toolkit the same repository as Shopify CLI?",
+          "answer": "No. The toolkit supplies agent integration, while Shopify/cli maintains the command-line software."
+        },
+        {
+          "question": "What developer material does the toolkit expose?",
+          "answer": "The README identifies documentation, API schemas and code validation for building Shopify applications."
+        },
+        {
+          "question": "Can source access replace store authorization?",
+          "answer": "No. Store management requires the documented authentication and permissions for the selected account."
+        },
+        {
+          "question": "Where should I check supported clients?",
+          "answer": "Follow the AI Toolkit README and Shopify developer documentation for the plugin distribution you choose."
+        },
+        {
+          "question": "Does querying developer documentation authorize store execute actions?",
+          "answer": "No. Documentation and API-schema access are distinct from actions on a merchant’s store. Store operations use the CLI capability described by the toolkit and require the appropriate authenticated access."
+        }
+      ],
+      "ctaTitle": "Follow Shopify on GitHub",
+      "ctaDescription": "Follow AI Toolkit client setup separately from Shopify CLI releases.",
+      "ctaPrimary": {
+        "label": "Visit Shopify on GitHub",
+        "href": "https://github.com/Shopify"
+      }
+    },
+    "zh": {
+      "seoTitle": "Shopify：AI Toolkit、Agent 指引与电商开发工具",
+      "seoDescription": "AI Toolkit 连接开发文档、API Schema 与代码校验，另有独立的 Shopify CLI 软件工具。",
+      "heroTitle": "Shopify",
+      "heroDescription": "了解 Shopify AI Toolkit 与 CLI 电商开发资源，区分文档、代码校验入口与需要认证的店铺操作。",
+      "aboutTitle": "关于 Shopify",
+      "about": "Shopify 维护同名 GitHub 组织。AI Toolkit 插件为 Agent 提供 Shopify 文档、API Schema 与应用代码校验入口，Shopify CLI 则在独立软件仓库维护。 工具包还说明了通过 CLI 的 store execute 能力访问店铺管理。实际操作依赖经过认证的店铺访问与支持的权限，获得插件源码并不代表取得商家账号授权。",
+      "overview": {
+        "title": "关于 Shopify",
+        "paragraphs": [
+          "Shopify 维护同名 GitHub 组织。AI Toolkit 插件为 Agent 提供 Shopify 文档、API Schema 与应用代码校验入口，Shopify CLI 则在独立软件仓库维护。",
+          "工具包还说明了通过 CLI 的 store execute 能力访问店铺管理。实际操作依赖经过认证的店铺访问与支持的权限，获得插件源码并不代表取得商家账号授权。"
+        ]
+      },
+      "projectsTitle": "Shopify 项目",
+      "skillsTitle": "Shopify Skills",
+      "skillsIntro": "通过所列 Shopify 来源仓库查看任务指引。",
+      "faqTitle": "Shopify 常见问题",
+      "faq": [
+        {
+          "question": "工具包属于哪个 GitHub 组织？",
+          "answer": "仓库 owner 为 Shopify，正式仓库名为 Shopify-AI-Toolkit。"
+        },
+        {
+          "question": "AI Toolkit 与 Shopify CLI 是同一个仓库吗？",
+          "answer": "不是。工具包负责 Agent 集成，Shopify/cli 维护命令行软件。"
+        },
+        {
+          "question": "工具包提供哪些开发资料？",
+          "answer": "README 列出用于构建 Shopify 应用的文档、API Schema 和代码校验。"
+        },
+        {
+          "question": "读取源码能代替店铺授权吗？",
+          "answer": "不能。店铺管理需要按文档对相应账号完成认证并取得权限。"
+        },
+        {
+          "question": "去哪里确认支持的客户端？",
+          "answer": "按所选插件分发方式查看 AI Toolkit README 与 Shopify 开发者文档。"
+        },
+        {
+          "question": "查询开发文档就能执行 store execute 店铺操作吗？",
+          "answer": "不能。文档与 API Schema 访问不同于对商家店铺执行操作；店铺操作使用工具包说明的 CLI 能力，并需要相应的认证访问。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Shopify",
+      "ctaDescription": "分别跟进 AI Toolkit 客户端配置与 Shopify CLI 发行版。",
+      "ctaPrimary": {
+        "label": "访问 Shopify GitHub",
+        "href": "https://github.com/Shopify"
+      }
+    }
+  },
+  "figma": {
+    "name": "Figma",
+    "type": "Organization",
+    "profileUrl": "https://github.com/figma",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/figma",
+        "label": {
+          "en": "Figma on GitHub",
+          "zh": "Figma GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.figma.com/",
+        "label": {
+          "en": "Figma website",
+          "zh": "Figma 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/figma/mcp-server-guide",
+        "label": {
+          "en": "MCP and Skills documentation",
+          "zh": "MCP 与 Skills 官方文档仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Figma: Official MCP, Design Context, and Agent Skills Sources",
+      "seoDescription": "Figma’s MCP guide documents design context and agent workflows, with access conditions and developer terms distinct from source-code availability.",
+      "heroTitle": "Figma",
+      "heroDescription": "Understand Figma’s official MCP and related Skills sources. Check design-file access, remote writing capabilities and service terms before using design context in an agent workflow.",
+      "aboutTitle": "About Figma",
+      "about": "Figma owns the figma GitHub organization and mcp-server-guide. The guide explains how its MCP server makes design information available to coding agents and documents related Skills and client setup. The guide is documentation for a service, not proof that the server implementation is open source. It distinguishes remote-only writing capabilities, read-tool rate limits and developer terms. Use the current official documentation to confirm access to a specific file or operation.",
+      "overview": {
+        "title": "About Figma",
+        "paragraphs": [
+          "Figma owns the figma GitHub organization and mcp-server-guide. The guide explains how its MCP server makes design information available to coding agents and documents related Skills and client setup.",
+          "The guide is documentation for a service, not proof that the server implementation is open source. It distinguishes remote-only writing capabilities, read-tool rate limits and developer terms. Use the current official documentation to confirm access to a specific file or operation."
+        ]
+      },
+      "projectsTitle": "Figma Projects",
+      "skillsTitle": "Figma Skills",
+      "skillsIntro": "Consult the linked Figma source repositories for task instructions.",
+      "faqTitle": "Figma FAQ",
+      "faq": [
+        {
+          "question": "Which repository is Figma’s official MCP guide?",
+          "answer": "figma/mcp-server-guide, owned by the figma organization, links to Figma developer documentation."
+        },
+        {
+          "question": "Is the guide the MCP server implementation?",
+          "answer": "No. It documents the server and related resources; a public guide alone does not establish an open-source server license."
+        },
+        {
+          "question": "Do all MCP connections support canvas writing?",
+          "answer": "The guide identifies canvas writing as remote-server functionality. Check the connection and currently supported tools."
+        },
+        {
+          "question": "Are design-reading tools unlimited?",
+          "answer": "No. The guide describes rate limits for tools that read Figma data; check current account and tool conditions."
+        },
+        {
+          "question": "Which terms apply to the related Skills?",
+          "answer": "The guide refers to Figma Developer Terms and describes Skills as a beta feature. Review the current terms before adoption."
+        },
+        {
+          "question": "Can a repository link grant file access?",
+          "answer": "No. Access to design files still depends on the authenticated Figma account and the file’s permissions."
+        }
+      ],
+      "ctaTitle": "Follow Figma on GitHub",
+      "ctaDescription": "Read the MCP guide and linked Figma developer documentation for current connection capabilities.",
+      "ctaPrimary": {
+        "label": "Visit Figma on GitHub",
+        "href": "https://github.com/figma"
+      }
+    },
+    "zh": {
+      "seoTitle": "Figma：官方 MCP、设计上下文与 Agent Skills 来源",
+      "seoDescription": "MCP 指南说明设计上下文与 Agent 工作流，访问条件和开发者条款需与代码可见性分开判断。",
+      "heroTitle": "Figma",
+      "heroDescription": "了解 Figma 官方 MCP 与相关 Skills 来源，在 Agent 工作流中使用设计上下文前，先核对文件权限、远程写入能力和服务条款。",
+      "aboutTitle": "关于 Figma",
+      "about": "Figma 拥有 figma GitHub 组织及 mcp-server-guide。该指南说明 MCP 服务如何向编程 Agent 提供设计信息，并整理相关 Skills 与客户端配置。 指南是服务文档，不能据此认定服务实现已开源。文档区分远程服务的写入能力、读取工具限流及开发者条款，访问具体文件或执行操作前应查看当前官方说明。",
+      "overview": {
+        "title": "关于 Figma",
+        "paragraphs": [
+          "Figma 拥有 figma GitHub 组织及 mcp-server-guide。该指南说明 MCP 服务如何向编程 Agent 提供设计信息，并整理相关 Skills 与客户端配置。",
+          "指南是服务文档，不能据此认定服务实现已开源。文档区分远程服务的写入能力、读取工具限流及开发者条款，访问具体文件或执行操作前应查看当前官方说明。"
+        ]
+      },
+      "projectsTitle": "Figma 项目",
+      "skillsTitle": "Figma Skills",
+      "skillsIntro": "通过所列 Figma 来源仓库查看任务指引。",
+      "faqTitle": "Figma 常见问题",
+      "faq": [
+        {
+          "question": "Figma 官方 MCP 指南是哪个仓库？",
+          "answer": "figma 组织下的 figma/mcp-server-guide，并关联 Figma 开发者文档。"
+        },
+        {
+          "question": "指南仓库就是 MCP 服务实现吗？",
+          "answer": "不是。仓库提供服务及相关资源文档，公开指南不等于服务端获得开源许可。"
+        },
+        {
+          "question": "所有 MCP 连接都支持画布写入吗？",
+          "answer": "指南将画布写入列为远程服务功能，需要核对连接方式及当前支持的工具。"
+        },
+        {
+          "question": "设计读取工具没有用量限制吗？",
+          "answer": "不是。指南说明读取 Figma 数据的工具存在限流，需核对当前账号与工具条件。"
+        },
+        {
+          "question": "相关 Skills 适用什么条款？",
+          "answer": "指南引用 Figma 开发者条款，并将 Skills 描述为 Beta 功能，应核对现行条款。"
+        },
+        {
+          "question": "仓库链接能授予设计文件访问权吗？",
+          "answer": "不能。设计文件访问仍取决于经过认证的 Figma 账号及文件权限。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Figma",
+      "ctaDescription": "通过 MCP 指南及其链接的 Figma 开发者文档，核对当前连接能力。",
+      "ctaPrimary": {
+        "label": "访问 Figma GitHub",
+        "href": "https://github.com/figma"
+      }
+    }
+  },
+  "makenotion": {
+    "name": "Notion",
+    "type": "Organization",
+    "profileUrl": "https://github.com/makenotion",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/makenotion",
+        "label": {
+          "en": "Notion on GitHub",
+          "zh": "Notion GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.notion.so/",
+        "label": {
+          "en": "Notion website",
+          "zh": "Notion 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/makenotion/skills",
+        "label": {
+          "en": "Notion Skills source",
+          "zh": "Notion Skills 来源"
+        }
+      },
+      {
+        "href": "https://github.com/makenotion/notion-sdk-js",
+        "label": {
+          "en": "JavaScript SDK source",
+          "zh": "JavaScript SDK 软件仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Notion: Official Skills, API SDK, and makenotion Repositories",
+      "seoDescription": "Notion publishes Skills and its JavaScript API client under makenotion, separating agent instructions from application integration code.",
+      "heroTitle": "Notion",
+      "heroDescription": "Find Notion’s agent instructions and JavaScript API client under makenotion. Compare task guidance with application-integration code, then check the workspace access your chosen connection needs.",
+      "aboutTitle": "About Notion",
+      "about": "Notion’s GitHub organization is makenotion. Its skills repository publishes agent instructions for working with Notion, while notion-sdk-js is the JavaScript and TypeScript client for the Notion API. The instruction collection and API client serve different integration paths. Access to pages and workspace data depends on the connected account or integration and the permissions granted to it; installing source files does not make every workspace page accessible.",
+      "overview": {
+        "title": "About Notion",
+        "paragraphs": [
+          "Notion’s GitHub organization is makenotion. Its skills repository publishes agent instructions for working with Notion, while notion-sdk-js is the JavaScript and TypeScript client for the Notion API.",
+          "The instruction collection and API client serve different integration paths. Access to pages and workspace data depends on the connected account or integration and the permissions granted to it; installing source files does not make every workspace page accessible."
+        ]
+      },
+      "projectsTitle": "Notion Projects",
+      "skillsTitle": "Notion Skills",
+      "skillsIntro": "Consult the linked Notion source repositories for task instructions.",
+      "faqTitle": "Notion FAQ",
+      "faq": [
+        {
+          "question": "Why is the publisher handle makenotion?",
+          "answer": "That is the GitHub organization whose display name is Notion and which owns both listed repositories."
+        },
+        {
+          "question": "Is notion-sdk-js a Skill?",
+          "answer": "No. It is an API client library. The separate skills repository contains agent instructions."
+        },
+        {
+          "question": "Does installing a Skill share every Notion page?",
+          "answer": "No. The connected account or integration must have access to the relevant pages and data."
+        },
+        {
+          "question": "Where should I check API compatibility?",
+          "answer": "Use the SDK README and Notion API documentation for the API and SDK versions in your application."
+        },
+        {
+          "question": "Where should an SDK-specific problem be investigated?",
+          "answer": "Use notion-sdk-js documentation and its support information for client-library behavior. A task-instruction issue should instead be checked against the corresponding file in skills."
+        },
+        {
+          "question": "How can I follow source changes?",
+          "answer": "Use the skills repository for instruction changes and notion-sdk-js releases for API-client changes."
+        }
+      ],
+      "ctaTitle": "Follow Notion on GitHub",
+      "ctaDescription": "Follow instruction changes in skills and JavaScript client releases in notion-sdk-js.",
+      "ctaPrimary": {
+        "label": "Visit Notion on GitHub",
+        "href": "https://github.com/makenotion"
+      }
+    },
+    "zh": {
+      "seoTitle": "Notion：官方 Skills、API SDK 与 makenotion 仓库",
+      "seoDescription": "以 makenotion 为 GitHub 组织发布 Skills 与 JavaScript API 客户端，分别维护 Agent 指引和应用集成代码。",
+      "heroTitle": "Notion",
+      "heroDescription": "在 makenotion 组织查找 Notion Agent 指引与 JavaScript API 客户端，区分任务指导和应用集成代码，再核对所选连接需要的工作区权限。",
+      "aboutTitle": "关于 Notion",
+      "about": "Notion 的 GitHub 组织账号为 makenotion。skills 仓库发布操作 Notion 的 Agent 指引，notion-sdk-js 则提供 Notion API 的 JavaScript 与 TypeScript 客户端。 指令集合与 API 客户端承担不同的集成职责。页面和工作区数据访问取决于连接的账号或集成，以及授予的权限，安装源文件不会让全部页面自动开放。",
+      "overview": {
+        "title": "关于 Notion",
+        "paragraphs": [
+          "Notion 的 GitHub 组织账号为 makenotion。skills 仓库发布操作 Notion 的 Agent 指引，notion-sdk-js 则提供 Notion API 的 JavaScript 与 TypeScript 客户端。",
+          "指令集合与 API 客户端承担不同的集成职责。页面和工作区数据访问取决于连接的账号或集成，以及授予的权限，安装源文件不会让全部页面自动开放。"
+        ]
+      },
+      "projectsTitle": "Notion 项目",
+      "skillsTitle": "Notion Skills",
+      "skillsIntro": "通过所列 Notion 来源仓库查看任务指引。",
+      "faqTitle": "Notion 常见问题",
+      "faq": [
+        {
+          "question": "为什么发布者 handle 是 makenotion？",
+          "answer": "这是展示名称为 Notion 的 GitHub 组织账号，也是两个所列仓库的实际 owner。"
+        },
+        {
+          "question": "notion-sdk-js 是 Skill 吗？",
+          "answer": "不是。它是 API 客户端库，Agent 指令在独立的 skills 仓库。"
+        },
+        {
+          "question": "安装 Skill 会共享全部 Notion 页面吗？",
+          "answer": "不会。连接的账号或集成必须具有相应页面与数据的访问权。"
+        },
+        {
+          "question": "API 兼容性应去哪里核对？",
+          "answer": "按应用实际使用的 API 与 SDK 版本，查看 SDK README 和 Notion API 文档。"
+        },
+        {
+          "question": "SDK 本身的问题应查看哪个来源？",
+          "answer": "客户端库行为应查看 notion-sdk-js 文档及支持说明；任务指令问题则应对照 skills 中的对应文件。"
+        },
+        {
+          "question": "如何跟进来源变化？",
+          "answer": "指令变化查看 skills 仓库，API 客户端变化查看 notion-sdk-js 发布记录。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Notion",
+      "ctaDescription": "指令变化查看 skills，JavaScript 客户端发行版查看 notion-sdk-js。",
+      "ctaPrimary": {
+        "label": "访问 Notion GitHub",
+        "href": "https://github.com/makenotion"
+      }
+    }
+  },
+  "datadog": {
+    "name": "Datadog",
+    "type": "Organization",
+    "profileUrl": "https://github.com/DataDog",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/DataDog",
+        "label": {
+          "en": "Datadog on GitHub",
+          "zh": "Datadog GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.datadoghq.com/",
+        "label": {
+          "en": "Datadog website",
+          "zh": "Datadog 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/DataDog/datadog-agent",
+        "label": {
+          "en": "Datadog Agent software",
+          "zh": "Datadog Agent 软件仓库"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Datadog: Official Agent Software and Observability Sources",
+      "seoDescription": "The DataDog organization maintains Datadog Agent software; experimental AI Skills belong to the separate Datadog Labs organization.",
+      "heroTitle": "Datadog",
+      "heroDescription": "Locate Datadog’s monitoring Agent software and official development sources. Distinguish the main DataDog organization from the experimental AI instructions maintained by Datadog Labs.",
+      "aboutTitle": "About Datadog",
+      "about": "Datadog’s main GitHub organization is DataDog. It owns datadog-agent, the monitoring software whose repository documents Agent versions, installation packages and development resources. Datadog Agent is monitoring software, not a collection of AI task instructions. The agent-skills repository belongs to datadog-labs instead; the Labs organization explicitly states that its experimental repositories are not covered by Datadog’s MSA or supported by Datadog.",
+      "overview": {
+        "title": "About Datadog",
+        "paragraphs": [
+          "Datadog’s main GitHub organization is DataDog. It owns datadog-agent, the monitoring software whose repository documents Agent versions, installation packages and development resources.",
+          "Datadog Agent is monitoring software, not a collection of AI task instructions. The agent-skills repository belongs to datadog-labs instead; the Labs organization explicitly states that its experimental repositories are not covered by Datadog’s MSA or supported by Datadog."
+        ]
+      },
+      "projectsTitle": "Datadog Projects",
+      "skillsTitle": "Datadog Skills",
+      "skillsIntro": "Consult the linked Datadog source repositories for task instructions.",
+      "faqTitle": "Datadog FAQ",
+      "faq": [
+        {
+          "question": "Which GitHub account is the main Datadog organization?",
+          "answer": "The organization login is DataDog and its verified profile links to datadoghq.com."
+        },
+        {
+          "question": "Does DataDog own agent-skills?",
+          "answer": "The checked agent-skills repository belongs to datadog-labs, a separate GitHub organization."
+        },
+        {
+          "question": "Is Datadog Agent an AI coding agent?",
+          "answer": "The referenced repository is Datadog’s monitoring Agent software, not an AI coding assistant or Skill pack."
+        },
+        {
+          "question": "Are Labs repositories covered by the same support?",
+          "answer": "Datadog Labs states that its repositories are experimental, outside the Datadog MSA and unsupported by Datadog."
+        },
+        {
+          "question": "Where should I check Agent installation?",
+          "answer": "Use datadog-agent and the linked Agent documentation to choose packages and configuration for your environment."
+        },
+        {
+          "question": "Does source access include a hosted monitoring account?",
+          "answer": "No. The Agent source, hosted service access and service terms are separate."
+        }
+      ],
+      "ctaTitle": "Follow Datadog on GitHub",
+      "ctaDescription": "Use datadog-agent for monitoring software, installation packages and development references.",
+      "ctaPrimary": {
+        "label": "Visit Datadog on GitHub",
+        "href": "https://github.com/DataDog"
+      }
+    },
+    "zh": {
+      "seoTitle": "Datadog：官方 Agent 软件与可观测性来源",
+      "seoDescription": "DataDog 组织维护 Datadog Agent 软件；实验性 AI Skills 归属独立的 Datadog Labs 组织。",
+      "heroTitle": "Datadog",
+      "heroDescription": "查找 Datadog 监控 Agent 软件及官方开发来源，区分 DataDog 主组织与 Datadog Labs 维护的实验性 AI 指引。",
+      "aboutTitle": "关于 Datadog",
+      "about": "Datadog 的 GitHub 主组织为 DataDog，拥有 datadog-agent。该监控软件仓库提供 Agent 版本、安装包及开发资料。 Datadog Agent 是监控软件，不是 AI 任务指令集合。agent-skills 属于 datadog-labs；Labs 组织明确说明其仓库为实验项目，不受 Datadog MSA 覆盖，也不由 Datadog 提供支持。",
+      "overview": {
+        "title": "关于 Datadog",
+        "paragraphs": [
+          "Datadog 的 GitHub 主组织为 DataDog，拥有 datadog-agent。该监控软件仓库提供 Agent 版本、安装包及开发资料。",
+          "Datadog Agent 是监控软件，不是 AI 任务指令集合。agent-skills 属于 datadog-labs；Labs 组织明确说明其仓库为实验项目，不受 Datadog MSA 覆盖，也不由 Datadog 提供支持。"
+        ]
+      },
+      "projectsTitle": "Datadog 项目",
+      "skillsTitle": "Datadog Skills",
+      "skillsIntro": "通过所列 Datadog 来源仓库查看任务指引。",
+      "faqTitle": "Datadog 常见问题",
+      "faq": [
+        {
+          "question": "Datadog 主组织使用哪个 GitHub 账号？",
+          "answer": "组织 login 为 DataDog，经过验证的主页关联 datadoghq.com。"
+        },
+        {
+          "question": "DataDog 拥有 agent-skills 仓库吗？",
+          "answer": "本次核查的 agent-skills 属于 datadog-labs，它是独立 GitHub 组织。"
+        },
+        {
+          "question": "Datadog Agent 是 AI 编程 Agent 吗？",
+          "answer": "所列仓库是 Datadog 监控 Agent 软件，不是 AI 编程助手或 Skill 包。"
+        },
+        {
+          "question": "Labs 仓库享有相同支持吗？",
+          "answer": "Datadog Labs 声明其仓库属于实验项目，不受 Datadog MSA 覆盖，也不由 Datadog 提供支持。"
+        },
+        {
+          "question": "Agent 安装应以哪里为准？",
+          "answer": "通过 datadog-agent 及其关联的 Agent 文档，选择适合环境的安装包和配置。"
+        },
+        {
+          "question": "读取源码包含托管监控账号吗？",
+          "answer": "不包含。Agent 源码、托管服务访问及服务条款是不同事项。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Datadog",
+      "ctaDescription": "通过 datadog-agent 查看监控软件、安装包和开发资料。",
+      "ctaPrimary": {
+        "label": "访问 Datadog GitHub",
+        "href": "https://github.com/DataDog"
+      }
+    }
+  },
+  "datadog-labs": {
+    "name": "Datadog Labs",
+    "type": "Organization",
+    "profileUrl": "https://github.com/datadog-labs",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/datadog-labs",
+        "label": {
+          "en": "Datadog Labs on GitHub",
+          "zh": "Datadog Labs GitHub 组织"
+        }
+      },
+      {
+        "href": "https://github.com/datadog-labs/agent-skills",
+        "label": {
+          "en": "Experimental AI Skills source",
+          "zh": "实验性 AI Skills 来源"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Datadog Labs: Experimental AI Skills and Repository Ownership",
+      "seoDescription": "Datadog Labs publishes experimental AI Skills under its own GitHub organization, with an explicit boundary from Datadog product support.",
+      "heroTitle": "Datadog Labs",
+      "heroDescription": "Inspect experimental AI instructions from Datadog Labs, including documentation search and browser SDK guidance. Review their maintenance and support boundary separately from Datadog’s monitoring products.",
+      "aboutTitle": "About Datadog Labs",
+      "about": "Datadog Labs is the verified datadog-labs GitHub organization, separate from DataDog. It owns agent-skills, whose README lists instructions for tasks including Datadog documentation search and browser SDK work. The organization describes its repositories as experimental, outside the Datadog MSA and unsupported by Datadog. Preserve that distinction when evaluating instructions, even when their topic concerns a Datadog product.",
+      "overview": {
+        "title": "About Datadog Labs",
+        "paragraphs": [
+          "Datadog Labs is the verified datadog-labs GitHub organization, separate from DataDog. It owns agent-skills, whose README lists instructions for tasks including Datadog documentation search and browser SDK work.",
+          "The organization describes its repositories as experimental, outside the Datadog MSA and unsupported by Datadog. Preserve that distinction when evaluating instructions, even when their topic concerns a Datadog product."
+        ]
+      },
+      "projectsTitle": "Datadog Labs Projects",
+      "skillsTitle": "Datadog Labs Skills",
+      "skillsIntro": "Consult the linked Datadog Labs source repositories for task instructions.",
+      "faqTitle": "Datadog Labs FAQ",
+      "faq": [
+        {
+          "question": "Who owns these AI Skills?",
+          "answer": "The actual repository owner is datadog-labs, not the DataDog main organization."
+        },
+        {
+          "question": "Is Datadog Labs a separate GitHub organization?",
+          "answer": "Yes. Its profile is verified and links to Datadog, while maintaining a distinct organization login."
+        },
+        {
+          "question": "Are the repositories supported Datadog products?",
+          "answer": "The organization explicitly says its experimental repositories are not supported by Datadog."
+        },
+        {
+          "question": "Which clients does the Skills README name?",
+          "answer": "It names Claude Code, Codex CLI, Gemini CLI, Cursor, Windsurf and OpenCode among its clients. Follow the instructions for the actual client instead of inferring identical behavior."
+        },
+        {
+          "question": "What is documented in agent-skills?",
+          "answer": "Its README includes Datadog documentation search and browser SDK guidance, with client-specific installation instructions."
+        },
+        {
+          "question": "Where is the monitoring Agent software?",
+          "answer": "The datadog-agent repository belongs to DataDog and is linked from the separate Datadog publisher profile."
+        }
+      ],
+      "ctaTitle": "Follow Datadog Labs on GitHub",
+      "ctaDescription": "Follow agent-skills changes within Datadog Labs, retaining its experimental support boundary.",
+      "ctaPrimary": {
+        "label": "Visit Datadog Labs on GitHub",
+        "href": "https://github.com/datadog-labs"
+      }
+    },
+    "zh": {
+      "seoTitle": "Datadog Labs：实验性 AI Skills 与仓库归属",
+      "seoDescription": "以独立 GitHub 组织发布实验性 AI Skills，明确区别于 Datadog 正式产品支持。",
+      "heroTitle": "Datadog Labs",
+      "heroDescription": "查看 Datadog Labs 的实验性 AI 指引，包括文档检索与浏览器 SDK 任务，并将其维护和支持边界与 Datadog 监控产品分别判断。",
+      "aboutTitle": "关于 Datadog Labs",
+      "about": "Datadog Labs 使用经过验证的 datadog-labs GitHub 组织，与 DataDog 分开。其 agent-skills README 列出 Datadog 文档检索和浏览器 SDK 等任务指引。 该组织明确说明仓库为实验项目，不受 Datadog MSA 覆盖，也不由 Datadog 提供支持。即使指引针对 Datadog 产品，也应保留这一边界。",
+      "overview": {
+        "title": "关于 Datadog Labs",
+        "paragraphs": [
+          "Datadog Labs 使用经过验证的 datadog-labs GitHub 组织，与 DataDog 分开。其 agent-skills README 列出 Datadog 文档检索和浏览器 SDK 等任务指引。",
+          "该组织明确说明仓库为实验项目，不受 Datadog MSA 覆盖，也不由 Datadog 提供支持。即使指引针对 Datadog 产品，也应保留这一边界。"
+        ]
+      },
+      "projectsTitle": "Datadog Labs 项目",
+      "skillsTitle": "Datadog Labs Skills",
+      "skillsIntro": "通过所列 Datadog Labs 来源仓库查看任务指引。",
+      "faqTitle": "Datadog Labs 常见问题",
+      "faq": [
+        {
+          "question": "这些 AI Skills 属于谁？",
+          "answer": "实际仓库 owner 为 datadog-labs，而非 DataDog 主组织。"
+        },
+        {
+          "question": "Datadog Labs 有独立 GitHub 组织吗？",
+          "answer": "有。其主页经过验证并关联 Datadog，但使用独立组织账号。"
+        },
+        {
+          "question": "这些仓库是受支持的 Datadog 产品吗？",
+          "answer": "组织明确说明其实验仓库不由 Datadog 提供支持。"
+        },
+        {
+          "question": "Skills README 列出了哪些客户端？",
+          "answer": "README 列出 Claude Code、Codex CLI、Gemini CLI、Cursor、Windsurf 和 OpenCode 等客户端，应按实际客户端配置，不假定行为完全一致。"
+        },
+        {
+          "question": "agent-skills 列出了哪些方向？",
+          "answer": "README 包含 Datadog 文档检索、浏览器 SDK 指引及不同客户端安装说明。"
+        },
+        {
+          "question": "监控 Agent 软件在哪里？",
+          "answer": "datadog-agent 属于 DataDog，由独立的 Datadog 发布者页整理。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Datadog Labs",
+      "ctaDescription": "在 Datadog Labs 跟进 agent-skills 变化，并保留其实验性支持边界。",
+      "ctaPrimary": {
+        "label": "访问 Datadog Labs GitHub",
+        "href": "https://github.com/datadog-labs"
+      }
+    }
+  },
+  "getsentry": {
+    "name": "Sentry",
+    "type": "Organization",
+    "profileUrl": "https://github.com/getsentry",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/getsentry",
+        "label": {
+          "en": "Sentry on GitHub",
+          "zh": "Sentry GitHub 组织"
+        }
+      },
+      {
+        "href": "https://sentry.io/",
+        "label": {
+          "en": "Sentry website",
+          "zh": "Sentry 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/getsentry/skills",
+        "label": {
+          "en": "Internal development Skills",
+          "zh": "内部开发 Skills 来源"
+        }
+      },
+      {
+        "href": "https://github.com/getsentry/sentry-for-ai",
+        "label": {
+          "en": "Product Skills source, not an installer",
+          "zh": "产品 Skills 源码，非安装入口"
+        }
+      },
+      {
+        "href": "https://github.com/getsentry/sentry",
+        "label": {
+          "en": "Sentry application source",
+          "zh": "Sentry 应用源码"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Sentry: Development Skills, Product Plugins, and Software Sources",
+      "seoDescription": "Sentry separates employee development Skills from product-focused agent plugin sources, all under the getsentry GitHub organization.",
+      "heroTitle": "Sentry",
+      "heroDescription": "Choose between Sentry’s employee development Skills and product-oriented agent plugins. Check the upstream source and client-specific installer before connecting monitoring or issue-investigation work.",
+      "aboutTitle": "About Sentry",
+      "about": "Sentry publishes under the getsentry GitHub organization. The skills repository identifies its audience as Sentry employees, while sentry-for-ai supplies sources for product setup, monitoring and production-issue workflows. The sentry-for-ai README says it is a source repository, not a direct installation target, and points to generated client plugins. The Sentry application has its own source and license; neither a Skill nor an application repository grants access to a hosted Sentry project.",
+      "overview": {
+        "title": "About Sentry",
+        "paragraphs": [
+          "Sentry publishes under the getsentry GitHub organization. The skills repository identifies its audience as Sentry employees, while sentry-for-ai supplies sources for product setup, monitoring and production-issue workflows.",
+          "The sentry-for-ai README says it is a source repository, not a direct installation target, and points to generated client plugins. The Sentry application has its own source and license; neither a Skill nor an application repository grants access to a hosted Sentry project."
+        ]
+      },
+      "projectsTitle": "Sentry Projects",
+      "skillsTitle": "Sentry Skills",
+      "skillsIntro": "Consult the linked Sentry source repositories for task instructions.",
+      "faqTitle": "Sentry FAQ",
+      "faq": [
+        {
+          "question": "Why is the publisher handle getsentry?",
+          "answer": "getsentry is Sentry’s actual GitHub organization and owns the listed repositories."
+        },
+        {
+          "question": "Are getsentry/skills aimed at product users?",
+          "answer": "Its README describes Skills for Sentry employees and directs product setup and debugging users to sentry-for-ai."
+        },
+        {
+          "question": "Should I install sentry-for-ai directly?",
+          "answer": "Its README says not to: use one of the linked generated plugins for the intended client."
+        },
+        {
+          "question": "Is the Sentry application a Skill?",
+          "answer": "No. getsentry/sentry is application source, distinct from instructions and client plugin packages."
+        },
+        {
+          "question": "Do all Sentry repositories share a license?",
+          "answer": "No. Check the selected repository and version rather than transferring the Skills license to the application."
+        },
+        {
+          "question": "Does a plugin provide access to production issues?",
+          "answer": "Access still depends on the connected Sentry account, project permissions and plugin configuration."
+        }
+      ],
+      "ctaTitle": "Follow Sentry on GitHub",
+      "ctaDescription": "Track product plugin sources in sentry-for-ai and employee workflow instructions in skills.",
+      "ctaPrimary": {
+        "label": "Visit Sentry on GitHub",
+        "href": "https://github.com/getsentry"
+      }
+    },
+    "zh": {
+      "seoTitle": "Sentry：开发 Skills、产品插件与软件来源",
+      "seoDescription": "在 getsentry 组织下分别维护员工开发 Skills、面向产品的 Agent 插件来源和 Sentry 应用。",
+      "heroTitle": "Sentry",
+      "heroDescription": "区分 Sentry 员工开发 Skills 与面向产品的 Agent 插件，连接监控或问题调查工作流前，先核对上游来源和客户端安装入口。",
+      "aboutTitle": "关于 Sentry",
+      "about": "Sentry 使用 getsentry GitHub 组织。skills 仓库将受众说明为 Sentry 员工，sentry-for-ai 则为产品配置、监控及生产问题处理工作流提供来源。 sentry-for-ai README 明确说明这是源码仓库，不是直接安装目标，并指向各客户端插件。Sentry 应用另有源码和许可，Skills 或应用仓库都不授予托管项目访问权。",
+      "overview": {
+        "title": "关于 Sentry",
+        "paragraphs": [
+          "Sentry 使用 getsentry GitHub 组织。skills 仓库将受众说明为 Sentry 员工，sentry-for-ai 则为产品配置、监控及生产问题处理工作流提供来源。",
+          "sentry-for-ai README 明确说明这是源码仓库，不是直接安装目标，并指向各客户端插件。Sentry 应用另有源码和许可，Skills 或应用仓库都不授予托管项目访问权。"
+        ]
+      },
+      "projectsTitle": "Sentry 项目",
+      "skillsTitle": "Sentry Skills",
+      "skillsIntro": "通过所列 Sentry 来源仓库查看任务指引。",
+      "faqTitle": "Sentry 常见问题",
+      "faq": [
+        {
+          "question": "为什么发布者 handle 是 getsentry？",
+          "answer": "getsentry 是 Sentry 的实际 GitHub 组织，拥有本页所列仓库。"
+        },
+        {
+          "question": "getsentry/skills 主要面向产品用户吗？",
+          "answer": "README 将其描述为 Sentry 员工 Skills，并引导产品配置与调试用户查看 sentry-for-ai。"
+        },
+        {
+          "question": "应直接安装 sentry-for-ai 吗？",
+          "answer": "README 明确表示不应直接安装，应选择其链接的目标客户端插件。"
+        },
+        {
+          "question": "Sentry 应用本身是 Skill 吗？",
+          "answer": "不是。getsentry/sentry 是应用源码，与指令及客户端插件包不同。"
+        },
+        {
+          "question": "所有 Sentry 仓库使用同一许可证吗？",
+          "answer": "不是。应核对具体仓库和版本，不能将 Skills 许可套用到应用。"
+        },
+        {
+          "question": "插件会直接提供生产问题访问权吗？",
+          "answer": "访问仍取决于连接的 Sentry 账号、项目权限及插件配置。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 Sentry",
+      "ctaDescription": "产品插件来源查看 sentry-for-ai，员工开发指引查看 skills。",
+      "ctaPrimary": {
+        "label": "访问 Sentry GitHub",
+        "href": "https://github.com/getsentry"
+      }
+    }
+  },
+  "hashicorp": {
+    "name": "HashiCorp",
+    "type": "Organization",
+    "profileUrl": "https://github.com/hashicorp",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://github.com/hashicorp",
+        "label": {
+          "en": "HashiCorp on GitHub",
+          "zh": "HashiCorp GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.hashicorp.com/",
+        "label": {
+          "en": "HashiCorp website",
+          "zh": "HashiCorp 官方网站"
+        }
+      },
+      {
+        "href": "https://github.com/hashicorp/agent-skills",
+        "label": {
+          "en": "Terraform and Packer Skills",
+          "zh": "Terraform 与 Packer Skills"
+        }
+      },
+      {
+        "href": "https://github.com/hashicorp/terraform",
+        "label": {
+          "en": "Terraform software source",
+          "zh": "Terraform 软件源码"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "HashiCorp: Terraform and Packer Skills, Plugins, and Source Repositories",
+      "seoDescription": "HashiCorp publishes Terraform and Packer agent instructions alongside infrastructure software, with licenses and execution requirements checked per repository.",
+      "heroTitle": "HashiCorp",
+      "heroDescription": "Explore HashiCorp’s Terraform and Packer instructions alongside infrastructure software. Distinguish Skill bundles, product binaries and repository-specific licensing before planning an infrastructure workflow.",
+      "aboutTitle": "About HashiCorp",
+      "about": "HashiCorp maintains the hashicorp GitHub organization. agent-skills packages Skills and Claude Code plugins for Terraform and Packer, while terraform contains the infrastructure tool’s software source. Instructions help an agent work with product-specific conventions; they do not supply cloud credentials or authorize infrastructure changes. Terraform’s source-available terms and the Skills repository’s MPL-2.0 license must be evaluated separately.",
+      "overview": {
+        "title": "About HashiCorp",
+        "paragraphs": [
+          "HashiCorp maintains the hashicorp GitHub organization. agent-skills packages Skills and Claude Code plugins for Terraform and Packer, while terraform contains the infrastructure tool’s software source.",
+          "Instructions help an agent work with product-specific conventions; they do not supply cloud credentials or authorize infrastructure changes. Terraform’s source-available terms and the Skills repository’s MPL-2.0 license must be evaluated separately."
+        ]
+      },
+      "projectsTitle": "HashiCorp Projects",
+      "skillsTitle": "HashiCorp Skills",
+      "skillsIntro": "Consult the linked HashiCorp source repositories for task instructions.",
+      "faqTitle": "HashiCorp FAQ",
+      "faq": [
+        {
+          "question": "Which GitHub organization publishes these resources?",
+          "answer": "Both agent-skills and terraform are owned by hashicorp, whose verified profile links to HashiCorp."
+        },
+        {
+          "question": "Which products are named in the Skills README?",
+          "answer": "The repository identifies Terraform and Packer, with product bundles and a separate catalog of Skill lifecycle status."
+        },
+        {
+          "question": "Is Terraform source covered by the Skills license?",
+          "answer": "No. The Skills repository uses MPL-2.0; Terraform’s own source-available terms must be read separately."
+        },
+        {
+          "question": "Do Skills include Terraform or Packer binaries?",
+          "answer": "Do not assume so. Check each package’s prerequisites and install the software required by the chosen workflow."
+        },
+        {
+          "question": "Does reading instructions authorize an infrastructure apply?",
+          "answer": "No. Credentials, target environment and approval for changes remain part of the actual infrastructure workflow."
+        },
+        {
+          "question": "Where should I follow product and Skill releases?",
+          "answer": "Use terraform for software releases and agent-skills for instruction bundles and lifecycle status."
+        }
+      ],
+      "ctaTitle": "Follow HashiCorp on GitHub",
+      "ctaDescription": "Check agent-skills for instruction lifecycle and Terraform’s repository for software changes.",
+      "ctaPrimary": {
+        "label": "Visit HashiCorp on GitHub",
+        "href": "https://github.com/hashicorp"
+      }
+    },
+    "zh": {
+      "seoTitle": "HashiCorp：Terraform、Packer Skills、插件与源码仓库",
+      "seoDescription": "发布 Terraform 与 Packer Agent 指引及基础设施软件，许可与运行要求按仓库分别核对。",
+      "heroTitle": "HashiCorp",
+      "heroDescription": "了解 HashiCorp 的 Terraform、Packer 指引与基础设施软件，在规划工作流前区分 Skill 包、产品程序及各仓库许可。",
+      "aboutTitle": "关于 HashiCorp",
+      "about": "HashiCorp 维护 hashicorp GitHub 组织。agent-skills 打包面向 Terraform 和 Packer 的 Skills 与 Claude Code 插件，terraform 则维护基础设施工具的软件源码。 指令帮助 Agent 遵循产品相关约定，不提供云凭证，也不授予基础设施变更权限。Terraform 的源码可见条款与 Skills 仓库的 MPL-2.0 许可应分别判断。",
+      "overview": {
+        "title": "关于 HashiCorp",
+        "paragraphs": [
+          "HashiCorp 维护 hashicorp GitHub 组织。agent-skills 打包面向 Terraform 和 Packer 的 Skills 与 Claude Code 插件，terraform 则维护基础设施工具的软件源码。",
+          "指令帮助 Agent 遵循产品相关约定，不提供云凭证，也不授予基础设施变更权限。Terraform 的源码可见条款与 Skills 仓库的 MPL-2.0 许可应分别判断。"
+        ]
+      },
+      "projectsTitle": "HashiCorp 项目",
+      "skillsTitle": "HashiCorp Skills",
+      "skillsIntro": "通过所列 HashiCorp 来源仓库查看任务指引。",
+      "faqTitle": "HashiCorp 常见问题",
+      "faq": [
+        {
+          "question": "这些资源由哪个 GitHub 组织发布？",
+          "answer": "agent-skills 和 terraform 均属于 hashicorp，其经过验证的主页关联 HashiCorp。"
+        },
+        {
+          "question": "Skills README 列出了哪些产品？",
+          "answer": "仓库列出 Terraform 和 Packer，并提供产品包及单独的 Skill 生命周期目录。"
+        },
+        {
+          "question": "Terraform 源码适用 Skills 许可证吗？",
+          "answer": "不是。Skills 仓库使用 MPL-2.0，Terraform 本身的源码可见条款应单独阅读。"
+        },
+        {
+          "question": "Skills 包含 Terraform 或 Packer 可执行程序吗？",
+          "answer": "不能这样假定。应核对具体包的前提，并安装所选工作流要求的软件。"
+        },
+        {
+          "question": "读取指令就能授权基础设施变更吗？",
+          "answer": "不能。凭证、目标环境及变更授权仍需在实际基础设施流程中确认。"
+        },
+        {
+          "question": "产品与 Skill 更新分别去哪里查看？",
+          "answer": "软件发行版查看 terraform，指令包及生命周期查看 agent-skills。"
+        }
+      ],
+      "ctaTitle": "在 GitHub 跟进 HashiCorp",
+      "ctaDescription": "指令生命周期查看 agent-skills，软件变化查看 Terraform 仓库。",
+      "ctaPrimary": {
+        "label": "访问 HashiCorp GitHub",
+        "href": "https://github.com/hashicorp"
+      }
+    }
+  }
+}

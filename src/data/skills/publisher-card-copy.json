@@ -190,5 +190,69 @@
   "addyosmani": {
     "en": "Publishes practical engineering Skills, including a DevTools workflow for reproducing browser defects and capturing runtime evidence.",
     "zh": "发布面向工程实践的 Agent Skills，其中 DevTools 工作流可复现页面缺陷并保存运行时证据。"
+  },
+  "adobe": {
+    "en": "Adobe publishes creative-tool Skills and React Spectrum libraries, connecting product-specific agent guidance with accessible interface development.",
+    "zh": "发布创意工具 Skills 与 React Spectrum 组件库，分别面向 Adobe 产品操作和无障碍界面开发。"
+  },
+  "aws": {
+    "en": "AWS maintains an agent toolkit combining cloud-development instructions, MCP servers and plugins for working with AWS services.",
+    "zh": "维护面向云开发的 Agent 工具包，包含 AWS 服务操作指引、MCP 服务与插件。"
+  },
+  "google-gemini": {
+    "en": "The google-gemini organization publishes Gemini API Skills and Gemini CLI, separating reusable API guidance from the terminal agent.",
+    "zh": "发布 Gemini API Skills 和 Gemini CLI，分别提供 API 开发指引与终端 Agent。"
+  },
+  "google-labs-code": {
+    "en": "Google Labs Code maintains Stitch design Skills and plugins, with host-specific setup documented in its own repositories.",
+    "zh": "维护 Stitch 设计 Skills 与插件，由独立仓库说明各 Agent 宿主的安装方式。"
+  },
+  "firebase": {
+    "en": "Firebase publishes product-specific agent instructions for building applications, with official documentation linking to its agent-skills repository.",
+    "zh": "发布应用开发相关的 Agent 指引，官方文档明确链接 firebase/agent-skills 来源仓库。"
+  },
+  "huggingface": {
+    "en": "Hugging Face publishes AI and ML task Skills covering dataset creation, model training, evaluation and Hub operations.",
+    "zh": "发布数据集创建、模型训练、评估及 Hub 操作相关的 AI 与机器学习任务 Skills。"
+  },
+  "mongodb": {
+    "en": "MongoDB maintains database software and official agent Skills, with separate Atlas and self-managed connection paths.",
+    "zh": "维护数据库软件与官方 Agent Skills，分别说明 Atlas 和自管理部署的连接方式。"
+  },
+  "redis": {
+    "en": "Redis publishes server software and agent instructions for data structures, key design, memory, expiration and related application decisions.",
+    "zh": "发布 Redis 软件及 Agent 指引，涉及数据结构、键设计、内存、过期策略与应用选型。"
+  },
+  "stripe": {
+    "en": "Stripe publishes agent plugins and Skills alongside payment SDKs; integration instructions, API clients and hosted services have distinct roles.",
+    "zh": "发布 Agent 插件、Skills 与支付 SDK，分别承担集成指引、API 调用及服务接入职责。"
+  },
+  "shopify": {
+    "en": "Shopify’s AI Toolkit connects agents to developer documentation, API schemas and code validation, alongside separate Shopify CLI tooling.",
+    "zh": "AI Toolkit 连接开发文档、API Schema 与代码校验，另有独立的 Shopify CLI 软件工具。"
+  },
+  "figma": {
+    "en": "Figma’s MCP guide documents design context and agent workflows, with access conditions and developer terms distinct from source-code availability.",
+    "zh": "MCP 指南说明设计上下文与 Agent 工作流，访问条件和开发者条款需与代码可见性分开判断。"
+  },
+  "makenotion": {
+    "en": "Notion publishes Skills and its JavaScript API client under makenotion, separating agent instructions from application integration code.",
+    "zh": "以 makenotion 组织发布 Skills 与 JavaScript API 客户端，分别维护任务指引和集成代码。"
+  },
+  "datadog": {
+    "en": "The DataDog organization maintains Datadog Agent software; experimental AI Skills belong to the separate Datadog Labs organization.",
+    "zh": "维护 Datadog Agent 监控软件；实验性 AI Skills 属于独立的 Datadog Labs 组织。"
+  },
+  "datadog-labs": {
+    "en": "Datadog Labs publishes experimental AI Skills under its own GitHub organization, with an explicit boundary from Datadog product support.",
+    "zh": "以独立 GitHub 组织发布实验性 AI Skills，明确区别于 Datadog 正式产品支持。"
+  },
+  "getsentry": {
+    "en": "Sentry separates employee development Skills from product-focused agent plugin sources, all under the getsentry GitHub organization.",
+    "zh": "在 getsentry 组织下分别维护员工开发 Skills、面向产品的 Agent 插件来源和 Sentry 应用。"
+  },
+  "hashicorp": {
+    "en": "HashiCorp publishes Terraform and Packer agent instructions alongside infrastructure software, with licenses and execution requirements checked per repository.",
+    "zh": "发布 Terraform 与 Packer Agent 指引及基础设施软件，许可与运行要求按仓库分别核对。"
   }
 }

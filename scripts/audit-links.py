@@ -46,7 +46,7 @@ def marketplace_paths():
     review = json.loads((data / "skills/publisher-review.json").read_text())
     approved = {key for key, value in review["publishers"].items() if value["status"] == "approved"}
     profiles = {}
-    for filename in ["skills/additional-publisher-profiles.json", "skills/publisher-profiles.json", "projects/agent-publishers.json"]:
+    for filename in ["skills/additional-publisher-profiles.json", "skills/publisher-profiles.json", "projects/agent-publishers.json", "skills/organization-publisher-profiles.json"]:
         profiles.update(json.loads((data / filename).read_text()))
     paths = {"/skills-marketplace", "/skills-marketplace/categories"}
     paths.update(f"/skills-marketplace/{author}" for author in approved if author in profiles)

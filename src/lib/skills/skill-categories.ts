@@ -3,7 +3,7 @@ import mergedSkills from "@/data/skills/merged-skills.json";
 import { FEATURED_SKILLS, skillPath, type SkillLocale } from "@/lib/skills/featured-skills";
 import { PUBLISHER_HANDLES, getPublisherDirectory } from "@/lib/skills/publisher-directories";
 import { getProjectForSource, projectPath } from "@/lib/projects/project-pages";
-import { getPublisherProfile, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, isOrganizationProfilePublisher, publisherProfilePath, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
 import { isMarketplaceRepository } from "./marketplace-repository-review";
 
 import { getResourceTaxonomy, getResourceGuide, projectResourceId, resourceCategoryPath, RESOURCE_CATEGORY_SLUGS } from "./resource-taxonomy";
@@ -169,7 +169,7 @@ export function getStoreCatalog(locale: SkillLocale) {
 /** Approved profiles with no current work in the public catalog. */
 export function getReferencePublishers(locale: SkillLocale) {
   const active = new Set(getStoreCatalog(locale).map((entry) => entry.authorHandle));
-  return PUBLISHER_PROFILE_HANDLES.filter((handle) => !active.has(handle)).map((handle) => ({
+  return PUBLISHER_PROFILE_HANDLES.filter((handle) => !active.has(handle) && !isOrganizationProfilePublisher(handle)).map((handle) => ({
     label: getPublisherProfile(handle)!.name,
     href: publisherProfilePath(locale, handle),
   }));

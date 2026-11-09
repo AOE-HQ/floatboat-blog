@@ -741,6 +741,421 @@
       "repositories": [
         "addyosmani/agent-skills"
       ]
+    },
+    "adobe": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "adobe/react-spectrum",
+      "stars": 16019,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "adobe",
+        "type": "Organization",
+        "url": "https://github.com/adobe",
+        "verified": true,
+        "website": "https://www.adobe.com/",
+        "evidence": [
+          "https://github.com/adobe",
+          "https://github.com/adobe/react-spectrum"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "adobe/skills",
+        "adobe/react-spectrum"
+      ]
+    },
+    "aws": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "aws/agent-toolkit-for-aws",
+      "stars": 3439,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "aws",
+        "type": "Organization",
+        "url": "https://github.com/aws",
+        "verified": true,
+        "website": "https://aws.amazon.com/",
+        "evidence": [
+          "https://github.com/aws",
+          "https://github.com/aws/agent-toolkit-for-aws"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "aws/agent-toolkit-for-aws"
+      ]
+    },
+    "google-gemini": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "google-gemini/gemini-cli",
+      "stars": 108797,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "google-gemini",
+        "type": "Organization",
+        "url": "https://github.com/google-gemini",
+        "verified": false,
+        "website": "https://ai.google.dev/",
+        "evidence": [
+          "https://github.com/google-gemini",
+          "https://github.com/google-gemini/gemini-cli",
+          "https://ai.google.dev/gemini-api/docs/coding-agents"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "google-gemini/gemini-skills",
+        "google-gemini/gemini-cli"
+      ]
+    },
+    "google-labs-code": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "google-labs-code/stitch-skills",
+      "stars": 8706,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。 GitHub owner 已核实；仓库声明非 Google 正式支持产品，不宣称 GitHub verified 或产品支持。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "google-labs-code",
+        "type": "Organization",
+        "url": "https://github.com/google-labs-code",
+        "verified": false,
+        "website": "https://stitch.withgoogle.com/",
+        "evidence": [
+          "https://github.com/google-labs-code",
+          "https://github.com/google-labs-code/stitch-skills"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "google-labs-code/stitch-skills"
+      ]
+    },
+    "firebase": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "firebase/agent-skills",
+      "stars": 507,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "firebase",
+        "type": "Organization",
+        "url": "https://github.com/firebase",
+        "verified": false,
+        "website": "https://firebase.google.com/",
+        "evidence": [
+          "https://github.com/firebase",
+          "https://github.com/firebase/agent-skills",
+          "https://firebase.google.com/docs/ai-assistance/agent-skills"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "firebase/agent-skills"
+      ]
+    },
+    "huggingface": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "huggingface/skills",
+      "stars": 11306,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "huggingface",
+        "type": "Organization",
+        "url": "https://github.com/huggingface",
+        "verified": true,
+        "website": "https://huggingface.co/",
+        "evidence": [
+          "https://github.com/huggingface",
+          "https://github.com/huggingface/skills"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "huggingface/skills"
+      ]
+    },
+    "mongodb": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "mongodb/mongo",
+      "stars": 28678,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "mongodb",
+        "type": "Organization",
+        "url": "https://github.com/mongodb",
+        "verified": false,
+        "website": "https://www.mongodb.com/",
+        "evidence": [
+          "https://github.com/mongodb",
+          "https://github.com/mongodb/mongo",
+          "https://www.mongodb.com/docs/agent-skills/"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "mongodb/agent-skills",
+        "mongodb/mongo"
+      ]
+    },
+    "redis": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "redis/redis",
+      "stars": 77311,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "redis",
+        "type": "Organization",
+        "url": "https://github.com/redis",
+        "verified": true,
+        "website": "https://redis.io/",
+        "evidence": [
+          "https://github.com/redis",
+          "https://github.com/redis/redis"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "redis/agent-skills",
+        "redis/redis"
+      ]
+    },
+    "stripe": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "stripe/stripe-node",
+      "stars": 4559,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "stripe",
+        "type": "Organization",
+        "url": "https://github.com/stripe",
+        "verified": false,
+        "website": "https://stripe.com/",
+        "evidence": [
+          "https://github.com/stripe",
+          "https://github.com/stripe/stripe-node",
+          "https://docs.stripe.com/sdks"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "stripe/ai",
+        "stripe/stripe-node"
+      ]
+    },
+    "shopify": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "Shopify/Shopify-AI-Toolkit",
+      "stars": 634,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "Shopify",
+        "type": "Organization",
+        "url": "https://github.com/Shopify",
+        "verified": true,
+        "website": "https://shopify.dev/",
+        "evidence": [
+          "https://github.com/Shopify",
+          "https://github.com/Shopify/Shopify-AI-Toolkit"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "Shopify/Shopify-AI-Toolkit",
+        "Shopify/cli"
+      ]
+    },
+    "figma": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "figma/mcp-server-guide",
+      "stars": 2163,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "figma",
+        "type": "Organization",
+        "url": "https://github.com/figma",
+        "verified": true,
+        "website": "https://www.figma.com/",
+        "evidence": [
+          "https://github.com/figma",
+          "https://github.com/figma/mcp-server-guide"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "figma/mcp-server-guide"
+      ]
+    },
+    "makenotion": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "makenotion/notion-sdk-js",
+      "stars": 5682,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "makenotion",
+        "type": "Organization",
+        "url": "https://github.com/makenotion",
+        "verified": false,
+        "website": "https://www.notion.so/",
+        "evidence": [
+          "https://github.com/makenotion",
+          "https://github.com/makenotion/notion-sdk-js",
+          "https://developers.notion.com/reference/intro"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "makenotion/skills",
+        "makenotion/notion-sdk-js"
+      ]
+    },
+    "datadog": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "DataDog/datadog-agent",
+      "stars": 3771,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "DataDog",
+        "type": "Organization",
+        "url": "https://github.com/DataDog",
+        "verified": true,
+        "website": "https://www.datadoghq.com/",
+        "evidence": [
+          "https://github.com/DataDog",
+          "https://github.com/DataDog/datadog-agent"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "DataDog/datadog-agent"
+      ]
+    },
+    "datadog-labs": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "datadog-labs/agent-skills",
+      "stars": 183,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "datadog-labs",
+        "type": "Organization",
+        "url": "https://github.com/datadog-labs",
+        "verified": true,
+        "website": "https://github.com/datadog-labs",
+        "evidence": [
+          "https://github.com/datadog-labs",
+          "https://github.com/datadog-labs/agent-skills"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "datadog-labs/agent-skills"
+      ]
+    },
+    "getsentry": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "getsentry/skills",
+      "stars": 1135,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "getsentry",
+        "type": "Organization",
+        "url": "https://github.com/getsentry",
+        "verified": true,
+        "website": "https://sentry.io/",
+        "evidence": [
+          "https://github.com/getsentry",
+          "https://github.com/getsentry/skills"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "getsentry/skills",
+        "getsentry/sentry-for-ai",
+        "getsentry/sentry"
+      ]
+    },
+    "hashicorp": {
+      "status": "approved",
+      "checkedAt": "2026-11-09",
+      "representativeRepository": "hashicorp/terraform",
+      "stars": 50174,
+      "fork": false,
+      "archived": false,
+      "reason": "用户明确要求建设已核实的 Organization 发布者身份页；仅来源定位，不批准具体 Skill 或软件项目收录。",
+      "approvalScope": "organization-profile",
+      "organization": {
+        "login": "hashicorp",
+        "type": "Organization",
+        "url": "https://github.com/hashicorp",
+        "verified": true,
+        "website": "https://www.hashicorp.com/",
+        "evidence": [
+          "https://github.com/hashicorp",
+          "https://github.com/hashicorp/terraform"
+        ],
+        "userRequest": "2026-11-09：按 GitHub 实际组织与仓库 owner 分别创建 Organization 发布者页面。"
+      },
+      "repositories": [
+        "hashicorp/agent-skills",
+        "hashicorp/terraform"
+      ]
     }
   }
 }

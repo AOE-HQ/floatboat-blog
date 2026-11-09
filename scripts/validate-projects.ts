@@ -11,7 +11,7 @@ import { buildCombinedSitemapXml } from "../src/lib/sitemap";
 import { pathForLocale } from "../src/lib/locale-path";
 import { buildPublisherMetadata } from "../src/lib/skills/publisher-metadata";
 
-const ingress = readFileSync("k8s/ingress-main.yaml", "utf8");
+const ingress = readFileSync("k8s/ingress-main.yaml", "utf8").replace(/\r\n/g, "\n");
 const sitemap = buildCombinedSitemapXml();
 const paths = new Set<string>();
 assert.equal(PROJECTS.filter((project) => project.classification === "official-harness").length, 4);

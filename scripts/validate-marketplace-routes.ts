@@ -4,7 +4,7 @@ import { buildCombinedSitemapXml } from "../src/lib/sitemap";
 import { pathForLocale } from "../src/lib/locale-path";
 
 // The directory owns only /skills-marketplace. Combo Store belongs to the main app.
-const ingress = readFileSync("k8s/ingress-main.yaml", "utf8");
+const ingress = readFileSync("k8s/ingress-main.yaml", "utf8").replace(/\r\n/g, "\n");
 const hosts = ingress.split("    - host: ").slice(1);
 assert.equal(hosts.length, 2);
 for (const host of hosts) {
