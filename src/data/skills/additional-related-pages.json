@@ -64,7 +64,7 @@
       "obra/systematic-debugging",
       "mattpocock/tdd",
       "mattpocock/improve-codebase-architecture",
-      "vercel-labs/agent-browser"
+      "anthropics/webapp-testing"
     ],
     "mattpocock/code-review": [
       "mattpocock/tdd",
@@ -88,7 +88,7 @@
       "mattpocock/diagnosing-bugs",
       "mattpocock/tdd",
       "mattpocock/code-review",
-      "vercel-labs/agent-browser"
+      "anthropics/webapp-testing"
     ],
     "heygen-com/hyperframes": [
       "anthropics/pptx",
@@ -475,6 +475,78 @@
       "cloudflare",
       "microsoft",
       "github"
+    ],
+    "skyvern-ai": [
+      "browser-use",
+      "browserbase",
+      "brightdata",
+      "unclecode"
+    ],
+    "steel-dev": [
+      "browserbase",
+      "skyvern-ai",
+      "lightpanda-io",
+      "brightdata"
+    ],
+    "brightdata": [
+      "unclecode",
+      "steel-dev",
+      "skyvern-ai",
+      "lightpanda-io"
+    ],
+    "lightpanda-io": [
+      "steel-dev",
+      "unclecode",
+      "pinchtab",
+      "browser-use"
+    ],
+    "unclecode": [
+      "brightdata",
+      "lightpanda-io",
+      "browser-use",
+      "skyvern-ai"
+    ],
+    "citrolabs": [
+      "browsermcp",
+      "browseros-ai",
+      "browser-use",
+      "pinchtab"
+    ],
+    "browseros-ai": [
+      "citrolabs",
+      "browsermcp",
+      "microsoft",
+      "chromedevtools"
+    ],
+    "browsermcp": [
+      "citrolabs",
+      "browseros-ai",
+      "microsoft",
+      "pinchtab"
+    ],
+    "pinchtab": [
+      "vercel-labs",
+      "browsermcp",
+      "steel-dev",
+      "lightpanda-io"
+    ],
+    "browser-use": [
+      "browserbase",
+      "vercel-labs",
+      "skyvern-ai",
+      "citrolabs"
+    ],
+    "browserbase": [
+      "browser-use",
+      "vercel-labs",
+      "microsoft",
+      "steel-dev"
+    ],
+    "chromedevtools": [
+      "microsoft",
+      "vercel-labs",
+      "browsermcp",
+      "browseros-ai"
     ]
   },
   "skill-categories": {

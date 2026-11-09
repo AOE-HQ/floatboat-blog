@@ -298,7 +298,7 @@
     },
     "links": {
       "vercel-labs/find-skills": [
-        "vercel-labs/agent-browser",
+        "anthropics/webapp-testing",
         "vercel-labs/vercel-react-best-practices",
         "vercel-labs/web-design-guidelines",
         "vercel-labs/writing-guidelines"
@@ -343,23 +343,17 @@
         "vercel-labs/vercel-cli-with-tokens",
         "vercel-labs/vercel-optimize",
         "vercel-labs/vercel-react-best-practices",
-        "vercel-labs/agent-browser"
+        "anthropics/webapp-testing"
       ],
       "vercel-labs/vercel-cli-with-tokens": [
         "vercel-labs/deploy-to-vercel",
         "vercel-labs/vercel-optimize",
-        "vercel-labs/agent-browser",
+        "anthropics/webapp-testing",
         "vercel-labs/find-skills"
       ],
       "vercel-labs/vercel-optimize": [
         "vercel-labs/deploy-to-vercel",
         "vercel-labs/vercel-react-best-practices",
-        "vercel-labs/vercel-cli-with-tokens",
-        "vercel-labs/web-design-guidelines"
-      ],
-      "vercel-labs/agent-browser": [
-        "vercel-labs/find-skills",
-        "vercel-labs/deploy-to-vercel",
         "vercel-labs/vercel-cli-with-tokens",
         "vercel-labs/web-design-guidelines"
       ]

@@ -8,8 +8,13 @@ import { getPublisherProfile } from "../src/lib/skills/publisher-profiles";
 const escapeXml = (text: string) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 async function main() {
+  const requested = new Set(process.argv.slice(2));
+  const selected = PROJECTS.filter((project) => requested.size === 0 || requested.has(`${project.author}/${project.slug}`));
+  if (requested.size > 0 && selected.length !== requested.size) {
+    throw new Error("Unknown or duplicate project selection for share images");
+  }
   const logo = (await readFile("public/blog/brand/floatboat-logo.svg")).toString("base64");
-  for (const project of PROJECTS) {
+  for (const project of selected) {
     const publisher = getPublisherProfile(project.author)!;
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#f1efea"/>
@@ -26,7 +31,7 @@ async function main() {
     await mkdir(path.dirname(filename), { recursive: true });
     await writeFile(filename, await sharp(Buffer.from(svg)).webp({ quality: 88 }).toBuffer());
   }
-  console.log(`Generated ${PROJECTS.length} project share images (1200×630 WebP).`);
+  console.log(`Generated ${selected.length} project share images (1200×630 WebP).`);
 }
 
 main().catch((error: unknown) => { console.error(error); process.exitCode = 1; });

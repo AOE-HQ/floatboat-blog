@@ -4216,5 +4216,1781 @@
         "href": "/zh/skills-marketplace/addyosmani/browser-testing-with-devtools"
       }
     }
+  },
+  "skyvern-ai": {
+    "name": "Skyvern",
+    "type": "Organization",
+    "profileUrl": "https://github.com/Skyvern-AI",
+    "logo": "/blog/brand/publishers/skyvern-ai.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/Skyvern-AI",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.skyvern.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Skyvern",
+        "url": "https://github.com/Skyvern-AI/skyvern",
+        "en": {
+          "kind": "Browser workflow platform",
+          "description": "Use Skyvern’s MCP or API for browser operations and multi-step workflows. Choose cloud or self-hosted execution, supply the required credentials, and review the business result rather than only the run status."
+        },
+        "zh": {
+          "kind": "浏览器工作流平台",
+          "description": "通过 Skyvern MCP 或 API 完成浏览器操作和多步骤流程。选择云端或自托管运行、准备所需凭据，并验收业务结果，而不只看运行状态。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Skyvern: Browser-Based Workflow Automation",
+      "seoDescription": "Builds Skyvern’s browser workflow platform and coding-agent interfaces, with cloud and self-hosted execution options.",
+      "heroTitle": "Skyvern",
+      "heroDescription": "Builds Skyvern’s browser workflow platform and coding-agent interfaces, with cloud and self-hosted execution options.",
+      "overview": {
+        "title": "About Skyvern",
+        "paragraphs": [
+          "Skyvern-AI maintains the Skyvern browser-workflow project. Its source and documentation cover both direct browser control and workflows, with agent-facing MCP and CLI entry points rather than a separate Skill-only product.",
+          "Cloud service access and self-hosted software share a project identity but have different operating requirements. Official Skills help use the selected interface; the project guide explains their setup and execution requirements."
+        ]
+      },
+      "aboutTitle": "About Skyvern",
+      "about": "Skyvern-AI maintains the Skyvern browser-workflow project. Its source and documentation cover both direct browser control and workflows, with agent-facing MCP and CLI entry points rather than a separate Skill-only product. Cloud service access and self-hosted software share a project identity but have different operating requirements. Official Skills help use the selected interface; the project guide explains their setup and execution requirements.",
+      "projectsTitle": "Software from Skyvern",
+      "projectsIntro": "Builds Skyvern’s browser workflow platform and coding-agent interfaces, with cloud and self-hosted execution options.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "Who publishes the Skyvern platform?",
+          "answer": "The linked upstream repository belongs to Skyvern-AI. Use its official project and documentation links to identify current releases and interfaces."
+        },
+        {
+          "question": "Is cloud access the only way to use it?",
+          "answer": "No. Official documentation describes self-hosted and cloud paths. Their authentication, model, browser, and maintenance responsibilities differ."
+        },
+        {
+          "question": "Are the CLI Skills upstream-maintained?",
+          "answer": "The skyvern instructions are in the official repository. They accompany the runtime and do not replace backend setup or a service account."
+        },
+        {
+          "question": "What is the difference between authoring and running?",
+          "answer": "Authoring changes a workflow definition; operating executes it with inputs. Treat those permissions and verification requirements separately."
+        },
+        {
+          "question": "What terms govern the source?",
+          "answer": "The repository is AGPL-3.0. Hosted subscriptions and model charges are separate from source licensing and require their own review."
+        },
+        {
+          "question": "Where should session errors be investigated?",
+          "answer": "Use the installed MCP/CLI release’s documentation, session identifiers, and backend logs. Do not mix an older integration guide with current session-creation requirements."
+        }
+      ],
+      "ctaTitle": "Explore Skyvern",
+      "ctaDescription": "Browser workflow platform — A one-record run with field comparison, errors, and a submission checkpoint.",
+      "ctaPrimary": {
+        "label": "Open Skyvern guide",
+        "href": "/skills-marketplace/skyvern-ai/skyvern"
+      }
+    },
+    "zh": {
+      "seoTitle": "Skyvern：基于浏览器的流程自动化",
+      "seoDescription": "开发浏览器流程平台与编码 Agent 接口，提供云端及自托管运行选项。",
+      "heroTitle": "Skyvern",
+      "heroDescription": "开发浏览器流程平台与编码 Agent 接口，提供云端及自托管运行选项。",
+      "overview": {
+        "title": "关于 Skyvern",
+        "paragraphs": [
+          "Skyvern-AI 维护浏览器流程项目 Skyvern，源码和文档覆盖直接控制与流程执行，并提供 Agent 的 MCP 和 CLI 入口，不是单独 Skill 产品。",
+          "云端服务与自托管软件属于同一项目，但运行要求不同。官方 Skills 指导所选入口，项目指南说明配置及执行要求。"
+        ]
+      },
+      "aboutTitle": "关于 Skyvern",
+      "about": "Skyvern-AI 维护浏览器流程项目 Skyvern，源码和文档覆盖直接控制与流程执行，并提供 Agent 的 MCP 和 CLI 入口，不是单独 Skill 产品。 云端服务与自托管软件属于同一项目，但运行要求不同。官方 Skills 指导所选入口，项目指南说明配置及执行要求。",
+      "projectsTitle": "Skyvern 的软件作品",
+      "projectsIntro": "开发浏览器流程平台与编码 Agent 接口，提供云端及自托管运行选项。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "谁发布 Skyvern 平台？",
+          "answer": "链接上游属于 Skyvern-AI，应通过官方项目与文档确认当前发布和接口。"
+        },
+        {
+          "question": "只能使用云端服务吗？",
+          "answer": "不是。官方有自托管和云端路径，认证、模型、浏览器及维护责任不同。"
+        },
+        {
+          "question": "CLI Skills 由上游维护吗？",
+          "answer": "当前 skyvern 指引位于官方仓库，配合运行工具使用，不替代后端配置或服务账号。"
+        },
+        {
+          "question": "编写和运行流程有何区别？",
+          "answer": "编写改变流程定义，运行则使用输入执行流程，两者权限与验收要求需分开。"
+        },
+        {
+          "question": "源码遵循什么条款？",
+          "answer": "仓库采用 AGPL-3.0，托管订阅与模型费用独立于源码许可，需要单独核对。"
+        },
+        {
+          "question": "会话错误从哪里排查？",
+          "answer": "按当前 MCP／CLI 文档、会话标识及后端日志排查，不混用旧集成说明与新会话创建要求。"
+        }
+      ],
+      "ctaTitle": "了解 Skyvern",
+      "ctaDescription": "浏览器工作流平台 — 包含字段对照、错误与提交检查点的单条运行。",
+      "ctaPrimary": {
+        "label": "查看 Skyvern 指南",
+        "href": "/zh/skills-marketplace/skyvern-ai/skyvern"
+      }
+    }
+  },
+  "steel-dev": {
+    "name": "Steel",
+    "type": "Organization",
+    "profileUrl": "https://github.com/steel-dev",
+    "logo": "/blog/brand/publishers/steel-dev.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/steel-dev",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://steel.dev",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Steel Browser",
+        "url": "https://github.com/steel-dev/steel-browser",
+        "en": {
+          "kind": "Browser infrastructure and service",
+          "description": "Use Steel to provide a browser session for agent work. Compare the open-source browser runtime with Steel’s hosted MCP and official Skills, keeping service authentication and session costs explicit."
+        },
+        "zh": {
+          "kind": "浏览器基础设施与服务",
+          "description": "通过 Steel 为 Agent 工作提供浏览器会话，区分开源运行环境、托管 MCP 与官方 Skills，并明确服务认证和会话费用。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Steel: Browser Sessions and Agent Infrastructure",
+      "seoDescription": "Publishes Steel Browser infrastructure and official cloud-browser Skills for live browsing, reusable code, and session diagnosis.",
+      "heroTitle": "Steel",
+      "heroDescription": "Publishes Steel Browser infrastructure and official cloud-browser Skills for live browsing, reusable code, and session diagnosis.",
+      "overview": {
+        "title": "About Steel",
+        "paragraphs": [
+          "Steel maintains the open-source steel-browser project and related browser-service tooling. The infrastructure supplies browser sessions; agent reasoning and application logic remain with the connected client or code.",
+          "Official Skills are maintained in steel-dev/skills and target specific cloud-browser jobs. The hosted MCP service and the open-source browser runtime have different setup paths, which should be checked before equating the repository with a cloud account."
+        ]
+      },
+      "aboutTitle": "About Steel",
+      "about": "Steel maintains the open-source steel-browser project and related browser-service tooling. The infrastructure supplies browser sessions; agent reasoning and application logic remain with the connected client or code. Official Skills are maintained in steel-dev/skills and target specific cloud-browser jobs. The hosted MCP service and the open-source browser runtime have different setup paths, which should be checked before equating the repository with a cloud account.",
+      "projectsTitle": "Software from Steel",
+      "projectsIntro": "Publishes Steel Browser infrastructure and official cloud-browser Skills for live browsing, reusable code, and session diagnosis.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "What does Steel publish as source?",
+          "answer": "The linked steel-browser repository provides browser infrastructure, while companion repositories contain interfaces and official agent instructions."
+        },
+        {
+          "question": "Is Steel the task-planning agent?",
+          "answer": "The infrastructure provides sessions and connectivity. A coding agent or application supplies task reasoning, inputs, and output verification."
+        },
+        {
+          "question": "Where are the official Skills?",
+          "answer": "steel-dev/skills maintains operating, developer, and session-diagnosis guidance. Read each Skill’s service assumptions instead of treating all of them as local-server instructions."
+        },
+        {
+          "question": "Does open-source setup create a hosted account?",
+          "answer": "No. Hosted MCP authentication and session access are service-level setup. They do not appear automatically when the open-source runtime starts."
+        },
+        {
+          "question": "What does Apache-2.0 apply to?",
+          "answer": "It applies to the steel-browser source. Cloud time, account limits, model usage, and companion-package licensing must be assessed separately."
+        },
+        {
+          "question": "How should a failed session be reported?",
+          "answer": "Keep the session ID, relevant step, and redacted runtime evidence. Official steel-session-debugging guidance can help distinguish infrastructure failure from target-site behavior."
+        }
+      ],
+      "ctaTitle": "Explore Steel Browser",
+      "ctaDescription": "Browser infrastructure and service — A session record with source values, connection evidence, and cleanup status.",
+      "ctaPrimary": {
+        "label": "Open Steel Browser guide",
+        "href": "/skills-marketplace/steel-dev/steel-browser"
+      }
+    },
+    "zh": {
+      "seoTitle": "Steel：浏览器会话与 Agent 基础设施",
+      "seoDescription": "发布 Steel Browser 基础设施及官方云浏览器 Skills，覆盖现场操作、复用代码与会话诊断。",
+      "heroTitle": "Steel",
+      "heroDescription": "发布 Steel Browser 基础设施及官方云浏览器 Skills，覆盖现场操作、复用代码与会话诊断。",
+      "overview": {
+        "title": "关于 Steel",
+        "paragraphs": [
+          "Steel 维护开源 steel-browser 及相关服务工具，基础设施提供浏览器会话，Agent 推理与应用逻辑仍由客户端或代码负责。",
+          "官方 Skills 在 steel-dev/skills 维护，面向具体云浏览器任务。托管 MCP 与开源运行环境配置路径不同，不能把仓库等同于云账号。"
+        ]
+      },
+      "aboutTitle": "关于 Steel",
+      "about": "Steel 维护开源 steel-browser 及相关服务工具，基础设施提供浏览器会话，Agent 推理与应用逻辑仍由客户端或代码负责。 官方 Skills 在 steel-dev/skills 维护，面向具体云浏览器任务。托管 MCP 与开源运行环境配置路径不同，不能把仓库等同于云账号。",
+      "projectsTitle": "Steel 的软件作品",
+      "projectsIntro": "发布 Steel Browser 基础设施及官方云浏览器 Skills，覆盖现场操作、复用代码与会话诊断。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "Steel 公开哪些源码？",
+          "answer": "steel-browser 提供浏览器基础设施，配套仓库维护接口和官方 Agent 指引。"
+        },
+        {
+          "question": "Steel 是任务规划 Agent 吗？",
+          "answer": "基础设施提供会话和连接，编码 Agent 或应用负责推理、输入和输出验收。"
+        },
+        {
+          "question": "官方 Skills 在哪里？",
+          "answer": "steel-dev/skills 提供操作、开发和会话诊断指引，应核对服务前提，不能都当成本地服务指令。"
+        },
+        {
+          "question": "开源配置会创建托管账号吗？",
+          "answer": "不会。托管 MCP 认证和会话访问属于服务配置，开源运行环境启动不自动提供。"
+        },
+        {
+          "question": "Apache-2.0 适用于什么？",
+          "answer": "适用于当前 steel-browser 源码，云端时长、账号限制、模型用量及配套包许可需另行核对。"
+        },
+        {
+          "question": "如何报告失败会话？",
+          "answer": "保留会话 ID、相关步骤及去敏运行证据，官方诊断指引可帮助区分基础设施故障与目标网站行为。"
+        }
+      ],
+      "ctaTitle": "了解 Steel Browser",
+      "ctaDescription": "浏览器基础设施与服务 — 包含来源值、连接证据及清理状态的会话记录。",
+      "ctaPrimary": {
+        "label": "查看 Steel Browser 指南",
+        "href": "/zh/skills-marketplace/steel-dev/steel-browser"
+      }
+    }
+  },
+  "brightdata": {
+    "name": "Bright Data",
+    "type": "Organization",
+    "profileUrl": "https://github.com/brightdata",
+    "logo": "/blog/brand/publishers/brightdata.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/brightdata",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://brightdata.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Bright Data MCP",
+        "url": "https://github.com/brightdata/brightdata-mcp",
+        "en": {
+          "kind": "Web data MCP service connector",
+          "description": "Connect a coding agent to Bright Data’s web access and data tools. Use its official Skills to choose browser, fetch, search, or extraction workflows, with credentials, product scope, and costs checked separately."
+        },
+        "zh": {
+          "kind": "网页数据 MCP 服务连接器",
+          "description": "将编码 Agent 连接到 Bright Data 网页访问与数据工具，通过官方 Skills 选择浏览器、获取、搜索或提取流程，并分别核对凭据、产品范围及成本。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Bright Data: Web Data Tools, MCP, and Agent Skills",
+      "seoDescription": "Publishes agent connectors and official Skills for web access, search, extraction, and browser services backed by Bright Data.",
+      "heroTitle": "Bright Data",
+      "heroDescription": "Publishes agent connectors and official Skills for web access, search, extraction, and browser services backed by Bright Data.",
+      "overview": {
+        "title": "About Bright Data",
+        "paragraphs": [
+          "Bright Data publishes web-data service connectors including its MCP server, CLI, and official Skills. These interfaces connect agents to service products rather than representing a single standalone local scraping library.",
+          "The organization’s Skills distinguish onboarding, data collection, browsing, and cost checks. Product access and charges need to be considered alongside the chosen interface; a repository’s open-source license does not grant access to every dataset or cloud browser."
+        ]
+      },
+      "aboutTitle": "About Bright Data",
+      "about": "Bright Data publishes web-data service connectors including its MCP server, CLI, and official Skills. These interfaces connect agents to service products rather than representing a single standalone local scraping library. The organization’s Skills distinguish onboarding, data collection, browsing, and cost checks. Product access and charges need to be considered alongside the chosen interface; a repository’s open-source license does not grant access to every dataset or cloud browser.",
+      "projectsTitle": "Software from Bright Data",
+      "projectsIntro": "Publishes agent connectors and official Skills for web access, search, extraction, and browser services backed by Bright Data.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "What is the role of the MCP repository?",
+          "answer": "It connects MCP hosts to Bright Data capabilities. The server code and the remote products it invokes are related but governed by different setup and service conditions."
+        },
+        {
+          "question": "Are the Skills published by Bright Data?",
+          "answer": "The verified brightdata/skills repository is under the same organization and contains task instructions for the service ecosystem."
+        },
+        {
+          "question": "When should I use MCP instead of the CLI?",
+          "answer": "Use MCP to expose service tools inside an existing agent host. Choose the CLI for command-driven setup or operations supported by its documentation; both need the relevant Bright Data service access."
+        },
+        {
+          "question": "Does the publisher only provide browser interaction?",
+          "answer": "No. Search, fetch, structured extraction, and data products serve different jobs. Choose the needed surface before treating a request as interactive browsing."
+        },
+        {
+          "question": "Does connector licensing cover paid data?",
+          "answer": "No. The MCP code is MIT, while service use and data purchases have their own conditions. A task request should not silently approve purchases."
+        },
+        {
+          "question": "Where should login and key setup happen?",
+          "answer": "Use official onboarding and client settings. Keep credentials in the local configuration rather than in prompts, reports, or shared repository files."
+        }
+      ],
+      "ctaTitle": "Explore Bright Data MCP",
+      "ctaDescription": "Web data MCP service connector — A small sourced result with the chosen service path and usage considerations.",
+      "ctaPrimary": {
+        "label": "Open Bright Data MCP guide",
+        "href": "/skills-marketplace/brightdata/brightdata-mcp"
+      }
+    },
+    "zh": {
+      "seoTitle": "Bright Data：网页数据工具、MCP 与 Agent Skills",
+      "seoDescription": "发布 Agent 连接器和官方 Skills，接入网页访问、搜索、提取与浏览器服务。",
+      "heroTitle": "Bright Data",
+      "heroDescription": "发布 Agent 连接器和官方 Skills，接入网页访问、搜索、提取与浏览器服务。",
+      "overview": {
+        "title": "关于 Bright Data",
+        "paragraphs": [
+          "Bright Data 发布网页数据服务连接器，包括 MCP、CLI 和官方 Skills，接口将 Agent 连接到服务产品，不是单个独立本地采集库。",
+          "组织 Skills 区分引导、采集、浏览和成本检查。产品权限及费用与接口分别考虑，仓库开源许可不提供所有数据集或云浏览器权限。"
+        ]
+      },
+      "aboutTitle": "关于 Bright Data",
+      "about": "Bright Data 发布网页数据服务连接器，包括 MCP、CLI 和官方 Skills，接口将 Agent 连接到服务产品，不是单个独立本地采集库。 组织 Skills 区分引导、采集、浏览和成本检查。产品权限及费用与接口分别考虑，仓库开源许可不提供所有数据集或云浏览器权限。",
+      "projectsTitle": "Bright Data 的软件作品",
+      "projectsIntro": "发布 Agent 连接器和官方 Skills，接入网页访问、搜索、提取与浏览器服务。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "MCP 仓库的职责是什么？",
+          "answer": "它将 MCP 宿主连接到 Bright Data 能力，服务代码与远程产品相关，但配置和服务条件不同。"
+        },
+        {
+          "question": "Skills 由 Bright Data 发布吗？",
+          "answer": "已核对 brightdata/skills 位于同一组织，包含服务生态的任务指引。"
+        },
+        {
+          "question": "何时使用 MCP 而不是 CLI？",
+          "answer": "需要在现有 Agent 宿主中调用服务工具时可选 MCP；命令式配置或文档支持的操作可选 CLI，两者都需要对应 Bright Data 服务权限。"
+        },
+        {
+          "question": "发布者只提供浏览器交互吗？",
+          "answer": "不是。搜索、获取、结构化提取与数据产品服务不同任务，应先选择入口再判断是否需要交互浏览。"
+        },
+        {
+          "question": "连接器许可覆盖付费数据吗？",
+          "answer": "不覆盖。当前 MCP 代码采用 MIT，服务和数据购买有独立条件，任务请求不能静默批准购买。"
+        },
+        {
+          "question": "登录与密钥应在哪里配置？",
+          "answer": "使用官方引导和客户端设置，凭据保留在本地配置，不写入请求、报告或共享仓库。"
+        }
+      ],
+      "ctaTitle": "了解 Bright Data MCP",
+      "ctaDescription": "网页数据 MCP 服务连接器 — 附来源、所选服务路径和用量说明的小规模结果。",
+      "ctaPrimary": {
+        "label": "查看 Bright Data MCP 指南",
+        "href": "/zh/skills-marketplace/brightdata/brightdata-mcp"
+      }
+    }
+  },
+  "lightpanda-io": {
+    "name": "Lightpanda",
+    "type": "Organization",
+    "profileUrl": "https://github.com/lightpanda-io",
+    "logo": "/blog/brand/publishers/lightpanda-io.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/lightpanda-io",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://lightpanda.io",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Lightpanda",
+        "url": "https://github.com/lightpanda-io/browser",
+        "en": {
+          "kind": "Headless browser for agents",
+          "description": "Use Lightpanda for headless page access, extraction, and supported interactions through native MCP or official agent guidance. Check compatibility before replacing a full browser, especially for visual or layout-dependent work."
+        },
+        "zh": {
+          "kind": "面向 Agent 的无头浏览器",
+          "description": "通过原生 MCP 或官方 Agent 指引使用 Lightpanda，完成无头页面访问、提取和受支持交互。替换完整浏览器前需检查兼容性，尤其是视觉与布局相关任务。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Lightpanda: Headless Browser and Native Agent Interfaces",
+      "seoDescription": "Maintains the Lightpanda headless browser and a separate official agent Skill, with MCP access and platform-specific guidance.",
+      "heroTitle": "Lightpanda",
+      "heroDescription": "Maintains the Lightpanda headless browser and a separate official agent Skill, with MCP access and platform-specific guidance.",
+      "overview": {
+        "title": "About Lightpanda",
+        "paragraphs": [
+          "The lightpanda-io organization publishes Lightpanda, a headless browser for AI and automation. It also maintains agent instructions in a separate repository, so engine source, usage guidance, and hosted offerings should not be treated as one package.",
+          "Native MCP and other interfaces expose supported page access and interactions. Compatibility and rendering boundaries remain important when choosing this engine; publisher benchmarks do not establish that every Chrome-dependent task will behave identically."
+        ]
+      },
+      "aboutTitle": "About Lightpanda",
+      "about": "The lightpanda-io organization publishes Lightpanda, a headless browser for AI and automation. It also maintains agent instructions in a separate repository, so engine source, usage guidance, and hosted offerings should not be treated as one package. Native MCP and other interfaces expose supported page access and interactions. Compatibility and rendering boundaries remain important when choosing this engine; publisher benchmarks do not establish that every Chrome-dependent task will behave identically.",
+      "projectsTitle": "Software from Lightpanda",
+      "projectsIntro": "Maintains the Lightpanda headless browser and a separate official agent Skill, with MCP access and platform-specific guidance.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "Which organization publishes the engine?",
+          "answer": "The lightpanda-io/browser repository is the upstream source linked here. Use its release history and official documentation to identify supported interfaces."
+        },
+        {
+          "question": "Is the agent Skill inside the engine repository?",
+          "answer": "The verified official instructions are in lightpanda-io/agent-skill. Their package and license are separate from the browser engine."
+        },
+        {
+          "question": "Is Lightpanda a graphical desktop browser?",
+          "answer": "It is a headless engine for automation. Visual-layout tasks need evidence from a rendering browser rather than assuming headless content extraction verifies appearance."
+        },
+        {
+          "question": "Are Windows instructions native?",
+          "answer": "The official Skill uses WSL2 on Windows. Check current platform documentation before planning deployment on a native desktop environment."
+        },
+        {
+          "question": "Do the engine and Skill share a license?",
+          "answer": "The engine is AGPL-3.0, while the separate official Skill states Apache-2.0. Read the license of the component actually used or redistributed."
+        },
+        {
+          "question": "How should performance claims be evaluated?",
+          "answer": "Compare the same task, pages, output quality, and environment. Upstream measurements are evidence for their workload, not a guaranteed speedup for a different engine deployment."
+        }
+      ],
+      "ctaTitle": "Explore Lightpanda",
+      "ctaDescription": "Headless browser for agents — A compatibility table with sampled values and unsupported features.",
+      "ctaPrimary": {
+        "label": "Open Lightpanda guide",
+        "href": "/skills-marketplace/lightpanda-io/lightpanda"
+      }
+    },
+    "zh": {
+      "seoTitle": "Lightpanda：无头浏览器与原生 Agent 接口",
+      "seoDescription": "维护 Lightpanda 无头浏览器与独立官方 Agent Skill，提供 MCP 接入和平台指引。",
+      "heroTitle": "Lightpanda",
+      "heroDescription": "维护 Lightpanda 无头浏览器与独立官方 Agent Skill，提供 MCP 接入和平台指引。",
+      "overview": {
+        "title": "关于 Lightpanda",
+        "paragraphs": [
+          "lightpanda-io 组织发布面向 AI 与自动化的无头浏览器 Lightpanda，并在独立仓库维护 Agent 指引。引擎源码、使用说明和托管服务不能视为一个包。",
+          "原生 MCP 等接口提供受支持的页面访问与交互。选择引擎时仍需关注兼容和渲染边界，发布者测试不能证明所有依赖 Chrome 的任务都会等价运行。"
+        ]
+      },
+      "aboutTitle": "关于 Lightpanda",
+      "about": "lightpanda-io 组织发布面向 AI 与自动化的无头浏览器 Lightpanda，并在独立仓库维护 Agent 指引。引擎源码、使用说明和托管服务不能视为一个包。 原生 MCP 等接口提供受支持的页面访问与交互。选择引擎时仍需关注兼容和渲染边界，发布者测试不能证明所有依赖 Chrome 的任务都会等价运行。",
+      "projectsTitle": "Lightpanda 的软件作品",
+      "projectsIntro": "维护 Lightpanda 无头浏览器与独立官方 Agent Skill，提供 MCP 接入和平台指引。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "哪个组织发布引擎？",
+          "answer": "lightpanda-io/browser 是这里链接的上游源码，应结合发布历史及官方文档核对接口。"
+        },
+        {
+          "question": "Agent Skill 在引擎仓库内吗？",
+          "answer": "已核对官方指引位于 lightpanda-io/agent-skill，包及许可与浏览器引擎分开。"
+        },
+        {
+          "question": "Lightpanda 是图形桌面浏览器吗？",
+          "answer": "它是用于自动化的无头引擎，视觉布局任务需要渲染浏览器证据，不能假定内容提取验证了外观。"
+        },
+        {
+          "question": "Windows 指引是原生运行吗？",
+          "answer": "当前官方 Skill 在 Windows 使用 WSL2，规划原生桌面部署前应核对当前平台文档。"
+        },
+        {
+          "question": "引擎和 Skill 许可相同吗？",
+          "answer": "引擎为 AGPL-3.0，独立官方 Skill 声明 Apache-2.0，应按实际使用或分发组件阅读许可。"
+        },
+        {
+          "question": "怎样评估性能说法？",
+          "answer": "需比较相同任务、页面、输出质量与环境，上游测量对应其工作负载，不保证另一部署得到相同加速。"
+        }
+      ],
+      "ctaTitle": "了解 Lightpanda",
+      "ctaDescription": "面向 Agent 的无头浏览器 — 包含抽样值与不支持特性的兼容表。",
+      "ctaPrimary": {
+        "label": "查看 Lightpanda 指南",
+        "href": "/zh/skills-marketplace/lightpanda-io/lightpanda"
+      }
+    }
+  },
+  "unclecode": {
+    "name": "UncleCode",
+    "type": "Person",
+    "profileUrl": "https://github.com/unclecode",
+    "logo": "/blog/brand/publishers/unclecode.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/unclecode",
+        "label": {
+          "en": "GitHub creator",
+          "zh": "GitHub 创作者"
+        }
+      },
+      {
+        "href": "https://crawl4ai.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Crawl4AI",
+        "url": "https://github.com/unclecode/crawl4ai",
+        "en": {
+          "kind": "Web crawling and extraction framework",
+          "description": "Collect page content for research or data processing through Crawl4AI’s Python, deployed API, or documented MCP interface. Define the crawl boundary and validate extracted fields before using the data."
+        },
+        "zh": {
+          "kind": "网页抓取与提取框架",
+          "description": "通过 Crawl4AI 的 Python、部署 API 或文档中的 MCP 接口收集页面内容，用于调查与数据处理；先限定抓取范围，再验证提取字段。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "UncleCode: Crawl4AI and Agent-Ready Web Data",
+      "seoDescription": "Creator publishing Crawl4AI, with Python and deployed interfaces for collecting web content and preparing structured inputs for agents.",
+      "heroTitle": "UncleCode",
+      "heroDescription": "Creator publishing Crawl4AI, with Python and deployed interfaces for collecting web content and preparing structured inputs for agents.",
+      "overview": {
+        "title": "About UncleCode",
+        "paragraphs": [
+          "UncleCode is the GitHub creator identity associated with the Crawl4AI upstream repository. The account is a personal creator profile.",
+          "Crawl4AI’s project documentation covers the library and deployed interfaces for crawling and extraction. Community wrappers and Skills should retain their own attribution, even when they target the same framework or use a similar name."
+        ]
+      },
+      "aboutTitle": "About UncleCode",
+      "about": "UncleCode is the GitHub creator identity associated with the Crawl4AI upstream repository. The account is a personal creator profile. Crawl4AI’s project documentation covers the library and deployed interfaces for crawling and extraction. Community wrappers and Skills should retain their own attribution, even when they target the same framework or use a similar name.",
+      "projectsTitle": "Software from UncleCode",
+      "projectsIntro": "Creator publishing Crawl4AI, with Python and deployed interfaces for collecting web content and preparing structured inputs for agents.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "Is unclecode an organization account?",
+          "answer": "UncleCode is a personal GitHub account and the owner of the upstream Crawl4AI repository."
+        },
+        {
+          "question": "Which work is represented here?",
+          "answer": "Crawl4AI provides a Python library, hosted Cloud MCP, and self-hosted Docker/API/MCP paths for web crawling and extraction."
+        },
+        {
+          "question": "Are community Skills official project material?",
+          "answer": "Not automatically. Verify the maintainer and source. The main Crawl4AI repository does not document an official end-user Skill."
+        },
+        {
+          "question": "Is crawling the same as a browser agent workflow?",
+          "answer": "Crawling prepares content and data. Rendering or interacting during collection does not establish support for every account-based business process."
+        },
+        {
+          "question": "What does Apache-2.0 cover?",
+          "answer": "It covers the framework source. Website access rights, any model credentials, and deployed hosting costs remain separate requirements."
+        },
+        {
+          "question": "Where should current setup be verified?",
+          "answer": "Use the official Crawl4AI documentation and the upstream deployment README matching the runtime. Historical tutorials may describe different server or browser dependencies."
+        }
+      ],
+      "ctaTitle": "Explore Crawl4AI",
+      "ctaDescription": "Web crawling and extraction framework — A sourced sample with required fields, missing content, and extraction errors.",
+      "ctaPrimary": {
+        "label": "Open Crawl4AI guide",
+        "href": "/skills-marketplace/unclecode/crawl4ai"
+      }
+    },
+    "zh": {
+      "seoTitle": "UncleCode：Crawl4AI 与 Agent 网页数据",
+      "seoDescription": "发布 Crawl4AI 的创作者，提供 Python 与部署接口，收集网页内容并为 Agent 准备结构化输入。",
+      "heroTitle": "UncleCode",
+      "heroDescription": "发布 Crawl4AI 的创作者，提供 Python 与部署接口，收集网页内容并为 Agent 准备结构化输入。",
+      "overview": {
+        "title": "关于 UncleCode",
+        "paragraphs": [
+          "UncleCode 是 Crawl4AI 上游仓库对应的 GitHub 创作者身份，该账号属于个人创作者。",
+          "Crawl4AI 项目文档覆盖抓取与提取的库及部署接口。社区包装与 Skills 即使服务同一框架或名称相近，也应保留真实归属。"
+        ]
+      },
+      "aboutTitle": "关于 UncleCode",
+      "about": "UncleCode 是 Crawl4AI 上游仓库对应的 GitHub 创作者身份，该账号属于个人创作者。 Crawl4AI 项目文档覆盖抓取与提取的库及部署接口。社区包装与 Skills 即使服务同一框架或名称相近，也应保留真实归属。",
+      "projectsTitle": "UncleCode 的软件作品",
+      "projectsIntro": "发布 Crawl4AI 的创作者，提供 Python 与部署接口，收集网页内容并为 Agent 准备结构化输入。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "unclecode 是组织账号吗？",
+          "answer": "UncleCode 是个人 GitHub 账号，也是 Crawl4AI 上游仓库的所有者。"
+        },
+        {
+          "question": "这里对应哪项作品？",
+          "answer": "Crawl4AI 提供 Python 库、托管 Cloud MCP，以及自部署 Docker／API／MCP 路径，用于网页抓取与提取。"
+        },
+        {
+          "question": "社区 Skills 属于官方资料吗？",
+          "answer": "不自动属于。应核对维护者和来源，未在 Crawl4AI 主仓确认官方用户 Skill。"
+        },
+        {
+          "question": "抓取等于浏览器 Agent 流程吗？",
+          "answer": "抓取准备内容与数据，采集时渲染或交互不等于支持全部账号业务流程。"
+        },
+        {
+          "question": "Apache-2.0 覆盖什么？",
+          "answer": "它管理当前框架源码，网站访问权、模型凭据和部署费用仍是独立要求。"
+        },
+        {
+          "question": "当前配置去哪里核对？",
+          "answer": "核对匹配运行版本的官方文档与部署 README，历史教程可能描述不同服务或浏览器依赖。"
+        }
+      ],
+      "ctaTitle": "了解 Crawl4AI",
+      "ctaDescription": "网页抓取与提取框架 — 带来源、必需字段、缺失内容及提取错误的样本。",
+      "ctaPrimary": {
+        "label": "查看 Crawl4AI 指南",
+        "href": "/zh/skills-marketplace/unclecode/crawl4ai"
+      }
+    }
+  },
+  "citrolabs": {
+    "name": "CitroLabs",
+    "type": "Organization",
+    "profileUrl": "https://github.com/citrolabs",
+    "logo": "/blog/brand/publishers/citrolabs.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/citrolabs",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.egolite.ai",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Ego Lite",
+        "url": "https://github.com/citrolabs/ego-lite",
+        "en": {
+          "kind": "Shared agent browser",
+          "description": "Use the ego-browser Skill to let a coding agent work in its own browser Space while you keep your tabs. Ego Lite supports macOS and Windows and can reuse imported login state."
+        },
+        "zh": {
+          "kind": "人机共用 Agent 浏览器",
+          "description": "通过 ego-browser Skill，让编码 Agent 在任务 Space 工作，你继续使用自己的标签页。Ego Lite 支持 macOS 和 Windows，可复用导入的登录状态。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "CitroLabs: Ego Lite and Agent Browser Connections",
+      "seoDescription": "Maintains Ego Lite and ego-browser tooling for sharing browser work with external coding agents, with task Spaces and login-state access.",
+      "heroTitle": "CitroLabs",
+      "heroDescription": "Maintains Ego Lite and ego-browser tooling for sharing browser work with external coding agents, with task Spaces and login-state access.",
+      "overview": {
+        "title": "About CitroLabs",
+        "paragraphs": [
+          "CitroLabs publishes Ego Lite and companion browser tooling under its GitHub organization. Ego Lite is the browser product; ego-browser supplies a connection layer and instructions for the external coding agent selected by the user.",
+          "The public materials describe a shared-browser workflow with task Spaces and imported browser state. Use the project guide for platform requirements and account boundaries rather than treating the publisher’s ecosystem as automatic access to every profile or device."
+        ]
+      },
+      "aboutTitle": "About CitroLabs",
+      "about": "CitroLabs publishes Ego Lite and companion browser tooling under its GitHub organization. Ego Lite is the browser product; ego-browser supplies a connection layer and instructions for the external coding agent selected by the user. The public materials describe a shared-browser workflow with task Spaces and imported browser state. Use the project guide for platform requirements and account boundaries rather than treating the publisher’s ecosystem as automatic access to every profile or device.",
+      "projectsTitle": "Software from CitroLabs",
+      "projectsIntro": "Maintains Ego Lite and ego-browser tooling for sharing browser work with external coding agents, with task Spaces and login-state access.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
+      "faq": [
+        {
+          "question": "Who maintains Ego Lite?",
+          "answer": "The linked upstream repository belongs to CitroLabs. Check official organization and product links rather than similarly named browser extensions."
+        },
+        {
+          "question": "Is ego-browser another product?",
+          "answer": "It is the connection Skill/tooling for Ego Lite and external agents. The browser and its companion interface are explained together in the project guide."
+        },
+        {
+          "question": "Does the publisher provide the task model?",
+          "answer": "The external-agent path uses the coding host selected by the user. Do not infer that importing browser data changes the model provider or inference location."
+        },
+        {
+          "question": "Are all systems supported by the browser?",
+          "answer": "Ego Lite supports macOS and Windows, with Linux on the roadmap. Follow the current platform download and onboarding instructions; the Skill alone does not supply a browser build."
+        },
+        {
+          "question": "What does the MIT repository license cover?",
+          "answer": "It governs the published tooling source. Check bundled browser-component and binary-distribution terms separately before making broader licensing claims."
+        },
+        {
+          "question": "Where should connection instructions come from?",
+          "answer": "Use the official ego-browser Skill and product documentation matching the installed browser. Community recordings or benchmarks are additional materials, not replacement setup instructions."
+        }
+      ],
+      "ctaTitle": "Explore Ego Lite",
+      "ctaDescription": "Shared agent browser — A sourced summary with the inspected account and missing values.",
+      "ctaPrimary": {
+        "label": "Open Ego Lite guide",
+        "href": "/skills-marketplace/citrolabs/ego-lite"
+      }
+    },
+    "zh": {
+      "seoTitle": "CitroLabs：Ego Lite 与 Agent 浏览器连接",
+      "seoDescription": "维护 Ego Lite 与 ego-browser，让外部编码 Agent 使用任务 Space 和已有登录状态。",
+      "heroTitle": "CitroLabs",
+      "heroDescription": "维护 Ego Lite 与 ego-browser，让外部编码 Agent 使用任务 Space 和已有登录状态。",
+      "overview": {
+        "title": "关于 CitroLabs",
+        "paragraphs": [
+          "CitroLabs 在 GitHub 组织下发布 Ego Lite 及配套工具。Ego Lite 是浏览器产品，ego-browser 提供与用户选定外部编码 Agent 连接的工具和指引。",
+          "公开资料介绍以任务 Space 和导入状态共用浏览器的流程。平台要求与账号边界应查项目指南，不能将发布者生态视为自动访问所有配置或设备的权限。"
+        ]
+      },
+      "aboutTitle": "关于 CitroLabs",
+      "about": "CitroLabs 在 GitHub 组织下发布 Ego Lite 及配套工具。Ego Lite 是浏览器产品，ego-browser 提供与用户选定外部编码 Agent 连接的工具和指引。 公开资料介绍以任务 Space 和导入状态共用浏览器的流程。平台要求与账号边界应查项目指南，不能将发布者生态视为自动访问所有配置或设备的权限。",
+      "projectsTitle": "CitroLabs 的软件作品",
+      "projectsIntro": "维护 Ego Lite 与 ego-browser，让外部编码 Agent 使用任务 Space 和已有登录状态。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
+      "faq": [
+        {
+          "question": "谁维护 Ego Lite？",
+          "answer": "链接上游仓库属于 CitroLabs，应核对组织及产品入口，不与同名浏览器扩展混淆。"
+        },
+        {
+          "question": "ego-browser 是另一个产品吗？",
+          "answer": "它是连接 Ego Lite 与外部 Agent 的 Skill／工具入口，浏览器与配套接口在同一项目指南说明。"
+        },
+        {
+          "question": "发布者提供任务模型吗？",
+          "answer": "外部 Agent 路径使用用户选择的编码宿主，导入浏览器数据不意味着模型提供方或推理位置改变。"
+        },
+        {
+          "question": "浏览器支持所有系统吗？",
+          "answer": "Ego Lite 支持 macOS 和 Windows，Linux 仍在路线图中。应按平台下载并完成引导，Skill 本身不提供浏览器安装包。"
+        },
+        {
+          "question": "MIT 仓库许可覆盖什么？",
+          "answer": "它管理公开工具源码，捆绑浏览器组件及二进制分发条款需另查，不能作更广许可承诺。"
+        },
+        {
+          "question": "连接指引从哪里取得？",
+          "answer": "使用匹配安装版本的官方 ego-browser Skill 与产品文档，社区录屏或测试不是配置说明替代。"
+        }
+      ],
+      "ctaTitle": "了解 Ego Lite",
+      "ctaDescription": "人机共用 Agent 浏览器 — 带来源、已核对账号及缺失项的摘要。",
+      "ctaPrimary": {
+        "label": "查看 Ego Lite 指南",
+        "href": "/zh/skills-marketplace/citrolabs/ego-lite"
+      }
+    }
+  },
+  "browseros-ai": {
+    "name": "BrowserOS",
+    "type": "Organization",
+    "profileUrl": "https://github.com/browseros-ai",
+    "logo": "/blog/brand/publishers/browseros-ai.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/browseros-ai",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.browseros.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "BrowserOS",
+        "url": "https://github.com/browseros-ai/BrowserOS",
+        "en": {
+          "kind": "Agent browser with local MCP",
+          "description": "Use BrowserOS neo’s local MCP endpoint from Floatboat or another MCP host. Keep the browser product, the external-agent connection, and the official browseros-neo Skill in one workflow."
+        },
+        "zh": {
+          "kind": "带本地 MCP 的 Agent 浏览器",
+          "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "BrowserOS: Agent Browser and Local MCP Tools",
+      "seoDescription": "Publishes BrowserOS and neo’s external-agent MCP connection, with browser-specific Skills and client setup documentation.",
+      "heroTitle": "BrowserOS",
+      "heroDescription": "Publishes BrowserOS and neo’s external-agent MCP connection, with browser-specific Skills and client setup documentation.",
+      "overview": {
+        "title": "About BrowserOS",
+        "paragraphs": [
+          "The browseros-ai organization maintains BrowserOS, an agentic browser project. Its neo documentation describes a local MCP server for external tools, including coding agents, alongside the browser’s own interface.",
+          "Publisher identity, browser generation, and client configuration are separate facts. Use current neo documentation and official browseros-neo instructions together, and inspect the browser version before applying older extension tutorials."
+        ]
+      },
+      "aboutTitle": "About BrowserOS",
+      "about": "The browseros-ai organization maintains BrowserOS, an agentic browser project. Its neo documentation describes a local MCP server for external tools, including coding agents, alongside the browser’s own interface. Publisher identity, browser generation, and client configuration are separate facts. Use current neo documentation and official browseros-neo instructions together, and inspect the browser version before applying older extension tutorials.",
+      "projectsTitle": "Software from BrowserOS",
+      "projectsIntro": "Publishes BrowserOS and neo’s external-agent MCP connection, with browser-specific Skills and client setup documentation.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
+      "faq": [
+        {
+          "question": "Which repository is the upstream browser?",
+          "answer": "The BrowserOS repository under browseros-ai is the source linked here. A third-party MCP wrapper with a similar name is not automatically maintained by that organization."
+        },
+        {
+          "question": "Does the project expose external tools?",
+          "answer": "The neo documentation provides local MCP access and explicitly lists supported coding clients, including Cursor and Codex. This is distinct from its internal assistant UI."
+        },
+        {
+          "question": "Where is the official Skill maintained?",
+          "answer": "The browseros-neo Skill is in the BrowserOS repository. Use it with matching neo configuration rather than treating it as a separate browser release."
+        },
+        {
+          "question": "Is every BrowserOS tutorial current for neo?",
+          "answer": "No. Browser generations and connection mechanisms can change. Start with the installed browser’s MCP panel and current upstream guide."
+        },
+        {
+          "question": "What is the repository license?",
+          "answer": "The current repository is AGPL-3.0. Review distribution or modification obligations separately from the account and model configuration used for a browsing task."
+        },
+        {
+          "question": "Does local MCP prove local-only AI?",
+          "answer": "No. It describes the browser connection endpoint. The external host’s model and its content processing remain a separate configuration decision."
+        }
+      ],
+      "ctaTitle": "Explore BrowserOS",
+      "ctaDescription": "Agent browser with local MCP — A connection check with visible tools, page title, and one observed interaction.",
+      "ctaPrimary": {
+        "label": "Open BrowserOS guide",
+        "href": "/skills-marketplace/browseros-ai/browseros"
+      }
+    },
+    "zh": {
+      "seoTitle": "BrowserOS：Agent 浏览器与本地 MCP 工具",
+      "seoDescription": "发布 BrowserOS、neo 外部 Agent MCP 连接及浏览器专属 Skills 和客户端配置文档。",
+      "heroTitle": "BrowserOS",
+      "heroDescription": "发布 BrowserOS、neo 外部 Agent MCP 连接及浏览器专属 Skills 和客户端配置文档。",
+      "overview": {
+        "title": "关于 BrowserOS",
+        "paragraphs": [
+          "browseros-ai 组织维护 Agent 浏览器 BrowserOS。neo 文档在浏览器自身界面之外，为编码 Agent 等外部工具说明本地 MCP 服务。",
+          "发布者身份、浏览器代际和客户端配置是不同事实。当前 neo 文档应与官方 browseros-neo 指引配合使用，应用旧扩展教程前先核对浏览器版本。"
+        ]
+      },
+      "aboutTitle": "关于 BrowserOS",
+      "about": "browseros-ai 组织维护 Agent 浏览器 BrowserOS。neo 文档在浏览器自身界面之外，为编码 Agent 等外部工具说明本地 MCP 服务。 发布者身份、浏览器代际和客户端配置是不同事实。当前 neo 文档应与官方 browseros-neo 指引配合使用，应用旧扩展教程前先核对浏览器版本。",
+      "projectsTitle": "BrowserOS 的软件作品",
+      "projectsIntro": "发布 BrowserOS、neo 外部 Agent MCP 连接及浏览器专属 Skills 和客户端配置文档。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
+      "faq": [
+        {
+          "question": "哪个仓库是上游浏览器？",
+          "answer": "这里链接 browseros-ai 下的 BrowserOS，同名第三方 MCP 包装不自动属于该组织。"
+        },
+        {
+          "question": "项目提供外部工具入口吗？",
+          "answer": "neo 文档提供本地 MCP 并列出 Cursor、Codex 等客户端，与内部助手界面不同。"
+        },
+        {
+          "question": "官方 Skill 维护在哪里？",
+          "answer": "browseros-neo Skill 位于 BrowserOS 仓库，应匹配 neo 配置使用，不是另一浏览器发布版本。"
+        },
+        {
+          "question": "所有 BrowserOS 教程都适用 neo 吗？",
+          "answer": "不是。浏览器代际和连接机制可能变化，应从安装版本 MCP 面板及当前上游指南开始。"
+        },
+        {
+          "question": "仓库使用什么许可？",
+          "answer": "当前仓库采用 AGPL-3.0，分发或修改义务与浏览任务的账号及模型配置分别核对。"
+        },
+        {
+          "question": "本地 MCP 能证明 AI 只在本机吗？",
+          "answer": "不能。它描述浏览器连接端点，外部宿主模型及内容处理仍取决于独立配置。"
+        }
+      ],
+      "ctaTitle": "了解 BrowserOS",
+      "ctaDescription": "带本地 MCP 的 Agent 浏览器 — 包含可见工具、页面标题与一次交互的连接检查。",
+      "ctaPrimary": {
+        "label": "查看 BrowserOS 指南",
+        "href": "/zh/skills-marketplace/browseros-ai/browseros"
+      }
+    }
+  },
+  "browsermcp": {
+    "name": "Browser MCP",
+    "type": "Organization",
+    "profileUrl": "https://github.com/BrowserMCP",
+    "logo": "/blog/brand/publishers/browsermcp.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/BrowserMCP",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://browsermcp.io",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Browser MCP",
+        "url": "https://github.com/BrowserMCP/mcp",
+        "en": {
+          "kind": "MCP server and Chrome extension",
+          "description": "Connect a local MCP server and Chrome extension so an agent can use your existing browser profile. Pair the extension deliberately, then work in task tabs with the selected account."
+        },
+        "zh": {
+          "kind": "MCP 服务与 Chrome 扩展",
+          "description": "连接本地 MCP 服务与 Chrome 扩展，让 Agent 使用现有浏览器配置。明确配对扩展后，在任务标签页中使用已核对的账号。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Browser MCP: Real-Chrome MCP Server and Extension",
+      "seoDescription": "Maintains Browser MCP’s local server and Chrome extension, connecting coding agents to approved existing browser profiles.",
+      "heroTitle": "Browser MCP",
+      "heroDescription": "Maintains Browser MCP’s local server and Chrome extension, connecting coding agents to approved existing browser profiles.",
+      "overview": {
+        "title": "About Browser MCP",
+        "paragraphs": [
+          "The BrowserMCP organization maintains the Browser MCP server and companion Chrome extension. Their shared purpose is letting AI applications operate a real browser profile through a deliberately paired local connection.",
+          "The name describes this project, not every browser MCP implementation. Verify the organization, package, extension, and matching documentation together before granting a coding agent access to a signed-in browser."
+        ]
+      },
+      "aboutTitle": "About Browser MCP",
+      "about": "The BrowserMCP organization maintains the Browser MCP server and companion Chrome extension. Their shared purpose is letting AI applications operate a real browser profile through a deliberately paired local connection. The name describes this project, not every browser MCP implementation. Verify the organization, package, extension, and matching documentation together before granting a coding agent access to a signed-in browser.",
+      "projectsTitle": "Software from Browser MCP",
+      "projectsIntro": "Maintains Browser MCP’s local server and Chrome extension, connecting coding agents to approved existing browser profiles.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "Is Browser MCP a Microsoft project?",
+          "answer": "No. The linked project is published by BrowserMCP. Microsoft’s Playwright MCP is a different repository and installation path."
+        },
+        {
+          "question": "What components does the publisher maintain?",
+          "answer": "The repository includes the MCP server, local daemon, protocol, and Chrome-extension source. They form one browser connection workflow."
+        },
+        {
+          "question": "Is the extension necessary for real Chrome use?",
+          "answer": "The documented workflow uses the official extension with the local MCP server. A random browser extension or a server-only config is not equivalent."
+        },
+        {
+          "question": "Does this publisher supply an official Skill?",
+          "answer": "The main repository does not document an end-user Skill. The verified entry points are the server, extension, and official configuration documentation."
+        },
+        {
+          "question": "Can modified copies use the same branding?",
+          "answer": "Read the source license and branding notes. The project asks published modified extensions or servers to use a different name and icon so they are not confused with the official release."
+        },
+        {
+          "question": "Where should the connection be verified?",
+          "answer": "Use the extension’s pairing control and the official client instructions. Confirm the code and browser profile before reading any signed-in account content."
+        }
+      ],
+      "ctaTitle": "Explore Browser MCP",
+      "ctaDescription": "MCP server and Chrome extension — A report summary with account context, selected period, and source pages.",
+      "ctaPrimary": {
+        "label": "Open Browser MCP guide",
+        "href": "/skills-marketplace/browsermcp/browser-mcp"
+      }
+    },
+    "zh": {
+      "seoTitle": "Browser MCP：真实 Chrome 的 MCP 服务与扩展",
+      "seoDescription": "维护本地 MCP 服务与 Chrome 扩展，让编码 Agent 连接获准的现有浏览器配置。",
+      "heroTitle": "Browser MCP",
+      "heroDescription": "维护本地 MCP 服务与 Chrome 扩展，让编码 Agent 连接获准的现有浏览器配置。",
+      "overview": {
+        "title": "关于 Browser MCP",
+        "paragraphs": [
+          "BrowserMCP 组织维护 Browser MCP 服务与配套 Chrome 扩展，两者通过明确配对的本地连接，让 AI 应用操作真实浏览器配置。",
+          "该名称指此项目，不代表所有浏览器 MCP 实现。允许编码 Agent 访问已登录浏览器前，需一起核对组织、包、扩展与对应文档。"
+        ]
+      },
+      "aboutTitle": "关于 Browser MCP",
+      "about": "BrowserMCP 组织维护 Browser MCP 服务与配套 Chrome 扩展，两者通过明确配对的本地连接，让 AI 应用操作真实浏览器配置。 该名称指此项目，不代表所有浏览器 MCP 实现。允许编码 Agent 访问已登录浏览器前，需一起核对组织、包、扩展与对应文档。",
+      "projectsTitle": "Browser MCP 的软件作品",
+      "projectsIntro": "维护本地 MCP 服务与 Chrome 扩展，让编码 Agent 连接获准的现有浏览器配置。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "Browser MCP 是 Microsoft 项目吗？",
+          "answer": "不是。链接项目由 BrowserMCP 发布，Microsoft 的 Playwright MCP 是另一仓库与安装路径。"
+        },
+        {
+          "question": "发布者维护哪些组件？",
+          "answer": "仓库包含 MCP 服务、本地守护进程、协议及 Chrome 扩展源码，组成一套浏览器连接流程。"
+        },
+        {
+          "question": "使用真实 Chrome 需要扩展吗？",
+          "answer": "文档流程需要官方扩展与本地 MCP 配合，随机扩展或只有服务配置不等价。"
+        },
+        {
+          "question": "发布者提供官方 Skill 吗？",
+          "answer": "未在主仓确认用户 Skill，已核实入口是服务、扩展与官方配置文档。"
+        },
+        {
+          "question": "修改副本可以沿用相同品牌吗？",
+          "answer": "需阅读源码许可和品牌说明；项目要求公开修改扩展或服务使用不同名称和图标，以免与官方版本混淆。"
+        },
+        {
+          "question": "在哪里验证连接？",
+          "answer": "按扩展配对控制及官方客户端指引，先核对配对码和浏览器配置，再读取登录账号内容。"
+        }
+      ],
+      "ctaTitle": "了解 Browser MCP",
+      "ctaDescription": "MCP 服务与 Chrome 扩展 — 包含账号、周期和来源页的报告摘要。",
+      "ctaPrimary": {
+        "label": "查看 Browser MCP 指南",
+        "href": "/zh/skills-marketplace/browsermcp/browser-mcp"
+      }
+    }
+  },
+  "pinchtab": {
+    "name": "PinchTab",
+    "type": "Organization",
+    "profileUrl": "https://github.com/pinchtab",
+    "logo": "/blog/brand/publishers/pinchtab.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/pinchtab",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://pinchtab.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "PinchTab",
+        "url": "https://github.com/pinchtab/pinchtab",
+        "en": {
+          "kind": "Browser control server",
+          "description": "Run a local browser control plane and call it through CLI, HTTP, or MCP. PinchTab separates profiles, browser instances, and task tabs, with an official Skill for coding agents."
+        },
+        "zh": {
+          "kind": "浏览器控制服务",
+          "description": "运行本地浏览器控制服务，通过 CLI、HTTP 或 MCP 调用。PinchTab 区分配置、浏览器实例与任务标签页，并提供编码 Agent 的官方 Skill。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "PinchTab: Browser Control and Instance Orchestration",
+      "seoDescription": "Maintains a browser control server with CLI, HTTP, MCP, and official Skills, focusing on profiles, instances, and task sessions.",
+      "heroTitle": "PinchTab",
+      "heroDescription": "Maintains a browser control server with CLI, HTTP, MCP, and official Skills, focusing on profiles, instances, and task sessions.",
+      "overview": {
+        "title": "About PinchTab",
+        "paragraphs": [
+          "The pinchtab organization publishes a browser control service and its agent interfaces. The project combines local runtime management with browser actions, giving coding agents a shared control plane instead of a new language-model assistant.",
+          "Its CLI, MCP layer, and bundled Skills belong to the same project. The documentation treats remote exposure and high-risk capabilities as explicit operator decisions; the project guide explains setup and task boundaries."
+        ]
+      },
+      "aboutTitle": "About PinchTab",
+      "about": "The pinchtab organization publishes a browser control service and its agent interfaces. The project combines local runtime management with browser actions, giving coding agents a shared control plane instead of a new language-model assistant. Its CLI, MCP layer, and bundled Skills belong to the same project. The documentation treats remote exposure and high-risk capabilities as explicit operator decisions; the project guide explains setup and task boundaries.",
+      "projectsTitle": "Software from PinchTab",
+      "projectsIntro": "Maintains a browser control server with CLI, HTTP, MCP, and official Skills, focusing on profiles, instances, and task sessions.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find official interface documentation and any companion agent instructions in the project guide.",
+      "faq": [
+        {
+          "question": "Who maintains the official PinchTab source?",
+          "answer": "Use the pinchtab/pinchtab repository and the linked project site. Community MCP wrappers should retain their own maintainer identity."
+        },
+        {
+          "question": "Is PinchTab a Chrome fork?",
+          "answer": "The project is a control server and instance orchestrator that drives a selected browser. Its runtime and the browser binary are different components."
+        },
+        {
+          "question": "Are the CLI and MCP separate products?",
+          "answer": "They are interfaces to the PinchTab control plane. Their task identifiers and security settings need to remain consistent when used in one workflow."
+        },
+        {
+          "question": "Which Skills are for normal task use?",
+          "answer": "Use official operating or MCP guidance as documented. Repository-development Skills target contribution work and should not be substituted for browser-task instructions."
+        },
+        {
+          "question": "Does MIT licensing permit public endpoint exposure?",
+          "answer": "The code license does not establish a secure deployment. The project documents a controlled local model and separate responsibilities for remote operation."
+        },
+        {
+          "question": "How should package updates be checked?",
+          "answer": "Read release notes and compare bundled Skill versions before updating a long-running task environment. Recheck profile and tool behavior when the runtime changes."
+        }
+      ],
+      "ctaTitle": "Explore PinchTab",
+      "ctaDescription": "Browser control server — A lookup record with profile, tab, period, and source values.",
+      "ctaPrimary": {
+        "label": "Open PinchTab guide",
+        "href": "/skills-marketplace/pinchtab/pinchtab"
+      }
+    },
+    "zh": {
+      "seoTitle": "PinchTab：浏览器控制与实例编排",
+      "seoDescription": "维护带 CLI、HTTP、MCP 和官方 Skills 的浏览器控制服务，管理配置、实例和任务会话。",
+      "heroTitle": "PinchTab",
+      "heroDescription": "维护带 CLI、HTTP、MCP 和官方 Skills 的浏览器控制服务，管理配置、实例和任务会话。",
+      "overview": {
+        "title": "关于 PinchTab",
+        "paragraphs": [
+          "pinchtab 组织发布浏览器控制服务及 Agent 接口，将本地运行管理与浏览器动作结合，为编码 Agent 提供控制层，而非另一个模型助手。",
+          "CLI、MCP 层和捆绑 Skills 属于同一项目。文档将远程暴露与高风险能力作为操作者的明确决定，项目指南解释配置与任务边界。"
+        ]
+      },
+      "aboutTitle": "关于 PinchTab",
+      "about": "pinchtab 组织发布浏览器控制服务及 Agent 接口，将本地运行管理与浏览器动作结合，为编码 Agent 提供控制层，而非另一个模型助手。 CLI、MCP 层和捆绑 Skills 属于同一项目。文档将远程暴露与高风险能力作为操作者的明确决定，项目指南解释配置与任务边界。",
+      "projectsTitle": "PinchTab 的软件作品",
+      "projectsIntro": "维护带 CLI、HTTP、MCP 和官方 Skills 的浏览器控制服务，管理配置、实例和任务会话。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方接口文档及配套 Agent 指引。",
+      "faq": [
+        {
+          "question": "官方 PinchTab 源码由谁维护？",
+          "answer": "使用 pinchtab/pinchtab 仓库及项目网站，社区 MCP 包装需保留其维护者身份。"
+        },
+        {
+          "question": "PinchTab 是 Chrome 分支吗？",
+          "answer": "项目是驱动所选浏览器的控制服务与实例编排层，运行服务与浏览器二进制是不同组件。"
+        },
+        {
+          "question": "CLI 和 MCP 是不同产品吗？",
+          "answer": "它们是同一控制层的接口，同一流程中的任务标识与安全设置应一致。"
+        },
+        {
+          "question": "哪些 Skill 用于日常任务？",
+          "answer": "按文档使用官方操作或 MCP 指引，仓库开发 Skill 面向贡献工作，不应替代浏览器任务指令。"
+        },
+        {
+          "question": "MIT 许可意味着可以公开端点吗？",
+          "answer": "源码许可不证明部署安全，项目说明受控的本地部署方式，并对远程运行列明独立责任。"
+        },
+        {
+          "question": "怎样检查包更新？",
+          "answer": "长期任务环境更新前应看发布记录并比较 Skill 版本，运行环境变化后重新核对配置与工具行为。"
+        }
+      ],
+      "ctaTitle": "了解 PinchTab",
+      "ctaDescription": "浏览器控制服务 — 记录配置、标签、周期及来源数值的查询结果。",
+      "ctaPrimary": {
+        "label": "查看 PinchTab 指南",
+        "href": "/zh/skills-marketplace/pinchtab/pinchtab"
+      }
+    }
+  },
+  "browser-use": {
+    "name": "Browser Use",
+    "type": "Organization",
+    "profileUrl": "https://github.com/browser-use",
+    "logo": "/blog/brand/publishers/browser-use.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/browser-use",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://browser-use.com",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Browser Use",
+        "url": "https://github.com/browser-use/browser-use",
+        "en": {
+          "kind": "Browser agent framework",
+          "description": "Give an agent a local or cloud browser for multi-step web tasks. Choose the coding-agent CLI or Python framework, then inspect the resulting page and output."
+        },
+        "zh": {
+          "kind": "浏览器 Agent 框架",
+          "description": "为 Agent 提供本地或云端浏览器，完成多步骤网页任务。按工作方式选择编码 Agent CLI 或 Python 框架，并检查最终页面及交付结果。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Browser Use: Browser Agent Tools and Cloud Services",
+      "seoDescription": "Maintains Browser Use and its coding-agent tooling, with local browser control, a Python framework, and hosted browser services.",
+      "heroTitle": "Browser Use",
+      "heroDescription": "Maintains Browser Use and its coding-agent tooling, with local browser control, a Python framework, and hosted browser services.",
+      "overview": {
+        "title": "About Browser Use",
+        "paragraphs": [
+          "The browser-use GitHub organization publishes Browser Use and related tools for browser agents. Its public repositories distinguish the core framework, coding-agent packaging, and supporting browser work rather than representing a single installable Skill.",
+          "Use the organization’s official repository and website to identify the current entry point. Local code, a client plugin, and Browser Use Cloud have different setup and service conditions; this publisher page links the project guide where those choices are explained."
+        ]
+      },
+      "aboutTitle": "About Browser Use",
+      "about": "The browser-use GitHub organization publishes Browser Use and related tools for browser agents. Its public repositories distinguish the core framework, coding-agent packaging, and supporting browser work rather than representing a single installable Skill. Use the organization’s official repository and website to identify the current entry point. Local code, a client plugin, and Browser Use Cloud have different setup and service conditions; this publisher page links the project guide where those choices are explained.",
+      "projectsTitle": "Software from Browser Use",
+      "projectsIntro": "Maintains Browser Use and its coding-agent tooling, with local browser control, a Python framework, and hosted browser services.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
+      "faq": [
+        {
+          "question": "Who publishes Browser Use?",
+          "answer": "The browser-use organization maintains the linked upstream project and companion repositories. Verify the repository owner rather than assuming similarly named ports are maintained by the same team."
+        },
+        {
+          "question": "Does every Browser Use repository contain the same software?",
+          "answer": "No. Core framework, plugins, and supporting browser tooling have different roles. Follow the main project’s current documentation before choosing a package."
+        },
+        {
+          "question": "Are plugins and the Python library interchangeable?",
+          "answer": "Plugins package a host connection; the Python library supports application development. Their release and setup instructions need to be checked separately."
+        },
+        {
+          "question": "Does an official plugin cover every coding agent?",
+          "answer": "Plugin support is host-specific. A CLI or MCP path can exist even when a particular plugin package has not added that host."
+        },
+        {
+          "question": "Does the source license include Browser Use Cloud?",
+          "answer": "The core repository’s MIT license is separate from hosted-service terms and model usage. Inspect the actual service selected for the task."
+        },
+        {
+          "question": "Where should a stale setup example be checked?",
+          "answer": "Use the project README, current documentation, and release history under the official organization before adopting a third-party installation guide."
+        }
+      ],
+      "ctaTitle": "Explore Browser Use",
+      "ctaDescription": "Browser agent framework — A comparison with source URLs, missing fields, and observed values.",
+      "ctaPrimary": {
+        "label": "Open Browser Use guide",
+        "href": "/skills-marketplace/browser-use/browser-use"
+      }
+    },
+    "zh": {
+      "seoTitle": "Browser Use：浏览器 Agent 工具与云服务",
+      "seoDescription": "维护 Browser Use 与编码 Agent 工具，覆盖本地浏览器控制、Python 框架和托管服务。",
+      "heroTitle": "Browser Use",
+      "heroDescription": "维护 Browser Use 与编码 Agent 工具，覆盖本地浏览器控制、Python 框架和托管服务。",
+      "overview": {
+        "title": "关于 Browser Use",
+        "paragraphs": [
+          "browser-use GitHub 组织发布 Browser Use 及相关浏览器 Agent 工具。公开仓库区分核心框架、编码 Agent 打包与浏览器配套工作，不应将整个组织视为单个可安装 Skill。",
+          "通过组织官方仓库与网站识别当前入口。本地代码、客户端插件与 Browser Use Cloud 的配置和服务条件不同，具体选择由下方项目指南说明。"
+        ]
+      },
+      "aboutTitle": "关于 Browser Use",
+      "about": "browser-use GitHub 组织发布 Browser Use 及相关浏览器 Agent 工具。公开仓库区分核心框架、编码 Agent 打包与浏览器配套工作，不应将整个组织视为单个可安装 Skill。 通过组织官方仓库与网站识别当前入口。本地代码、客户端插件与 Browser Use Cloud 的配置和服务条件不同，具体选择由下方项目指南说明。",
+      "projectsTitle": "Browser Use 的软件作品",
+      "projectsIntro": "维护 Browser Use 与编码 Agent 工具，覆盖本地浏览器控制、Python 框架和托管服务。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
+      "faq": [
+        {
+          "question": "Browser Use 由谁发布？",
+          "answer": "链接中的上游项目及配套仓库由 browser-use 组织维护，同名移植项目需核对 owner，不能视为同一团队。"
+        },
+        {
+          "question": "各仓库都包含同一软件吗？",
+          "answer": "不是。核心框架、插件和浏览器配套工具职责不同，应先按主项目当前文档选择包。"
+        },
+        {
+          "question": "插件和 Python 库可以互换吗？",
+          "answer": "插件打包宿主连接，Python 库用于应用开发，发布与配置说明需分别核对。"
+        },
+        {
+          "question": "官方插件覆盖所有编码 Agent 吗？",
+          "answer": "插件支持依宿主而定，某插件尚未支持某宿主时，仍可能有 CLI 或 MCP 路径。"
+        },
+        {
+          "question": "源码许可包含 Browser Use Cloud 吗？",
+          "answer": "核心仓库 MIT 与托管服务、模型用量条款分开，应按实际选择的服务核对。"
+        },
+        {
+          "question": "配置示例过期时去哪里核对？",
+          "answer": "先查看组织下的项目 README、当前文档与发布历史，再决定是否采用第三方安装指南。"
+        }
+      ],
+      "ctaTitle": "了解 Browser Use",
+      "ctaDescription": "浏览器 Agent 框架 — 附来源、缺失项和实际值的比较表。",
+      "ctaPrimary": {
+        "label": "查看 Browser Use 指南",
+        "href": "/zh/skills-marketplace/browser-use/browser-use"
+      }
+    }
+  },
+  "browserbase": {
+    "name": "Browserbase",
+    "type": "Organization",
+    "profileUrl": "https://github.com/browserbase",
+    "logo": "/blog/brand/publishers/browserbase.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/browserbase",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://www.stagehand.dev",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Stagehand",
+        "url": "https://github.com/browserbase/stagehand",
+        "en": {
+          "kind": "Browser SDK and agent CLI",
+          "description": "Use Stagehand when a browser workflow needs both explicit code and language-driven interaction. Coding agents can start with the browse CLI and official Skill; reusable applications can use the SDK."
+        },
+        "zh": {
+          "kind": "浏览器 SDK 与 Agent CLI",
+          "description": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Browserbase: Stagehand and Browser Infrastructure",
+      "seoDescription": "Builds Stagehand and browser infrastructure, connecting deterministic code, agent interaction, and local or hosted browser workflows.",
+      "heroTitle": "Browserbase",
+      "heroDescription": "Builds Stagehand and browser infrastructure, connecting deterministic code, agent interaction, and local or hosted browser workflows.",
+      "overview": {
+        "title": "About Browserbase",
+        "paragraphs": [
+          "Browserbase publishes Stagehand and supporting browser tooling. Stagehand is an open-source automation project within a broader browser-service ecosystem; the organization identity should not be confused with one SDK package or one MCP endpoint.",
+          "The current project README is the entry point for choosing browse CLI, SDK, or hosted MCP. Older MCP repositories and major-version examples remain historical material, so follow current links before using a copied configuration."
+        ]
+      },
+      "aboutTitle": "About Browserbase",
+      "about": "Browserbase publishes Stagehand and supporting browser tooling. Stagehand is an open-source automation project within a broader browser-service ecosystem; the organization identity should not be confused with one SDK package or one MCP endpoint. The current project README is the entry point for choosing browse CLI, SDK, or hosted MCP. Older MCP repositories and major-version examples remain historical material, so follow current links before using a copied configuration.",
+      "projectsTitle": "Software from Browserbase",
+      "projectsIntro": "Builds Stagehand and browser infrastructure, connecting deterministic code, agent interaction, and local or hosted browser workflows.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
+      "faq": [
+        {
+          "question": "How are Browserbase and Stagehand related?",
+          "answer": "Browserbase maintains Stagehand, the browser automation framework, and provides hosted browser infrastructure. Stagehand can work with local browsers or Browserbase sessions; using the framework does not by itself require a hosted browser account."
+        },
+        {
+          "question": "Is Stagehand the company name?",
+          "answer": "Stagehand is the project name; Browserbase is the publishing organization and service brand. Keep repository and product identities distinct."
+        },
+        {
+          "question": "Which MCP documentation is current?",
+          "answer": "Follow links from the current Stagehand README. The older mcp-server-browserbase repository is archived and should not be the default installation source."
+        },
+        {
+          "question": "What is the browse Skill for?",
+          "answer": "It teaches a coding agent to use the browse CLI. It is a companion entry point for browser tasks, not an additional hosted browser entitlement."
+        },
+        {
+          "question": "Does local use always require a subscription?",
+          "answer": "The documented local browse mode differs from hosted Browserbase sessions. Check the chosen interface rather than applying cloud billing assumptions to all project use."
+        },
+        {
+          "question": "How should older examples be interpreted?",
+          "answer": "Treat them as version-specific. Confirm the installed Stagehand major and current API before translating an old example into a maintained workflow."
+        }
+      ],
+      "ctaTitle": "Explore Stagehand",
+      "ctaDescription": "Browser SDK and agent CLI — A step-by-step browser flow with observed states and an isolated dynamic action.",
+      "ctaPrimary": {
+        "label": "Open Stagehand guide",
+        "href": "/skills-marketplace/browserbase/stagehand"
+      }
+    },
+    "zh": {
+      "seoTitle": "Browserbase：Stagehand 与浏览器基础设施",
+      "seoDescription": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
+      "heroTitle": "Browserbase",
+      "heroDescription": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
+      "overview": {
+        "title": "关于 Browserbase",
+        "paragraphs": [
+          "Browserbase 发布 Stagehand 和配套浏览器工具。Stagehand 是更广浏览器服务生态中的开源自动化项目，组织身份不能与某个 SDK 包或 MCP 端点混为一谈。",
+          "当前项目 README 用于选择 browse CLI、SDK 或托管 MCP。旧 MCP 仓库与大版本示例属于历史材料，使用复制配置前应先核对当前链接。"
+        ]
+      },
+      "aboutTitle": "关于 Browserbase",
+      "about": "Browserbase 发布 Stagehand 和配套浏览器工具。Stagehand 是更广浏览器服务生态中的开源自动化项目，组织身份不能与某个 SDK 包或 MCP 端点混为一谈。 当前项目 README 用于选择 browse CLI、SDK 或托管 MCP。旧 MCP 仓库与大版本示例属于历史材料，使用复制配置前应先核对当前链接。",
+      "projectsTitle": "Browserbase 的软件作品",
+      "projectsIntro": "开发 Stagehand 与浏览器基础设施，连接确定性代码、Agent 交互及本地或托管流程。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
+      "faq": [
+        {
+          "question": "Browserbase 和 Stagehand 是什么关系？",
+          "answer": "Browserbase 维护浏览器自动化框架 Stagehand，同时提供托管浏览器基础设施。Stagehand 可以使用本地浏览器或 Browserbase 会话，使用框架本身不等于必须开通托管浏览器账号。"
+        },
+        {
+          "question": "Stagehand 是公司名称吗？",
+          "answer": "Stagehand 是项目名称，Browserbase 是发布组织和服务品牌，仓库与产品身份应区分。"
+        },
+        {
+          "question": "哪份 MCP 文档应优先使用？",
+          "answer": "优先跟随当前 Stagehand README 链接，旧 mcp-server-browserbase 仓库已归档，不应默认作为安装来源。"
+        },
+        {
+          "question": "browse Skill 做什么？",
+          "answer": "它指导编码 Agent 使用 browse CLI，是任务入口，不是额外的托管浏览器额度。"
+        },
+        {
+          "question": "本地使用一定要订阅吗？",
+          "answer": "文档中的本地 browse 模式与托管会话不同，应按所选入口核对，不把云端计费套用于所有使用。"
+        },
+        {
+          "question": "如何对待旧版示例？",
+          "answer": "旧示例与版本绑定，转入维护流程前应确认 Stagehand 大版本及当前 API。"
+        }
+      ],
+      "ctaTitle": "了解 Stagehand",
+      "ctaDescription": "浏览器 SDK 与 Agent CLI — 包含实际状态并单独处理动态动作的浏览器流程。",
+      "ctaPrimary": {
+        "label": "查看 Stagehand 指南",
+        "href": "/zh/skills-marketplace/browserbase/stagehand"
+      }
+    }
+  },
+  "chromedevtools": {
+    "name": "Chrome DevTools",
+    "type": "Organization",
+    "profileUrl": "https://github.com/ChromeDevTools",
+    "logo": "/blog/brand/publishers/chromedevtools.webp",
+    "tags": {
+      "en": [
+        "Browser tools",
+        "Agent interfaces"
+      ],
+      "zh": [
+        "浏览器工具",
+        "Agent 接口"
+      ]
+    },
+    "links": [
+      {
+        "href": "https://github.com/ChromeDevTools",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      },
+      {
+        "href": "https://developer.chrome.com/docs/devtools",
+        "label": {
+          "en": "Project website",
+          "zh": "项目官网"
+        }
+      }
+    ],
+    "projects": [
+      {
+        "name": "Chrome DevTools MCP",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "en": {
+          "kind": "Chrome inspection MCP server",
+          "description": "Let a coding agent inspect live Chrome with console, network, performance, and page tools. Use the evidence to diagnose a particular failure rather than treating a screenshot as the whole investigation."
+        },
+        "zh": {
+          "kind": "Chrome 检查 MCP 服务",
+          "description": "让编码 Agent 通过控制台、网络、性能和页面工具检查运行中的 Chrome，以具体证据定位故障，而不只依赖截图判断。"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "Chrome DevTools: Browser Diagnostics for Coding Agents",
+      "seoDescription": "Publishes Chrome DevTools MCP and official debugging Skills for browser inspection, runtime evidence, and coding-agent workflows.",
+      "heroTitle": "Chrome DevTools",
+      "heroDescription": "Publishes Chrome DevTools MCP and official debugging Skills for browser inspection, runtime evidence, and coding-agent workflows.",
+      "overview": {
+        "title": "About Chrome DevTools",
+        "paragraphs": [
+          "The ChromeDevTools organization publishes tools around Chrome’s developer diagnostics, including chrome-devtools-mcp. The project connects coding agents to browser inspection and automation rather than supplying a general-purpose language model.",
+          "Its repository includes the server, client setup, official Skills, and troubleshooting. Follow the configuration and enabled capabilities of the installed release; a server tool, a CLI path, and a usage Skill are related interfaces rather than separate publishers."
+        ]
+      },
+      "aboutTitle": "About Chrome DevTools",
+      "about": "The ChromeDevTools organization publishes tools around Chrome’s developer diagnostics, including chrome-devtools-mcp. The project connects coding agents to browser inspection and automation rather than supplying a general-purpose language model. Its repository includes the server, client setup, official Skills, and troubleshooting. Follow the configuration and enabled capabilities of the installed release; a server tool, a CLI path, and a usage Skill are related interfaces rather than separate publishers.",
+      "projectsTitle": "Software from Chrome DevTools",
+      "projectsIntro": "Publishes Chrome DevTools MCP and official debugging Skills for browser inspection, runtime evidence, and coding-agent workflows.",
+      "skillsTitle": "Official Skill guides",
+      "skillsIntro": "Find the official companion instructions and their runtime requirements in the project guide.",
+      "faq": [
+        {
+          "question": "Which organization owns the MCP repository?",
+          "answer": "The linked chrome-devtools-mcp repository is owned by ChromeDevTools on GitHub. Use that owner identity to distinguish official source from similarly named wrappers."
+        },
+        {
+          "question": "Is this page about Chrome itself?",
+          "answer": "It identifies the DevTools publisher and the agent-facing MCP project. Browser installation and browser licensing remain separate from the MCP package."
+        },
+        {
+          "question": "Are the debugging Skills official?",
+          "answer": "The usage and specialized debugging Skills are maintained inside the same upstream repository, rather than inferred from a third-party skills directory."
+        },
+        {
+          "question": "Does slim mode expose the same tools?",
+          "answer": "No. Configuration changes the available surface. The full browser Skill has explicit scope limits, so match instructions to the tools actually enabled."
+        },
+        {
+          "question": "What license applies to the MCP code?",
+          "answer": "The repository uses Apache-2.0. That license does not determine the terms of the host’s model provider or all installed Chrome components."
+        },
+        {
+          "question": "Where should launch failures be investigated?",
+          "answer": "Start with the official troubleshooting guide and the installed version’s options. Report the Chrome connection and runtime conditions without including personal browsing data."
+        }
+      ],
+      "ctaTitle": "Explore Chrome DevTools MCP",
+      "ctaDescription": "Chrome inspection MCP server — A request/console timeline with evidence-backed causes and a verification plan.",
+      "ctaPrimary": {
+        "label": "Open Chrome DevTools MCP guide",
+        "href": "/skills-marketplace/chromedevtools/chrome-devtools-mcp"
+      }
+    },
+    "zh": {
+      "seoTitle": "Chrome DevTools：面向编码 Agent 的浏览器诊断",
+      "seoDescription": "发布 Chrome DevTools MCP 与官方调试 Skills，提供浏览器检查、运行证据及编码 Agent 工作流。",
+      "heroTitle": "Chrome DevTools",
+      "heroDescription": "发布 Chrome DevTools MCP 与官方调试 Skills，提供浏览器检查、运行证据及编码 Agent 工作流。",
+      "overview": {
+        "title": "关于 Chrome DevTools",
+        "paragraphs": [
+          "ChromeDevTools 组织发布 Chrome 开发诊断相关工具，包括 chrome-devtools-mcp。项目连接编码 Agent 与浏览器检查、自动化，不提供通用语言模型。",
+          "仓库包含服务、客户端配置、官方 Skills 和排障资料。应核对实际版本配置与已启用能力；服务工具、CLI 路径和使用 Skill 都属于同一发布者的相关入口。"
+        ]
+      },
+      "aboutTitle": "关于 Chrome DevTools",
+      "about": "ChromeDevTools 组织发布 Chrome 开发诊断相关工具，包括 chrome-devtools-mcp。项目连接编码 Agent 与浏览器检查、自动化，不提供通用语言模型。 仓库包含服务、客户端配置、官方 Skills 和排障资料。应核对实际版本配置与已启用能力；服务工具、CLI 路径和使用 Skill 都属于同一发布者的相关入口。",
+      "projectsTitle": "Chrome DevTools 的软件作品",
+      "projectsIntro": "发布 Chrome DevTools MCP 与官方调试 Skills，提供浏览器检查、运行证据及编码 Agent 工作流。",
+      "skillsTitle": "官方 Skill 指南",
+      "skillsIntro": "在项目指南中查看官方配套指引及其运行环境要求。",
+      "faq": [
+        {
+          "question": "MCP 仓库属于哪个组织？",
+          "answer": "链接中的 chrome-devtools-mcp 属于 GitHub ChromeDevTools 组织，应据此区分官方源码与同名包装。"
+        },
+        {
+          "question": "本页介绍 Chrome 浏览器本体吗？",
+          "answer": "本页介绍 DevTools 发布者和面向 Agent 的 MCP，浏览器安装及许可与 MCP 包需分别核对。"
+        },
+        {
+          "question": "调试 Skills 是官方的吗？",
+          "answer": "使用与专项调试 Skill 维护在同一上游仓库，不是根据第三方目录推断官方身份。"
+        },
+        {
+          "question": "slim 模式提供相同工具吗？",
+          "answer": "不是。配置影响工具范围，完整浏览器 Skill 有明确适用限制，应按实际启用工具选择指引。"
+        },
+        {
+          "question": "MCP 代码采用什么许可？",
+          "answer": "仓库采用 Apache-2.0，它不决定宿主模型提供方或所有 Chrome 组件的条款。"
+        },
+        {
+          "question": "启动失败应在哪里排查？",
+          "answer": "从官方排障指南和安装版本选项开始，说明 Chrome 连接与运行条件，不包含个人浏览数据。"
+        }
+      ],
+      "ctaTitle": "了解 Chrome DevTools MCP",
+      "ctaDescription": "Chrome 检查 MCP 服务 — 请求与控制台时间线、有证据的原因及验证计划。",
+      "ctaPrimary": {
+        "label": "查看 Chrome DevTools MCP 指南",
+        "href": "/zh/skills-marketplace/chromedevtools/chrome-devtools-mcp"
+      }
+    }
   }
 }

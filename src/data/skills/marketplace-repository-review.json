@@ -429,10 +429,24 @@
       "private": false
     },
     "vercel-labs/agent-browser": {
-      "stars": 45588,
+      "stars": 48100,
       "fork": false,
       "archived": false,
-      "private": false
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser CLI for coding agents: Open a page, read a compact accessibility snapshot, and act on element references from the terminal. agent-browser keeps the browser session available across commands.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/vercel-labs/agent-browser/blob/main/README.md",
+          "https://agent-browser.dev"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
     },
     "vercel-labs/agent-desktop": {
       "stars": 16000,
@@ -505,6 +519,264 @@
       "fork": false,
       "archived": false,
       "private": false
+    },
+    "skyvern-ai/skyvern": {
+      "stars": 23367,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser workflow platform: Use Skyvern’s MCP or API for browser operations and multi-step workflows. Choose cloud or self-hosted execution, supply the required credentials, and review the business result rather than only the run status.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/Skyvern-AI/skyvern/blob/main/README.md",
+          "https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/mcp_tools/README.md"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "steel-dev/steel-browser": {
+      "stars": 7939,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser infrastructure and service: Use Steel to provide a browser session for agent work. Compare the open-source browser runtime with Steel’s hosted MCP and official Skills, keeping service authentication and session costs explicit.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/steel-dev/steel-browser/blob/main/README.md",
+          "https://docs.steel.dev/overview/mcp"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "brightdata/brightdata-mcp": {
+      "stars": 2717,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Web data MCP service connector: Connect a coding agent to Bright Data’s web access and data tools. Use its official Skills to choose browser, fetch, search, or extraction workflows, with credentials, product scope, and costs checked separately.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/brightdata/brightdata-mcp/blob/main/README.md",
+          "https://github.com/brightdata/brightdata-mcp#readme"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "lightpanda-io/browser": {
+      "stars": 41654,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Headless browser for agents: Use Lightpanda for headless page access, extraction, and supported interactions through native MCP or official agent guidance. Check compatibility before replacing a full browser, especially for visual or layout-dependent work.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/lightpanda-io/browser/blob/main/README.md",
+          "https://github.com/lightpanda-io/browser#readme"
+        ],
+        "hosts": [
+          "mcp-client"
+        ]
+      }
+    },
+    "unclecode/crawl4ai": {
+      "stars": 87132,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Web crawling and extraction framework: Collect page content for research or data processing through Crawl4AI’s Python, deployed API, or documented MCP interface. Define the crawl boundary and validate extracted fields before using the data.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+          "https://docs.crawl4ai.com"
+        ],
+        "hosts": [
+          "mcp-client"
+        ]
+      }
+    },
+    "citrolabs/ego-lite": {
+      "stars": 22256,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Shared agent browser: Use the ego-browser Skill to let a coding agent work in its own browser Space while you keep your tabs. The documented browser is for macOS and can reuse imported login state.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/citrolabs/ego-lite/blob/main/README.md",
+          "https://www.egolite.app/document/en/docs/product-introduce"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "browseros-ai/browseros": {
+      "stars": 14289,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Agent browser with local MCP: Use BrowserOS neo’s local MCP endpoint from Floatboat or another MCP host. Keep the browser product, the external-agent connection, and the official browseros-neo Skill in one workflow.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/browseros-ai/BrowserOS/blob/main/README.md",
+          "https://github.com/browseros-ai/BrowserOS/blob/main/docs/neo/mcp/index.mdx"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "browsermcp/mcp": {
+      "stars": 7319,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "MCP server and Chrome extension: Connect a local MCP server and Chrome extension so an agent can use your existing browser profile. Pair the extension deliberately, then work in task tabs with the selected account.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/BrowserMCP/mcp/blob/main/README.md",
+          "https://browsermcp.io/docs"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "pinchtab/pinchtab": {
+      "stars": 10565,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser control server: Run a local browser control plane and call it through CLI, HTTP, or MCP. PinchTab separates profiles, browser instances, and task tabs, with an official Skill for coding agents.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/pinchtab/pinchtab/blob/main/README.md",
+          "https://github.com/pinchtab/pinchtab/blob/main/docs/architecture/mcp.md"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "browser-use/browser-use": {
+      "stars": 120399,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser agent framework: Give an agent a local or cloud browser for multi-step web tasks. Choose the coding-agent CLI or Python framework, then inspect the resulting page and output.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/browser-use/browser-use/blob/main/README.md",
+          "https://github.com/browser-use/plugins"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "browserbase/stagehand": {
+      "stars": 25990,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser SDK and agent CLI: Use Stagehand when a browser workflow needs both explicit code and language-driven interaction. Coding agents can start with the browse CLI and official Skill; reusable applications can use the SDK.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/browserbase/stagehand/blob/main/README.md",
+          "https://github.com/browserbase/stagehand/blob/main/README.md"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "microsoft/playwright-mcp": {
+      "stars": 39367,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Browser automation MCP server: Connect a coding agent to Playwright through MCP for navigation, accessibility snapshots, and browser interactions. Compare the persistent MCP workflow with the separate Playwright CLI and its official Skill.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/microsoft/playwright-mcp/blob/main/README.md",
+          "https://github.com/microsoft/playwright-mcp#readme"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
+    },
+    "chromedevtools/chrome-devtools-mcp": {
+      "stars": 55008,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-09",
+        "reason": "Chrome inspection MCP server: Let a coding agent inspect live Chrome with console, network, performance, and page tools. Use the evidence to diagnose a particular failure rather than treating a screenshot as the whole investigation.",
+        "userRequest": "2026-11-09: vertical projects do not require 50,000 stars; build one project per work, with Cursor/Codex paths accepted for Floatboat.",
+        "evidence": [
+          "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md",
+          "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/troubleshooting.md"
+        ],
+        "hosts": [
+          "cursor",
+          "codex"
+        ]
+      }
     }
   }
 }

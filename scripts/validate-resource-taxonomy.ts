@@ -4,6 +4,15 @@ import { getCatalogInventory, getStoreCatalog, getCategoryResources, SKILL_CATEG
 import { getResourceLabels, projectResourceId, RESOURCE_TAXONOMY_IDS } from "../src/lib/skills/resource-taxonomy";
 import { buildCombinedSitemapXml } from "../src/lib/sitemap";
 
+import { isMarketplaceRepository } from "../src/lib/skills/marketplace-repository-review";
+
+// Vertical project approvals must not admit the same repository as a Skill.
+for (const repo of ["browserbase/stagehand", "BrowserMCP/mcp", "pinchtab/pinchtab", "steel-dev/steel-browser"]) {
+  assert(isMarketplaceRepository(`https://github.com/${repo}`, "project"), `Approved project missing: ${repo}`);
+  assert(!isMarketplaceRepository(`https://github.com/${repo}`, "skill"), `Project approval leaked into Skills: ${repo}`);
+}
+assert(!isMarketplaceRepository("https://github.com/unreviewed-owner/unreviewed-project", "project"));
+
 const paths = new Set([...buildCombinedSitemapXml().matchAll(/<loc>https:\/\/floatboat.ai([^<]*)<\/loc>/g)].map((match) => match[1]));
 const en = getStoreCatalog("en");
 const zh = getStoreCatalog("zh");

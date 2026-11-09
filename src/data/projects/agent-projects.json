@@ -6497,5 +6497,3001 @@
         }
       ]
     }
+  },
+  {
+    "author": "skyvern-ai",
+    "slug": "skyvern",
+    "name": "Skyvern",
+    "repository": "https://github.com/Skyvern-AI/skyvern",
+    "website": "https://www.skyvern.com",
+    "documentation": "https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/mcp_tools/README.md",
+    "license": "AGPL-3.0",
+    "licenseUrl": "https://github.com/Skyvern-AI/skyvern/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/Skyvern-AI/skyvern/blob/main/skills/skyvern/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/mcp_tools/README.md",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "browser-use/browser-use",
+      "browserbase/stagehand",
+      "brightdata/brightdata-mcp",
+      "unclecode/crawl4ai"
+    ],
+    "en": {
+      "seoTitle": "Skyvern: Run and Review Browser-Based Business Workflows",
+      "seoDescription": "Use Skyvern’s MCP or API for browser operations and multi-step workflows. Choose cloud or self-hosted execution, supply the required credentials, and review the business result rather than only the run status.",
+      "description": "Use Skyvern’s MCP or API for browser operations and multi-step workflows. Choose cloud or self-hosted execution, supply the required credentials, and review the business result rather than only the run status.",
+      "kind": "Browser workflow platform",
+      "overviewTitle": "About Skyvern",
+      "overview": [
+        "Skyvern targets browser-based workflows such as form completion, portal navigation, and information collection. It offers both direct browser operations and authored workflow execution. This makes it useful when a task needs a repeatable business process rather than only a temporary tab for a coding check.",
+        "The official MCP server documentation names Cursor and Codex, with cloud and local configuration paths. Cloud access uses a Skyvern account and authentication; self-hosted execution requires the backend and model/browser dependencies. Some setups require explicit browser-session creation before tool use.",
+        "Use the official skyvern Skill for the matching CLI/MCP release, keeping workflow-authoring and workflow-running scopes distinct. The repository is AGPL-3.0; hosted subscriptions, model use, and any enterprise terms are separate. Floatboat can use the external-agent path without implying that a workflow has already been verified."
+      ],
+      "capabilitiesTitle": "How Skyvern Fits the Browser Workflow",
+      "capabilitiesIntro": "Separate browser sessions, workflow definitions, and execution permissions. The selected backend supplies the runtime, while official agent tools help build or operate a flow with inputs that can be reviewed.",
+      "capabilities": [
+        {
+          "title": "Browser and workflow tools",
+          "description": "Choose direct page actions or an authored workflow according to how often the task repeats."
+        },
+        {
+          "title": "Cloud or self-hosted backend",
+          "description": "Configure the server that executes the task, not just the MCP client entry."
+        },
+        {
+          "title": "Scoped agent guidance",
+          "description": "Use current official CLI/MCP Skills and separate building a workflow from operating one."
+        }
+      ],
+      "useCases": {
+        "title": "Skyvern Use Cases",
+        "description": "These workflows emphasize repeatable business results rather than only page navigation. Use sample records and observable checkpoints before increasing run frequency, batch size, or the permissions available to the agent.",
+        "items": [
+          {
+            "title": "Enter a repeatable portal record",
+            "description": "Provide approved test records and the destination form. Build a workflow that fills one record and pauses before final submission, then compare the field values with the input. Validate the exception path before increasing the batch size."
+          },
+          {
+            "title": "Monitor a recurring workflow run",
+            "description": "For an existing workflow, supply its identifier and the expected output for one run. Inspect completion and error states through the permitted tools, then verify the resulting document or record. A completed run may still contain a wrong business value."
+          },
+          {
+            "title": "Collect a structured portal result",
+            "description": "Use an approved account to navigate to a specified report and return named fields with their source context. Keep login, date selection, and extraction as visible steps so a stale page cannot silently become the report for the wrong period."
+          },
+          {
+            "title": "Compare local and cloud operation",
+            "description": "Run a small non-sensitive workflow on the selected backend and record setup, output, and required services. Choose deployment based on data access and operational needs, rather than assuming self-hosting removes model costs or that cloud execution inherits a local browser login."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Skyvern",
+        "description": "Choose hosted or self-hosted execution, then prepare the account, runtime, and workflow permissions for that path.",
+        "items": [
+          {
+            "title": "Selected backend",
+            "description": "Prepare cloud authentication or the documented self-hosted stack and model/browser configuration."
+          },
+          {
+            "title": "Workflow inputs",
+            "description": "Use test records and identify session creation and submission checkpoints before a production run."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does Skyvern provide a Cursor/Codex interface?",
+          "answer": "Yes. The official MCP server documentation names both and describes local and cloud configuration. Configure the backend and session requirements in addition to the client entry."
+        },
+        {
+          "question": "Is a workflow the same as a browser session?",
+          "answer": "No. A session supplies browser state; a workflow describes a sequence and its inputs. Keep identifiers and output checks separate when running or diagnosing a task."
+        },
+        {
+          "question": "Can the backend be self-hosted?",
+          "answer": "The project provides a self-hosted path. It requires its own runtime, browser, model, and authentication setup; a local MCP wrapper alone does not supply a complete backend."
+        },
+        {
+          "question": "What does the official Skill add?",
+          "answer": "It guides the coding agent through the current Skyvern CLI and MCP workflow. It does not replace the server, account, or output verification, and it should match the installed release."
+        },
+        {
+          "question": "When should a workflow stop for review?",
+          "answer": "Mark consequential submissions, account changes, and purchases as explicit checkpoints. Test the workflow using draft or staging data before allowing those actions on production records."
+        },
+        {
+          "question": "How are licensing and service fees different?",
+          "answer": "The source is AGPL-3.0, while hosted access and model usage have separate terms and charges. Review deployment and redistribution requirements rather than interpreting the repository license as free hosted service."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Skyvern：执行并复核基于浏览器的业务流程",
+      "seoDescription": "通过 Skyvern MCP 或 API 完成浏览器操作和多步骤流程。选择云端或自托管运行、准备所需凭据，并验收业务结果，而不只看运行状态。",
+      "description": "通过 Skyvern MCP 或 API 完成浏览器操作和多步骤流程。选择云端或自托管运行、准备所需凭据，并验收业务结果，而不只看运行状态。",
+      "kind": "浏览器工作流平台",
+      "overviewTitle": "关于 Skyvern",
+      "overview": [
+        "Skyvern 面向表单填写、门户导航和信息收集等浏览器流程，提供直接浏览器操作与预先编排流程的执行。任务需要可重复业务过程，而不只是临时检查网页时，可以考虑它。",
+        "官方 MCP 文档列出 Cursor、Codex，并提供云端和本地配置。云端需要 Skyvern 账号及认证，自托管则要准备后端、模型与浏览器依赖。部分配置要求先创建浏览器会话才能调用工具。",
+        "官方 skyvern Skill 应匹配 CLI／MCP 版本，编写流程与运行流程的范围分别确认。仓库采用 AGPL-3.0，托管订阅、模型用量和企业条款另行核对。Floatboat 可使用外部 Agent 接入路径，但不表示流程已经验证。"
+      ],
+      "capabilitiesTitle": "Skyvern 在浏览器流程中的作用",
+      "capabilitiesIntro": "浏览器会话、流程定义与执行权限需分别明确。选定后端提供运行环境，官方 Agent 工具帮助编写或操作流程；输入、检查点及实际结果仍需可审阅，不能只依赖状态。",
+      "capabilities": [
+        {
+          "title": "浏览器与流程工具",
+          "description": "按任务重复程度选择直接页面动作或预先编排的流程。"
+        },
+        {
+          "title": "云端或自托管后端",
+          "description": "除 MCP 客户端条目之外，还需配置实际执行任务的服务端。"
+        },
+        {
+          "title": "有范围的 Agent 指引",
+          "description": "使用当前官方 CLI／MCP Skill，区分编写流程和运行流程。"
+        }
+      ],
+      "useCases": {
+        "title": "Skyvern 使用场景",
+        "description": "以下流程关注可重复业务结果，而不只关注页面导航。增加运行频率、批量规模或 Agent 权限前，先使用样例记录与可观察检查点，核对字段、错误和最终交付物。",
+        "items": [
+          {
+            "title": "填写可重复的门户记录",
+            "description": "提供获准测试记录与目标表单，建立填写一条记录并在最终提交前暂停的流程，对照输入检查字段值，扩大批量前先验证异常路径。"
+          },
+          {
+            "title": "跟踪周期流程运行",
+            "description": "提供既有流程标识与一次运行的预期输出，通过获准工具检查完成和错误状态，再核对文档或记录。运行完成仍可能产生错误业务值。"
+          },
+          {
+            "title": "收集结构化门户结果",
+            "description": "使用获准账号进入指定报表，返回所需字段及来源上下文。将登录、日期选择与提取分别记录，避免过期页面成为错误周期的报告。"
+          },
+          {
+            "title": "比较本地与云端运行",
+            "description": "在选定后端执行无敏感的小型流程，记录配置、输出与依赖服务。按数据访问和运营需要选择部署，不假定自托管免除模型费用，也不假定云端继承本地登录。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Skyvern 前的准备",
+        "description": "先选择托管或自部署方式，再按该入口准备账号、运行环境和流程权限。",
+        "items": [
+          {
+            "title": "选定后端",
+            "description": "准备云端认证或文档中的自托管服务栈及模型、浏览器配置。"
+          },
+          {
+            "title": "流程输入",
+            "description": "使用测试记录，运行生产任务前明确会话创建与提交检查点。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Skyvern 有 Cursor／Codex 入口吗？",
+          "answer": "有。官方 MCP 文档列明两者及本地、云端配置，除客户端条目之外还需准备后端与会话。"
+        },
+        {
+          "question": "流程与浏览器会话相同吗？",
+          "answer": "不同。会话提供浏览器状态，流程描述动作序列与输入，运行和诊断时需分别保留标识及输出检查。"
+        },
+        {
+          "question": "后端可以自托管吗？",
+          "answer": "项目提供自托管路径，需要运行环境、浏览器、模型与认证，单独本地 MCP 包装不能替代完整后端。"
+        },
+        {
+          "question": "官方 Skill 增加什么？",
+          "answer": "它指导编码 Agent 使用当前 Skyvern CLI 与 MCP，不替代服务端、账号和结果验收，并应与安装版本匹配。"
+        },
+        {
+          "question": "流程何时应暂停并交给用户确认？",
+          "answer": "将关键提交、账号变更与购买设为明确检查点，先用草稿或测试数据验证，再允许作用于生产记录。"
+        },
+        {
+          "question": "源码许可与服务费有什么区别？",
+          "answer": "源码采用 AGPL-3.0，托管访问和模型使用有独立条款与费用，需核对部署和分发要求，不能将源码许可等同于免费托管服务。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "steel-dev",
+    "slug": "steel-browser",
+    "name": "Steel Browser",
+    "repository": "https://github.com/steel-dev/steel-browser",
+    "website": "https://steel.dev",
+    "documentation": "https://docs.steel.dev/overview/mcp",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/steel-dev/steel-browser/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/steel-dev/skills",
+        "label": {
+          "en": "Official companion Skills",
+          "zh": "官方配套 Skills"
+        }
+      },
+      {
+        "href": "https://docs.steel.dev/overview/mcp",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "browserbase/stagehand",
+      "skyvern-ai/skyvern",
+      "lightpanda-io/lightpanda",
+      "brightdata/brightdata-mcp"
+    ],
+    "en": {
+      "seoTitle": "Steel Browser: Browser Sessions, MCP Access, and Agent Skills",
+      "seoDescription": "Use Steel to provide a browser session for agent work. Compare the open-source browser runtime with Steel’s hosted MCP and official Skills, keeping service authentication and session costs explicit.",
+      "description": "Use Steel to provide a browser session for agent work. Compare the open-source browser runtime with Steel’s hosted MCP and official Skills, keeping service authentication and session costs explicit.",
+      "kind": "Browser infrastructure and service",
+      "overviewTitle": "About Steel Browser",
+      "overview": [
+        "Steel Browser is open-source browser infrastructure rather than a task-planning agent. It supplies sessions and browser connectivity that an agent or application can drive. Its ecosystem includes a hosted MCP service and official Skills for live browser work, reusable code, and session diagnosis.",
+        "The hosted MCP documentation gives Cursor and Codex configuration and authentication steps. That service is not automatically installed when the open-source browser server is started. The official steel-browser Skill targets Steel cloud browser work; follow the path whose account and runtime you actually have.",
+        "The steel-browser repository uses Apache-2.0. Cloud credentials, session time, and connected model services remain separate considerations. For Floatboat, use the documented external-agent MCP or Skill workflow and verify the created session before passing private data or reusing a profile."
+      ],
+      "capabilitiesTitle": "How Steel Browser Fits the Browser Workflow",
+      "capabilitiesIntro": "Steel separates browser infrastructure from the logic that drives it. Choose a session backend, the official operating or developer guidance, and a session cleanup and release plan before treating a browser connection as a reusable workflow.",
+      "capabilities": [
+        {
+          "title": "Session infrastructure",
+          "description": "Create a browser session and connect an automation client rather than running a separate task-planning model."
+        },
+        {
+          "title": "Hosted MCP connection",
+          "description": "Use the service’s documented host configuration and authentication for live agent access."
+        },
+        {
+          "title": "Task-specific official Skills",
+          "description": "Separate operating a browser, writing Steel code, and diagnosing a failed session."
+        }
+      ],
+      "useCases": {
+        "title": "Steel Browser Use Cases",
+        "description": "Session provisioning, reusable scripts, failure diagnosis, and runtime placement are different infrastructure decisions. Keep the selected service and evidence visible so a cloud assumption does not silently enter a local deployment.",
+        "items": [
+          {
+            "title": "Provide a browser to an existing agent",
+            "description": "When the agent already knows the task, create a Steel session through the chosen service and connect its supported tools. Verify the target URL and session identity before performing actions. The browser infrastructure does not decide which business operations the agent is allowed to perform."
+          },
+          {
+            "title": "Turn a successful lookup into code",
+            "description": "Use the official developer guidance to turn a verified browser lookup into a maintained script. Record session creation, connection, extraction, and cleanup, then run the same input again. Reusable code needs explicit error and output handling beyond a successful interactive session."
+          },
+          {
+            "title": "Diagnose a failed hosted session",
+            "description": "Bring the session identifier and the point where the task stopped. Compare logs, traces, or replay evidence available in the selected service to distinguish connection failure from application behavior. Redact credentials and do not infer the cause from a generic timeout alone."
+          },
+          {
+            "title": "Evaluate browser runtime placement",
+            "description": "For a non-sensitive extraction task, compare the operational needs of the open-source server and hosted service. Record which components run where and how the agent connects. A self-hosted runtime and a hosted MCP subscription are different deployment choices, not interchangeable installation commands."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Steel Browser",
+        "description": "The open-source browser server and hosted MCP have different setup requirements. Confirm where the browser will run before configuring the agent.",
+        "items": [
+          {
+            "title": "Cloud or self-hosted choice",
+            "description": "Choose the open-source server or hosted service and prepare the corresponding credentials and connection method."
+          },
+          {
+            "title": "Session lifecycle",
+            "description": "Plan session creation, output inspection, and release, including service limits and billing conditions."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Steel an autonomous browser agent?",
+          "answer": "The browser infrastructure supplies sessions and connectivity. An agent or application supplies task reasoning and actions; the hosted MCP and Skills are ways to connect that existing host."
+        },
+        {
+          "question": "Does running steel-browser provide hosted MCP?",
+          "answer": "No. The open-source server and Steel’s hosted MCP are distinct deployment surfaces. Use the service documentation for its authentication and client setup rather than assuming a local container supplies them."
+        },
+        {
+          "question": "Which Skill should I choose?",
+          "answer": "The official repository distinguishes steel-browser for live work, steel-developer for code, and steel-session-debugging for failed runs. Choose the job first instead of installing every instruction indiscriminately."
+        },
+        {
+          "question": "Can Cursor, Codex, and Floatboat connect?",
+          "answer": "The hosted MCP documentation lists Cursor and Codex. Floatboat can use the corresponding MCP path with the service’s account and authentication requirements; it is not a bundled browser entitlement."
+        },
+        {
+          "question": "Does Apache-2.0 include free cloud sessions?",
+          "answer": "No. The source license governs the repository code. Hosted browser sessions, service limits, and model use follow their own terms, even when an open-source client connects to them."
+        },
+        {
+          "question": "What should be saved after a session?",
+          "answer": "Keep the requested output, source URL, session identifier, and verification result where appropriate. Close or release the session according to the service so a finished task does not leave infrastructure running unintentionally."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Steel Browser：浏览器会话、MCP 接入与 Agent Skills",
+      "seoDescription": "通过 Steel 为 Agent 工作提供浏览器会话，区分开源运行环境、托管 MCP 与官方 Skills，并明确服务认证和会话费用。",
+      "description": "通过 Steel 为 Agent 工作提供浏览器会话，区分开源运行环境、托管 MCP 与官方 Skills，并明确服务认证和会话费用。",
+      "kind": "浏览器基础设施与服务",
+      "overviewTitle": "关于 Steel Browser",
+      "overview": [
+        "Steel Browser 是开源浏览器基础设施，不是任务规划 Agent。它提供供 Agent 或应用驱动的会话与浏览器连接，生态中另有托管 MCP 和用于现场操作、复用代码及会话诊断的官方 Skills。",
+        "托管 MCP 文档提供 Cursor、Codex 配置及认证步骤。启动开源浏览器服务并不会自动安装该托管服务。官方 steel-browser Skill 面向 Steel 云浏览器任务，应根据实际账号和运行环境选择路径。",
+        "steel-browser 仓库采用 Apache-2.0，云端凭据、会话时长与连接模型服务需分别考虑。Floatboat 可采用文档中的外部 Agent MCP 或 Skill 流程，传入私有数据或复用配置前先验证创建的会话。"
+      ],
+      "capabilitiesTitle": "Steel Browser 在浏览器流程中的作用",
+      "capabilitiesIntro": "Steel 将浏览器基础设施与驱动逻辑分开。建立可复用流程前，先选择会话后端、对应操作或开发指引，并明确释放方式，不把连接成功当作任务已具备运行条件。",
+      "capabilities": [
+        {
+          "title": "会话基础设施",
+          "description": "创建浏览器会话并连接自动化客户端，无需将其理解为另一任务规划模型。"
+        },
+        {
+          "title": "托管 MCP 连接",
+          "description": "按服务文档配置宿主与认证，实现实时 Agent 接入。"
+        },
+        {
+          "title": "按任务划分的官方 Skills",
+          "description": "区分操作浏览器、编写 Steel 代码与诊断失败会话。"
+        }
+      ],
+      "useCases": {
+        "title": "Steel Browser 使用场景",
+        "description": "会话提供、复用脚本、失败诊断与运行位置属于不同基础设施决定。需要记录所选服务和证据，避免将云端假设带入本地部署，也不把本地条件套用于托管 MCP。",
+        "items": [
+          {
+            "title": "为现有 Agent 提供浏览器",
+            "description": "Agent 已有任务时，通过选定服务创建 Steel 会话并连接工具。先核对目标 URL 与会话身份再操作，浏览器基础设施并不决定业务动作是否获准。"
+          },
+          {
+            "title": "将成功查询转成代码",
+            "description": "按官方开发指引将已验证浏览器查询改为维护脚本，记录会话创建、连接、提取和清理，再用相同输入复跑。复用代码还需明确错误及输出处理。"
+          },
+          {
+            "title": "诊断失败的托管会话",
+            "description": "提供会话标识与停止位置，结合所选服务的日志、轨迹或回放区分连接故障和应用行为。凭据需隐藏，不能仅凭通用超时推断原因。"
+          },
+          {
+            "title": "评估浏览器运行位置",
+            "description": "针对无敏感提取任务，比较开源服务与托管服务的运行要求，记录组件位置及 Agent 连接方式。自托管运行环境与托管 MCP 订阅是不同部署选择，不能混用安装命令。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Steel Browser 前的准备",
+        "description": "开源浏览器服务与托管 MCP 的配置要求不同，先确定浏览器在哪里运行，再配置 Agent 连接。",
+        "items": [
+          {
+            "title": "选择云端或自托管",
+            "description": "选择开源服务或托管服务，准备对应凭据与连接方式。"
+          },
+          {
+            "title": "会话生命周期",
+            "description": "明确会话创建、输出检查与释放，以及服务限制和计费条件。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Steel 是自主浏览器 Agent 吗？",
+          "answer": "浏览器基础设施提供会话与连接，任务推理和动作来自 Agent 或应用；托管 MCP 和 Skills 用于连接现有宿主。"
+        },
+        {
+          "question": "运行 steel-browser 就有托管 MCP 吗？",
+          "answer": "不是。开源服务与 Steel 托管 MCP 是不同部署入口，托管认证与客户端配置应查服务文档，不能假定本地容器已提供。"
+        },
+        {
+          "question": "应该选择哪个 Skill？",
+          "answer": "官方区分现场工作的 steel-browser、编写代码的 steel-developer，以及失败运行的 steel-session-debugging，应按任务选择。"
+        },
+        {
+          "question": "Cursor、Codex 与 Floatboat 可以连接吗？",
+          "answer": "托管 MCP 文档列出 Cursor、Codex，Floatboat 可按对应 MCP 路径使用，需满足账号与认证要求，不代表内置浏览器额度。"
+        },
+        {
+          "question": "Apache-2.0 包含免费云会话吗？",
+          "answer": "不包含。源码许可管理仓库代码，托管会话、服务限制和模型使用有自己的条款，开源客户端连接也不改变这一点。"
+        },
+        {
+          "question": "会话后需要保存什么？",
+          "answer": "按需要保留输出、来源 URL、会话标识及验证结果，并按服务要求关闭或释放会话，避免任务结束后仍无意占用运行资源。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "brightdata",
+    "slug": "brightdata-mcp",
+    "name": "Bright Data MCP",
+    "repository": "https://github.com/brightdata/brightdata-mcp",
+    "website": "https://brightdata.com",
+    "documentation": "https://github.com/brightdata/brightdata-mcp#readme",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/brightdata/brightdata-mcp/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/brightdata/skills",
+        "label": {
+          "en": "Official companion Skills",
+          "zh": "官方配套 Skills"
+        }
+      },
+      {
+        "href": "https://github.com/brightdata/brightdata-mcp#readme",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "unclecode/crawl4ai",
+      "steel-dev/steel-browser",
+      "skyvern-ai/skyvern",
+      "lightpanda-io/lightpanda"
+    ],
+    "en": {
+      "seoTitle": "Bright Data MCP: Connect Agents to Web Access and Extraction",
+      "seoDescription": "Connect a coding agent to Bright Data’s web access and data tools. Use its official Skills to choose browser, fetch, search, or extraction workflows, with credentials, product scope, and costs checked separately.",
+      "description": "Connect a coding agent to Bright Data’s web access and data tools. Use its official Skills to choose browser, fetch, search, or extraction workflows, with credentials, product scope, and costs checked separately.",
+      "kind": "Web data MCP service connector",
+      "overviewTitle": "About Bright Data MCP",
+      "overview": [
+        "Bright Data MCP is a service connector rather than a standalone local browser. It exposes web access and data capabilities from Bright Data to an MCP client. Browser operation is one possible task alongside search, page fetching, and structured data extraction, so select the relevant product surface first.",
+        "Official client examples include Cursor, and the Bright Data CLI can configure agent connections. The separate official Skills repository covers onboarding, browsing, scraping, fetching, and cost checks. Choose MCP for tools exposed to an agent client, CLI for terminal workflows, or an SDK for application code.",
+        "Prepare an authorized service account and the product access needed by the task. The MCP repository is MIT-licensed, while service use, data products, and usage charges follow Bright Data’s terms. A local MCP process still calls external infrastructure, so do not describe it as local-only data processing."
+      ],
+      "capabilitiesTitle": "How Bright Data MCP Fits the Browser Workflow",
+      "capabilitiesIntro": "Bright Data exposes several products through agent interfaces. Choose the output first, then the service, authentication, and usage limits; MCP connectivity alone does not select a suitable collection or browser workflow.",
+      "capabilities": [
+        {
+          "title": "Select a data access surface",
+          "description": "Match search, fetching, browser work, or ready data products to the requested output."
+        },
+        {
+          "title": "Official agent onboarding",
+          "description": "Use official Skills and CLI guidance to configure the service without putting keys in the task text."
+        },
+        {
+          "title": "Usage-aware workflows",
+          "description": "Check service access and cost conditions before expanding a small collection into a batch."
+        }
+      ],
+      "useCases": {
+        "title": "Bright Data MCP Use Cases",
+        "description": "Public extraction, search, interactive browsing, and ready data products require different tools and checks. Start with a bounded sample and keep evidence, freshness, and cost decisions separate from connection setup.",
+        "items": [
+          {
+            "title": "Collect public product fields",
+            "description": "Provide a small list of public product pages and the fields needed for comparison. Select an appropriate extraction or fetching tool, preserve source URLs, and record missing values. Check the cost and output of the sample before authorizing a wider collection."
+          },
+          {
+            "title": "Search before opening many pages",
+            "description": "For a research question, use the appropriate search surface to identify likely sources, then inspect a bounded subset. Return queries, selected URLs, and the facts they support rather than treating search snippets as verified page content."
+          },
+          {
+            "title": "Operate a cloud browser",
+            "description": "When an interaction genuinely needs a browser, use the relevant Bright Data browser service and configured agent tools. Identify the session and expected page result, then verify the action. A simple fetch task should not be described as having exercised the interactive workflow."
+          },
+          {
+            "title": "Choose existing data over recrawling",
+            "description": "If a ready data product may answer the request, compare coverage, freshness, and access terms before launching a new crawl. Present the choice and cost implications for review; neither an MCP connection nor a Skill authorizes purchases automatically."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Bright Data MCP",
+        "description": "Match the service product, account access, and usage budget to the data task before connecting an agent.",
+        "items": [
+          {
+            "title": "Service account and product access",
+            "description": "Configure the relevant Bright Data product and authentication through official onboarding or client settings."
+          },
+          {
+            "title": "Collection scope and costs",
+            "description": "Set a bounded sample, required fields, and usage limits before running a larger job."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Bright Data MCP a free standalone scraper?",
+          "answer": "No. It connects agents to Bright Data services. The MIT repository license covers connector code, not unrestricted service use, data purchases, or browser-session allowance."
+        },
+        {
+          "question": "Are official Skills available?",
+          "answer": "Yes. brightdata/skills contains onboarding and task-specific instructions. They can guide CLI, MCP, or SDK use, but the requested service still needs an account and appropriate access."
+        },
+        {
+          "question": "How should credentials be supplied?",
+          "answer": "Use the documented client or CLI authentication configuration. Keep API tokens out of task text, generated reports, and source control; a user may need to approve the service login."
+        },
+        {
+          "question": "Does every task need a browser?",
+          "answer": "No. Search, fetch, datasets, and extraction can serve different outputs. Reserve interactive browser operations for tasks that require page state or actions rather than assuming browsing is always necessary."
+        },
+        {
+          "question": "Can a local MCP keep the task offline?",
+          "answer": "No. The local connector still calls Bright Data’s infrastructure and the host may use a remote model. Review service and model data paths for the content you plan to submit."
+        },
+        {
+          "question": "What should a collection report include?",
+          "answer": "Record source URLs, retrieval context, required fields, missing values, and relevant usage information. Validate samples against source pages before treating a returned JSON structure as trustworthy data."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Bright Data MCP：将 Agent 连接到网页访问与提取服务",
+      "seoDescription": "将编码 Agent 连接到 Bright Data 网页访问与数据工具，通过官方 Skills 选择浏览器、获取、搜索或提取流程，并分别核对凭据、产品范围及成本。",
+      "description": "将编码 Agent 连接到 Bright Data 网页访问与数据工具，通过官方 Skills 选择浏览器、获取、搜索或提取流程，并分别核对凭据、产品范围及成本。",
+      "kind": "网页数据 MCP 服务连接器",
+      "overviewTitle": "关于 Bright Data MCP",
+      "overview": [
+        "Bright Data MCP 是服务连接器，不是独立本地浏览器。它向 MCP 客户端提供 Bright Data 的网页访问与数据能力，浏览器操作只是其中一种任务，还包括搜索、获取页面和结构化提取，应先选择对应产品入口。",
+        "官方客户端示例包含 Cursor，Bright Data CLI 也可配置 Agent 连接。独立官方 Skills 仓库覆盖引导、浏览、采集、获取与成本检查。需要 Agent 客户端调用工具时选择 MCP，终端流程使用 CLI，应用代码则采用 SDK。",
+        "准备获准服务账号及任务对应产品权限。MCP 仓库采用 MIT，服务、数据产品和用量费用遵循 Bright Data 条款。本地 MCP 进程仍调用外部基础设施，不能写成只在本机处理数据。"
+      ],
+      "capabilitiesTitle": "Bright Data MCP 在浏览器流程中的作用",
+      "capabilitiesIntro": "Bright Data 通过 Agent 接口提供多种产品，应先确定输出，再选择服务、认证和用量限制。MCP 连通不自动选择适合的采集或浏览器流程，也不批准额外费用。",
+      "capabilities": [
+        {
+          "title": "选择数据访问入口",
+          "description": "按输出选择搜索、页面获取、浏览器工作或现成数据产品。"
+        },
+        {
+          "title": "官方 Agent 引导",
+          "description": "使用官方 Skills 与 CLI 指引配置服务，不将密钥写入任务文本。"
+        },
+        {
+          "title": "关注用量的流程",
+          "description": "将小规模收集扩大为批量之前，先核对服务权限与费用条件。"
+        }
+      ],
+      "useCases": {
+        "title": "Bright Data MCP 使用场景",
+        "description": "公开提取、搜索、交互浏览和现成数据产品需要不同工具与检查。先限定样本，将证据、新鲜度和成本决定与连接配置分开，并在扩大范围前验证实际输出。",
+        "items": [
+          {
+            "title": "收集公开产品字段",
+            "description": "提供少量公开产品页与比较字段，选择适用提取或获取工具，保留来源并记录缺失值。扩大采集前先检查样本成本与输出。"
+          },
+          {
+            "title": "先搜索再打开大量网页",
+            "description": "针对调查问题先用搜索入口寻找来源，再检查限定数量页面。返回查询、选定 URL 与支持事实，不把搜索摘要直接当作已验证正文。"
+          },
+          {
+            "title": "操作云端浏览器",
+            "description": "交互确需浏览器时，使用对应 Bright Data 浏览器服务与已配置 Agent 工具，明确会话及预期状态并验收动作。普通获取任务不能称为已执行交互流程。"
+          },
+          {
+            "title": "比较现成数据与重新采集",
+            "description": "现成数据产品可能回答问题时，先比较覆盖、新鲜度与访问条款，再决定是否重新采集。提交选择及成本影响供审阅，MCP 或 Skill 不自动授权购买。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Bright Data MCP 前的准备",
+        "description": "连接 Agent 前，先确认数据任务需要的服务产品、账号权限和用量预算。",
+        "items": [
+          {
+            "title": "服务账号与产品权限",
+            "description": "通过官方引导或客户端设置配置对应 Bright Data 产品与认证。"
+          },
+          {
+            "title": "采集范围与费用",
+            "description": "大规模运行前明确样本、字段与用量限制。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Bright Data MCP 是免费独立爬虫吗？",
+          "answer": "不是。它连接 Bright Data 服务，MIT 管理连接器源码，不包含无限服务、数据购买或浏览器会话额度。"
+        },
+        {
+          "question": "有官方 Skills 吗？",
+          "answer": "有。brightdata/skills 提供引导和专项指令，可指导 CLI、MCP 或 SDK，但服务仍需账号与适用权限。"
+        },
+        {
+          "question": "凭据应该放在哪里？",
+          "answer": "使用文档中的客户端或 CLI 认证配置，不将 API 令牌放进任务、报告或版本库，服务登录可能需要用户批准。"
+        },
+        {
+          "question": "每项任务都需要浏览器吗？",
+          "answer": "不需要。搜索、获取、数据集和提取面向不同输出，只有确需页面状态或动作时才使用交互浏览器。"
+        },
+        {
+          "question": "本地 MCP 能让任务离线吗？",
+          "answer": "不能。本地连接器仍调用 Bright Data 基础设施，宿主也可能使用远程模型，需核对服务与模型的数据路径。"
+        },
+        {
+          "question": "采集报告应该包含什么？",
+          "answer": "记录来源 URL、获取上下文、所需字段、缺失项及相关用量，先对照来源抽查，不能把返回 JSON 直接视为可信数据。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "lightpanda-io",
+    "slug": "lightpanda",
+    "name": "Lightpanda",
+    "repository": "https://github.com/lightpanda-io/browser",
+    "website": "https://lightpanda.io",
+    "documentation": "https://github.com/lightpanda-io/browser#readme",
+    "license": "AGPL-3.0",
+    "licenseUrl": "https://github.com/lightpanda-io/browser/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/lightpanda-io/agent-skill",
+        "label": {
+          "en": "Official companion Skills",
+          "zh": "官方配套 Skills"
+        }
+      },
+      {
+        "href": "https://github.com/lightpanda-io/browser#readme",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "steel-dev/steel-browser",
+      "unclecode/crawl4ai",
+      "pinchtab/pinchtab",
+      "browser-use/browser-use"
+    ],
+    "en": {
+      "seoTitle": "Lightpanda: Headless Browser Access Through MCP and Skills",
+      "seoDescription": "Use Lightpanda for headless page access, extraction, and supported interactions through native MCP or official agent guidance. Check compatibility before replacing a full browser, especially for visual or layout-dependent work.",
+      "description": "Use Lightpanda for headless page access, extraction, and supported interactions through native MCP or official agent guidance. Check compatibility before replacing a full browser, especially for visual or layout-dependent work.",
+      "kind": "Headless browser for agents",
+      "overviewTitle": "About Lightpanda",
+      "overview": [
+        "Lightpanda is a headless browser designed for AI and automation. It provides native interfaces including MCP and an official agent Skill repository. Its purpose is browser execution and page access; it is not a general-purpose desktop browser with the same visual behavior as Chrome.",
+        "The native MCP supports structured browsing actions and session handling. The official Skill describes platform-specific installation and use, including Windows through WSL2. Verify the APIs and page features needed by the task before choosing it for a site that depends on a full browser engine.",
+        "The browser repository is AGPL-3.0, while the separate agent-skill repository uses its own license. Avoid copying Chrome benchmark expectations to a different engine. Local execution, telemetry configuration, and the host model’s processing are separate choices and should be checked before handling private data."
+      ],
+      "capabilitiesTitle": "How Lightpanda Fits the Browser Workflow",
+      "capabilitiesIntro": "Lightpanda supplies a headless engine and native agent interfaces. Choose it by required page compatibility, content output, and supported platform, rather than assuming every full-browser workflow transfers without changes.",
+      "capabilities": [
+        {
+          "title": "Native MCP browsing",
+          "description": "Expose supported browser actions directly to an MCP host rather than relying on an unofficial wrapper."
+        },
+        {
+          "title": "Headless extraction workflow",
+          "description": "Read supported page structures and content for data-oriented tasks without using a desktop browser window."
+        },
+        {
+          "title": "Official installation guidance",
+          "description": "Use the separate agent Skill to select the supported binary and interface for the operating system."
+        }
+      ],
+      "useCases": {
+        "title": "Lightpanda Use Cases",
+        "description": "The tasks below compare content extraction and runtime suitability while keeping visual QA outside the headless evidence boundary. Check representative pages before replacing a browser backend in an existing agent workflow.",
+        "items": [
+          {
+            "title": "Collect text from compatible pages",
+            "description": "Start with a small set of public pages and identify the text fields needed downstream. Fetch them through the selected Lightpanda interface, compare samples with a full browser, and record unsupported features instead of silently filling gaps with inferred text."
+          },
+          {
+            "title": "Evaluate a lightweight browser backend",
+            "description": "Run the same read-only task with representative pages before changing your agent infrastructure. Record compatibility, output, and the resources measured in your environment. Upstream speed comparisons are a hypothesis for your deployment, not a substitute for equivalent task results."
+          },
+          {
+            "title": "Connect an agent over native MCP",
+            "description": "Configure the native server and inspect the available tools from the host. Verify a public page and one supported interaction, keeping session identifiers consistent. If a page requires unsupported behavior, report that boundary before attempting to replace the task with a different engine."
+          },
+          {
+            "title": "Distinguish text checks from visual QA",
+            "description": "For a UI change, use extracted text to verify labels or content availability, then use a full rendering browser for layout assertions. Keep the two evidence sources separate so successful extraction is not misreported as a verified responsive or pixel-level result."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Lightpanda",
+        "description": "Check the deployment platform and page requirements before choosing Lightpanda as the browser engine.",
+        "items": [
+          {
+            "title": "Supported system",
+            "description": "Choose the documented binary for Linux or macOS, or the WSL2 path on Windows, and verify required page features."
+          },
+          {
+            "title": "Engine and Skill licenses",
+            "description": "Review the AGPL-3.0 engine separately from the official Skill package and any hosted offering."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Lightpanda a full Chrome replacement?",
+          "answer": "Do not assume equivalent compatibility or rendering. Check the browser’s supported features against your actual pages, and use a full browser for work that depends on visual layout."
+        },
+        {
+          "question": "Does it have an official MCP?",
+          "answer": "Yes. The browser documents native MCP interfaces and session behavior. Use the current documentation for transport and tool options rather than assuming a community bridge is necessary."
+        },
+        {
+          "question": "Where is the official Skill?",
+          "answer": "The separate lightpanda-io/agent-skill repository contains installation and use guidance. Its license and instructions should be read separately from the browser engine’s repository."
+        },
+        {
+          "question": "Can it run on Windows?",
+          "answer": "The reviewed official Skill documents Windows through WSL2, alongside Linux and macOS. Do not present that as a native Windows desktop-browser build."
+        },
+        {
+          "question": "Does a local engine mean no external processing?",
+          "answer": "No. Review telemetry settings and the host agent’s model separately. Page observations may still be sent to a model provider even when the browser runs on your machine."
+        },
+        {
+          "question": "What should a compatibility trial verify?",
+          "answer": "Check required page APIs, extracted values, session behavior, and any interaction the task relies on. A successful process start or connection is not sufficient evidence of compatibility."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Lightpanda：通过 MCP 与 Skill 使用无头浏览器",
+      "seoDescription": "通过原生 MCP 或官方 Agent 指引使用 Lightpanda，完成无头页面访问、提取和受支持交互。替换完整浏览器前需检查兼容性，尤其是视觉与布局相关任务。",
+      "description": "通过原生 MCP 或官方 Agent 指引使用 Lightpanda，完成无头页面访问、提取和受支持交互。替换完整浏览器前需检查兼容性，尤其是视觉与布局相关任务。",
+      "kind": "面向 Agent 的无头浏览器",
+      "overviewTitle": "关于 Lightpanda",
+      "overview": [
+        "Lightpanda 是面向 AI 与自动化的无头浏览器，提供原生 MCP 等接口及官方 Agent Skill 仓库。它负责浏览器执行和页面访问，不是与 Chrome 视觉行为相同的通用桌面浏览器。",
+        "原生 MCP 支持结构化浏览动作与会话管理。官方 Skill 说明各平台安装使用，包括通过 WSL2 在 Windows 运行。网站依赖完整浏览器能力时，需先验证任务所需 API 和页面特性。",
+        "浏览器仓库采用 AGPL-3.0，独立 agent-skill 仓库有自己的许可。不同引擎不能直接套用 Chrome 测试预期。本地执行、使用统计配置与宿主模型处理需分别核对，再决定是否处理私有数据。"
+      ],
+      "capabilitiesTitle": "Lightpanda 在浏览器流程中的作用",
+      "capabilitiesIntro": "Lightpanda 提供无头引擎和原生 Agent 接口，应按页面兼容要求、内容输出及支持平台选择，不能假定完整浏览器流程无需改动即可迁入，也不能将文本结果视为视觉证据。",
+      "capabilities": [
+        {
+          "title": "原生 MCP 浏览",
+          "description": "直接向 MCP 宿主提供受支持浏览器动作，无需默认采用非官方包装。"
+        },
+        {
+          "title": "无头提取流程",
+          "description": "为数据任务读取受支持页面结构与内容，无需桌面浏览器窗口。"
+        },
+        {
+          "title": "官方安装指引",
+          "description": "通过独立 Agent Skill 选择适合操作系统的二进制和接口。"
+        }
+      ],
+      "useCases": {
+        "title": "Lightpanda 使用场景",
+        "description": "以下任务比较内容提取与运行适用性，将视觉验收与无头证据分开。替换既有 Agent 流程的浏览器后端前，应先检查代表页面、必要交互与输出，明确不支持行为。",
+        "items": [
+          {
+            "title": "从兼容页面收集文本",
+            "description": "先提供少量公开页面及下游所需文本字段，通过选定 Lightpanda 入口读取，并与完整浏览器抽样对照。遇到不支持特性时记录，不能推断补齐缺失文本。"
+          },
+          {
+            "title": "评估轻量浏览器后端",
+            "description": "更换 Agent 基础设施前，使用代表页面执行同一只读任务，记录兼容性、输出及本环境测量资源。上游速度对比只是评估线索，不能替代等价任务结果。"
+          },
+          {
+            "title": "通过原生 MCP 连接 Agent",
+            "description": "配置原生服务并从宿主检查工具，验证一个公开页及受支持交互，保持会话标识一致。页面需要不支持行为时先报告边界，再决定是否更换引擎。"
+          },
+          {
+            "title": "区分文本检查与视觉验收",
+            "description": "界面改动中可用提取文本核对标签或内容存在，再用完整渲染浏览器检查布局。两类证据需分开，不能把提取成功写成响应式或像素级验收通过。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Lightpanda 前的准备",
+        "description": "选择 Lightpanda 作为浏览器引擎前，先检查部署平台与页面所需功能。",
+        "items": [
+          {
+            "title": "支持的系统",
+            "description": "按文档选择 Linux、macOS 二进制或 Windows WSL2 路径，并核对所需页面特性。"
+          },
+          {
+            "title": "引擎与 Skill 许可",
+            "description": "分别核对 AGPL-3.0 引擎、官方 Skill 包及托管服务条款。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Lightpanda 能完整替代 Chrome 吗？",
+          "answer": "不能假定兼容与渲染等价。需按实际页面核对支持特性，依赖视觉布局的工作应使用完整浏览器。"
+        },
+        {
+          "question": "有官方 MCP 吗？",
+          "answer": "有。浏览器提供原生 MCP 文档和会话行为说明，传输及工具选项按当前文档配置，不必默认使用社区桥接。"
+        },
+        {
+          "question": "官方 Skill 在哪里？",
+          "answer": "独立 lightpanda-io/agent-skill 仓库提供安装和使用指引，许可及说明需与浏览器引擎仓库分别阅读。"
+        },
+        {
+          "question": "Windows 可以运行吗？",
+          "answer": "当前官方 Skill 说明 Windows 通过 WSL2 使用，另支持 Linux 和 macOS，不能写成原生 Windows 桌面浏览器。"
+        },
+        {
+          "question": "本地引擎意味着没有外部处理吗？",
+          "answer": "不意味着。使用统计设置与宿主模型需分别检查，即使浏览器本地运行，页面观察仍可能发送给模型提供方。"
+        },
+        {
+          "question": "兼容性试运行需要验证什么？",
+          "answer": "检查所需页面 API、提取值、会话行为与依赖交互。进程启动或连接成功不足以证明页面兼容。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "unclecode",
+    "slug": "crawl4ai",
+    "name": "Crawl4AI",
+    "repository": "https://github.com/unclecode/crawl4ai",
+    "website": "https://crawl4ai.com",
+    "documentation": "https://docs.crawl4ai.com",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/unclecode/crawl4ai/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/unclecode/crawl4ai/blob/main/deploy/docker/README.md",
+        "label": {
+          "en": "Official server and MCP guide",
+          "zh": "官方服务与 MCP 指南"
+        }
+      },
+      {
+        "href": "https://docs.crawl4ai.com",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "brightdata/brightdata-mcp",
+      "lightpanda-io/lightpanda",
+      "browser-use/browser-use",
+      "skyvern-ai/skyvern"
+    ],
+    "en": {
+      "seoTitle": "Crawl4AI: Turn Web Pages into Structured Agent Inputs",
+      "seoDescription": "Collect page content for research or data processing through Crawl4AI’s Python, deployed API, or documented MCP interface. Define the crawl boundary and validate extracted fields before using the data.",
+      "description": "Collect page content for research or data processing through Crawl4AI’s Python, deployed API, or documented MCP interface. Define the crawl boundary and validate extracted fields before using the data.",
+      "kind": "Web crawling and extraction framework",
+      "overviewTitle": "About Crawl4AI",
+      "overview": [
+        "Crawl4AI is a web crawling and extraction framework for producing usable content from pages. Its focus is collected text and structured output rather than operating an entire business workflow on a person’s behalf. Select the pages and output contract before choosing extraction settings.",
+        "Developers can use the Python library, while deployed server interfaces provide API and MCP access for agents. The official Docker guide describes MCP use by coding agents. A server must be prepared before connecting that endpoint; a client entry does not run the whole crawler backend.",
+        "The repository is Apache-2.0. Browser rendering, network access, and any model-based extraction have their own resource and credential requirements. The main repository does not document an official end-user Skill; community Skills must be labeled by their actual maintainer rather than presented as upstream instructions."
+      ],
+      "capabilitiesTitle": "How Crawl4AI Fits the Browser Workflow",
+      "capabilitiesIntro": "Treat crawling as a data-production step. Choose pages, fields, extraction method, and server interface together, then validate a small sample before those values become inputs to another agent or report.",
+      "capabilities": [
+        {
+          "title": "Content-oriented crawling",
+          "description": "Choose a bounded set of pages and produce text suitable for downstream research or processing."
+        },
+        {
+          "title": "Structured extraction",
+          "description": "Define the fields and extraction method, then check missing or malformed values before reuse."
+        },
+        {
+          "title": "Agent-facing server access",
+          "description": "Use the documented deployed API or MCP after preparing the crawler runtime."
+        }
+      ],
+      "useCases": {
+        "title": "Crawl4AI Use Cases",
+        "description": "Research corpora, comparison tables, documentation refreshes, and MCP extraction have different completeness checks. Keep crawl failures distinguishable from empty source values, and preserve provenance before widening the collection.",
+        "items": [
+          {
+            "title": "Build a sourced research corpus",
+            "description": "Provide the allowed domains, seed URLs, and content sections needed for a research question. Collect a bounded sample and preserve the source for each document. Inspect repeated navigation and missing text before treating the corpus as sufficient evidence for a report."
+          },
+          {
+            "title": "Extract a product comparison table",
+            "description": "Specify required fields and several representative product pages. Choose an extraction method suited to the page structure, validate the output shape, and compare sampled values with the rendered source. Report unavailable fields rather than inferring values from adjacent products."
+          },
+          {
+            "title": "Refresh documentation inputs",
+            "description": "For a defined documentation section, collect the requested pages and compare the resulting content with a prior snapshot supplied by the user. Keep URLs and retrieval context so additions and deletions can be reviewed without confusing crawler omissions with upstream changes."
+          },
+          {
+            "title": "Supply structured data through MCP",
+            "description": "Connect the host to a prepared Crawl4AI server and run one small extraction. Return the requested fields with source and failure information, then decide whether to widen the job. A successful MCP connection does not validate either the crawl boundary or the data quality."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Crawl4AI",
+        "description": "Choose the official hosted MCP or a self-hosted crawler, then prepare the credentials and dependencies required by that deployment.",
+        "items": [
+          {
+            "title": "Crawler runtime",
+            "description": "Prepare the Python or documented Docker/server environment, browser dependencies, and endpoint access."
+          },
+          {
+            "title": "Output contract",
+            "description": "Define allowed URLs, page limits, fields, and a sample-validation method before a batch."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Crawl4AI primarily a browser task agent?",
+          "answer": "Its main role is crawling and extraction for downstream data use. It may render or interact with pages as part of collection, but that is different from promising arbitrary authenticated business workflows."
+        },
+        {
+          "question": "Which interface should an external agent use?",
+          "answer": "Use the documented server API or MCP when a crawler service is prepared; use the Python library when building a maintained application. Keep deployment prerequisites with the selected path."
+        },
+        {
+          "question": "Is model-based extraction mandatory?",
+          "answer": "Choose the extraction method according to the content and required fields. Model-assisted extraction has separate configuration and cost; do not assume every crawl needs an LLM key."
+        },
+        {
+          "question": "Is there a confirmed official Skill?",
+          "answer": "Use the upstream library and server documentation; the main repository does not document an official end-user Skill. Community Skill wrappers remain separate sources with their own maintainers."
+        },
+        {
+          "question": "How should the crawl be limited?",
+          "answer": "Specify seed URLs, allowed sites, page limits, required content, and output fields before running. Inspect a sample before broadening collection so navigation loops and irrelevant pages are caught early."
+        },
+        {
+          "question": "What makes the output ready for an agent?",
+          "answer": "Keep source URLs, check required fields, flag missing content, and distinguish extraction errors from actual empty values. Well-formed Markdown or JSON is only the format, not proof of factual completeness."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Crawl4AI：将网页转换为结构化 Agent 输入",
+      "seoDescription": "通过 Crawl4AI 的 Python、部署 API 或文档中的 MCP 接口收集页面内容，用于调查与数据处理；先限定抓取范围，再验证提取字段。",
+      "description": "通过 Crawl4AI 的 Python、部署 API 或文档中的 MCP 接口收集页面内容，用于调查与数据处理；先限定抓取范围，再验证提取字段。",
+      "kind": "网页抓取与提取框架",
+      "overviewTitle": "关于 Crawl4AI",
+      "overview": [
+        "Crawl4AI 是从网页生成可用内容的抓取和提取框架，重点是文本与结构化输出，而不是代表用户完成整项业务流程。应先确定页面和输出要求，再选择提取设置。",
+        "开发者可使用 Python 库，已部署服务则提供 API 和 MCP 供 Agent 调用。官方 Docker 指南说明编码 Agent 的 MCP 使用方式，连接前需要准备服务端，客户端条目不替代抓取后端。",
+        "仓库采用 Apache-2.0。浏览器渲染、网络访问及模型提取有各自资源和凭据要求。当前未在主仓确认官方用户 Skill，社区 Skill 需按真实维护者标明，不能作为上游官方指引。"
+      ],
+      "capabilitiesTitle": "Crawl4AI 在浏览器流程中的作用",
+      "capabilitiesIntro": "将抓取作为数据生产步骤，同时选择页面、字段、提取方法与服务接口。先验证小样本，再将数值交给其他 Agent 或报告，并记录来源、遗漏及无法解析的情况。",
+      "capabilities": [
+        {
+          "title": "面向内容的抓取",
+          "description": "选择限定页面集合，输出适合后续调查或处理的文本。"
+        },
+        {
+          "title": "结构化提取",
+          "description": "定义字段与提取方式，复用前检查缺失或格式错误。"
+        },
+        {
+          "title": "面向 Agent 的服务接入",
+          "description": "准备抓取运行环境后，使用文档中的部署 API 或 MCP。"
+        }
+      ],
+      "useCases": {
+        "title": "Crawl4AI 使用场景",
+        "description": "研究语料、比较表、文档更新与 MCP 提取各有完整性检查。需区分抓取失败和来源空值，保留出处后再扩大采集，避免格式正确的文本或对象掩盖实际遗漏。",
+        "items": [
+          {
+            "title": "建立有来源的研究语料",
+            "description": "提供允许域名、起始 URL 与调查所需内容区块，先收集有限样本并保留每份文档来源。检查重复导航和缺失正文，再判断语料是否足以支持报告。"
+          },
+          {
+            "title": "提取产品比较表",
+            "description": "指定字段及代表产品页面，按结构选择提取方式，校验输出并对照渲染来源抽查。无法取得的字段应标明，不从相邻产品推断补值。"
+          },
+          {
+            "title": "更新文档输入",
+            "description": "对明确文档区域收集指定页面，与用户提供的旧快照比较，保留 URL 及获取上下文，让新增和删除可审阅，避免把抓取遗漏当成上游改动。"
+          },
+          {
+            "title": "通过 MCP 提供结构化数据",
+            "description": "将宿主连接到准备好的 Crawl4AI 服务，先执行一次小规模提取，返回字段、来源和失败信息，再决定是否扩大任务。MCP 连通不等于范围和数据质量已合格。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Crawl4AI 前的准备",
+        "description": "先选择官方托管 MCP 或自部署爬取服务，再准备对应的认证与依赖。",
+        "items": [
+          {
+            "title": "抓取运行环境",
+            "description": "准备 Python 或文档中的 Docker／服务环境、浏览器依赖及端点访问。"
+          },
+          {
+            "title": "输出要求",
+            "description": "批量前定义允许 URL、页面限制、字段及抽样验证方法。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Crawl4AI 主要是浏览器任务 Agent 吗？",
+          "answer": "主要职责是为下游数据使用抓取和提取内容。采集时可以渲染或交互，但不能据此承诺任意登录业务流程。"
+        },
+        {
+          "question": "外部 Agent 应选哪个入口？",
+          "answer": "已有抓取服务时可选文档中的 API 或 MCP，需要维护应用时可使用 Python 库，各路径前提应分别列明。"
+        },
+        {
+          "question": "提取必须调用模型吗？",
+          "answer": "按内容和字段选择提取方式。模型辅助提取有独立配置与成本，不能假定每次抓取都需要模型密钥。"
+        },
+        {
+          "question": "已确认官方 Skill 吗？",
+          "answer": "当前确认上游库与服务文档，未在主仓确认官方用户 Skill；社区包装属于有独立维护者的来源。"
+        },
+        {
+          "question": "怎样限定抓取范围？",
+          "answer": "运行前明确起始 URL、允许网站、页面限制、目标内容与字段，扩大前检查样本，尽早发现导航循环和无关页面。"
+        },
+        {
+          "question": "什么样的输出适合 Agent 使用？",
+          "answer": "保留来源，检查必填字段、标明缺失内容，区分提取错误和实际空值。Markdown 或 JSON 格式正确不代表事实完整。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "citrolabs",
+    "slug": "ego-lite",
+    "name": "Ego Lite",
+    "repository": "https://github.com/citrolabs/ego-lite",
+    "website": "https://www.egolite.ai",
+    "documentation": "https://www.egolite.app/document/en/docs/product-introduce",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/citrolabs/ego-lite/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/citrolabs/ego-lite/blob/main/skills/ego-browser/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://www.egolite.app/document/en/docs/product-introduce",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "browsermcp/browser-mcp",
+      "browseros-ai/browseros",
+      "browser-use/browser-use",
+      "pinchtab/pinchtab"
+    ],
+    "en": {
+      "seoTitle": "Ego Lite: Share a Logged-In Browser with Coding Agents",
+      "seoDescription": "Use the ego-browser Skill to let a coding agent work in its own browser Space while you keep your tabs. Ego Lite supports macOS and Windows and can reuse imported login state.",
+      "description": "Use the ego-browser Skill to let a coding agent work in its own browser Space while you keep your tabs. Ego Lite supports macOS and Windows and can reuse imported login state.",
+      "kind": "Shared agent browser",
+      "overviewTitle": "About Ego Lite",
+      "overview": [
+        "Ego Lite is CitroLabs’ Chromium-based browser for people and external coding agents. Instead of placing another assistant inside the page, ego-browser connects the agent you already use to the browser. The official instructions name Cursor, Codex, and other shell-capable hosts.",
+        "A Space groups the tabs used by an agent task while you keep browsing elsewhere. Imported Chrome data can supply existing login state, but the selected account and session still need review. Spaces separate task activity; they should not be described as a guarantee of complete security isolation.",
+        "Follow the macOS or Windows onboarding and official ego-browser Skill for the browser version you install. Keep browser execution separate from the host model’s processing of page content. The GitHub tooling uses MIT licensing; that alone does not establish the license or distribution terms of every bundled browser component."
+      ],
+      "capabilitiesTitle": "How Ego Lite Fits the Browser Workflow",
+      "capabilitiesIntro": "The shared browser, task Spaces, and ego-browser connection have different roles. Confirm the account and browser version before handing a task to an external agent, even when login state was imported successfully.",
+      "capabilities": [
+        {
+          "title": "Agent task Spaces",
+          "description": "Keep an agent’s task tabs organized separately from the tabs you are actively using."
+        },
+        {
+          "title": "Existing login context",
+          "description": "Use an imported browser setup after confirming the account and permitted sites."
+        },
+        {
+          "title": "Official connection Skill",
+          "description": "ego-browser supplies the instructions and connection layer for external coding agents."
+        }
+      ],
+      "useCases": {
+        "title": "Ego Lite Use Cases",
+        "description": "Ego Lite is relevant when browser continuity matters: signed-in work, parallel research, draft forms, or authenticated testing. A task Space organizes activity without deciding which account actions are authorized.",
+        "items": [
+          {
+            "title": "Read a signed-in work portal",
+            "description": "On an approved account, name the portal section and report fields. Let the agent work in its Space and return a sourced summary while you keep your own tabs. Confirm the account first so imported session data does not silently select the wrong workspace."
+          },
+          {
+            "title": "Run research beside daily browsing",
+            "description": "Give an agent a bounded set of public pages and a comparison question. Keep its research tabs in a task Space and inspect citations in the output. Separate the task’s evidence from unrelated tabs rather than exposing the whole browsing session as context."
+          },
+          {
+            "title": "Prepare a form for human review",
+            "description": "Provide an approved test page and exact values for a draft. Let the agent fill the fields in its task Space and show the resulting state, then take over for review. Keep the submit action outside the agent’s scope until you explicitly authorize it."
+          },
+          {
+            "title": "Check an authenticated web application",
+            "description": "Use a dedicated test account for an application that cannot be checked anonymously. Ask the agent to reproduce one navigation or validation issue, preserving the session context and observed state. Report the exact failing path rather than treating login access as test coverage."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Ego Lite",
+        "description": "Prepare the browser, the external-agent Skill, and the intended account before handing over a task Space.",
+        "items": [
+          {
+            "title": "macOS or Windows onboarding",
+            "description": "Install the supported Ego Lite build and complete browser onboarding before connecting the Skill."
+          },
+          {
+            "title": "Approved login state",
+            "description": "Check the imported profile and the account in the task Space; avoid unrelated personal data."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Ego Lite a plugin or a browser?",
+          "answer": "It is a Chromium-based browser; ego-browser is the Skill and connection layer used by external agents. Installing only the Skill does not replace browser onboarding."
+        },
+        {
+          "question": "Which platforms does Ego Lite support?",
+          "answer": "The official README lists macOS and Windows; Linux is on the roadmap. Choose a current build for your system and follow its onboarding before connecting an agent."
+        },
+        {
+          "question": "Do Spaces create separate accounts?",
+          "answer": "Do not assume that. Spaces organize task tabs; existing login state may be shared by the configured browser. Inspect the active account and application workspace before operating."
+        },
+        {
+          "question": "Can Floatboat use ego-browser?",
+          "answer": "Use the documented shell-capable agent path with the installed browser and official Skill. The connection does not mean Ego Lite is bundled with Floatboat or supported on every operating system."
+        },
+        {
+          "question": "Does local browser data stay away from the model?",
+          "answer": "Browser storage and agent inference are different. The host may send page observations to its model provider, so local bookmarks or cookies do not imply local-only task processing."
+        },
+        {
+          "question": "Are published speed comparisons a guarantee?",
+          "answer": "No. The upstream benchmarks use particular agents, tasks, and grading conditions. Compare your own task and model before expecting the same relative speed or success rate."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Ego Lite：与编码 Agent 共用已登录的浏览器",
+      "seoDescription": "通过 ego-browser Skill，让编码 Agent 在任务 Space 工作，你继续使用自己的标签页。Ego Lite 支持 macOS 和 Windows，可复用导入的登录状态。",
+      "description": "通过 ego-browser Skill，让编码 Agent 在任务 Space 工作，你继续使用自己的标签页。Ego Lite 支持 macOS 和 Windows，可复用导入的登录状态。",
+      "kind": "人机共用 Agent 浏览器",
+      "overviewTitle": "关于 Ego Lite",
+      "overview": [
+        "Ego Lite 是 CitroLabs 面向用户和外部编码 Agent 的 Chromium 浏览器。ego-browser 将现有 Agent 连接到浏览器，官方指引列明 Cursor、Codex 及其他能运行命令的宿主。",
+        "Space 将 Agent 任务使用的标签页组织在一起，你可继续在别处浏览。导入的 Chrome 数据可提供登录状态，但仍需核对账号与会话。Space 用于区分任务活动，不能直接称为完整安全隔离保证。",
+        "按所安装版本完成 macOS 或 Windows 引导并使用官方 ego-browser Skill。浏览器运行位置与宿主模型处理页面内容需分别考虑。GitHub 工具采用 MIT 许可，但这不能代表所有捆绑浏览器组件的许可和分发条款。"
+      ],
+      "capabilitiesTitle": "Ego Lite 在浏览器流程中的作用",
+      "capabilitiesIntro": "共用浏览器、任务 Space 和 ego-browser 连接承担不同职责。即使登录状态已导入，也需核对账号与浏览器版本，再将范围明确的任务交给外部 Agent。",
+      "capabilities": [
+        {
+          "title": "Agent 任务 Space",
+          "description": "将 Agent 任务标签页与自己正在使用的标签页分开组织。"
+        },
+        {
+          "title": "既有登录上下文",
+          "description": "导入浏览器配置后，核对账号与获准网站再使用。"
+        },
+        {
+          "title": "官方连接 Skill",
+          "description": "ego-browser 提供外部编码 Agent 的指引和连接层。"
+        }
+      ],
+      "useCases": {
+        "title": "Ego Lite 使用场景",
+        "description": "需要延续浏览器状态时，可考虑登录工作、并行调查、表单草稿或登录测试。Space 组织任务活动，但不会替代账号权限决定，仍需明确操作范围与验收结果。",
+        "items": [
+          {
+            "title": "读取已登录工作门户",
+            "description": "在获准账号中明确门户区域与报告字段，让 Agent 在自己的 Space 整理带来源摘要，你继续使用自己的标签页。先核对账号，避免导入会话误选工作区。"
+          },
+          {
+            "title": "在日常浏览旁开展调查",
+            "description": "提供一组公开页面和比较问题，将调查标签页放进任务 Space，并检查输出引用。任务证据与无关标签页分开，不把整个浏览会话都当作上下文。"
+          },
+          {
+            "title": "准备人工审阅的表单",
+            "description": "提供获准测试页面与草稿字段值，让 Agent 在任务 Space 填写并展示状态，再由你接手审阅。提交动作在明确授权前不属于本次操作范围。"
+          },
+          {
+            "title": "检查登录后的 Web 应用",
+            "description": "对无法匿名检查的应用使用专用测试账号，让 Agent 复现一处导航或校验问题，保留会话上下文与实际状态。交付确切失败路径，登录可用不等于测试覆盖完整。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Ego Lite 前的准备",
+        "description": "将任务交给 Agent Space 前，先准备浏览器、外部 Agent Skill 及实际使用的账号。",
+        "items": [
+          {
+            "title": "macOS 或 Windows 引导",
+            "description": "安装受支持的 Ego Lite 版本，完成浏览器引导后再连接 Skill。"
+          },
+          {
+            "title": "获准登录状态",
+            "description": "检查导入配置与任务 Space 中的账号，避免涉及无关个人数据。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Ego Lite 是插件还是浏览器？",
+          "answer": "它是 Chromium 浏览器，ego-browser 是供外部 Agent 使用的 Skill 与连接层，单独安装 Skill 不替代浏览器引导。"
+        },
+        {
+          "question": "Ego Lite 支持哪些平台？",
+          "answer": "官方 README 列出 macOS 和 Windows，Linux 仍在路线图中。应选择适配系统的当前版本，完成浏览器引导后再连接 Agent。"
+        },
+        {
+          "question": "Space 会创建独立账号吗？",
+          "answer": "不能这样假定。Space 组织任务标签页，登录状态可能来自同一浏览器配置；操作前需检查活跃账号和应用工作区。"
+        },
+        {
+          "question": "Floatboat 能使用 ego-browser 吗？",
+          "answer": "可按能执行命令的 Agent 路径使用已安装浏览器和官方 Skill；这不表示 Floatboat 捆绑 Ego Lite 或支持所有操作系统。"
+        },
+        {
+          "question": "本地浏览器数据不会发给模型吗？",
+          "answer": "浏览器存储与 Agent 推理不同，宿主可能把页面观察发送给模型，本地书签或 Cookie 不意味着整项任务只在本机处理。"
+        },
+        {
+          "question": "公布的速度对比是效果保证吗？",
+          "answer": "不是。上游测试使用特定 Agent、任务与评分条件，应以自己的任务和模型验证，不能直接套用速度或成功率。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "browseros-ai",
+    "slug": "browseros",
+    "name": "BrowserOS",
+    "repository": "https://github.com/browseros-ai/BrowserOS",
+    "website": "https://www.browseros.com",
+    "documentation": "https://github.com/browseros-ai/BrowserOS/blob/main/docs/neo/mcp/index.mdx",
+    "license": "AGPL-3.0",
+    "licenseUrl": "https://github.com/browseros-ai/BrowserOS/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/browseros-ai/BrowserOS/blob/main/skills/browseros-neo/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/browseros-ai/BrowserOS/blob/main/docs/neo/mcp/index.mdx",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "citrolabs/ego-lite",
+      "browsermcp/browser-mcp",
+      "microsoft/playwright-mcp",
+      "chromedevtools/chrome-devtools-mcp"
+    ],
+    "en": {
+      "seoTitle": "BrowserOS: Connect Coding Agents to a Browser over Local MCP",
+      "seoDescription": "Use BrowserOS neo’s local MCP endpoint from Floatboat or another MCP host. Keep the browser product, the external-agent connection, and the official browseros-neo Skill in one workflow.",
+      "description": "Use BrowserOS neo’s local MCP endpoint from Floatboat or another MCP host. Keep the browser product, the external-agent connection, and the official browseros-neo Skill in one workflow.",
+      "kind": "Agent browser with local MCP",
+      "overviewTitle": "About BrowserOS",
+      "overview": [
+        "BrowserOS is an agentic browser project, and its neo documentation exposes a local MCP server for external AI tools. The connection page explicitly lists Cursor and Codex alongside other clients. This external-tool path is distinct from asking the browser’s own built-in assistant to do a task.",
+        "Open the MCP panel in the installed browser to obtain its current endpoint. Supported clients have connection helpers; other MCP hosts can use the displayed URL. A local endpoint describes the browser connection, not where the host agent’s language model runs or how it processes page content.",
+        "The official browseros-neo Skill supplies instructions for that browser surface. Keep it aligned with the installed BrowserOS generation rather than combining older extension instructions with neo configuration. The source repository is AGPL-3.0; review distribution obligations separately from ordinary task use."
+      ],
+      "capabilitiesTitle": "How BrowserOS Fits the Browser Workflow",
+      "capabilitiesIntro": "Start from the endpoint shown by the installed BrowserOS generation. Client connection helpers and the official Skill support that interface; neither changes the selected model or grants access to an arbitrary account.",
+      "capabilities": [
+        {
+          "title": "Local MCP endpoint",
+          "description": "Read the browser’s displayed endpoint and configure an external MCP client against it."
+        },
+        {
+          "title": "Client connection helpers",
+          "description": "The neo connection guide lists supported agent hosts and a manual path for other MCP clients."
+        },
+        {
+          "title": "Browser-specific guidance",
+          "description": "Use the official browseros-neo Skill with the matching browser generation."
+        }
+      ],
+      "useCases": {
+        "title": "BrowserOS Use Cases",
+        "description": "An external-agent connection is useful for repository checks and account-specific pages, while some jobs fit the browser’s own interface. Compare where the work belongs and keep handoff state explicit.",
+        "items": [
+          {
+            "title": "Connect an existing coding workflow",
+            "description": "When the repository agent needs to inspect a web change, connect it to the endpoint shown by BrowserOS neo. Verify a public page title before opening the local application, then check one control and return the observed state alongside the relevant code question."
+          },
+          {
+            "title": "Inspect an account-specific page",
+            "description": "Choose an approved test account inside the browser and define the permitted page. Ask the external agent for a read-only summary of specified fields, recording the active account and source. MCP connectivity alone does not authorize changes to that account."
+          },
+          {
+            "title": "Compare a browser-native and external agent",
+            "description": "Use the same small website task to decide whether the work belongs in the browser or in a repository conversation. Compare the output and evidence, not only the interface. Keep each task’s model and connection configuration recorded so the comparison is interpretable."
+          },
+          {
+            "title": "Prepare a human handoff",
+            "description": "Let the agent inspect a form or application state without completing a consequential action. Return the current page, selected values, and outstanding confirmation so a person can review the task in the browser. Verify the visible state before continuing after a handoff."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using BrowserOS",
+        "description": "Match the installed browser generation to its MCP configuration and confirm which profile the external agent will use.",
+        "items": [
+          {
+            "title": "Matching BrowserOS generation",
+            "description": "Use a supported BrowserOS neo build and read its MCP panel; do not rely on legacy extension instructions."
+          },
+          {
+            "title": "External client configuration",
+            "description": "Configure the displayed endpoint in the selected host and verify a public page before using private sessions."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is BrowserOS only a built-in assistant?",
+          "answer": "No. The reviewed neo documentation provides a local MCP endpoint for external tools, explicitly including Cursor and Codex. That path is the basis for the Floatboat use case here."
+        },
+        {
+          "question": "Where should I copy the endpoint from?",
+          "answer": "Open the installed browser’s MCP panel and use the displayed address. Follow its connection instructions rather than assuming a fixed port will be correct on every installation."
+        },
+        {
+          "question": "Does local MCP imply local inference?",
+          "answer": "No. The MCP server connects the agent to the browser on the machine; the agent’s model may still run remotely. Assess page content and model configuration separately."
+        },
+        {
+          "question": "Is there an official Skill?",
+          "answer": "The BrowserOS repository includes browseros-neo instructions. Use that Skill with the corresponding browser version; it is not a separate browser download or an independent product."
+        },
+        {
+          "question": "Should the old and neo setup be mixed?",
+          "answer": "Follow one documented generation. Client entries, extension behavior, and endpoint choices may differ; verify the installed version before copying a configuration from an older tutorial."
+        },
+        {
+          "question": "What confirms the agent is connected correctly?",
+          "answer": "List the available tools, open one harmless public page, and compare its title or content with the browser. A configuration file being written is not sufficient proof of a working connection."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "BrowserOS：通过本地 MCP 将编码 Agent 连接到浏览器",
+      "seoDescription": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。",
+      "description": "通过 BrowserOS neo 的本地 MCP 端点连接 Floatboat 或其他 MCP 宿主，操作网页并检查结果。官方 browseros-neo Skill 提供相应的浏览器任务指引。",
+      "kind": "带本地 MCP 的 Agent 浏览器",
+      "overviewTitle": "关于 BrowserOS",
+      "overview": [
+        "BrowserOS 是 Agent 浏览器项目，其 neo 文档为外部 AI 工具提供本地 MCP 服务。连接页明确列出 Cursor、Codex 等客户端，这条路径与使用浏览器内置助手不同。",
+        "在已安装浏览器的 MCP 面板取得当前端点。支持的客户端有连接辅助，其他 MCP 宿主可使用显示的 URL。本地端点只说明浏览器连接位置，不代表宿主模型在本机运行。",
+        "官方 browseros-neo Skill 提供对应浏览器入口的指引，应与实际 BrowserOS 代际匹配，不能把旧扩展说明和 neo 配置混用。源码仓采用 AGPL-3.0，分发义务与日常任务使用需分别核对。"
+      ],
+      "capabilitiesTitle": "BrowserOS 在浏览器流程中的作用",
+      "capabilitiesIntro": "从所安装 BrowserOS 代际显示的端点开始，结合客户端连接辅助与官方 Skill 使用对应接口。连接不改变选定模型，也不自动授权访问任意账号，需要核对实际会话。",
+      "capabilities": [
+        {
+          "title": "本地 MCP 端点",
+          "description": "读取浏览器显示的端点，将外部 MCP 客户端连接到该地址。"
+        },
+        {
+          "title": "客户端连接辅助",
+          "description": "neo 连接指南列出支持的宿主，并提供其他 MCP 客户端的手动路径。"
+        },
+        {
+          "title": "浏览器专属指引",
+          "description": "为匹配代际的浏览器使用官方 browseros-neo Skill。"
+        }
+      ],
+      "useCases": {
+        "title": "BrowserOS 使用场景",
+        "description": "外部 Agent 连接适合仓库检查及账号专属页面，另一些任务可在浏览器自身界面完成。以下场景帮助判断工作入口，并在人工接手时保留明确状态和下一步。",
+        "items": [
+          {
+            "title": "连接现有编码工作流",
+            "description": "仓库 Agent 需要检查网页改动时，连接 BrowserOS neo 显示的端点。先用公开页标题验证连接，再打开本地应用，检查一个控件并将状态与代码问题对应。"
+          },
+          {
+            "title": "检查账号专属页面",
+            "description": "在浏览器选择获准测试账号并限定页面，让外部 Agent 只读整理指定字段，记录活跃账号与来源。MCP 连接成功并不授权修改账号内容。"
+          },
+          {
+            "title": "比较内置与外部 Agent 流程",
+            "description": "用同一小型网站任务判断工作适合在浏览器还是仓库对话中完成。比较输出和证据，不只看界面；记录各任务的模型与连接配置，让比较有明确含义。"
+          },
+          {
+            "title": "准备人工接手",
+            "description": "让 Agent 检查表单或应用状态，暂不执行关键动作，返回当前页面、已选值和待确认事项，供用户在浏览器审阅。接手后继续之前，再核对可见状态。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 BrowserOS 前的准备",
+        "description": "将已安装浏览器代际与 MCP 配置对应，并确认外部 Agent 将使用的配置和账号。",
+        "items": [
+          {
+            "title": "匹配 BrowserOS 代际",
+            "description": "使用支持的 BrowserOS neo 版本并查看 MCP 面板，不依赖旧扩展配置。"
+          },
+          {
+            "title": "外部客户端配置",
+            "description": "在宿主配置显示的端点，先验证公开页，再使用私有会话。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "BrowserOS 只有内置助手吗？",
+          "answer": "不是。neo 文档提供外部工具使用的本地 MCP 端点，明确列出 Cursor、Codex，本页据此说明 Floatboat 使用路径。"
+        },
+        {
+          "question": "从哪里复制端点？",
+          "answer": "从已安装浏览器的 MCP 面板复制显示地址并按说明连接，不假定每台安装都使用固定端口。"
+        },
+        {
+          "question": "本地 MCP 就是本地推理吗？",
+          "answer": "不是。本地 MCP 将 Agent 连接到电脑中的浏览器，模型仍可能远程运行，需另行检查页面内容与模型配置。"
+        },
+        {
+          "question": "有官方 Skill 吗？",
+          "answer": "BrowserOS 仓库包含 browseros-neo 指引，应匹配浏览器版本使用；它不是单独浏览器下载，也不是另一产品。"
+        },
+        {
+          "question": "旧版配置能和 neo 混用吗？",
+          "answer": "应遵循同一代际文档。客户端条目、扩展行为和端点可能不同，复制旧教程配置前先核对安装版本。"
+        },
+        {
+          "question": "怎样确认 Agent 连接正确？",
+          "answer": "先确认工具列表，再打开无敏感内容的公开页，对照浏览器中的标题或正文。配置文件写入成功不等于连接可用。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "browsermcp",
+    "slug": "browser-mcp",
+    "name": "Browser MCP",
+    "repository": "https://github.com/BrowserMCP/mcp",
+    "website": "https://browsermcp.io",
+    "documentation": "https://browsermcp.io/docs",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/BrowserMCP/mcp/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/BrowserMCP/mcp/blob/main/README.md",
+        "label": {
+          "en": "Server and extension guide",
+          "zh": "服务与扩展指南"
+        }
+      },
+      {
+        "href": "https://browsermcp.io/docs",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "citrolabs/ego-lite",
+      "browseros-ai/browseros",
+      "microsoft/playwright-mcp",
+      "pinchtab/pinchtab"
+    ],
+    "en": {
+      "seoTitle": "Browser MCP: Let Coding Agents Use Your Own Chrome Tabs",
+      "seoDescription": "Connect a local MCP server and Chrome extension so an agent can use your existing browser profile. Pair the extension deliberately, then work in task tabs with the selected account.",
+      "description": "Connect a local MCP server and Chrome extension so an agent can use your existing browser profile. Pair the extension deliberately, then work in task tabs with the selected account.",
+      "kind": "MCP server and Chrome extension",
+      "overviewTitle": "About Browser MCP",
+      "overview": [
+        "Browser MCP provides an MCP server and extension for using your own Chrome from an AI application. The README names Cursor, Codex, and other clients. It is useful when a task depends on an existing browser profile rather than an unrelated automation browser.",
+        "A local daemon forwards browser calls through the extension, which requires a pairing confirmation. The documented design gives agents their own task tabs and retains extension-side controls such as stopping activity. Confirm the pairing code and selected profile before granting access.",
+        "The repository uses Apache-2.0 and provides an MCP server and browser extension. It relies on the connected agent for task planning. Existing login state does not remove account permissions, and local browser execution does not determine how the host model processes page content."
+      ],
+      "capabilitiesTitle": "How Browser MCP Fits the Browser Workflow",
+      "capabilitiesIntro": "Pair the official extension with its local server, choose the intended profile, and verify task tabs before reading account data. The connection layer supplies access; the host still decides and checks each action.",
+      "capabilities": [
+        {
+          "title": "Use a real Chrome profile",
+          "description": "Operate approved signed-in pages through the extension instead of rebuilding every login in a fresh browser."
+        },
+        {
+          "title": "Local pairing and relay",
+          "description": "Check the displayed pairing code before allowing the extension to relay agent commands."
+        },
+        {
+          "title": "Task-tab operation",
+          "description": "Keep the agent’s browser work in its task tabs and use the extension’s stop control when necessary."
+        }
+      ],
+      "useCases": {
+        "title": "Browser MCP Use Cases",
+        "description": "Existing Chrome state is helpful for portal reports and profile-specific issues. The following tasks keep that continuity while separating draft preparation, read-only collection, and review of agent tab activity.",
+        "items": [
+          {
+            "title": "Collect a portal status report",
+            "description": "After pairing the approved Chrome profile, ask the agent to read a named report section. Capture the active account, period, and selected fields, then return a traceable summary. Avoid treating every page visible in your personal profile as part of the task."
+          },
+          {
+            "title": "Check a profile-dependent bug",
+            "description": "When a bug occurs only in the existing profile, reproduce the specified interaction through the extension rather than switching immediately to a fresh browser. Record the relevant state and keep unrelated extensions or tabs out of the investigation until they are needed."
+          },
+          {
+            "title": "Prepare values in an authenticated form",
+            "description": "Provide exact draft values and a clear stopping point. Have the agent fill the form in a task tab and report the visible validation state. The person reviewing the browser can then decide whether to submit; the extension connection does not grant blanket write approval."
+          },
+          {
+            "title": "Review task-tab activity",
+            "description": "For a shared browsing session, ask the agent to name the pages it touched and summarize the observed result. Use the extension stop control if scope changes unexpectedly, then inspect the task tabs before resuming. A clean tool response cannot replace checking the actual pages."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Browser MCP",
+        "description": "Prepare the intended Chrome profile, extension pairing, and client connection before granting browser access.",
+        "items": [
+          {
+            "title": "Chrome extension",
+            "description": "Install the official extension in the intended Chrome profile and keep its controls available."
+          },
+          {
+            "title": "MCP server and pairing",
+            "description": "Prepare the documented Node runtime, connect the MCP package, and approve the matching local pairing code."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is this Microsoft’s Playwright MCP?",
+          "answer": "No. Browser MCP is a separate project with its own MCP package, daemon, and Chrome extension. Both can automate pages, but their setup and browser-session model differ."
+        },
+        {
+          "question": "Must I install both parts?",
+          "answer": "The documented real-browser workflow uses the MCP server and Chrome extension together. A client configuration alone does not provide the extension or complete the pairing step."
+        },
+        {
+          "question": "How is pairing approved?",
+          "answer": "Follow the extension popup and compare the displayed code with the agent’s code before allowing the connection. Do not approve an unexpected pairing merely because the extension is installed."
+        },
+        {
+          "question": "Can it access incognito or internal pages?",
+          "answer": "The extension enforces its documented restrictions. Incognito requires an explicit browser setting, and internal browser/extension pages are restricted; do not promise arbitrary-page access."
+        },
+        {
+          "question": "Does it have an official Skill?",
+          "answer": "Use the official server, extension, and MCP documentation. The main repository does not document an official end-user Skill installation."
+        },
+        {
+          "question": "Does my model see the whole profile?",
+          "answer": "The agent receives the browser data exposed through its tool use. Scope the task and selected tabs carefully; using a local relay does not establish that observations stay away from a remote model."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Browser MCP：让编码 Agent 操作自己的 Chrome 标签页",
+      "seoDescription": "连接本地 MCP 服务与 Chrome 扩展，让 Agent 使用现有浏览器配置。明确配对扩展后，在任务标签页中使用已核对的账号。",
+      "description": "连接本地 MCP 服务与 Chrome 扩展，让 Agent 使用现有浏览器配置。明确配对扩展后，在任务标签页中使用已核对的账号。",
+      "kind": "MCP 服务与 Chrome 扩展",
+      "overviewTitle": "关于 Browser MCP",
+      "overview": [
+        "Browser MCP 提供 MCP 服务和扩展，让 AI 应用使用你自己的 Chrome。README 列明 Cursor、Codex 等客户端，适合依赖现有浏览器配置、而非独立自动化浏览器的任务。",
+        "本地守护进程通过扩展转发浏览器调用，扩展需要配对确认。文档设计为 Agent 使用任务标签页，并保留停止活动等扩展端控制；授权前应核对配对码与浏览器配置。",
+        "仓库采用 Apache-2.0，提供 MCP 服务和浏览器扩展，由连接的 Agent 规划任务。既有登录态不能替代账号权限，本地浏览器执行也不决定宿主模型如何处理页面内容。"
+      ],
+      "capabilitiesTitle": "Browser MCP 在浏览器流程中的作用",
+      "capabilitiesIntro": "先将官方扩展与本地服务配对，选择目标配置并检查任务标签页，再读取账号数据。连接层提供访问入口，具体动作仍由宿主选择和验收，不能省略账号范围检查。",
+      "capabilities": [
+        {
+          "title": "使用真实 Chrome 配置",
+          "description": "通过扩展操作获准登录页，无需每次在全新浏览器重建登录。"
+        },
+        {
+          "title": "本地配对与转发",
+          "description": "允许扩展转发 Agent 命令前，核对显示的配对码。"
+        },
+        {
+          "title": "任务标签页操作",
+          "description": "将 Agent 工作放在任务标签页中，必要时使用扩展停止控制。"
+        }
+      ],
+      "useCases": {
+        "title": "Browser MCP 使用场景",
+        "description": "现有 Chrome 状态有助于门户报告和配置专属问题。以下场景保留会话连续性，同时区分草稿准备、只读收集和 Agent 标签活动复核，避免把整个个人配置纳入任务。",
+        "items": [
+          {
+            "title": "收集门户状态报告",
+            "description": "配对获准 Chrome 配置后，让 Agent 读取指定报告区域，记录活跃账号、周期和字段，返回可追溯摘要。个人配置中可见的其他页面不自动属于任务范围。"
+          },
+          {
+            "title": "检查与配置有关的故障",
+            "description": "问题仅在既有配置出现时，先通过扩展复现指定交互，不立即换成全新浏览器。记录相关状态，在确有需要前不扩大到无关扩展或标签页。"
+          },
+          {
+            "title": "在登录表单中准备字段",
+            "description": "提供确切草稿值与停止位置，让 Agent 在任务标签页填写并报告校验状态，之后由浏览器中的用户决定是否提交。扩展连接不等于所有写入都获准。"
+          },
+          {
+            "title": "复核任务标签页活动",
+            "description": "共用浏览会话时，让 Agent 列出接触页面与观察结果。范围意外变化时使用扩展停止控制，检查任务标签页后再继续，不能只看工具响应正常。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Browser MCP 前的准备",
+        "description": "开放浏览器访问前，先准备目标 Chrome 配置、扩展配对和客户端连接。",
+        "items": [
+          {
+            "title": "Chrome 扩展",
+            "description": "在目标 Chrome 配置安装官方扩展，并保留扩展控制入口。"
+          },
+          {
+            "title": "MCP 服务与配对",
+            "description": "准备文档所需 Node 环境，连接 MCP 包并核对本地配对码。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "这是 Microsoft 的 Playwright MCP 吗？",
+          "answer": "不是。Browser MCP 有自己的 MCP 包、守护进程与 Chrome 扩展，两者虽都能操作页面，配置与会话模型不同。"
+        },
+        {
+          "question": "两部分都需要安装吗？",
+          "answer": "文档中的真实浏览器流程需要 MCP 服务与 Chrome 扩展配合，单独写客户端配置不会安装扩展或完成配对。"
+        },
+        {
+          "question": "怎样确认配对？",
+          "answer": "按扩展弹窗核对它与 Agent 显示的配对码，再允许连接；扩展已安装不意味着应批准意外配对。"
+        },
+        {
+          "question": "能访问无痕或浏览器内部页吗？",
+          "answer": "扩展有文档规定的限制，无痕需浏览器显式设置，浏览器及扩展内部页受限，不能承诺任意页面访问。"
+        },
+        {
+          "question": "有官方 Skill 吗？",
+          "answer": "官方使用入口是 MCP 服务、浏览器扩展和配置文档。主仓库没有提供面向用户的官方 Skill 安装说明。"
+        },
+        {
+          "question": "模型会看到整个配置吗？",
+          "answer": "Agent 会收到工具操作暴露的浏览器数据，需要限定任务与标签页；本地转发不等于观察内容不会发送给远程模型。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "pinchtab",
+    "slug": "pinchtab",
+    "name": "PinchTab",
+    "repository": "https://github.com/pinchtab/pinchtab",
+    "website": "https://pinchtab.com",
+    "documentation": "https://github.com/pinchtab/pinchtab#readme",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/pinchtab/pinchtab/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/pinchtab/pinchtab/blob/main/skills/pinchtab/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/pinchtab/pinchtab/blob/main/docs/architecture/mcp.md",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "vercel-labs/agent-browser",
+      "browsermcp/browser-mcp",
+      "steel-dev/steel-browser",
+      "lightpanda-io/lightpanda"
+    ],
+    "en": {
+      "seoTitle": "PinchTab: Browser Control with CLI, MCP, and Managed Instances",
+      "seoDescription": "Run a local browser control plane and call it through CLI, HTTP, or MCP. PinchTab separates profiles, browser instances, and task tabs, with an official Skill for coding agents.",
+      "description": "Run a local browser control plane and call it through CLI, HTTP, or MCP. PinchTab separates profiles, browser instances, and task tabs, with an official Skill for coding agents.",
+      "kind": "Browser control server",
+      "overviewTitle": "About PinchTab",
+      "overview": [
+        "PinchTab is a Go-based browser control service for AI agents. Its command line, HTTP API, and MCP layer expose browser tasks while its control plane manages profiles and instances. It is designed primarily for a local, single-user machine rather than an untrusted public service.",
+        "The npm package includes official Skills for hosts such as Cursor and Codex. A daemon can keep the service available; direct server or bridge modes cover other setups. Select the intended profile, instance, and tab before issuing actions so concurrent tasks do not silently share state.",
+        "The MIT project documents token authentication and security gates for high-risk capabilities. Keep the server local unless you deliberately operate a secured remote deployment. Dashboard access or a working token does not make every endpoint appropriate for an agent task."
+      ],
+      "capabilitiesTitle": "How PinchTab Fits the Browser Workflow",
+      "capabilitiesIntro": "Profiles, browser instances, and task tabs are separate identifiers. Keep them with the chosen CLI, HTTP, or MCP path so repeated or concurrent work does not accidentally operate a different session.",
+      "capabilities": [
+        {
+          "title": "Profiles and instances",
+          "description": "Choose a persistent profile and a running instance before assigning a task tab."
+        },
+        {
+          "title": "Several execution surfaces",
+          "description": "Use CLI, HTTP, or MCP with the same deliberately selected control plane."
+        },
+        {
+          "title": "Official versioned Skills",
+          "description": "The package supplies coding-agent instructions and commands to inspect whether installed copies match the release."
+        }
+      ],
+      "useCases": {
+        "title": "PinchTab Use Cases",
+        "description": "PinchTab is useful where session lifecycle matters as much as page actions: recurring reports, concurrent jobs, local MCP access, and human checkpoints all need explicit runtime and task identifiers.",
+        "items": [
+          {
+            "title": "Keep recurring portal tasks available",
+            "description": "For a recurring read-only report, prepare a named profile and local service, then create a task tab for each run. Record account and time-period checks with the output. Reusing infrastructure saves setup work but does not establish that yesterday’s session is still authenticated."
+          },
+          {
+            "title": "Separate concurrent browser jobs",
+            "description": "When two agents investigate different sites, assign profiles or instances deliberately and keep their tab identifiers with each task. Check that an action changes only the intended page before collecting results. Do not equate separate tabs with isolated credentials."
+          },
+          {
+            "title": "Expose a browser through MCP locally",
+            "description": "Start the configured local instance, attach the MCP layer, and verify a harmless navigation with the selected host. Keep authentication outside the task prompt and return the page title and active identifiers so the connection can be reproduced without disclosing secrets."
+          },
+          {
+            "title": "Hand off an interactive checkpoint",
+            "description": "If a page requires login or consent, pause the tab with the documented handoff mechanism and let a person complete the step. Read the state again before resuming the task, preserving the checkpoint and permitted next action in the record."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using PinchTab",
+        "description": "Select the operating mode and browser connection that fit the task, then check the required runtime and access scope.",
+        "items": [
+          {
+            "title": "Local control plane",
+            "description": "Install the appropriate package or binary, prepare a supported browser, and start daemon, server, or bridge mode as documented."
+          },
+          {
+            "title": "Scoped instance access",
+            "description": "Select profile and tab identifiers, keep tokens in configuration, and review enabled capabilities."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is PinchTab a browser engine?",
+          "answer": "It is a control server and orchestration layer that drives a selected browser. Prepare a supported browser and do not confuse the control-plane version with the browser’s version."
+        },
+        {
+          "question": "Which agent interfaces are available?",
+          "answer": "The official project documents CLI, HTTP API, MCP, and bundled Skills. Choose the surface that fits the host while keeping instance and tab selection consistent."
+        },
+        {
+          "question": "Can the server be exposed publicly?",
+          "answer": "The project is designed first for controlled local use. Remote operation requires deliberate authentication, transport, and endpoint restrictions; the dashboard and MCP layer are privileged control surfaces."
+        },
+        {
+          "question": "Are all capabilities enabled by default?",
+          "answer": "No. High-risk functions have documented policy gates. Read the installed release’s security settings before asking for evaluation, uploads, downloads, or cookie access."
+        },
+        {
+          "question": "How do I check the bundled Skill version?",
+          "answer": "The project provides skill-status and update commands. Inspect local modifications before replacing a Skill so a package refresh does not silently erase task-specific instructions."
+        },
+        {
+          "question": "What should a browser run record include?",
+          "answer": "Keep the selected profile, instance, tab, task boundary, and observed result. These identifiers help distinguish a stale session from a page-level failure without embedding tokens in the report."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "PinchTab：通过 CLI、MCP 与实例管理控制浏览器",
+      "seoDescription": "运行本地浏览器控制服务，通过 CLI、HTTP 或 MCP 调用。PinchTab 区分配置、浏览器实例与任务标签页，并提供编码 Agent 的官方 Skill。",
+      "description": "运行本地浏览器控制服务，通过 CLI、HTTP 或 MCP 调用。PinchTab 区分配置、浏览器实例与任务标签页，并提供编码 Agent 的官方 Skill。",
+      "kind": "浏览器控制服务",
+      "overviewTitle": "关于 PinchTab",
+      "overview": [
+        "PinchTab 是面向 AI Agent 的 Go 浏览器控制服务。命令行、HTTP API 和 MCP 提供任务入口，控制层管理配置与实例，主要面向本地单用户电脑，而非不可信的公共服务。",
+        "npm 包包含 Cursor、Codex 等宿主的官方 Skill。守护进程可保持服务可用，其他环境也有 server 或 bridge 模式。动作前需选择配置、实例与标签页，避免并行任务不知情地共用状态。",
+        "MIT 项目说明令牌认证及高风险能力门禁。除非明确运营受控远程部署，否则保持服务本地使用。能打开仪表盘或持有令牌，不代表每个端点都适合当前任务。"
+      ],
+      "capabilitiesTitle": "PinchTab 在浏览器流程中的作用",
+      "capabilitiesIntro": "配置、浏览器实例和任务标签是不同标识，应与所选 CLI、HTTP 或 MCP 路径一起记录。重复或并行工作时持续核对，避免动作意外进入另一会话。",
+      "capabilities": [
+        {
+          "title": "配置与实例",
+          "description": "分配任务标签页前，选择持续配置与运行实例。"
+        },
+        {
+          "title": "多种执行入口",
+          "description": "通过 CLI、HTTP 或 MCP 使用明确选定的控制服务。"
+        },
+        {
+          "title": "带版本的官方 Skill",
+          "description": "包提供编码 Agent 指引，并可检查已安装副本是否匹配发布版本。"
+        }
+      ],
+      "useCases": {
+        "title": "PinchTab 使用场景",
+        "description": "需要同时管理会话生命周期与页面动作时，可参考周期报表、并行任务、本地 MCP 接入和人工检查点。这些场景均需明确运行环境与任务标识，再验证实际输出。",
+        "items": [
+          {
+            "title": "持续执行门户任务",
+            "description": "为重复只读报表准备命名配置与本地服务，每次运行创建任务标签页并记录账号、周期核对。复用运行环境可减少配置，但不能假定昨天的会话今天仍已登录。"
+          },
+          {
+            "title": "区分并行浏览器任务",
+            "description": "两个 Agent 调查不同网站时，明确分配配置或实例，并为任务保留标签标识。确认动作只改变目标页再收集结果，不能把分开标签页当作凭据隔离。"
+          },
+          {
+            "title": "通过本地 MCP 提供浏览器",
+            "description": "启动已配置本地实例并连接 MCP，在选定宿主中验证无敏感导航。认证留在配置中，返回页面标题与活跃标识，便于复现连接而不泄露密钥。"
+          },
+          {
+            "title": "在交互节点交给用户",
+            "description": "页面需要登录或同意时，通过文档中的交接机制暂停标签页，由用户完成步骤。恢复任务前重新读取状态，记录检查点及获准下一步。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 PinchTab 前的准备",
+        "description": "按任务选择运行模式与浏览器连接方式，再检查运行环境和访问范围。",
+        "items": [
+          {
+            "title": "本地控制服务",
+            "description": "安装对应包或二进制，准备受支持浏览器，按文档启动 daemon、server 或 bridge。"
+          },
+          {
+            "title": "限定实例访问",
+            "description": "选择配置与标签标识，将令牌保留在配置，并核对已启用能力。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "PinchTab 是浏览器引擎吗？",
+          "answer": "它是驱动指定浏览器的控制服务与编排层，需要准备受支持浏览器，控制层版本和浏览器版本应分别记录。"
+        },
+        {
+          "question": "提供哪些 Agent 入口？",
+          "answer": "官方项目提供 CLI、HTTP API、MCP 和捆绑 Skill，可按宿主选择入口，但实例与标签选择需一致。"
+        },
+        {
+          "question": "可以直接公开服务端口吗？",
+          "answer": "项目优先面向受控本地使用，远程运行需要明确认证、传输和端点限制，仪表盘与 MCP 都属于高权限控制入口。"
+        },
+        {
+          "question": "所有能力默认都能用吗？",
+          "answer": "不是。高风险能力有策略门禁，执行脚本、上传、下载或读取 Cookie 前，应核对实际版本安全设置。"
+        },
+        {
+          "question": "怎样检查捆绑 Skill 版本？",
+          "answer": "项目提供 Skill 状态与更新命令，替换前检查本地修改，避免包更新静默覆盖任务专属指引。"
+        },
+        {
+          "question": "一次运行需要记录什么？",
+          "answer": "保留配置、实例、标签、任务边界与实际结果，这些标识可帮助区分过期会话和页面故障，无需把令牌写进报告。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "browser-use",
+    "slug": "browser-use",
+    "name": "Browser Use",
+    "repository": "https://github.com/browser-use/browser-use",
+    "website": "https://browser-use.com",
+    "documentation": "https://docs.browser-use.com",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/browser-use/browser-use/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/browser-use/browser-use/blob/main/skills/browser-use/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/browser-use/plugins",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "browserbase/stagehand",
+      "vercel-labs/agent-browser",
+      "skyvern-ai/skyvern",
+      "citrolabs/ego-lite"
+    ],
+    "en": {
+      "seoTitle": "Browser Use: Browser Tasks Through CLI, Skills, and Python",
+      "seoDescription": "Give an agent a local or cloud browser for multi-step web tasks. Choose the coding-agent CLI or Python framework, then inspect the resulting page and output.",
+      "description": "Give an agent a local or cloud browser for multi-step web tasks. Choose the coding-agent CLI or Python framework, then inspect the resulting page and output.",
+      "kind": "Browser agent framework",
+      "overviewTitle": "About Browser Use",
+      "overview": [
+        "Browser Use combines a browser-control surface with an agent framework. Coding agents can use its CLI and official instructions; developers can build a Python Agent that chooses browser actions with a configured model. These are different execution paths, so select one before following setup examples.",
+        "A local browser keeps the session on your machine; Browser Use Cloud supplies hosted browser infrastructure and a hosted agent API. Existing browser access and cloud sessions have different login, network, and billing conditions. An official Cursor plugin is one packaging option, not the only way to use the project.",
+        "For Floatboat, use the relevant CLI or MCP connection in the same way as the documented external-agent path. Keep the Python library and cloud setup distinct, record the installed version, and verify one bounded task before reusing a session. The repository is MIT-licensed; model and hosted-service charges are separate."
+      ],
+      "capabilitiesTitle": "How Browser Use Fits the Browser Workflow",
+      "capabilitiesIntro": "Choose the CLI for an existing coding agent or the Python framework for an application-owned loop. Browser location, login state, and model configuration need to be selected independently before comparing results.",
+      "capabilities": [
+        {
+          "title": "One browser command at a time",
+          "description": "Use the coding-agent interface to inspect state and choose the next action without writing a complete Python agent."
+        },
+        {
+          "title": "Programmable agent loop",
+          "description": "The Python framework combines a task, model, and browser for workflows that need application-level control."
+        },
+        {
+          "title": "Local or hosted sessions",
+          "description": "Choose the browser location and account scope separately from the language model that drives the task."
+        }
+      ],
+      "useCases": {
+        "title": "Browser Use Use Cases",
+        "description": "The following tasks separate public research, draft interaction, application development, and local UI checks. Each needs its own output check rather than a generic successful-run message.",
+        "items": [
+          {
+            "title": "Research a small set of pages",
+            "description": "Supply several product URLs and the fields to compare. Let the agent navigate and collect evidence with source links, then review missing fields against the original pages. A finished comparison needs traceable values rather than a claim that browsing succeeded."
+          },
+          {
+            "title": "Complete a draft form",
+            "description": "Use an approved test account and provide the values for one form. Have the agent enter them, report validation messages, and stop before submission. Inspect the filled state so an unintended action is not mistaken for a completed draft."
+          },
+          {
+            "title": "Build a repeatable Python job",
+            "description": "When a task belongs in an application, configure the Python Agent with the selected model and browser. Start with a read-only lookup and save its output. Compare repeated runs before expanding the workflow or moving it to hosted infrastructure."
+          },
+          {
+            "title": "Inspect a local web workflow",
+            "description": "Give the agent a reachable development URL and one expected interaction sequence. Capture the observed state after each meaningful step, preserve console or screenshot evidence where available, and hand off a reproducible discrepancy instead of a broad claim of test coverage."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Browser Use",
+        "description": "Choose the CLI or Python path first, then prepare its browser session and any model or cloud credentials it requires.",
+        "items": [
+          {
+            "title": "Execution path",
+            "description": "Select the current CLI/MCP instructions or Python library guide; prepare the browser and model credentials required by that path."
+          },
+          {
+            "title": "Session boundary",
+            "description": "Name the local profile or hosted session and the allowed sites before giving the agent access."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is the CLI the same as the Python Agent?",
+          "answer": "No. The CLI lets an external coding agent drive browser operations; the Python framework lets you construct an agent loop with a model and task. Follow setup instructions for the path you actually use."
+        },
+        {
+          "question": "Does Browser Use require a cloud browser?",
+          "answer": "No. Local and cloud browser paths are documented. A cloud API key, hosted session, and its charges belong to the hosted path rather than every local CLI operation."
+        },
+        {
+          "question": "Can Floatboat use the project?",
+          "answer": "Use the documented external-agent CLI or MCP path after its runtime is installed. This is an integration path, not evidence that Floatboat includes Browser Use or that this page has tested your machine."
+        },
+        {
+          "question": "Does an installed plugin support every agent?",
+          "answer": "Plugin packaging is host-specific. Choose the official Cursor plugin where appropriate, or configure the documented CLI/MCP surface for another host instead of copying a plugin manifest blindly."
+        },
+        {
+          "question": "Where does page content go?",
+          "answer": "It depends on the browser location and model configuration. The agent may send observed content to its model provider, even when the browser itself runs locally. Review both paths before using private pages."
+        },
+        {
+          "question": "What counts as successful completion?",
+          "answer": "Check the requested output and the final website state. A navigation result, generated plan, or nonempty agent history does not by itself prove that the form, lookup, or export is correct."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Browser Use：通过 CLI、Skill 与 Python 执行网页任务",
+      "seoDescription": "为 Agent 提供本地或云端浏览器，完成多步骤网页任务。按工作方式选择编码 Agent CLI 或 Python 框架，并检查最终页面及交付结果。",
+      "description": "为 Agent 提供本地或云端浏览器，完成多步骤网页任务。按工作方式选择编码 Agent CLI 或 Python 框架，并检查最终页面及交付结果。",
+      "kind": "浏览器 Agent 框架",
+      "overviewTitle": "关于 Browser Use",
+      "overview": [
+        "Browser Use 同时提供浏览器控制入口与 Agent 框架。编码 Agent 可以使用 CLI 和官方指引；开发者则可构建由模型选择浏览器动作的 Python Agent。两条执行路径不同，配置前应先确定采用哪一种。",
+        "本地浏览器会话运行在你的电脑上，Browser Use Cloud 则提供托管浏览器及 Agent API。既有浏览器访问与云端会话的登录、网络和计费条件不同。官方 Cursor 插件是一种打包入口，并非项目唯一的使用方式。",
+        "在 Floatboat 中可按文档中的外部 Agent 路径配置 CLI 或 MCP。Python 库和云端配置需分别核对，记录实际安装版本，并先完成一个范围明确的任务再复用会话。仓库采用 MIT 许可，模型及托管服务费用另计。"
+      ],
+      "capabilitiesTitle": "Browser Use 在浏览器流程中的作用",
+      "capabilitiesIntro": "已有编码 Agent 可选 CLI，需要应用控制循环时可选 Python 框架。比较结果前，分别明确浏览器位置、登录状态与模型配置，不将不同入口的条件混为一谈。",
+      "capabilities": [
+        {
+          "title": "逐步控制浏览器",
+          "description": "通过编码 Agent 入口读取页面状态、选择下一步动作，无需先编写完整 Python Agent。"
+        },
+        {
+          "title": "可编程 Agent 循环",
+          "description": "Python 框架组合任务、模型和浏览器，适合需要应用层控制的流程。"
+        },
+        {
+          "title": "本地与托管会话",
+          "description": "浏览器运行位置、账号范围与任务使用的模型分别配置。"
+        }
+      ],
+      "useCases": {
+        "title": "Browser Use 使用场景",
+        "description": "以下场景分别覆盖公开调查、草稿交互、应用开发与本地界面检查，所需证据和完成条件不同，应按具体交付物验收，而不只读取运行成功消息。",
+        "items": [
+          {
+            "title": "调查一组指定网页",
+            "description": "提供几个产品 URL 和待比较字段，让 Agent 浏览并记录来源，再对照原页检查缺失项。最终比较表需要能追溯的数值与链接，不能只报告浏览器运行成功。"
+          },
+          {
+            "title": "填写表单草稿",
+            "description": "使用获准测试账号，提供一份表单的字段值，让 Agent 填写并报告校验提示，在提交前停止。检查实际填写状态，避免把意外提交当作草稿完成。"
+          },
+          {
+            "title": "编写可重复的 Python 任务",
+            "description": "任务需要进入应用时，为 Python Agent 配置指定模型和浏览器。先从只读查询开始并保存输出，比较重复运行结果后，再扩展流程或迁移到托管环境。"
+          },
+          {
+            "title": "检查本地网页流程",
+            "description": "提供可访问的开发地址和一条预期交互流程，在关键动作后记录实际状态，保留可获得的控制台或截图证据。交付可复现差异，不把单条流程称为完整测试覆盖。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Browser Use 前的准备",
+        "description": "先选择 CLI 或 Python 路径，再准备所需浏览器会话，以及该入口需要的模型或云端凭据。",
+        "items": [
+          {
+            "title": "执行入口",
+            "description": "选择当前 CLI／MCP 指引或 Python 库文档，准备该路径要求的浏览器与模型凭据。"
+          },
+          {
+            "title": "会话范围",
+            "description": "授予 Agent 访问前，明确本地配置或托管会话，以及允许操作的网站。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "CLI 与 Python Agent 是同一入口吗？",
+          "answer": "不是。CLI 让外部编码 Agent 驱动浏览器，Python 框架用于组合模型与任务建立 Agent 循环，应按实际入口配置。"
+        },
+        {
+          "question": "必须使用云端浏览器吗？",
+          "answer": "不必。项目提供本地与云端路径，云端密钥、托管会话和相关费用不能套用于所有本地 CLI 操作。"
+        },
+        {
+          "question": "Floatboat 可以使用吗？",
+          "answer": "安装所需运行环境后，可按外部 Agent 的 CLI 或 MCP 路径使用。这不表示 Floatboat 内置该工具，也不表示已测试你的电脑。"
+        },
+        {
+          "question": "安装插件后所有 Agent 都能用吗？",
+          "answer": "插件打包依宿主而定。Cursor 可选择官方插件，其他宿主应配置文档对应的 CLI／MCP，而不是直接复制插件清单。"
+        },
+        {
+          "question": "页面内容会发送到哪里？",
+          "answer": "取决于浏览器位置和模型配置。即使浏览器本地运行，Agent 仍可能把观察到的内容发送给模型提供方，私有页面需分别核对两条数据路径。"
+        },
+        {
+          "question": "怎样判定网页任务完成？",
+          "answer": "检查所需交付物及网站最终状态。导航成功、生成计划或非空执行历史，本身不能证明表单、查询或导出正确。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "browserbase",
+    "slug": "stagehand",
+    "name": "Stagehand",
+    "repository": "https://github.com/browserbase/stagehand",
+    "website": "https://www.stagehand.dev",
+    "documentation": "https://docs.stagehand.dev",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/browserbase/stagehand/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/browserbase/stagehand/blob/main/packages/cli/skills/browse/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/browserbase/stagehand/blob/main/README.md",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "browser-use/browser-use",
+      "vercel-labs/agent-browser",
+      "microsoft/playwright-mcp",
+      "steel-dev/steel-browser"
+    ],
+    "en": {
+      "seoTitle": "Stagehand: Combine Browser Code with Natural-Language Actions",
+      "seoDescription": "Use Stagehand when a browser workflow needs both explicit code and language-driven interaction. Coding agents can start with the browse CLI and official Skill; reusable applications can use the SDK.",
+      "description": "Use Stagehand when a browser workflow needs both explicit code and language-driven interaction. Coding agents can start with the browse CLI and official Skill; reusable applications can use the SDK.",
+      "kind": "Browser SDK and agent CLI",
+      "overviewTitle": "About Stagehand",
+      "overview": [
+        "Stagehand is Browserbase’s browser automation project. It exposes navigation and structured interaction alongside language-driven action and extraction. Its value is choosing where ordinary browser code is sufficient and where a model-assisted step is needed, rather than turning every operation into an open-ended agent loop.",
+        "For coding-agent use, the current README offers the browse CLI and its Skill for Cursor and Codex. SDK applications and the hosted Browserbase MCP are separate paths. Local browse operations do not require a Browserbase account in the documented local mode; hosted services require their own authentication.",
+        "Start with a small page task, choose local or hosted execution, and pin the interface version used by your code. Stagehand documentation contains multiple major-version examples, so verify signatures against the installed package. MIT source licensing does not include hosted browser or model usage."
+      ],
+      "capabilitiesTitle": "How Stagehand Fits the Browser Workflow",
+      "capabilitiesIntro": "Stagehand supports several levels of control. Start with explicit navigation, add structured extraction where the output is known, and use language-driven actions only for the part that needs interpretation.",
+      "capabilities": [
+        {
+          "title": "Explicit and language-driven steps",
+          "description": "Keep known navigation deterministic and reserve natural-language interpretation for page elements that require it."
+        },
+        {
+          "title": "Structured extraction",
+          "description": "Define the output shape and check extracted fields before using them in a later operation."
+        },
+        {
+          "title": "Coding-agent entry point",
+          "description": "The browse CLI and Skill expose browser work without requiring a full SDK application first."
+        }
+      ],
+      "useCases": {
+        "title": "Stagehand Use Cases",
+        "description": "Stable portal work, schema-bound extraction, exploratory browsing, and script refactoring put different demands on the interface. Select the CLI or SDK according to what must be maintained after the task.",
+        "items": [
+          {
+            "title": "Automate a stable account workflow",
+            "description": "For a recurring internal portal task, identify fixed URLs and the one page action whose wording changes. Keep navigation in explicit code, isolate the language-driven action, and save the resulting state so failures can be traced to a particular step."
+          },
+          {
+            "title": "Extract a typed result",
+            "description": "Provide a public listing and the fields your downstream code expects. Use the SDK extraction path with an output schema, then check representative values and missing fields before treating the result as a valid application input."
+          },
+          {
+            "title": "Explore through a coding agent",
+            "description": "Ask Floatboat or another configured coding agent to use browse on one approved page. Inspect a snapshot before choosing an interaction, and compare the resulting page title or value with the expected state. Keep the session local when using the documented local mode."
+          },
+          {
+            "title": "Refactor an opaque browser loop",
+            "description": "Bring an existing script and one failing run. Separate deterministic navigation, extraction, and genuinely open-ended actions, then rewrite only the affected path. Validate the same input before comparing maintainability or model usage; a migration is not proof of a speed gain."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Stagehand",
+        "description": "Local browse, the SDK, and hosted MCP have different dependencies. Prepare the interface you intend to use and follow its version-specific setup.",
+        "items": [
+          {
+            "title": "Choose CLI or SDK",
+            "description": "For browse, prepare its CLI and Chrome; for an SDK job, install the matching package and configure the model or cloud services it actually uses."
+          },
+          {
+            "title": "Versioned example",
+            "description": "Keep the installed version with the task record before adapting a documentation example."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which entry should a coding agent use?",
+          "answer": "The current README recommends the browse CLI and Skill for coding agents. Use an SDK when you need an application you maintain, or hosted MCP when that service fits the execution environment."
+        },
+        {
+          "question": "Does local browse require Browserbase credentials?",
+          "answer": "The documented local CLI mode does not require a Browserbase account or model key. Do not apply that statement to SDK AI calls or hosted MCP sessions, which have separate requirements."
+        },
+        {
+          "question": "Is every step driven by an LLM?",
+          "answer": "No. Keep known interactions in explicit browser code and use language-driven methods only where they add value. This distinction is the reason to compare Stagehand with fully autonomous browser loops."
+        },
+        {
+          "question": "Can older examples be copied unchanged?",
+          "answer": "Check the installed major version first. Names, initialization, and method signatures can differ across releases; a working v3 example is not evidence that the same code is valid in another major."
+        },
+        {
+          "question": "Should I use the SDK, MCP, or browse Skill?",
+          "answer": "Choose the SDK when you need browser actions in application code. Use MCP to expose browser tools to a compatible agent client. The browse Skill guides a coding agent through the CLI; it complements the installed runtime rather than replacing it."
+        },
+        {
+          "question": "How should extraction be verified?",
+          "answer": "Validate the declared structure and compare sampled values with the source page. Record empty and ambiguous fields rather than allowing a well-formed object to conceal missing evidence."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Stagehand：组合浏览器代码与自然语言操作",
+      "seoDescription": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
+      "description": "浏览器流程同时需要确定性代码和自然语言交互时，可使用 Stagehand。编码 Agent 可从 browse CLI 与官方 Skill 开始，可复用应用则使用 SDK。",
+      "kind": "浏览器 SDK 与 Agent CLI",
+      "overviewTitle": "关于 Stagehand",
+      "overview": [
+        "Stagehand 是 Browserbase 的浏览器自动化项目，在导航和结构化交互之外提供自然语言动作与提取。它的价值在于区分哪些操作适合普通代码，哪些需要模型辅助，而不是把每一步都变成开放式 Agent 循环。",
+        "当前 README 为 Cursor、Codex 提供 browse CLI 与配套 Skill。SDK 应用和托管 Browserbase MCP 是另外的路径。文档中的本地 browse 模式不要求 Browserbase 账号，托管服务则需要单独认证。",
+        "先选择一项小型页面任务，明确本地或托管运行，并固定代码采用的接口版本。Stagehand 文档包含不同大版本示例，函数签名应与已安装包核对。MIT 源码许可不包含托管浏览器和模型用量。"
+      ],
+      "capabilitiesTitle": "Stagehand 在浏览器流程中的作用",
+      "capabilitiesIntro": "Stagehand 提供不同控制层次：已知导航先用确定性代码，输出已知时定义提取结构，仅将确需解释的步骤交给语言动作，便于定位失败和维护流程。",
+      "capabilities": [
+        {
+          "title": "确定性代码与语言操作",
+          "description": "已知导航保留确定性代码，仅在需要时用自然语言解释页面元素。"
+        },
+        {
+          "title": "结构化提取",
+          "description": "定义输出结构，在后续操作使用前检查提取字段。"
+        },
+        {
+          "title": "编码 Agent 入口",
+          "description": "browse CLI 与 Skill 可直接承接浏览器工作，不必先搭建完整 SDK 应用。"
+        }
+      ],
+      "useCases": {
+        "title": "Stagehand 使用场景",
+        "description": "稳定门户、按字段提取、探索浏览与脚本重构对接口要求不同，应根据任务结束后需要维护的内容选择 CLI 或 SDK，再检查具体结果及失败步骤。",
+        "items": [
+          {
+            "title": "自动化稳定的账号流程",
+            "description": "面对反复使用的内部系统，明确固定 URL 与文案会变化的操作。导航保留确定性代码，单独处理语言驱动动作，并保存最终状态，让失败能定位到具体步骤。"
+          },
+          {
+            "title": "提取字段明确的结果",
+            "description": "提供公开列表及下游代码需要的字段，通过 SDK 提取路径定义输出结构。先抽查代表性数值与缺失字段，再将结果作为应用输入。"
+          },
+          {
+            "title": "通过编码 Agent 探查页面",
+            "description": "让 Floatboat 或其他已配置编码 Agent 用 browse 打开获准页面，先读快照再选择交互，并将页面标题或数值与预期对照。采用文档中的本地模式时，将会话保留在本机。"
+          },
+          {
+            "title": "重构难以检查的浏览器循环",
+            "description": "提供现有脚本与一次失败运行，拆分确定导航、提取和开放式动作，只重写相关路径。先验证相同输入，再比较可维护性或模型用量；迁移本身不能证明性能提升。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Stagehand 前的准备",
+        "description": "本地 browse、SDK 与托管 MCP 的依赖不同，应先确定使用入口，再按对应版本完成配置。",
+        "items": [
+          {
+            "title": "选择 CLI 或 SDK",
+            "description": "browse 需要 CLI 和 Chrome；SDK 任务需安装对应包，并配置实际使用的模型或云端服务。"
+          },
+          {
+            "title": "匹配版本的示例",
+            "description": "改写文档示例前，先记录实际安装版本。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "编码 Agent 先选哪个入口？",
+          "answer": "当前 README 推荐编码 Agent 使用 browse CLI 与 Skill。需要自维护应用时选 SDK，执行环境适合托管服务时再选 MCP。"
+        },
+        {
+          "question": "本地 browse 需要 Browserbase 凭据吗？",
+          "answer": "文档中的本地 CLI 模式不要求 Browserbase 账号或模型密钥；SDK 中的 AI 调用和托管 MCP 会话有各自要求。"
+        },
+        {
+          "question": "每一步都需要模型决定吗？",
+          "answer": "不是。已知交互可以使用明确浏览器代码，只在有价值的位置使用语言驱动方法，这是它与全自主浏览器循环的重要区别。"
+        },
+        {
+          "question": "旧版示例可以直接复制吗？",
+          "answer": "先核对安装的大版本。初始化、名称和方法签名可能变化，v3 示例可用不代表在其他大版本中也成立。"
+        },
+        {
+          "question": "应该选择 SDK、MCP，还是 browse Skill？",
+          "answer": "需要把浏览器操作写进应用时选择 SDK；希望兼容的 Agent 客户端直接调用浏览器工具时使用 MCP。browse Skill 则指导编码 Agent 使用 CLI，需要配合已安装的运行工具。"
+        },
+        {
+          "question": "怎样验收提取结果？",
+          "answer": "校验输出结构，并抽样对照来源页面。空值和含糊字段需要记录，不能让格式正确的对象掩盖证据缺失。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "vercel-labs",
+    "slug": "agent-browser",
+    "name": "agent-browser",
+    "repository": "https://github.com/vercel-labs/agent-browser",
+    "website": "https://agent-browser.dev",
+    "documentation": "https://agent-browser.dev",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/vercel-labs/agent-browser/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://agent-browser.dev",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "microsoft/playwright-mcp",
+      "pinchtab/pinchtab",
+      "browser-use/browser-use",
+      "chromedevtools/chrome-devtools-mcp"
+    ],
+    "en": {
+      "seoTitle": "agent-browser: Drive Browser Tasks with CLI Snapshots and Refs",
+      "seoDescription": "Open a page, read a compact accessibility snapshot, and act on element references from the terminal. agent-browser keeps the browser session available across commands.",
+      "description": "Open a page, read a compact accessibility snapshot, and act on element references from the terminal. agent-browser keeps the browser session available across commands.",
+      "kind": "Browser CLI for coding agents",
+      "overviewTitle": "About agent-browser",
+      "overview": [
+        "agent-browser is a Vercel Labs CLI designed for coding agents. A typical loop opens a page, reads a snapshot containing element references, acts on a reference, and reads the page again. It provides a browser execution surface rather than a second model that plans the entire task.",
+        "The official discovery Skill directs an agent to instructions served by the installed CLI, helping commands stay aligned with the local version. The project also provides an MCP mode and integrations for local and hosted browser execution. Choose the actual provider and session explicitly.",
+        "In Floatboat, follow the same terminal-driven workflow documented for Cursor and Codex. Re-snapshot after navigation or meaningful DOM changes rather than reusing stale references. The Apache-2.0 CLI does not include any separate cloud provider’s credentials or usage allowance."
+      ],
+      "capabilitiesTitle": "How agent-browser Fits the Browser Workflow",
+      "capabilitiesIntro": "The shell loop stays small: read a snapshot, choose a current element reference, and observe the result. Version-matched instructions and an explicit session keep that loop understandable across repeated commands.",
+      "capabilities": [
+        {
+          "title": "Snapshot and reference loop",
+          "description": "Use short element references from the current page instead of guessing selectors from a screenshot."
+        },
+        {
+          "title": "Version-matched instructions",
+          "description": "Load command guidance through the installed CLI when following the official discovery Skill."
+        },
+        {
+          "title": "Persistent command session",
+          "description": "Inspect a page over several shell calls while retaining the selected browser context."
+        }
+      ],
+      "useCases": {
+        "title": "agent-browser Use Cases",
+        "description": "A CLI browser is useful beside repository work, but it also exposes account state and export controls. Keep UI assertions, read-only reports, and state-changing actions distinguishable in the task.",
+        "items": [
+          {
+            "title": "Verify a newly built screen",
+            "description": "Give the coding agent a development URL and the expected navigation. Use snapshots to find the controls, exercise one path, and inspect the final state. Preserve a screenshot when visual evidence matters, since accessibility text alone does not establish layout quality."
+          },
+          {
+            "title": "Read a logged-in dashboard",
+            "description": "Select an approved session and name the dashboard fields needed for a report. Read only those values, keep source page references, and report unavailable sections. Using an existing session removes a login step, not the need to verify the account and data scope."
+          },
+          {
+            "title": "Diagnose a stale element action",
+            "description": "When an action fails after navigation or content refresh, obtain a new snapshot and compare the visible controls. Retry only after resolving the changed state, then save the successful sequence. Replaying an old reference blindly can target the wrong element."
+          },
+          {
+            "title": "Prepare an export without submitting",
+            "description": "For a permitted reporting site, navigate to the requested period and inspect available export controls. Report the selected dates, format, and expected output before triggering a state-changing or billable action. Verify the saved file separately when export is authorized."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using agent-browser",
+        "description": "Prepare the browser runtime and load instructions from the installed CLI before selecting a profile or provider for page commands.",
+        "items": [
+          {
+            "title": "CLI and browser",
+            "description": "Install agent-browser and its supported browser runtime; install Linux system dependencies when required."
+          },
+          {
+            "title": "Current core guidance",
+            "description": "Load the CLI’s core skill and select the profile or provider before running page commands."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Does agent-browser choose its own model?",
+          "answer": "The CLI exposes browser operations to the coding agent that calls it. Task reasoning belongs to that host; additional provider integrations may introduce their own service requirements."
+        },
+        {
+          "question": "Why use snapshots instead of only screenshots?",
+          "answer": "Snapshots expose text and actionable references for the current document. Screenshots still matter for layout and visual state, so choose the evidence according to the assertion you need to check."
+        },
+        {
+          "question": "Can element references be reused after navigation?",
+          "answer": "Obtain a new snapshot after navigation or substantial DOM updates. References identify the observed state; they are not permanent selectors that can safely be reused on another page."
+        },
+        {
+          "question": "Is the official Skill a separate browser?",
+          "answer": "No. It teaches the host to discover and use CLI instructions. Install the CLI and a supported browser or provider as required; a Skill file does not supply the runtime."
+        },
+        {
+          "question": "Can it run through MCP?",
+          "answer": "The project documents an MCP server in addition to its shell workflow. Choose one interface deliberately so the agent does not mix state across unrelated browser sessions."
+        },
+        {
+          "question": "What should a completed UI check include?",
+          "answer": "Return the exercised actions, expected and observed states, and relevant evidence. A command exiting successfully is not enough if the page failed validation or the wrong account was active."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "agent-browser：通过 CLI 快照与引用执行浏览器任务",
+      "seoDescription": "从终端打开页面、读取精简的可访问性快照，并通过元素引用执行操作。agent-browser 可在多次命令之间保留浏览器会话。",
+      "description": "从终端打开页面、读取精简的可访问性快照，并通过元素引用执行操作。agent-browser 可在多次命令之间保留浏览器会话。",
+      "kind": "编码 Agent 浏览器 CLI",
+      "overviewTitle": "关于 agent-browser",
+      "overview": [
+        "agent-browser 是 Vercel Labs 面向编码 Agent 的 CLI。常见循环是打开页面、读取带元素引用的快照、执行操作并重新观察。它提供浏览器执行入口，不是另一个负责规划整项任务的模型。",
+        "官方发现型 Skill 会引导 Agent 读取已安装 CLI 提供的指引，让命令与本地版本保持一致。项目也提供 MCP 模式，以及本地和托管浏览器接入；使用前应明确实际提供方与会话。",
+        "在 Floatboat 中可采用 Cursor、Codex 文档对应的终端流程。导航或页面结构明显变化后需重新获取快照，不能继续使用过期引用。Apache-2.0 许可不包含独立云服务提供方的账号或用量。"
+      ],
+      "capabilitiesTitle": "agent-browser 在浏览器流程中的作用",
+      "capabilitiesIntro": "终端循环由快照、当前元素引用和结果观察组成。使用与安装版本匹配的指引，明确会话，在多次命令之间检查状态变化，避免过期引用导致错误操作。",
+      "capabilities": [
+        {
+          "title": "快照与引用循环",
+          "description": "使用当前页面快照中的短引用，避免只凭截图猜测选择器。"
+        },
+        {
+          "title": "与版本匹配的指引",
+          "description": "按官方发现型 Skill，通过已安装 CLI 读取对应版本命令指引。"
+        },
+        {
+          "title": "持续命令会话",
+          "description": "在多次终端调用间保留已选浏览器上下文，持续检查页面。"
+        }
+      ],
+      "useCases": {
+        "title": "agent-browser 使用场景",
+        "description": "CLI 浏览器可配合仓库工作，也会接触账号状态与导出控件。以下场景区分界面断言、只读报告和改变状态的动作，按具体目标保留证据与停止节点。",
+        "items": [
+          {
+            "title": "验收新建界面",
+            "description": "提供开发地址与预期导航，让编码 Agent 从快照寻找控件、执行一条路径并检查最终状态。需要视觉证据时保留截图，可访问性文本本身不能证明布局质量。"
+          },
+          {
+            "title": "读取登录后的仪表盘",
+            "description": "选择获准会话，明确报告需要的仪表盘字段，只读取这些数值并保留来源，记录不可访问部分。复用会话只是减少登录步骤，仍需核对账号与数据范围。"
+          },
+          {
+            "title": "排查过期元素引用",
+            "description": "导航或内容刷新后操作失败时，重新获取快照并比较当前控件。确认状态变化后再重试，保存成功序列。直接重放旧引用可能指向错误元素。"
+          },
+          {
+            "title": "准备导出操作",
+            "description": "在获准报表网站选择所需周期并检查导出控件，先报告日期、格式与预期文件，再执行会改变状态或产生费用的动作。导出获准后，还要单独检查实际文件。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 agent-browser 前的准备",
+        "description": "准备浏览器运行环境，并从已安装 CLI 加载指引，再为页面操作选择配置或提供方。",
+        "items": [
+          {
+            "title": "CLI 与浏览器",
+            "description": "安装 agent-browser 与受支持的浏览器运行环境，Linux 按需补齐系统依赖。"
+          },
+          {
+            "title": "当前核心指引",
+            "description": "执行页面命令前读取 CLI 核心指引，并选择配置或浏览器提供方。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "agent-browser 自己选择模型吗？",
+          "answer": "CLI 向调用它的编码 Agent 提供浏览器操作，任务推理由宿主负责；额外提供方接入可能带来独立服务要求。"
+        },
+        {
+          "question": "为什么读取快照而不只看截图？",
+          "answer": "快照提供当前文档的文本与操作引用，截图则用于布局和视觉状态，应按待验证的判断选择证据。"
+        },
+        {
+          "question": "导航后能继续使用元素引用吗？",
+          "answer": "导航或 DOM 明显更新后应重新取快照。引用对应观察时的状态，不是可以跨页面长期复用的固定选择器。"
+        },
+        {
+          "question": "官方 Skill 是另一个浏览器吗？",
+          "answer": "不是。Skill 教宿主发现和使用 CLI 指引，运行仍需按要求准备 CLI、浏览器或提供方。"
+        },
+        {
+          "question": "可以通过 MCP 使用吗？",
+          "answer": "项目在终端流程之外提供 MCP 服务，应明确选择接口，避免将不相关浏览器会话的状态混用。"
+        },
+        {
+          "question": "界面检查完成后应交付什么？",
+          "answer": "返回实际动作、预期与观察状态，以及相关证据。命令成功退出并不足够，页面可能校验失败或使用了错误账号。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "microsoft",
+    "slug": "playwright-mcp",
+    "name": "Playwright MCP",
+    "repository": "https://github.com/microsoft/playwright-mcp",
+    "website": "https://playwright.dev",
+    "documentation": "https://github.com/microsoft/playwright-mcp#readme",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/microsoft/playwright-mcp/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md",
+        "label": {
+          "en": "Official Playwright CLI Skill",
+          "zh": "官方 Playwright CLI Skill"
+        }
+      },
+      {
+        "href": "https://github.com/microsoft/playwright-mcp#readme",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "vercel-labs/agent-browser",
+      "chromedevtools/chrome-devtools-mcp",
+      "browsermcp/browser-mcp",
+      "browserbase/stagehand"
+    ],
+    "en": {
+      "seoTitle": "Playwright MCP: Stateful Browser Tools for Coding Agents",
+      "seoDescription": "Connect a coding agent to Playwright through MCP for navigation, accessibility snapshots, and browser interactions. Compare the persistent MCP workflow with the separate Playwright CLI and its official Skill.",
+      "description": "Connect a coding agent to Playwright through MCP for navigation, accessibility snapshots, and browser interactions. Compare the persistent MCP workflow with the separate Playwright CLI and its official Skill.",
+      "kind": "Browser automation MCP server",
+      "overviewTitle": "About Playwright MCP",
+      "overview": [
+        "Playwright MCP is Microsoft’s server for exposing Playwright browser tools to an MCP client. It uses structured accessibility snapshots for many interactions and retains browser context across calls. The server is an execution surface for the agent you already use, rather than a standalone autonomous task planner.",
+        "The official repository documents Cursor and Codex setup, browser configuration, and optional capabilities. Playwright CLI is a separate terminal interface with its own official usage Skill. Choose MCP for persistent tool interactions or consult the CLI Skill for a terminal-driven workflow; the CLI Skill does not configure the MCP server.",
+        "Use MCP when a task benefits from a persistent sequence of observations and interactions. Choose the CLI when the coding workflow is already terminal-driven. In either case, prepare the target browser and inspect the resulting application state. The MCP server is Apache-2.0; browser downloads and host prerequisites remain separate setup steps."
+      ],
+      "capabilitiesTitle": "How Playwright MCP Fits the Browser Workflow",
+      "capabilitiesIntro": "MCP exposes the browser through structured tool calls. Inspect accessible state, keep context between actions, and select optional tools deliberately before using the interface for an exploratory or repeatable task.",
+      "capabilities": [
+        {
+          "title": "Accessible page structure",
+          "description": "Inspect a structured snapshot before choosing controls, without requiring a vision model for ordinary text-based actions."
+        },
+        {
+          "title": "Persistent MCP context",
+          "description": "Maintain one browser context while the client observes, interacts, and verifies intermediate results."
+        },
+        {
+          "title": "Configurable browser surface",
+          "description": "Select browser and optional capabilities from the documented server options rather than assuming every tool is enabled."
+        }
+      ],
+      "useCases": {
+        "title": "Playwright MCP Use Cases",
+        "description": "These jobs emphasize persistent observation and interaction. Compare the MCP and CLI paths on the actual task, while keeping browser state, expected behavior, and output verification visible.",
+        "items": [
+          {
+            "title": "Explore a failing checkout in staging",
+            "description": "Give the agent a staging URL, test cart, and expected validation. Inspect the accessible controls and reproduce the failure up to the permitted boundary. Record the exact state and error without completing a real purchase or calling a partial run an end-to-end pass."
+          },
+          {
+            "title": "Check keyboard-reachable controls",
+            "description": "Start with a known page state and a sequence of expected focus targets. Exercise keyboard actions and inspect the snapshot after each transition. Save the observed order and any missing names; this supports a focused check rather than a complete accessibility certification."
+          },
+          {
+            "title": "Compare MCP and CLI for a test task",
+            "description": "Run the same small development-page task through the chosen interface and record setup, output, and repeatability. A persistent investigation may suit MCP while a scripted shell loop may suit CLI. Compare your own evidence instead of assuming one interface is universally cheaper."
+          },
+          {
+            "title": "Inspect a browser-dependent report",
+            "description": "Use an approved session and specify the date controls and expected report rows. Observe the filter state before reading the result, then return a traceable summary. If a download is authorized, inspect the file separately from the browser tool response."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Playwright MCP",
+        "description": "Configure the MCP host and browser together, or follow the separate CLI setup if you choose the terminal interface.",
+        "items": [
+          {
+            "title": "MCP runtime",
+            "description": "Prepare a supported Node.js version and install the documented browser dependencies for the selected server configuration."
+          },
+          {
+            "title": "Explicit browser mode",
+            "description": "Choose isolated or existing-session access and enable only the documented capabilities needed by the task."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is Playwright MCP the Playwright test runner?",
+          "answer": "No. It exposes browser tools over MCP. Playwright’s test runner executes test suites, and Playwright CLI offers a separate shell interface. Choose the surface according to the deliverable."
+        },
+        {
+          "question": "Does it work with Cursor or Codex?",
+          "answer": "The official repository includes setup instructions for both. Floatboat can follow the corresponding MCP connection path once the required Node runtime and browser are prepared."
+        },
+        {
+          "question": "Is a vision model required?",
+          "answer": "Ordinary interactions can use accessibility snapshots and element references. Pixel-based or screenshot-specific work has different requirements; a text snapshot cannot establish visual appearance by itself."
+        },
+        {
+          "question": "Which official Skill belongs to Playwright?",
+          "answer": "The usage Skill is shipped with Playwright CLI and maintained in the main Playwright repository. It teaches the CLI interface, so it should not be described as installing or replacing this MCP server."
+        },
+        {
+          "question": "Can an existing browser session be used?",
+          "answer": "Connection options depend on the chosen browser mode and documented extension or endpoint setup. Confirm the exact profile and client configuration before assuming existing login state is available."
+        },
+        {
+          "question": "Does a tool call prove the workflow passed?",
+          "answer": "Verify the expected application state, not just the call result. A click may succeed while the page shows validation errors, and an export action still needs a valid output file."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Playwright MCP：面向编码 Agent 的有状态浏览器工具",
+      "seoDescription": "通过 MCP 将编码 Agent 连接到 Playwright，执行导航、可访问性快照和浏览器交互，并比较持续会话与独立 Playwright CLI／官方 Skill 的使用方式。",
+      "description": "通过 MCP 将编码 Agent 连接到 Playwright，执行导航、可访问性快照和浏览器交互，并比较持续会话与独立 Playwright CLI／官方 Skill 的使用方式。",
+      "kind": "浏览器自动化 MCP 服务",
+      "overviewTitle": "关于 Playwright MCP",
+      "overview": [
+        "Playwright MCP 是 Microsoft 将 Playwright 浏览器工具提供给 MCP 客户端的服务。许多交互基于结构化可访问性快照，会话上下文在调用间保留。服务为现有 Agent 提供执行入口，而不是独立自主规划器。",
+        "官方仓库记录 Cursor、Codex 配置、浏览器设置与可选能力。Playwright CLI 是独立终端入口，并有官方使用 Skill。需要持续工具交互时选择 MCP，以终端为主时查看 CLI Skill；CLI Skill 不负责配置 MCP 服务。",
+        "任务需要连续观察与交互时可选择 MCP；编码流程以终端为主时可考虑 CLI。两者都需要准备目标浏览器并检查应用实际状态。MCP 服务采用 Apache-2.0 许可，浏览器下载与宿主前提仍需单独配置。"
+      ],
+      "capabilitiesTitle": "Playwright MCP 在浏览器流程中的作用",
+      "capabilitiesIntro": "MCP 通过结构化工具调用提供浏览器，先检查可访问状态，在动作间保留上下文，并明确选择可选工具，再用于探索或重复任务，避免预设所有能力已经开启。",
+      "capabilities": [
+        {
+          "title": "可访问的页面结构",
+          "description": "先检查结构化快照再选择控件，普通文本动作不必依赖视觉模型。"
+        },
+        {
+          "title": "持续 MCP 上下文",
+          "description": "客户端观察、操作与验证中间结果时，可保留同一浏览器上下文。"
+        },
+        {
+          "title": "可配置浏览器工具",
+          "description": "按服务配置选择浏览器与可选能力，不预设所有工具已经启用。"
+        }
+      ],
+      "useCases": {
+        "title": "Playwright MCP 使用场景",
+        "description": "以下任务强调连续观察与交互。应以真实任务比较 MCP 和 CLI，明确浏览器状态、预期行为和输出验收，不能将工具连通或单次调用成功当作流程完成。",
+        "items": [
+          {
+            "title": "调查测试环境结账故障",
+            "description": "提供测试 URL、购物车和预期校验，让 Agent 检查可访问控件，在许可边界内复现故障，记录状态与错误。不要完成真实购买，也不要把部分流程称为端到端通过。"
+          },
+          {
+            "title": "检查键盘可达控件",
+            "description": "从已知页面状态和预期焦点序列开始，执行键盘动作并检查每次变化后的快照，记录实际顺序与缺失名称。这是定向检查，不构成完整无障碍认证。"
+          },
+          {
+            "title": "为测试任务比较 MCP 与 CLI",
+            "description": "为同一小型开发页面任务记录接口配置、输出与可重复性。持续调查可选 MCP，脚本式终端循环可选 CLI，应比较自身证据，不假定某个入口始终更省资源。"
+          },
+          {
+            "title": "检查依赖浏览器状态的报表",
+            "description": "使用获准会话，指定日期控件和预期报表行，先观察筛选状态再读取结果，返回可追溯摘要。下载获准时，应单独检查文件，不能只依赖浏览器工具响应。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Playwright MCP 前的准备",
+        "description": "选择 MCP 时需同时配置宿主与浏览器；选择终端入口时，按独立 CLI 指引准备。",
+        "items": [
+          {
+            "title": "MCP 运行环境",
+            "description": "准备受支持的 Node.js 版本，并按服务配置安装所需浏览器依赖。"
+          },
+          {
+            "title": "明确浏览器模式",
+            "description": "选择隔离或既有会话接入，只开启任务所需的文档能力。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Playwright MCP 就是测试运行器吗？",
+          "answer": "不是。MCP 提供浏览器工具，测试运行器执行测试套件，CLI 则是另一个终端入口，应按交付物选择。"
+        },
+        {
+          "question": "可以连接 Cursor 或 Codex 吗？",
+          "answer": "官方仓库包含两者的配置说明。准备所需 Node 环境和浏览器后，Floatboat 可采用对应 MCP 连接路径。"
+        },
+        {
+          "question": "必须使用视觉模型吗？",
+          "answer": "普通交互可使用可访问性快照与元素引用，像素或截图工作要求不同；文本快照本身不能证明视觉效果。"
+        },
+        {
+          "question": "对应的官方 Skill 在哪里？",
+          "answer": "使用型 Skill 随 Playwright CLI 提供，维护于 Playwright 主仓。它教授 CLI，不应描述成安装或替代此 MCP 服务。"
+        },
+        {
+          "question": "能使用已有浏览器会话吗？",
+          "answer": "取决于浏览器模式及文档中的扩展或端点配置。应先确认配置和客户端连接，不能假定既有登录态自动可用。"
+        },
+        {
+          "question": "工具调用成功就算流程通过吗？",
+          "answer": "需要验证应用状态，而不只看调用结果。点击成功后页面可能显示校验错误，导出动作也需要有效文件。"
+        }
+      ]
+    }
+  },
+  {
+    "author": "chromedevtools",
+    "slug": "chrome-devtools-mcp",
+    "name": "Chrome DevTools MCP",
+    "repository": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "website": "https://developer.chrome.com/docs/devtools",
+    "documentation": "https://github.com/ChromeDevTools/chrome-devtools-mcp#readme",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/LICENSE",
+    "sourceLinks": [
+      {
+        "href": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/skills/chrome-devtools/SKILL.md",
+        "label": {
+          "en": "Official usage Skill",
+          "zh": "官方使用 Skill"
+        }
+      },
+      {
+        "href": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/docs/troubleshooting.md",
+        "label": {
+          "en": "Interface and setup reference",
+          "zh": "接口与配置参考"
+        }
+      }
+    ],
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-09",
+    "related": [
+      "microsoft/playwright-mcp",
+      "vercel-labs/agent-browser",
+      "browsermcp/browser-mcp",
+      "browseros-ai/browseros"
+    ],
+    "en": {
+      "seoTitle": "Chrome DevTools MCP: Browser Debugging and Performance Evidence",
+      "seoDescription": "Let a coding agent inspect live Chrome with console, network, performance, and page tools. Use the evidence to diagnose a particular failure rather than treating a screenshot as the whole investigation.",
+      "description": "Let a coding agent inspect live Chrome with console, network, performance, and page tools. Use the evidence to diagnose a particular failure rather than treating a screenshot as the whole investigation.",
+      "kind": "Chrome inspection MCP server",
+      "overviewTitle": "About Chrome DevTools MCP",
+      "overview": [
+        "Chrome DevTools MCP connects coding agents to a Chrome browser for inspection and automation. Its distinctive value is the runtime evidence available alongside page interaction: console messages, network requests, and performance traces can explain why a visible action failed or a page became slow.",
+        "The official repository provides MCP client setup and usage Skills for browser operations and specific debugging jobs. A CLI is another entry point. Tool availability depends on configuration; the full Skill explicitly does not describe every slim-mode deployment. Match the instructions to the enabled surface.",
+        "Choose a dedicated test session or a deliberately connected existing profile. Chrome running locally does not prevent the host agent from sending observations to its model. The project uses Apache-2.0 and documents usage telemetry, so review configuration and data handling before investigating private applications."
+      ],
+      "capabilitiesTitle": "How Chrome DevTools MCP Fits the Browser Workflow",
+      "capabilitiesIntro": "Choose the diagnostic surface that can explain the symptom. A page error may need console and network evidence, while a slow interaction or growing heap needs a separately scoped trace or memory investigation.",
+      "capabilities": [
+        {
+          "title": "Console and network context",
+          "description": "Connect a visible failure with request and console evidence instead of guessing from the rendered page."
+        },
+        {
+          "title": "Performance trace analysis",
+          "description": "Record a scoped trace and inspect the evidence relevant to loading or interaction latency."
+        },
+        {
+          "title": "Focused debugging Skills",
+          "description": "Official guidance covers browser operations and narrower jobs such as accessibility, memory, and LCP investigation."
+        }
+      ],
+      "useCases": {
+        "title": "Chrome DevTools MCP Use Cases",
+        "description": "The examples below use runtime evidence for different decisions: request failure, loading performance, memory behavior, and extension debugging. Each investigation needs a repeatable scenario and a bounded browser target.",
+        "items": [
+          {
+            "title": "Find why a form request fails",
+            "description": "Reproduce a test form failure and inspect the network response and console messages around the action. Separate client validation, transport errors, and server responses. Return a timeline and affected request rather than proposing a fix solely from the visible error banner."
+          },
+          {
+            "title": "Investigate a slow page load",
+            "description": "Record the page and environment used for a slow-load report, capture a performance trace, and identify the resources or rendering work relevant to the observation. Repeat with comparable conditions before claiming that a code change improved the user experience."
+          },
+          {
+            "title": "Inspect growing memory usage",
+            "description": "Use a repeatable interaction sequence and the project’s memory guidance when the required tooling is enabled. Compare evidence before and after repeated actions and report suspected retaining paths. A single large allocation does not establish a persistent leak."
+          },
+          {
+            "title": "Check a browser extension change",
+            "description": "With extension tooling explicitly enabled, load the approved extension and inspect its page or worker behavior. Keep the extension target distinct from ordinary tabs, collect relevant errors, and verify the affected interaction before concluding that the extension release is ready."
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "Before Using Chrome DevTools MCP",
+        "description": "Confirm the supported Chrome installation, connection settings, and enabled tools before collecting diagnostic evidence.",
+        "items": [
+          {
+            "title": "Chrome and Node",
+            "description": "Prepare the Chrome and Node.js versions required by the current release; choose a controlled browser profile."
+          },
+          {
+            "title": "Matching capabilities",
+            "description": "Enable optional performance, extension, or memory surfaces only when the documented task requires them."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How is it different from Playwright MCP?",
+          "answer": "Both can operate pages. Chrome DevTools MCP emphasizes Chrome runtime diagnostics such as console, network, and performance evidence; choose according to the investigation rather than assuming identical tool sets."
+        },
+        {
+          "question": "Are there official Skills?",
+          "answer": "Yes. The repository contains browser-operation and specialized debugging Skills. They guide use of the existing runtime; installing a Skill alone does not start or configure Chrome."
+        },
+        {
+          "question": "Does the full Skill work with slim mode?",
+          "answer": "The official full browser Skill excludes slim-mode configuration. Inspect which tools are enabled and use the matching reference instead of asking the agent to call absent tools."
+        },
+        {
+          "question": "Can it inspect my ordinary Chrome profile?",
+          "answer": "Use the documented connection options and deliberately select the browser instance. Prefer a dedicated test profile when the task does not require personal login state."
+        },
+        {
+          "question": "Is local Chrome equivalent to local-only processing?",
+          "answer": "No. Browser execution and model inference are separate paths. The host may send page or diagnostic content to its model, and the tool documents configurable telemetry."
+        },
+        {
+          "question": "How do I verify a performance improvement?",
+          "answer": "Repeat the same scenario under comparable device, network, and cache conditions, and compare the relevant trace evidence. A successful trace capture is not evidence of an improvement."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Chrome DevTools MCP：浏览器调试与性能取证",
+      "seoDescription": "让编码 Agent 通过控制台、网络、性能和页面工具检查运行中的 Chrome，以具体证据定位故障，而不只依赖截图判断。",
+      "description": "让编码 Agent 通过控制台、网络、性能和页面工具检查运行中的 Chrome，以具体证据定位故障，而不只依赖截图判断。",
+      "kind": "Chrome 检查 MCP 服务",
+      "overviewTitle": "关于 Chrome DevTools MCP",
+      "overview": [
+        "Chrome DevTools MCP 将编码 Agent 连接到 Chrome，提供检查与自动化。它的区别在于页面交互之外的运行证据：控制台、网络请求与性能轨迹能帮助解释动作失败或页面变慢的原因。",
+        "官方仓库提供 MCP 客户端配置，以及浏览器操作和专项调试的 Skill，也有 CLI 入口。工具是否可用取决于配置，完整 Skill 明确不适用于所有 slim 模式部署，应让指引与已启用工具对应。",
+        "选择专用测试会话，或明确连接某个已有配置。Chrome 本地运行并不阻止宿主 Agent 将观察发送给模型。项目采用 Apache-2.0，并说明使用统计行为，检查私有应用前需核对配置和数据处理。"
+      ],
+      "capabilitiesTitle": "Chrome DevTools MCP 在浏览器流程中的作用",
+      "capabilitiesIntro": "按现象选择能解释原因的诊断入口：页面错误可能需要控制台与网络证据，交互迟缓或堆增长则需限定范围的轨迹或内存调查，避免不加区分地收集全部数据。",
+      "capabilities": [
+        {
+          "title": "控制台与网络上下文",
+          "description": "将可见故障与请求、控制台证据关联，避免只凭页面猜测。"
+        },
+        {
+          "title": "性能轨迹分析",
+          "description": "录制限定范围轨迹，检查加载或交互延迟对应的证据。"
+        },
+        {
+          "title": "专项调试 Skill",
+          "description": "官方指引覆盖浏览器操作，以及无障碍、内存和 LCP 等更窄的调查任务。"
+        }
+      ],
+      "useCases": {
+        "title": "Chrome DevTools MCP 使用场景",
+        "description": "以下场景分别利用运行证据判断请求失败、加载性能、内存行为与扩展问题。每项调查都需要可重复场景和明确浏览器目标，不能用同一截图替代不同问题的取证。",
+        "items": [
+          {
+            "title": "定位表单请求失败原因",
+            "description": "复现测试表单故障，检查动作附近的网络响应与控制台信息，区分客户端校验、传输错误和服务端响应。交付时间线及受影响请求，不只凭错误横幅建议修复。"
+          },
+          {
+            "title": "调查页面加载缓慢",
+            "description": "记录慢加载页面及环境，采集性能轨迹，识别与现象有关的资源或渲染工作。以可比条件复测后，再判断代码修改是否改善体验。"
+          },
+          {
+            "title": "检查持续增长的内存用量",
+            "description": "工具启用后，结合项目内存指引运行可重复交互，比较多次操作前后证据并报告可疑引用路径。一次较大分配不能直接证明持续内存泄漏。"
+          },
+          {
+            "title": "检查浏览器扩展改动",
+            "description": "明确启用扩展工具后，加载获准扩展并检查页面或 worker 行为。区分扩展目标与普通标签页，收集相关错误并验收受影响交互，再判断发布准备状态。"
+          }
+        ]
+      },
+      "prerequisites": {
+        "title": "使用 Chrome DevTools MCP 前的准备",
+        "description": "收集诊断证据前，确认支持的 Chrome 安装、连接设置及已启用工具。",
+        "items": [
+          {
+            "title": "Chrome 与 Node",
+            "description": "准备当前版本所需 Chrome 与 Node.js，选择可控浏览器配置。"
+          },
+          {
+            "title": "匹配的工具能力",
+            "description": "仅在文档任务需要时启用性能、扩展或内存相关可选能力。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "与 Playwright MCP 有何区别？",
+          "answer": "两者都能操作页面，但 Chrome DevTools MCP 侧重 Chrome 控制台、网络和性能取证，应按调查目标选择，不假定工具完全相同。"
+        },
+        {
+          "question": "有官方 Skill 吗？",
+          "answer": "有。仓库包含浏览器操作及专项调试 Skill，用于指导运行工具；单独安装 Skill 不会启动或配置 Chrome。"
+        },
+        {
+          "question": "完整 Skill 适用于 slim 模式吗？",
+          "answer": "官方完整浏览器 Skill 排除了 slim 模式配置，应检查已启用工具并使用匹配参考，不能要求调用不存在的工具。"
+        },
+        {
+          "question": "能检查日常 Chrome 配置吗？",
+          "answer": "按文档连接选项明确选择浏览器实例；不需要个人登录态时，优先使用独立测试配置。"
+        },
+        {
+          "question": "本地 Chrome 等于内容只在本机处理吗？",
+          "answer": "不等同。浏览器执行和模型推理是两条路径，宿主可能将页面或诊断内容发送给模型，工具也有可配置使用统计。"
+        },
+        {
+          "question": "怎样验证性能改善？",
+          "answer": "在可比设备、网络和缓存条件下重复相同场景，并比较相关轨迹。成功录制轨迹不等于性能已经改善。"
+        }
+      ]
+    }
   }
 ]

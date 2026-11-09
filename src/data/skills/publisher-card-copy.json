@@ -254,5 +254,53 @@
   "hashicorp": {
     "en": "HashiCorp publishes Terraform and Packer agent instructions alongside infrastructure software, with licenses and execution requirements checked per repository.",
     "zh": "发布 Terraform 与 Packer Agent 指引及基础设施软件，许可与运行要求按仓库分别核对。"
+  },
+  "skyvern-ai": {
+    "en": "Builds Skyvern’s browser workflow platform and coding-agent interfaces, with cloud and self-hosted execution options.",
+    "zh": "开发浏览器流程平台与编码 Agent 接口，提供云端及自托管运行选项。"
+  },
+  "steel-dev": {
+    "en": "Publishes Steel Browser infrastructure and official cloud-browser Skills for live browsing, reusable code, and session diagnosis.",
+    "zh": "发布 Steel Browser 基础设施及官方云浏览器 Skills，覆盖现场操作、复用代码与会话诊断。"
+  },
+  "brightdata": {
+    "en": "Publishes agent connectors and official Skills for web access, search, extraction, and browser services backed by Bright Data.",
+    "zh": "发布 Agent 连接器和官方 Skills，接入网页访问、搜索、提取与浏览器服务。"
+  },
+  "lightpanda-io": {
+    "en": "Maintains the Lightpanda headless browser and a separate official agent Skill, with MCP access and platform-specific guidance.",
+    "zh": "维护 Lightpanda 无头浏览器与独立官方 Agent Skill，提供 MCP 接入和平台指引。"
+  },
+  "unclecode": {
+    "en": "Creator publishing Crawl4AI, with Python and deployed interfaces for collecting web content and preparing structured inputs for agents.",
+    "zh": "发布 Crawl4AI 的创作者，提供 Python 与部署接口，收集网页内容并为 Agent 准备结构化输入。"
+  },
+  "citrolabs": {
+    "en": "Maintains Ego Lite and ego-browser tooling for sharing browser work with external coding agents, with task Spaces and login-state access.",
+    "zh": "维护 Ego Lite 与 ego-browser，让外部编码 Agent 使用任务 Space 和已有登录状态。"
+  },
+  "browseros-ai": {
+    "en": "Publishes BrowserOS and neo’s external-agent MCP connection, with browser-specific Skills and client setup documentation.",
+    "zh": "发布 BrowserOS、neo 外部 Agent MCP 连接及浏览器专属 Skills 和客户端配置文档。"
+  },
+  "browsermcp": {
+    "en": "Maintains Browser MCP’s local server and Chrome extension, connecting coding agents to approved existing browser profiles.",
+    "zh": "维护本地 MCP 服务与 Chrome 扩展，让编码 Agent 连接获准的现有浏览器配置。"
+  },
+  "pinchtab": {
+    "en": "Maintains a browser control server with CLI, HTTP, MCP, and official Skills, focusing on profiles, instances, and task sessions.",
+    "zh": "维护带 CLI、HTTP、MCP 和官方 Skills 的浏览器控制服务，管理配置、实例和任务会话。"
+  },
+  "browser-use": {
+    "en": "Maintains Browser Use and its coding-agent tooling, with local browser control, a Python framework, and hosted browser services.",
+    "zh": "维护 Browser Use 与编码 Agent 工具，覆盖本地浏览器控制、Python 框架和托管服务。"
+  },
+  "browserbase": {
+    "en": "Builds Stagehand and browser infrastructure, connecting deterministic code, agent interaction, and local or hosted browser workflows.",
+    "zh": "开发 Stagehand 与浏览器基础设施，连接明确代码、Agent 交互及本地或托管流程。"
+  },
+  "chromedevtools": {
+    "en": "Publishes Chrome DevTools MCP and official debugging Skills for browser inspection, runtime evidence, and coding-agent workflows.",
+    "zh": "发布 Chrome DevTools MCP 与官方调试 Skills，提供浏览器检查、运行证据及编码 Agent 工作流。"
   }
 }
