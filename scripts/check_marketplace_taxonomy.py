@@ -88,6 +88,7 @@ def main():
       }])),
       publishers: publishers.PUBLISHER_PROFILE_HANDLES.map(handle => ({
         handle, type: publishers.getPublisherProfile(handle).type,
+        organizationProfile: publishers.isOrganizationProfilePublisher(handle),
       })),
     }));
     """
@@ -109,7 +110,7 @@ def main():
         active_publishers = {e['authorHandle'] for e in entries}
         hub_sections = {
             'publishers': [f"{prefix}/skills-marketplace/{p['handle']}" for p in catalog['publishers']
-                           if p['handle'] in active_publishers and p['type'] == 'Organization'],
+                           if (p['handle'] in active_publishers or p['organizationProfile']) and p['type'] == 'Organization'],
             'browse': [e['href'] for e in entries if e['entryType'] == 'project'],
         }
         for section, expected in hub_sections.items():
@@ -119,7 +120,7 @@ def main():
         public_paths = {e['href'] for e in entries}
         expected_reference_publishers = {
             f"{prefix}/skills-marketplace/{p['handle']}" for p in catalog['publishers']
-            if p['handle'] not in active_publishers
+            if p['handle'] not in active_publishers and not p['organizationProfile']
         }
         category_hub = pages[f'{prefix}/skills-marketplace/categories']
         reference_sections = find(category_hub, 'section', 'aria-labelledby', 'reference-publishers-title')

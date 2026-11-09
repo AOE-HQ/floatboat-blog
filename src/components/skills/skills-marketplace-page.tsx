@@ -5,7 +5,7 @@ import { CapabilitiesSection } from "@/components/marketing/capabilities-section
 import storeCapabilities from "@/data/skills/skills-marketplace-capabilities.json";
 import { DirectoryTabs } from "@/components/marketing/directory-tabs";
 
-import { getPublisherProfile, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
+import { getPublisherProfile, isOrganizationProfilePublisher, PUBLISHER_PROFILE_HANDLES } from "@/lib/skills/publisher-profiles";
 import { getPublisherCardCopy } from "@/lib/skills/publisher-card-copy";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { Breadcrumb } from "@/components/marketing/breadcrumb";
@@ -27,7 +27,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
   const capabilityCopy = storeCapabilities[locale];
   const entries = getStoreCatalog(locale);
   const publisherHandles = new Set(entries.map((entry) => entry.authorHandle));
-  const publishers = PUBLISHER_PROFILE_HANDLES.filter((handle) => publisherHandles.has(handle)).map((handle) => {
+  const publishers = PUBLISHER_PROFILE_HANDLES.filter((handle) => publisherHandles.has(handle) || isOrganizationProfilePublisher(handle)).map((handle) => {
     const profile = getPublisherProfile(handle)!;
     return { handle, profile, projectCount: entries.filter((entry) => entry.authorHandle === handle && entry.entryType === "project").length, skillCount: entries.filter((entry) => entry.authorHandle === handle && entry.entryType === "skill").length };
   });
@@ -101,7 +101,7 @@ export function SkillsMarketplacePage({ locale }: { locale: SkillLocale }) {
         id: handle, title: profile.name, description: getPublisherCardCopy(handle)[locale], group: profile.type,
         href: `${prefix}/skills-marketplace/${handle}`,
         logo: profile.logo,
-        detail: `${projectCount} ${zh ? "个项目" : "projects"} · ${skillCount} Skills`,
+        detail: projectCount + skillCount === 0 ? (zh ? "组织资料" : "Organization profile") : `${projectCount} ${zh ? "个项目" : "projects"} · ${skillCount} Skills`,
       }))} />
     </section>
     <section id="browse" aria-labelledby="projects-title" className="mx-auto max-w-7xl scroll-mt-24 px-5 pb-20 sm:px-8">

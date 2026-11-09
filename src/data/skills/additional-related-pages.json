@@ -379,6 +379,102 @@
       "mattpocock",
       "obra",
       "anthropics"
+    ],
+    "adobe": [
+      "figma",
+      "pbakaus",
+      "anthropics",
+      "vercel-labs"
+    ],
+    "aws": [
+      "microsoft",
+      "cloudflare",
+      "hashicorp",
+      "google-gemini"
+    ],
+    "google-gemini": [
+      "google-labs-code",
+      "firebase",
+      "googleworkspace",
+      "openai"
+    ],
+    "google-labs-code": [
+      "google-gemini",
+      "firebase",
+      "figma",
+      "adobe"
+    ],
+    "firebase": [
+      "google-gemini",
+      "google-labs-code",
+      "supabase",
+      "mongodb"
+    ],
+    "huggingface": [
+      "nvidia",
+      "k-dense-ai",
+      "google-gemini",
+      "openai"
+    ],
+    "mongodb": [
+      "redis",
+      "supabase",
+      "firebase",
+      "hashicorp"
+    ],
+    "redis": [
+      "mongodb",
+      "supabase",
+      "firebase",
+      "hashicorp"
+    ],
+    "stripe": [
+      "shopify",
+      "makenotion",
+      "microsoft",
+      "github"
+    ],
+    "shopify": [
+      "stripe",
+      "makenotion",
+      "github",
+      "microsoft"
+    ],
+    "figma": [
+      "adobe",
+      "google-labs-code",
+      "pbakaus",
+      "vercel-labs"
+    ],
+    "makenotion": [
+      "googleworkspace",
+      "open.feishu.cn",
+      "microsoft",
+      "stripe"
+    ],
+    "datadog": [
+      "datadog-labs",
+      "getsentry",
+      "cloudflare",
+      "microsoft"
+    ],
+    "datadog-labs": [
+      "datadog",
+      "getsentry",
+      "github",
+      "cloudflare"
+    ],
+    "getsentry": [
+      "datadog",
+      "datadog-labs",
+      "github",
+      "cloudflare"
+    ],
+    "hashicorp": [
+      "aws",
+      "cloudflare",
+      "microsoft",
+      "github"
     ]
   },
   "skill-categories": {
