@@ -489,6 +489,42 @@
       "design-interfaces",
       "writing-marketing",
       "deployment-browser"
+    ],
+    "frontend-react": [
+      "testing-debugging",
+      "browser-automation",
+      "design-interfaces",
+      "coding"
+    ],
+    "testing-debugging": [
+      "frontend-react",
+      "browser-automation",
+      "security-review",
+      "coding"
+    ],
+    "databases": [
+      "security-review",
+      "testing-debugging",
+      "coding",
+      "development"
+    ],
+    "security-review": [
+      "databases",
+      "testing-debugging",
+      "development",
+      "deployment-browser"
+    ],
+    "seo": [
+      "browser-automation",
+      "writing-marketing",
+      "development",
+      "coding"
+    ],
+    "browser-automation": [
+      "seo",
+      "testing-debugging",
+      "frontend-react",
+      "deployment-browser"
     ]
   }
 }

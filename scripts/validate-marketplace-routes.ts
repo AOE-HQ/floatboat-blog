@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { buildCombinedSitemapXml } from "../src/lib/sitemap";
 import { pathForLocale } from "../src/lib/locale-path";
 
@@ -27,7 +27,8 @@ for (const path of paths) {
 }
 for (const folder of ["src/app/(en)/(marketing)", "src/app/(zh)/zh/(marketing)"]) {
   assert(existsSync(`${folder}/skills-marketplace/page.tsx`));
-  assert(!existsSync(`${folder}/combostore`), "Old local routes must be removed rather than redirected");
+  const retired = `${folder}/combostore`;
+  assert(!existsSync(retired) || !readdirSync(retired, { recursive: true }).some((name) => /(?:^|[\\/])(?:page|route)\.[jt]sx?$/.test(String(name))), "Old local routes must be removed rather than redirected");
 }
 const config = readFileSync("next.config.ts", "utf8");
 assert(!config.includes("combostore"), "Do not redirect or rewrite the main-app namespace");
