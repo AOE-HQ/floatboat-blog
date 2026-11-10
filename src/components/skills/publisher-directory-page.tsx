@@ -23,16 +23,25 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
   const projects = entries.filter((entry) => entry.entryType === "project");
   const isOrganization = profile.type === "Organization";
   const overview = t.overview ?? { title: t.aboutTitle, paragraphs: [t.about] };
-  const overviewLinks = profile.links !== undefined
-    ? profile.links.map((link) => ({ href: link.href, label: link.label[locale] }))
-    : profile.profileUrl ? [{ href: profile.profileUrl, label: profile.profileUrl.startsWith("https://github.com/") ? (isZh ? "GitHub 主页" : "GitHub profile") : (isZh ? "个人 / 官方主页" : "Website") }] : [];
+  const declaredLinks = (profile.links ?? []).map((link) => ({ href: link.href, label: link.label[locale] }));
+  const github = [profile.profileUrl, ...declaredLinks.map((link) => link.href)].find((href) => href && new URL(href).hostname === "github.com" && new URL(href).pathname.split("/").filter(Boolean).length === 1);
+  const website = [profile.profileUrl, ...declaredLinks.map((link) => link.href)].find((href) => {
+    if (!href) return false;
+    const { hostname, pathname } = new URL(href);
+    return hostname !== "github.com" && !hostname.startsWith("docs.")
+      && !/(^|\/)(docs?|documentation|guides?)(\/|$)/i.test(pathname);
+  });
+  const overviewLinks = [
+    ...(website ? [{ href: website, label: isZh ? "官方主页" : "Official website" }] : []),
+    ...(github ? [{ href: github, label: isZh ? "GitHub 主页" : "GitHub profile" }] : []),
+  ];
   const canonical = `${origin}${publisherProfilePath(locale, handle)}`;
   const labels = isZh
     ? { home: "首页", store: "Skills 市场", publisher: "发布者", profile: "查看发布者主页", project: "查看项目", download: "下载 Floatboat" }
     : { home: "Home", store: "Skills Marketplace", publisher: "Publisher", profile: "Visit Publisher Profile", project: "View Project", download: "Download Floatboat" };
   const jsonLd = {
     "@context": "https://schema.org", "@type": "CollectionPage", name: t.heroTitle, description: t.heroDescription, url: canonical,
-    inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: overviewLinks.map((link) => link.href) },
+    inLanguage: isZh ? "zh-CN" : "en-US", about: { "@type": profile.type, name: profile.name, url: profile.profileUrl, sameAs: profile.links !== undefined ? declaredLinks.map((link) => link.href) : profile.profileUrl ? [profile.profileUrl] : [] },
     mainEntity: { "@type": "ItemList", itemListElement: [...skillLinks, ...projects].map((entry, index) => ({ "@type": "ListItem", position: index + 1, name: entry.name, url: entry.href.startsWith("/") ? `${origin}${entry.href}` : entry.href })) },
   };
 
@@ -50,7 +59,7 @@ export function PublisherDirectoryPage({ locale, handle }: { locale: SkillLocale
 
         title={overview.title}
         paragraphs={overview.paragraphs}
-        identity={{ name: profile.name, typeLabel: isOrganization ? (isZh ? "团队 / 组织" : "Organization") : (isZh ? "创作者" : "Creator"), logo: profile.logo, tags: profile.tags?.[locale] }}
+        identity={{ name: profile.name, typeLabel: isOrganization ? (isZh ? "团队 / 组织" : "Organization") : (isZh ? "创作者" : "Creator"), logo: profile.logo }}
         links={overviewLinks}
         linksTitle={isOrganization ? (isZh ? "官方入口" : "Official links") : (isZh ? "主页与作品" : "Profile and work")}
       />

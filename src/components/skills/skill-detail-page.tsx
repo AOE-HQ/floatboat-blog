@@ -10,7 +10,7 @@ import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { UseCasesSection } from "@/components/marketing/use-cases-section";
 import { skillPath, skillPublisherPath, type FeaturedSkill, type SkillLocale } from "@/lib/skills/featured-skills";
 
-import { getResourceLabels } from "@/lib/skills/resource-taxonomy";
+import { getResourceTaxonomy } from "@/lib/skills/resource-taxonomy";
 
 const labels = {
   en: { home: "Home", store: "Skills Marketplace" },
@@ -72,15 +72,11 @@ export function SkillDetailPage({ skill, locale }: { skill: FeaturedSkill; local
         identity={{
           name: skill.name,
           typeLabel: "Agent Skill",
-          tags: getResourceLabels(resourceId, locale),
+          publisher: { label: isZh ? `发布者：${skill.publisher}` : `Publisher: ${skill.publisher}`, href: publisherPath },
+          categories: getResourceTaxonomy(resourceId, locale).categories,
         }}
-        linksTitle={isZh ? "发布者与来源" : "Publisher and sources"}
-        links={[
-          { label: isZh ? `提供方：${skill.publisher}` : `By ${skill.publisher}`, href: publisherPath },
-          { label: isZh ? "原始 SKILL.md" : "Original SKILL.md", href: skill.sourceUrl },
-          ...(skill.sourceLinks ?? []).map((link) => ({ label: link.label[locale], href: link.href })),
-          { label: new URL(skill.repositoryUrl).hostname === "github.com" ? (isZh ? "来源仓库" : "Source repository") : (isZh ? "官方 Skill 目录" : "Official Skill catalog"), href: skill.repositoryUrl },
-        ]}
+        linksTitle={isZh ? "Skill 来源" : "Skill source"}
+        links={[{ label: isZh ? "原始 Skill" : "Original Skill", href: skill.sourceUrl }]}
       />
 
       <UseCasesSection {...localizeUseCases(skill.useCases, locale)} />

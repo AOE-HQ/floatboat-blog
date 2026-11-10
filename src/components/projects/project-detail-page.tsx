@@ -13,7 +13,7 @@ import { getPublisherProfile, publisherProfilePath } from "@/lib/skills/publishe
 import type { SkillLocale } from "@/lib/skills/featured-skills";
 import { projectPath, type ProjectPage } from "@/lib/projects/project-pages";
 
-import { getResourceLabels, projectResourceId } from "@/lib/skills/resource-taxonomy";
+import { getResourceTaxonomy, projectResourceId } from "@/lib/skills/resource-taxonomy";
 
 export function ProjectDetailPage({ project, locale }: { project: ProjectPage; locale: SkillLocale }) {
   const zh = locale === "zh";
@@ -29,14 +29,11 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     { label: publisher.name, href: publisherHref },
     { label: project.name, href: projectPath(locale, project.author, project.slug) },
   ];
-  const links = [
-    { label: zh ? `发布者：${publisher.name}` : `Publisher: ${publisher.name}`, href: publisherHref },
-    ...(project.website !== project.repository ? [{ label: zh ? "项目官网" : "Project website", href: project.website }] : []),
-    { label: zh ? "官方文档" : "Official documentation", href: project.documentation },
-    { label: zh ? "GitHub 源码" : "GitHub repository", href: project.repository },
-    { label: zh ? `源码许可 · ${project.license}` : `Source license · ${project.license}`, href: project.licenseUrl },
-    ...(project.sourceLinks ?? []).map((link) => ({ href: link.href, label: link.label[locale] })),
-  ];
+  const repository = new URL(project.repository);
+  const github = repository.hostname === "github.com"
+    ? `${repository.origin}/${repository.pathname.split("/").filter(Boolean).slice(0, 2).join("/").replace(/\.git$/i, "")}`
+    : undefined;
+  const links = [{ label: github ? (zh ? "GitHub 项目" : "GitHub project") : (zh ? "项目官网" : "Project website"), href: github ?? project.website }];
   const jsonLd = {
     "@context": "https://schema.org", "@type": "WebPage", name: t.seoTitle, description: t.description, url: canonical, inLanguage: zh ? "zh-CN" : "en-US",
     about: { "@type": "SoftwareSourceCode", name: project.name, description: t.description, codeRepository: project.repository, url: project.website, license: project.licenseUrl, author: { "@type": publisher.type, name: publisher.name, url: `https://floatboat.ai${publisherHref}` } },
@@ -45,7 +42,7 @@ export function ProjectDetailPage({ project, locale }: { project: ProjectPage; l
     <Breadcrumb label={zh ? "面包屑导航" : "Breadcrumb"} items={breadcrumbs} />
     <MarketingHero layout="centered" title={project.name} description={t.description} />
     <StartInFloatboat key={`${locale}/${resourceId}`} variant="resource" locale={locale} pageId={resourceId} copy={startTask} initialTask={startTask.example ?? ""} resource={{ name: project.name, url: project.repository }} />
-    <OverviewSection variant="profile" title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, tags: [...getResourceLabels(projectResourceId(project.repository), locale), { id: "license", label: project.license }] }} linksTitle={zh ? "项目与来源" : "Project and sources"} links={links} />
+    <OverviewSection variant="profile" title={t.overviewTitle} paragraphs={t.overview} identity={{ name: project.name, typeLabel: t.kind, logo: project.logo, publisher: { label: zh ? `发布者：${publisher.name}` : `Publisher: ${publisher.name}`, href: publisherHref }, categories: getResourceTaxonomy(projectResourceId(project.repository), locale).categories }} linksTitle={zh ? "项目来源" : "Project source"} links={links} />
     <section aria-labelledby="project-capabilities-title" className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
       <h2 id="project-capabilities-title" className="font-serif text-3xl tracking-tight sm:text-4xl">{t.capabilitiesTitle}</h2>
       <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-text-subtle)]">{t.capabilitiesIntro}</p>

@@ -86,6 +86,8 @@ def main():
       locales: Object.fromEntries(["en", "zh"].map(locale => [locale, {
         public: catalog.getStoreCatalog(locale), inventory: catalog.getCatalogInventory(locale),
       }])),
+      projects: require("./src/lib/projects/project-pages.ts").PROJECTS.map(p => ({author:p.author,slug:p.slug,repository:p.repository})),
+      skills: require("./src/lib/skills/featured-skills.ts").FEATURED_SKILLS.map(s => ({author:s.authorHandle,slug:s.slug,source:s.sourceUrl})),
       publishers: publishers.PUBLISHER_PROFILE_HANDLES.map(handle => ({
         handle, type: publishers.getPublisherProfile(handle).type,
         organizationProfile: publishers.isOrganizationProfilePublisher(handle),
@@ -102,6 +104,40 @@ def main():
         canonical = find(page.root, 'link', 'rel', 'canonical')
         if canonical:
             pages[urlsplit(canonical[0].attrs['href']).path] = page.root
+    card_count = 0
+    for locale, prefix in [('en', ''), ('zh', '/zh')]:
+        for kind in ['projects', 'skills']:
+            for entry in catalog[kind]:
+                route = f"{prefix}/skills-marketplace/{entry['author']}/{entry['slug']}"
+                cards = find(pages[route], 'aside', 'data-profile-card')
+                assert len(cards) == 1, route
+                card = cards[0]
+                anchors = find(card, 'a', 'href')
+                external = [a.attrs['href'] for a in anchors if a.attrs['href'].startswith('https://')]
+                assert external == [entry['repository'] if kind == 'projects' else entry['source']], ('Source must be a single primary entry', route, external)
+                assert len([a for a in anchors if a.attrs['href'] == f"{prefix}/skills-marketplace/{entry['author']}"]) == 1, ('Missing publisher identity', route)
+                groups = find(card, attr='data-resource-labels')
+                assert all(a.attrs['href'].startswith(f'{prefix}/skills-marketplace/categories/') for g in groups for a in find(g, 'a')), route
+                assert not any(find(g, 'span') for g in groups), ('Plain tags or license badge in profile', route)
+                assert len({a.attrs['href'] for a in anchors}) == len(anchors), ('Repeated card destination', route)
+                card_count += 1
+        for publisher in catalog['publishers']:
+            route = f"{prefix}/skills-marketplace/{publisher['handle']}"
+            cards = find(pages[route], 'aside', 'data-profile-card')
+            assert len(cards) == 1, route
+            card = cards[0]
+            assert not find(card, attr='data-resource-labels'), ('Publisher tags must not be displayed', route)
+            targets = [a.attrs['href'] for a in find(card, 'a', 'href')]
+            assert len(targets) <= 2 and len(targets) == len(set(targets)), route
+            if publisher['handle'] == 'chromedevtools':
+                assert len(targets) == 1 and urlsplit(targets[0]).netloc == 'github.com', ('Documentation must not be relabeled as an official website', route)
+            for target in targets:
+                parsed = urlsplit(target)
+                assert parsed.scheme in ['http', 'https'], route
+                if parsed.netloc == 'github.com':
+                    assert len(parsed.path.strip('/').split('/')) == 1, ('Repository child path in publisher card', route, target)
+            card_count += 1
+    print(f'OK: {card_count} localized profile cards; primary sources, publisher identity, categories only, no duplicate destinations')
     checked = 0
     for locale, prefix in [('en', ''), ('zh', '/zh')]:
         entries = catalog['locales'][locale]['public']
@@ -177,8 +213,8 @@ def main():
                 continue
             profile = find(root, 'aside', 'data-profile-card')
             assert len(profile) == 1, entry['href']
-            expected = [t['label'] for t in entry['taxonomy']['categories'] + entry['taxonomy']['tags']]
-            assert labels(profile[0])[:len(expected)] == expected, entry['href']
+            expected = [t['label'] for t in entry['taxonomy']['categories']]
+            assert labels(profile[0]) == expected, entry['href']
             checked += 1
     sitemap = ElementTree.parse('.next/server/app/blog/sitemap.xml.body')
     marketplace_sitemap = {
