@@ -7,7 +7,7 @@ slug: "gpt-6-astra"
 date: "2026-09-04"
 author: "Kostja"
 category: "Model & Benchmarks"
-cover: "/blog/images/gpt-6-astra/1788496075502-7b01a53f-db8d-49cb-8844-0afcaa9d04aa.webp"
+cover: "/blog/images/gpt-6-astra/og-en.webp"
 locale: "en"
 draft: false
 ---

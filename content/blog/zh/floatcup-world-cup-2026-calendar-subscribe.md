@@ -7,7 +7,7 @@ slug: "floatcup-world-cup-2026-calendar-subscribe"
 date: "2026-07-15"
 author: "Jade"
 category: "Product Updates"
-cover: "/blog/images/floatcup-world-cup-2026-calendar-subscribe/1783514827876-4880f990-784a-4656-be8d-21c1202b7d71.webp"
+cover: "/blog/images/floatcup-world-cup-2026-calendar-subscribe/og-zh.webp"
 locale: "zh"
 draft: false
 ---
