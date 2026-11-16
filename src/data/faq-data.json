@@ -296,7 +296,7 @@
         },
         {
           "question": "How do I find an implementation guide rather than a product announcement?",
-          "answer": "Use the topic tabs to narrow the library, then read the description before opening an article. Look for a concrete task, inputs, execution steps, and verification; a release analysis may explain a capability without providing setup instructions."
+          "answer": "Use the category selector or search a concrete tool or task in the article library. Read the description for inputs, steps, and checks; a release analysis may explain a capability without providing setup instructions."
         },
         {
           "question": "Are model comparisons permanent recommendations?",
@@ -5452,7 +5452,7 @@
         },
         {
           "question": "怎样找到操作指南，而不是产品发布资讯？",
-          "answer": "先用主题标签缩小范围，再看文章简介。操作指南通常会写清任务、输入、步骤和检查方法；发布分析可能只解释能力，并不提供安装或配置教程。"
+          "answer": "使用文章库的分类筛选，或搜索具体工具与任务。阅读简介时留意输入、操作步骤和检查方法；发布分析可能解释能力，但不一定提供接入教程。"
         },
         {
           "question": "模型对比文章可以一直当作选型结论吗？",

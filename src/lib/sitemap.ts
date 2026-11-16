@@ -10,6 +10,7 @@ import { FEATURED_SKILLS, skillPath } from "@/lib/skills/featured-skills";
 import { skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-categories";
 import { PUBLISHER_PROFILE_HANDLES, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { PROJECTS, projectPath } from "@/lib/projects/project-pages";
+import { blogPageCount, blogPagePath } from "@/lib/blog-library";
 
 function extractUrlEntries(xml: string): string {
   const match = xml.match(/<urlset[^>]*>([\s\S]*)<\/urlset>/);
@@ -53,9 +54,15 @@ export function buildCombinedSitemapXml(): string {
     ]),
   ].map((url) => `<url><loc>${url}</loc></url>`).join("\n");
 
+  const blogPagination = SUPPORTED_LOCALES.flatMap(locale =>
+    Array.from({ length: blogPageCount(locale) - 1 }, (_, i) =>
+      `<url><loc>https://floatboat.ai${blogPagePath(locale, i + 2)}</loc></url>`),
+  ).join("\n");
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${bodies.join("\n")}
+${blogPagination}
 ${personaPages}
 ${skillPages}
 </urlset>`;

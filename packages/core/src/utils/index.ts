@@ -21,8 +21,14 @@ export function getPostExcerpt(description: string, maxLength = 140): string {
 }
 
 export function getReadingMinutes(content: string): number {
-  const words = content.trim().split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 200));
+  const prose = content
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
+  const han = prose.match(/\p{Script=Han}/gu)?.length ?? 0;
+  const words = prose.replace(/\p{Script=Han}/gu, " ").match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu)?.length ?? 0;
+  return Math.max(1, Math.ceil(han / 450 + words / 200));
 }
 
 export function stripDuplicateH1(content: string, title: string): string {

@@ -14,11 +14,17 @@ Independent OpenBlog app mounted at `https://floatboat.ai/blog`. Cloudflare / In
 
 ## Article workflow gate
 
+### Research tools (owner preference, 2026-11-16)
+
+Use ChatGPT's built-in web search, page reading, and image understanding for research and audits. Do not use Firecrawl unless the owner explicitly changes this preference. If a page cannot be read, report the evidence gap rather than silently switching to Firecrawl.
+
 Before creating or substantially rewriting an article, read `E:\clients\floatboat\blog\README.md`, `E:\clients\floatboat\blog\publishing-contract.md`, and every currently applicable rule in `E:\Agent执行\内容构建\Blog\article-shared\`. “Run the complete Skills” means this full project entry chain, not only the individual research or writing specification named in the prompt.
 
 Create an internal research brief before drafting. After the complete bilingual page is assembled—including frontmatter, body, FAQ, popup, internal links, and media—issue a content verdict using `BLOCKED`, `NEEDS_REVISION`, or `PUBLISH_READY`. Technical checks such as build, TypeScript, image validation, and link audits do not establish editorial readiness. Do not commit, push, or create/update a PR for an article marked `BLOCKED` or `NEEDS_REVISION`, unless the user explicitly asks to publish an unfinished draft.
 
 ## Images
+
+Before generating or rebuilding blog covers, read the Floatboat publishing contract §8. Independent review of the article-based bilingual title/scene brief must pass before generation; independent review of the actual final branded files must pass before integration. Never reduce a cover to a bare product/model name or treat a style reference as this article’s copy brief.
 
 Script: `scripts/convert-blog-images-to-webp.mjs`
 
