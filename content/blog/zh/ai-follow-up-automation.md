@@ -20,6 +20,8 @@ draft: false
 
 输入可以是逐字稿、由录音生成的逐字稿、确认过的笔记或会议聊天。流程必须知道证据来源、谁能访问、保留多久，以及参会者是否同意录音。没有可靠记录时，应停止或请求补充笔记。
 
+如果希望在 Google Meet 通话中形成记录，可先查看 [Claude Meetings 的接入与权限说明](/zh/blog/claude-meetings)，确认记录如何产生、谁能访问，再把结果交给会后流程。
+
 微软的 [Teams 会议回顾说明](https://support.microsoft.com/en-us/teams/meetings-events/recap-a-teams-meeting)给出了基线：AI 可以总结并找出行动项，但生成结果仍需核验。
 
 ### 2. 带来源抽取

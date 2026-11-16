@@ -20,6 +20,8 @@ draft: false
 
 Use a transcript, recording-derived transcript, approved notes, or meeting chat. The workflow must know where evidence came from, who may access it, how long it is retained, and whether participants consented to recording. If no reliable record exists, stop or request notes.
 
+For a Google Meet workflow that creates a record during the call, the [Claude Meetings guide](/blog/claude-meetings) explains current access, meeting-page visibility, and what to check before using the results.
+
 Microsoft's [Teams recap guidance](https://support.microsoft.com/en-us/teams/meetings-events/recap-a-teams-meeting) shows the baseline: AI can summarize and surface action items, but generated results still require verification.
 
 ### 2. Extract with provenance

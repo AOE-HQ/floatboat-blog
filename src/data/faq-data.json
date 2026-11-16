@@ -296,7 +296,7 @@
         },
         {
           "question": "How do I find an implementation guide rather than a product announcement?",
-          "answer": "Use the topic tabs to narrow the library, then read the description before opening an article. Look for a concrete task, inputs, execution steps, and verification; a release analysis may explain a capability without providing setup instructions."
+          "answer": "Use the category selector or search a concrete tool or task in the article library. Read the description for inputs, steps, and checks; a release analysis may explain a capability without providing setup instructions."
         },
         {
           "question": "Are model comparisons permanent recommendations?",
@@ -5452,7 +5452,7 @@
         },
         {
           "question": "怎样找到操作指南，而不是产品发布资讯？",
-          "answer": "先用主题标签缩小范围，再看文章简介。操作指南通常会写清任务、输入、步骤和检查方法；发布分析可能只解释能力，并不提供安装或配置教程。"
+          "answer": "使用文章库的分类筛选，或搜索具体工具与任务。阅读简介时留意输入、操作步骤和检查方法；发布分析可能解释能力，但不一定提供接入教程。"
         },
         {
           "question": "模型对比文章可以一直当作选型结论吗？",
@@ -11925,6 +11925,54 @@
         {
           "question": "小团队什么时候需要从代码审查升级到受控验证？",
           "answer": "当代码审查无法确认权限问题是否真的影响指定用户或数据时，可以安排经授权的隔离验证。用合成测试账号保留脱敏证据，补丁由负责人审批，并检查合法访问是否受到影响。"
+        }
+      ]
+    },
+    "/blog/claude-meetings": {
+      "items": [
+        {
+          "question": "Can Claude Meetings join Zoom or Microsoft Teams calls?",
+          "answer": "Current official support is Google Meet. A transcript from another platform can be a separate input to a chat workflow, but that is not the same as native Claude Meetings participation."
+        },
+        {
+          "question": "Why is Claude Meetings missing from my account?",
+          "answer": "Check that you are using an eligible Team or Enterprise organization, that its owner has enabled the relevant access, and that the calendar connection is allowed. Some organization configurations are excluded during beta."
+        },
+        {
+          "question": "Does Claude Meetings save the audio recording?",
+          "answer": "Anthropic says it saves a transcript, summary, and screen descriptions, not audio. Do not assume the meeting provides an audio download for a later recording-processing workflow."
+        },
+        {
+          "question": "Is Claude Meetings free?",
+          "answer": "Notes, transcripts, and answers without connected-tool use are included on Team and Enterprise during the current beta. Documents and whiteboards made in meetings are free through February 10, 2027; connector use counts toward usage. This is not an indefinite all-features-free promise."
+        },
+        {
+          "question": "Is an uploaded recording the same as using Claude Meetings?",
+          "answer": "No. Upload processing starts with an existing file and produces a transcript, notes, or minutes afterward. Claude Meetings is a live participant in a supported call and can help create shared work during the discussion."
+        }
+      ]
+    },
+    "/zh/blog/claude-meetings": {
+      "items": [
+        {
+          "question": "Claude Pro 能使用 Claude Meetings 吗？",
+          "answer": "当前官方列出的测试版面向 Team 和 Enterprise，不应把个人 Pro 或 Max 的其他 Claude 功能推断为 Meetings 准入。是否已经开放还要核对组织及角色设置。"
+        },
+        {
+          "question": "Claude Meetings 现在支持 Zoom 和 Teams 吗？",
+          "answer": "当前官方确认的是 Google Meet，其他会议平台仍属于后续支持范围。已有 Zoom 或 Teams 录音的处理，与 Claude 作为参会者实时加入通话是两种不同路径。"
+        },
+        {
+          "question": "Claude Meetings 会保存录音吗？",
+          "answer": "官方说明保存转录、摘要和屏幕描述，而不是音频。文字与屏幕描述仍可能包含敏感信息，不能因此推断不需要组织的数据管理。"
+        },
+        {
+          "question": "为什么会议里能看到 Claude，却收不到回复？",
+          "answer": "先核对是否有外部客人，以及当前组织允许的行为。在允许外部客人的通话中，Claude 会记录并发布通知，但不在 Meet 聊天中回复。还应检查暂停状态及账户权限。"
+        },
+        {
+          "question": "测试期间的免费安排包含所有工具调用吗？",
+          "answer": "不包含。纪要、转录和不使用连接工具的回答纳入相应套餐；会议文档及白板的免费安排截至 2027 年 2 月 10 日，连接工具调用会计入用量。"
         }
       ]
     }

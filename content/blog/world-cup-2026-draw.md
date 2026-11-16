@@ -7,7 +7,7 @@ slug: "world-cup-2026-draw"
 date: "2026-07-15"
 author: "Jade"
 category: "Calendar AI"
-cover: "/blog/images/world-cup-2026-draw/1783513678637-1a8b836f-a911-4927-9f91-1a1c2368e942.webp"
+cover: "/blog/images/world-cup-2026-draw/og-en.webp"
 locale: "en"
 draft: false
 ---

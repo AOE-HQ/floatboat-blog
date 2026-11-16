@@ -7,7 +7,7 @@ slug: "world-cup-2026-groups-standings"
 date: "2026-07-15"
 author: "Jade"
 category: "Calendar AI"
-cover: "/blog/images/world-cup-2026-groups-standings/1783513886835-e9bc6a31-19ae-414f-8414-85682f20e7f2.webp"
+cover: "/blog/images/world-cup-2026-groups-standings/og-en.webp"
 locale: "en"
 draft: false
 ---

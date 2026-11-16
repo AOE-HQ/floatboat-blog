@@ -7,7 +7,7 @@ slug: "automate-tiktok-shop-research-fastmoss-floatboat"
 date: "2026-08-20"
 author: "Remy"
 category: "Product Updates"
-cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/1787047250237-f387ec1b-5d83-4994-ab6c-10f7bb18137f.webp"
+cover: "/blog/images/automate-tiktok-shop-research-fastmoss-floatboat/og-zh.webp"
 locale: "zh"
 draft: false
 ---

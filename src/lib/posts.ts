@@ -15,6 +15,7 @@ import { postPathForLocale } from "@/config/i18n";
 import { resolveFaqForPost } from "@/lib/faq-data";
 import { resolveFinalCtaForPost } from "@/lib/final-cta-data";
 import { resolveTldrForPost } from "@/lib/tldr-data";
+import curatedRelatedPosts from "@/data/blog-related-posts.json";
 
 function attachPostSidecars<T extends Post | undefined>(
   post: T,
@@ -74,12 +75,22 @@ export function getAllPostMeta(locale: BlogLocale = "en"): PostMeta[] {
 
 const relatedPostMetaCache = new Map<BlogLocale, PostMeta[]>();
 
-/** Related articles in the same locale, ranked by category and shared tags. */
+/** Same-locale curated recommendations when supplied, otherwise ranked by category and shared tags. */
 export function getRelatedPostMeta(post: PostMeta, locale: BlogLocale = "en", limit = 3): PostMeta[] {
   let candidates = relatedPostMetaCache.get(locale);
   if (!candidates) {
     candidates = getAllPostMeta(locale);
     relatedPostMetaCache.set(locale, candidates);
+  }
+
+  const curated = (curatedRelatedPosts as Record<string, string[]>)[post.slug];
+  if (curated) {
+    if (new Set(curated).size !== curated.length || curated.includes(post.slug)) throw new Error(`Invalid related posts: ${post.slug}`);
+    return curated.slice(0, limit).map((slug) => {
+      const target = candidates.find((candidate) => candidate.slug === slug);
+      if (!target) throw new Error(`Missing ${locale} related post: ${slug}`);
+      return target;
+    });
   }
 
   const tags = new Set(post.tags.map(tagToSlug));

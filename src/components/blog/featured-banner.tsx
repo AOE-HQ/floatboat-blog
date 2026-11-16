@@ -14,10 +14,10 @@ export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: Featu
   return (
     <Link
       href={`${localePrefix}/blog/${post.slug}`}
-      className={`group grid overflow-hidden rounded-3xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl lg:grid-cols-5`}
+      className="group grid overflow-hidden rounded-3xl bg-[var(--ob-color-surface)] lg:grid-cols-5"
     >
       <div
-        className={`relative aspect-[16/9] overflow-hidden lg:col-span-3 lg:aspect-auto lg:min-h-[320px] ${
+        className={`relative aspect-[40/21] self-center overflow-hidden lg:col-span-3 ${
           hasCover ? "" : "bg-gradient-to-br from-[var(--ob-color-surface)] to-[var(--ob-color-border)]"
         }`}
       >
@@ -27,7 +27,9 @@ export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: Featu
             src={post.coverImage!}
             alt={post.title}
             loading="eager"
-            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+            width={1200}
+            height={630}
+            className="h-full w-full object-contain"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-4xl font-serif text-[var(--ob-color-muted)] opacity-30">
@@ -36,9 +38,9 @@ export function FeaturedBanner({ post, locale = "en", localePrefix = "" }: Featu
         )}
       </div>
       <div className="flex flex-col justify-center p-7 sm:p-10 lg:col-span-2">
-        <h2 className="font-serif text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] transition-colors group-hover:underline sm:text-3xl">
+        <h3 className="font-serif text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] group-hover:underline sm:text-3xl">
           {post.title}
-        </h2>
+        </h3>
         <p className="mt-4 line-clamp-3 text-base leading-7 text-[var(--ob-color-muted)]">
           {post.description}
         </p>

@@ -1,166 +1,49 @@
 "use client";
-
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { PostMeta } from "@openblog/core";
 import { formatPostDate } from "@openblog/core";
-
 import { categoryLabel } from "@openblog/components";
+import { BLOG_PAGE_SIZE as PAGE_SIZE, filterBlogPosts } from "@/lib/blog-pagination";
 
-interface TopicBrowserProps {
-  posts: PostMeta[];
-  pageSize?: number;
-  locale?: "en" | "zh";
-  localePrefix?: string;
-}
-
-/**
- * Topic-tabbed article browser with "load more" — client-side filtering.
- * Replaces the By Topic card grid + Latest grid for a cleaner discovery flow.
- */
-export function TopicBrowser({ posts, pageSize = 12, locale = "en", localePrefix = "" }: TopicBrowserProps) {
-  const [topic, setTopic] = useState<string>("all");
-  const [visible, setVisible] = useState(pageSize);
-
-  const categories = useMemo(() => {
-    const map = new Map<string, string>();
-    for (const p of posts) {
-      if (p.categorySlug && !map.has(p.categorySlug)) {
-        map.set(p.categorySlug, p.category ?? p.categorySlug);
-      }
-    }
-    return [...map.entries()]
-      .map(([slug, name]) => ({ slug, name }))
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [posts]);
-
-  const filtered = useMemo(() => {
-    if (topic === "all") return posts;
-    return posts.filter((p) => p.categorySlug === topic);
-  }, [posts, topic]);
-
-  const shown = filtered.slice(0, visible);
-  const remaining = filtered.length - shown.length;
-
-  const counts = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const p of posts) {
-      if (p.categorySlug) map.set(p.categorySlug, (map.get(p.categorySlug) ?? 0) + 1);
-    }
-    return map;
-  }, [posts]);
-
-  return (
-    <section
-      aria-label={locale === "zh" ? "按主题浏览文章" : "Browse articles by topic"}
-      className="scroll-mt-24"
-    >
-      <div className="flex flex-wrap items-end justify-between gap-4 pb-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-[var(--ob-color-text)] sm:text-3xl">
-          {locale === "zh" ? "浏览文章库" : "Browse the library"}
-        </h2>
-        <p className="text-sm text-[var(--ob-color-muted)]">
-          {locale === "zh"
-            ? `${filtered.length} 篇文章`
-            : `${filtered.length} article${filtered.length !== 1 ? "s" : ""}`}
-        </p>
-      </div>
-
-      <div className="mt-6 flex flex-wrap gap-2.5">
-        <CategoryPill label={locale === "zh" ? "全部" : "All"} count={posts.length} active={topic === "all"} onClick={() => setTopic("all")} />
-        {categories.map(({ slug, name }) => (
-          <CategoryPill
-            key={slug}
-            label={categoryLabel(slug, name, locale)}
-            count={counts.get(slug) ?? 0}
-            active={topic === slug}
-            onClick={() => setTopic(slug)}
-          />
-        ))}
-      </div>
-
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-        {shown.map((post) => (
-          <PostCardMini key={post.slug} post={post} locale={locale} localePrefix={localePrefix} />
-        ))}
-      </div>
-
-      {remaining > 0 ? (
-        <div className="mt-10 text-center">
-          <button
-            type="button"
-            onClick={() => setVisible((v) => v + pageSize)}
-            className="inline-flex items-center rounded-full border border-[var(--ob-color-border)] px-6 py-2.5 text-sm font-medium text-[var(--ob-color-text)] transition hover:border-[var(--ob-color-accent)]"
-          >
-            {locale === "zh" ? `加载更多（剩 ${remaining} 篇）` : `Load more (${remaining} remaining)`}
-          </button>
-        </div>
-      ) : null}
-    </section>
-  );
-}
-
-function CategoryPill({
-  label, count, active, onClick,
-}: {
-  label: string; count: number; active: boolean; onClick: () => void;
+export function TopicBrowser({ posts, initialPage = 1, locale = "en", localePrefix = "" }: {
+  posts: PostMeta[]; initialPage?: number; locale?: "en" | "zh"; localePrefix?: string;
 }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-full border px-4 py-1.5 text-sm font-medium transition ${
-        active
-          ? "border-[var(--ob-color-accent)] bg-[var(--ob-color-accent)]/10 text-[var(--ob-color-accent)]"
-          : "border-[var(--ob-color-border)] text-[var(--ob-color-muted)] hover:border-[var(--ob-color-text)] hover:text-[var(--ob-color-text)]"
-      }`}
-    >
-      {label} <span className="ml-1 tabular-nums text-xs opacity-60">{count}</span>
-    </button>
-  );
-}
-
-function PostCardMini({
-  post,
-  locale = "en",
-  localePrefix = "",
-}: {
-  post: PostMeta;
-  locale?: "en" | "zh";
-  localePrefix: string;
-}) {
-  return (
-    <article className="group overflow-hidden rounded-2xl border border-[var(--ob-color-border)] bg-[var(--ob-color-surface)] transition-all hover:-translate-y-0.5 hover:shadow-lg">
-      <Link href={`${localePrefix}/blog/${post.slug}`} className="block">
-        {post.coverImage ? (
-          <div className="aspect-[16/9] overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={post.coverImage}
-              alt={post.title}
-              loading="lazy"
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-            />
-          </div>
-        ) : null}
-        <div className="p-5">
-          <h3 className="font-serif text-base font-semibold leading-snug text-[var(--ob-color-text)] transition-colors group-hover:text-[var(--ob-color-accent)]">
-            {post.title}
-          </h3>
-          <p className="mt-2 line-clamp-2 text-sm leading-6 text-[var(--ob-color-muted)]">
-            {post.description}
-          </p>
-          <div className="mt-3 flex items-center gap-2 text-xs text-[var(--ob-color-muted)]">
-            <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>
-            {post.readingMinutes ? (
-              <>
-                <span aria-hidden="true">·</span>
-                <span>{locale === "zh" ? `${post.readingMinutes} 分钟` : `${post.readingMinutes} min`}</span>
-              </>
-            ) : null}
-          </div>
-        </div>
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("all");
+  const [order, setOrder] = useState("newest");
+  const [filteredPage, setFilteredPage] = useState(1);
+  const zh = locale === "zh";
+  const browsingAll = !query.trim() && category === "all" && order === "newest";
+  const categories = useMemo(() => [...new Map(posts.filter(p => p.categorySlug).map(p => [p.categorySlug!, p.category ?? p.categorySlug!])).entries()].sort((a, b) => a[1].localeCompare(b[1])), [posts]);
+  const filtered = useMemo(() => filterBlogPosts(posts, query, category, order), [posts, query, category, order]);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const page = Math.min(browsingAll ? initialPage : filteredPage, totalPages);
+  const shown = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const pageHref = (n: number) => n === 1 ? `${localePrefix}/blog#article-library` : `${localePrefix}/blog/page/${n}#article-library`;
+  const control = "min-h-11 rounded-xl border border-[var(--ob-color-border)] bg-[var(--ob-color-bg)] px-3 py-2 text-sm text-[var(--ob-color-text)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ob-color-accent)]";
+  const change = () => setFilteredPage(1);
+  return <section id="article-library" aria-labelledby="library-heading" className="scroll-mt-24">
+    <h2 id="library-heading" className="text-2xl font-semibold tracking-tight sm:text-3xl">{zh ? "查找文章" : "Find a guide"}</h2>
+    <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--ob-color-muted)]">{zh ? "搜索具体工具或工作问题，按分类缩小范围，或沿分页浏览全部文章。" : "Search for a tool or a work problem, narrow the results by category, or browse the complete library page by page."}</p>
+    <div role="search" aria-label={zh ? "搜索文章库" : "Search the article library"} className="mt-6 grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto_auto]">
+      <label className="grid gap-2 text-sm"><span>{zh ? "搜索文章" : "Search articles"}</span><input type="search" value={query} onChange={e => { setQuery(e.target.value); change(); }} placeholder={zh ? "例如：会议记录、Markdown、Agent Harness" : "Try meeting notes, Markdown, or agent harness"} className={control} /></label>
+      <label className="grid gap-2 text-sm"><span>{zh ? "分类" : "Category"}</span><select value={category} onChange={e => { setCategory(e.target.value); change(); }} className={control}><option value="all">{zh ? "全部分类" : "All categories"}</option>{categories.map(([slug, name]) => <option key={slug} value={slug}>{categoryLabel(slug, name, locale)}</option>)}</select></label>
+      <label className="grid gap-2 text-sm"><span>{zh ? "排序" : "Sort"}</span><select value={order} onChange={e => { setOrder(e.target.value); change(); }} className={control}><option value="newest">{zh ? "最新发布" : "Newest first"}</option><option value="oldest">{zh ? "最早发布" : "Oldest first"}</option></select></label>
+    </div>
+    <p role="status" aria-live="polite" className="mt-5 text-sm text-[var(--ob-color-muted)]">{zh ? `共 ${filtered.length} 篇${filtered.length ? `，当前显示 ${(page - 1) * PAGE_SIZE + 1}–${Math.min(page * PAGE_SIZE, filtered.length)} 篇` : ""}` : `${filtered.length} articles${filtered.length ? ` · Showing ${(page - 1) * PAGE_SIZE + 1}–${Math.min(page * PAGE_SIZE, filtered.length)}` : ""}`}</p>
+    {shown.length ? <div className="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">{shown.map(post => <article key={post.slug} className="group min-w-0">
+      <Link href={`${localePrefix}/blog/${post.slug}`} className="block rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ob-color-accent)]">
+        {post.coverImage && <div className="aspect-[40/21] overflow-hidden rounded-2xl bg-[var(--ob-color-surface)]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={post.coverImage} alt={post.title} width={1200} height={630} loading="lazy" className="h-full w-full object-contain" /></div>}
+        <div className="pt-4"><p className="text-xs text-[var(--ob-color-muted)]">{post.categorySlug ? categoryLabel(post.categorySlug, post.category ?? post.categorySlug, locale) : ""}</p><h3 className="mt-2 font-serif text-lg font-semibold leading-snug group-hover:underline">{post.title}</h3><p className="mt-2 line-clamp-2 text-sm leading-6 text-[var(--ob-color-muted)]">{post.description}</p><p className="mt-3 text-xs text-[var(--ob-color-muted)]"><time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>{post.readingMinutes ? ` · ${post.readingMinutes} ${zh ? "分钟阅读" : "min read"}` : ""}</p></div>
       </Link>
-    </article>
-  );
+    </article>)}</div> : <div className="py-14 text-center"><p>{zh ? "没有找到匹配文章，试试更短的关键词或其他分类。" : "No matching articles. Try a shorter search or another category."}</p><button className={`${control} mt-4`} onClick={() => { setQuery(""); setCategory("all"); setOrder("newest"); change(); }}>{zh ? "清除筛选" : "Clear filters"}</button></div>}
+    {totalPages > 1 && <nav aria-label={zh ? "文章分页" : "Article pagination"} className="mt-10 flex flex-wrap items-center justify-center gap-3">
+      {page > 1 && (browsingAll ? <Link href={pageHref(page - 1)} rel="prev" className={control}>{zh ? "上一页" : "Previous"}</Link> : <button onClick={() => setFilteredPage(page - 1)} className={control}>{zh ? "上一页" : "Previous"}</button>)}
+      <span aria-current="page" className="px-3 text-sm">{zh ? `第 ${page} / ${totalPages} 页` : `Page ${page} of ${totalPages}`}</span>
+      {page < totalPages && (browsingAll ? <Link href={pageHref(page + 1)} rel="next" className={control}>{zh ? "下一页" : "Next"}</Link> : <button onClick={() => setFilteredPage(page + 1)} className={control}>{zh ? "下一页" : "Next"}</button>)}
+    </nav>}
+  </section>;
 }

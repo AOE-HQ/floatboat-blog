@@ -7,7 +7,7 @@ slug: "raycast-for-windows-floatboat"
 date: "2026-09-03"
 author: "Floatboat Team"
 category: "Product Updates"
-cover: "/blog/images/raycast-for-windows-floatboat/1788445703727-512a806e-63ee-41c0-83b7-100e16fe7911.webp"
+cover: "/blog/images/raycast-for-windows-floatboat/og-en.webp"
 locale: "en"
 draft: false
 ---

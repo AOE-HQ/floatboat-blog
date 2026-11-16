@@ -1719,6 +1719,16 @@
         "title": "把权限问题整理成可复核的修复任务",
         "body": "在 Floatboat 中汇总已脱敏的发现、受影响版本和回归验收条件，把补丁交给负责人审批。"
       }
+    },
+    "claude-meetings": {
+      "en": {
+        "title": "A meeting recap still needs a next step",
+        "body": "Bring reviewed decisions, source files, and a clear deliverable into a Floatboat workspace. Keep proposed actions separate from approved work."
+      },
+      "zh": {
+        "title": "先把会议决定核对清楚，再安排后续工作",
+        "body": "在 Floatboat 工作空间中，把经确认的材料、任务和审核要求放在一起；录音处理服务与应用套餐分别按实际入口选择。"
+      }
     }
   }
 }
