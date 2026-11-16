@@ -7,7 +7,7 @@ slug: "oh-my-codex-vs-superpowers"
 date: "2026-04-30"
 author: "Nova"
 category: "Tool Comparisons"
-cover: "/blog/images/oh-my-codex-vs-superpowers/1777514461509-019a42cd-60f0-4a98-a14e-15689382a93a.webp"
+cover: "/blog/images/oh-my-codex-vs-superpowers/og-zh.webp"
 locale: "zh"
 draft: false
 ---

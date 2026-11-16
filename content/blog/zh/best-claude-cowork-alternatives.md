@@ -7,7 +7,7 @@ slug: "best-claude-cowork-alternatives"
 date: "2026-08-14"
 author: "Remy"
 category: "Tool Comparisons"
-cover: "/blog/images/best-claude-cowork-alternatives/1786692501546-8cecc575-31de-4176-9b24-b826a40b200a.webp"
+cover: "/blog/images/best-claude-cowork-alternatives/og-zh.webp"
 locale: "zh"
 draft: false
 ---
