@@ -1729,6 +1729,16 @@
         "title": "先把会议决定核对清楚，再安排后续工作",
         "body": "在 Floatboat 工作空间中，把经确认的材料、任务和审核要求放在一起；录音处理服务与应用套餐分别按实际入口选择。"
       }
+    },
+    "how-to-create-a-weekly-sales-report-with-ai": {
+      "en": {
+        "title": "Build your first weekly sales report",
+        "body": "Bring a CSV order export into Floatboat, check the numbers, and save a repeatable reporting workflow."
+      },
+      "zh": {
+        "title": "从一份订单 CSV 开始制作销售周报",
+        "body": "把订单文件放进 Floatboat，核对生成的收入与订单量，再将已确认的方法保存为可复用流程。"
+      }
     }
   }
 }

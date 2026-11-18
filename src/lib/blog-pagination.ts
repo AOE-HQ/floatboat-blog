@@ -10,9 +10,9 @@ export function parseBlogPage(value: string, totalPages: number): number | null 
   const page = Number(value);
   return Number.isSafeInteger(page) && page >= 2 && page <= totalPages ? page : null;
 }
-export function filterBlogPosts(posts: PostMeta[], query: string, category: string, order: string) {
+export function filterBlogPosts(posts: PostMeta[], query: string, category: string, order: string, contentType = "all") {
   const needle = query.trim().toLocaleLowerCase();
-  return posts.filter(p => (category === "all" || p.categorySlug === category) &&
+  return posts.filter(p => (contentType === "all" || (p.contentType ?? "article") === contentType) && (category === "all" || p.categorySlug === category) &&
     (!needle || `${p.title} ${p.description}`.toLocaleLowerCase().includes(needle)))
     .sort((a, b) => order === "oldest" ? a.date.localeCompare(b.date) : b.date.localeCompare(a.date));
 }

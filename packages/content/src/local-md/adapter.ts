@@ -46,6 +46,7 @@ function parseFile(filePath: string, features: ResolvedFeatures): Post {
   const bodyWithoutTldr = stripTldrFromContent(body);
 
   return {
+    contentType: parsed.contentType,
     slug: parsed.slug,
     title: parsed.title,
     description: parsed.description,

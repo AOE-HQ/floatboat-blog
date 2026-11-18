@@ -31,6 +31,10 @@ export function MarkdownContent({ content, className }: MarkdownContentProps) {
 
   const components = useMemo(
     () => ({
+      video: ({ children, node, ...props }: React.ComponentPropsWithoutRef<"video"> & { node?: Element }) => {
+        void node;
+        return <video {...props} controls playsInline preload="metadata" className="my-6 h-auto w-full max-w-full rounded-xl">{children}</video>;
+      },
       h2: ({ children, ...props }: React.ComponentPropsWithoutRef<"h2">) => {
         const { title, id } = parseHeadingAnchor(String(children));
         return (
