@@ -6,6 +6,7 @@ import type { FinalCta } from "../content/final-cta";
 import type { TldrContent } from "../content/tldr";
 
 export const postFrontmatterBaseSchema = z.object({
+  contentType: z.enum(["article", "guide"]).optional().default("article"),
   title: z.string().min(1),
   description: z.string().min(80).max(320),
   seoTitle: z.string().trim().min(1).optional(),
@@ -63,6 +64,7 @@ export function validatePostFrontmatter(data: unknown, features: ResolvedFeature
 }
 
 export interface PostMeta {
+  contentType?: "article" | "guide";
   slug: string;
   title: string;
   description: string;

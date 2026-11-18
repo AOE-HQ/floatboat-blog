@@ -63,6 +63,8 @@ export function buildCombinedSitemapXml(): string {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${bodies.join("\n")}
 ${blogPagination}
+<url><loc>https://floatboat.ai/blog/guides</loc></url>
+<url><loc>https://floatboat.ai/zh/blog/guides</loc></url>
 ${personaPages}
 ${skillPages}
 </urlset>`;

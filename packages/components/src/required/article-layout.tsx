@@ -102,6 +102,7 @@ export function ArticleLayout({
         title={post.title}
         description={required.postDek ? post.description : ""}
         metadata={<>
+          {post.contentType === "guide" ? <span>{locale === "zh" ? "操作指南" : "Guide"}</span> : null}
           {features.categories && post.category ? <CategoryBadge category={categoryLabel(post.categorySlug, post.category, locale)} categorySlug={post.categorySlug} /> : null}
           {required.postMeta ? <PostMetaRow author={post.author} showAuthor={features.authors} date={post.date} updated={post.updated} readingMinutes={post.readingMinutes} /> : null}
         </>}

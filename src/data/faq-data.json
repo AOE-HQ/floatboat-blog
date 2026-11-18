@@ -11975,6 +11975,38 @@
           "answer": "不包含。纪要、转录和不使用连接工具的回答纳入相应套餐；会议文档及白板的免费安排截至 2027 年 2 月 10 日，连接工具调用会计入用量。"
         }
       ]
+    },
+    "/blog/how-to-create-a-weekly-sales-report-with-ai": {
+      "items": [
+        {
+          "question": "Can I use an Excel order export?",
+          "answer": "For a manual task, Floatboat can extract an Excel file using a command that may require approval. A scheduled Materials only task cannot run that command, so prepare a CSV export before it starts."
+        },
+        {
+          "question": "Where does the scheduled report go?",
+          "answer": "Scheduled preparation saves its result in the Agent Space’s Auto Prep folder. Open the task from its notification to find the exact file, review it, and move it into past-reports yourself."
+        },
+        {
+          "question": "Does saving a Combo Skill make the report run automatically?",
+          "answer": "No. The skill preserves the steps for reuse. To run it weekly, create a repeating Float Schedule event, select the Agent Space and skill, and provide the new CSV before the start time."
+        }
+      ]
+    },
+    "/zh/blog/how-to-create-a-weekly-sales-report-with-ai": {
+      "items": [
+        {
+          "question": "订单只有 Excel 格式怎么办？",
+          "answer": "手动任务可以通过命令提取 Excel 内容，执行前可能需要批准。定时任务的 Materials only 模式不允许运行命令，因此要在任务开始前准备 CSV 文件。"
+        },
+        {
+          "question": "自动生成的周报保存在哪里？",
+          "answer": "定时准备生成的文件保存在 Agent 行动空间的 Auto Prep 文件夹中。通过任务完成通知打开任务，查看具体路径；检查报告后，再自行移入历史周报文件夹。"
+        },
+        {
+          "question": "保存为 Combo Skill 后就会每周自动运行吗？",
+          "answer": "不会。Combo Skill 保存的是可复用的操作步骤。每周自动执行还需要创建重复的 Float Schedule 日程，指定空间和技能，并提前放好新的订单 CSV。"
+        }
+      ]
     }
   }
 }
