@@ -135,6 +135,8 @@ Do not clone a workflow across the business before assigning an owner, review in
 
 ## A weekly operating routine
 
+For a concrete reporting workflow, follow the [weekly sales report guide](/blog/how-to-create-a-weekly-sales-report-with-ai): start with exported orders, verify the figures, then save the tested steps for reuse.
+
 For each live workflow, review:
 
 - failed, escalated, and sampled successful runs;
