@@ -93,8 +93,8 @@ export async function SiteFooter({
         {showNewsletter && <FooterNewsletter locale={locale} />}
 
         <div className="px-10 py-14 max-lg:px-5 sm:py-16">
-          <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-4 lg:grid-cols-[repeat(auto-fit,minmax(0,1fr))] lg:gap-8">
-            <div className="col-span-full max-w-sm lg:col-span-1">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,4fr)]">
+            <div className="max-w-sm">
               <a
                 className="inline-flex items-end gap-2"
                 aria-label="Floatboat"
@@ -110,7 +110,7 @@ export async function SiteFooter({
                   className="h-9 w-auto"
                 />
               </a>
-              <p className="mt-5 font-serif text-2xl leading-snug tracking-[-0.02em] text-[var(--ob-color-text)]">
+              <p className="mt-5 font-serif text-2xl leading-snug text-[var(--ob-color-text)]">
                 {isZh ? "让人、Agent、文件和工具在同一个工作空间完成工作。" : "One workspace for people, agents, files, and tools to finish real work."}
               </p>
               <p className="mt-3 text-sm leading-6 text-[var(--ob-color-muted)]">
@@ -124,16 +124,20 @@ export async function SiteFooter({
               </a>
             </div>
 
-            {groups.map((group) => <nav key={group.id} aria-label={group.label[locale]}>
-              <h2 className="text-sm font-semibold wrap-anywhere text-[var(--ob-color-text)]">{group.label[locale]}</h2>
-              <ul className="mt-4 space-y-1">
-                {group.links.map((link) => (
-                  <li key={link.path}>
-                    <a href={`${FB_SITE}${footerHref(link, locale)}`} className={footerLinkClass}>{link.label[locale]}</a>
-                  </li>
-                ))}
-              </ul>
-            </nav>)}
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-4 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
+              {groups.map((group) => (
+                <nav key={group.id} aria-label={group.label[locale]}>
+                  <h2 className="text-sm font-semibold wrap-anywhere text-[var(--ob-color-text)]">{group.label[locale]}</h2>
+                  <ul className="mt-4 space-y-1">
+                    {group.links.map((link) => (
+                      <li key={link.path}>
+                        <a href={`${FB_SITE}${footerHref(link, locale)}`} className={footerLinkClass}>{link.label[locale]}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              ))}
+            </div>
           </div>
         </div>
 
