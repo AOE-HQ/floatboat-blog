@@ -43,6 +43,9 @@ jobs:
 
       - run: npm run build
 
+      - name: Check sitemap coverage
+        run: python3 scripts/check_sitemap.py
+
       - name: Check rendered marketplace links and reachability
         run: python3 scripts/check_marketplace_taxonomy.py
 
