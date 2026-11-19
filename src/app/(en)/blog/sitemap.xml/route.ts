@@ -1,5 +1,7 @@
 import { buildCombinedSitemapXml } from "@/lib/sitemap";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const xml = buildCombinedSitemapXml();
 
