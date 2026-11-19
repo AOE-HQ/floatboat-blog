@@ -8,6 +8,7 @@ metadata:
     app.kubernetes.io/part-of: floatboat
 data:
   SITE_URL: https://floatboat.ai
+  MAIN_INTERNAL_URL: http://aoe-backend.aoe.svc.cluster.local
   DEPLOY_MODE: subdirectory
   BLOG_BASE_PATH: /blog
   ASSET_PREFIX: /blog
