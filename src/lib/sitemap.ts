@@ -11,6 +11,8 @@ import { skillCategoryPath, SKILL_CATEGORY_SLUGS } from "@/lib/skills/skill-cate
 import { PUBLISHER_PROFILE_HANDLES, publisherProfilePath } from "@/lib/skills/publisher-profiles";
 import { PROJECTS, projectPath } from "@/lib/projects/project-pages";
 import { blogPageCount, blogPagePath } from "@/lib/blog-library";
+import { MODEL_SLUGS, modelPath } from "@/lib/models/model-pages";
+import { CORE_FEATURE_SLUGS, featurePath } from "@/lib/landing/core-feature-pages";
 
 function extractUrlEntries(xml: string): string {
   const match = xml.match(/<urlset[^>]*>([\s\S]*)<\/urlset>/);
@@ -59,10 +61,17 @@ export function buildCombinedSitemapXml(): string {
       `<url><loc>https://floatboat.ai${blogPagePath(locale, i + 2)}</loc></url>`),
   ).join("\n");
 
+  const productPages = SUPPORTED_LOCALES.flatMap(locale => [
+    modelPath(locale),
+    ...MODEL_SLUGS.map(slug => modelPath(locale, slug)),
+    ...CORE_FEATURE_SLUGS.map(slug => featurePath(locale, slug)),
+  ]).map(path => `<url><loc>${siteHelpers.absoluteUrl(path)}</loc></url>`).join("\n");
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${bodies.join("\n")}
 ${blogPagination}
+${productPages}
 <url><loc>https://floatboat.ai/blog/guides</loc></url>
 <url><loc>https://floatboat.ai/zh/blog/guides</loc></url>
 ${personaPages}
