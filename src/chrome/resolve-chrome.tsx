@@ -8,6 +8,7 @@ import { resolveChromeBrand } from "@openblog/core";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { config } from "@/lib/openblog-config";
+import type { SiteFooterLocale } from "@/lib/site-footer-contract";
 
 type ChromeSlot = ComponentType<Record<string, never>>;
 
@@ -26,18 +27,19 @@ async function loadOverride(
   return (mod[exportName] ?? mod.default ?? null) as ChromeSlot | null;
 }
 
-export async function resolveBlogChrome(): Promise<{
+export async function resolveBlogChrome(locale: SiteFooterLocale): Promise<{
   Header: ChromeSlot;
   Footer: ChromeSlot;
 }> {
   const { mode } = resolveChromeBrand(config);
+  const DefaultFooter = () => <SiteFooter locale={locale} />;
 
   if (mode !== "inherit-monorepo") {
-    return { Header: SiteHeader, Footer: SiteFooter };
+    return { Header: SiteHeader, Footer: DefaultFooter };
   }
 
   const Header = (await loadOverride("Header.tsx", "Header")) ?? SiteHeader;
-  const Footer = (await loadOverride("Footer.tsx", "Footer")) ?? SiteFooter;
+  const Footer = (await loadOverride("Footer.tsx", "Footer")) ?? DefaultFooter;
 
   return { Header, Footer };
 }

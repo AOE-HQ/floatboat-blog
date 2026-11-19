@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "product",
+      "label": { "en": "Product", "zh": "产品" },
+      "links": [
+        {
+          "path": "/desktop",
+          "label": { "en": "Desktop App", "zh": "桌面端" }
+        },
+        {
+          "path": "/agent-workspace",
+          "label": { "en": "Agent Workspace", "zh": "Agent 工作站" }
+        },
+        {
+          "path": "/flow-mode",
+          "label": { "en": "Flow Mode", "zh": "心流模式" }
+        },
+        {
+          "path": "/ai-scheduling-assistant",
+          "label": { "en": "AI Scheduling Assistant", "zh": "AI 日程助理" }
+        },
+        {
+          "path": "/ai-file-organizer",
+          "label": { "en": "AI File Organizer", "zh": "AI 文件整理器" }
+        },
+        { "path": "/floatim", "label": { "en": "FloatIM", "zh": "FloatIM" } }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": { "en": "AI Tools", "zh": "AI 工具" },
+      "links": [
+        {
+          "path": "/ai",
+          "label": { "en": "All AI Tools", "zh": "全部 AI 工具" }
+        },
+        {
+          "path": "/ai-image-editor/edit-text-in-image",
+          "zhPath": "/ai-image-editor/edit-text-in-image",
+          "label": { "en": "Edit Text in Image", "zh": "图片文字编辑" }
+        },
+        {
+          "path": "/audio-to-text/meeting-notes",
+          "zhPath": "/audio-to-text/meeting-notes",
+          "label": { "en": "AI Meeting Notes", "zh": "AI 会议纪要" }
+        },
+        {
+          "path": "/audio-to-text/interview-transcription",
+          "zhPath": "/audio-to-text/interview-transcription",
+          "label": { "en": "Interview Transcription", "zh": "访谈转写" }
+        },
+        {
+          "path": "/audio-to-text/talk-to-text",
+          "zhPath": "/audio-to-text/talk-to-text",
+          "label": { "en": "Talk to Text", "zh": "语音转文字" }
+        },
+        {
+          "path": "/audio-to-text/voice-to-notes",
+          "zhPath": "/audio-to-text/voice-to-notes",
+          "label": { "en": "Voice to Notes", "zh": "语音转笔记" }
+        },
+        {
+          "path": "/tools/markdown",
+          "label": { "en": "Markdown Tool", "zh": "Markdown 工具" }
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "label": { "en": "Explore", "zh": "探索" },
+      "links": [
+        {
+          "path": "/workbenchstore",
+          "label": { "en": "Workbench Store", "zh": "工作台商店" }
+        },
+        {
+          "path": "/combostore",
+          "label": { "en": "Combo Store", "zh": "Combo 商店" }
+        },
+        {
+          "path": "/workflowstore",
+          "label": { "en": "Workflow Store", "zh": "工作流商店" }
+        },
+        {
+          "path": "/skills-marketplace",
+          "label": { "en": "Skills Marketplace", "zh": "Skills 市场" }
+        },
+        {
+          "path": "/skills-marketplace/categories",
+          "label": { "en": "Resource Categories", "zh": "资源分类" }
+        },
+        {
+          "path": "/connectors",
+          "label": { "en": "Connectors", "zh": "连接器" }
+        },
+        {
+          "path": "/use-cases",
+          "label": { "en": "Use Cases", "zh": "使用场景" }
+        },
+        { "path": "/models", "label": { "en": "Models", "zh": "模型" } }
+      ]
+    },
+    {
+      "id": "resources",
+      "label": { "en": "Resources & Company", "zh": "资源与公司" },
+      "links": [
+        { "path": "/blog", "label": { "en": "Blog", "zh": "博客" } },
+        { "path": "/docs", "label": { "en": "Documentation", "zh": "文档" } },
+        {
+          "path": "/skills-marketplace/vercel-labs/find-skills",
+          "label": { "en": "Find Skills", "zh": "查找 Skills" }
+        },
+        {
+          "path": "/alternatives",
+          "zhPath": "/alternatives",
+          "label": { "en": "Alternatives", "zh": "产品对比" }
+        },
+        { "path": "/pricing", "label": { "en": "Pricing", "zh": "价格" } },
+        { "path": "/about", "label": { "en": "About", "zh": "关于" } }
+      ]
+    }
+  ]
+}

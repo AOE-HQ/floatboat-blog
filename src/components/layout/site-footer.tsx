@@ -1,81 +1,9 @@
-"use client";
+import { loadSiteFooter } from "@/lib/site-footer";
+import { footerHref, type SiteFooterLocale } from "@/lib/site-footer-contract";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
-import { getLocaleFromPathname } from "@/lib/locale-path";
-import { resolveNewsletterForPost } from "@/lib/newsletter-data";
-
-import { NewsletterSubscribe } from "./newsletter-subscribe";
+import { FooterNewsletter } from "./footer-newsletter";
 
 const FB_SITE = "https://floatboat.ai";
-const EN_POST_PATH = /^\/blog\/([^/]+)\/?$/;
-const ZH_POST_PATH = /^\/zh\/blog\/([^/]+)\/?$/;
-
-type FooterLink = {
-  en: string;
-  zh: string;
-  path?: string;
-  href?: string;
-  zhHref?: string;
-};
-
-const FOOTER_GROUPS: Array<{ en: string; zh: string; links: FooterLink[] }> = [
-  {
-    en: "Product",
-    zh: "产品",
-    links: [
-      { en: "Agent Workspace", zh: "Agent 工作站", path: "/agent-workspace" },
-      { en: "Flow Mode", zh: "心流模式", href: `${FB_SITE}/flow-mode`, zhHref: `${FB_SITE}/zh/flow-mode` },
-      { en: "AI Scheduling Assistant", zh: "AI 日程助理", path: "/ai-scheduling-assistant" },
-      { en: "AI File Organizer", zh: "AI 文件整理器", path: "/ai-file-organizer" },
-      { en: "FloatIM", zh: "FloatIM", path: "/floatim" },
-    ],
-  },
-  {
-    en: "Explore",
-    zh: "探索",
-    links: [
-      { en: "Use Cases", zh: "使用场景", path: "/use-cases" },
-      { en: "Models", zh: "模型", path: "/models" },
-      { en: "Combo Store", zh: "Combo 商店", href: `${FB_SITE}/combostore`, zhHref: `${FB_SITE}/zh/combostore` },
-      { en: "Resource Categories", zh: "资源分类", path: "/skills-marketplace/categories" },
-      { en: "Find Skills", zh: "查找 Skills", path: "/skills-marketplace/vercel-labs/find-skills" },
-      { en: "Connectors", zh: "连接器", href: `${FB_SITE}/connectors`, zhHref: `${FB_SITE}/zh/connectors` },
-      { en: "Skills Marketplace", zh: "Skills 市场", path: "/skills-marketplace" },
-    ],
-  },
-  {
-    en: "Resources",
-    zh: "资源",
-    links: [
-      { en: "Blog", zh: "博客", path: "/blog" },
-      { en: "Documentation", zh: "文档", href: `${FB_SITE}/docs`, zhHref: `${FB_SITE}/zh/docs` },
-      { en: "Alternatives", zh: "产品对比", href: `${FB_SITE}/alternatives` },
-      { en: "Markdown Tool", zh: "Markdown 工具", href: `${FB_SITE}/tools/markdown`, zhHref: `${FB_SITE}/zh/tools/markdown` },
-    ],
-  },
-  {
-    en: "Company",
-    zh: "公司",
-    links: [
-      { en: "Pricing", zh: "价格", href: `${FB_SITE}/pricing`, zhHref: `${FB_SITE}/zh/pricing` },
-      { en: "About", zh: "关于", href: `${FB_SITE}/about`, zhHref: `${FB_SITE}/zh/about` },
-      { en: "Contact", zh: "联系", href: "mailto:contact@floatboat.ai" },
-    ],
-  },
-];
-
-function footerHref(link: FooterLink, isZh: boolean) {
-  if (link.path) return `${isZh ? "/zh" : ""}${link.path}`;
-  return isZh && link.zhHref ? link.zhHref : link.href ?? "#";
-}
-
-/** Blog post slug from the current pathname, or null for hubs/non-post routes. */
-function postSlugFromPathname(pathname: string, locale: "en" | "zh"): string | null {
-  const match = (locale === "zh" ? ZH_POST_PATH : EN_POST_PATH).exec(pathname);
-  return match ? match[1] : null;
-}
 
 /**
  * Social icons copied from the floatboat.ai footer: 20×20 viewBox, same paths.
@@ -146,28 +74,27 @@ function DiscordIcon() {
  * locale-aware labels and the Contact link. The newsletter card keeps the
  * per-article copy feature; its design is identical to the main site.
  */
-export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean }) {
-  const pathname = usePathname() ?? "/";
-  const locale = getLocaleFromPathname(pathname);
+export async function SiteFooter({
+  locale,
+  showNewsletter = true,
+}: {
+  locale: SiteFooterLocale;
+  showNewsletter?: boolean;
+}) {
+  const { groups } = await loadSiteFooter();
   const isZh = locale === "zh";
-  const slug = postSlugFromPathname(pathname, locale);
-  const newsletterCopy = resolveNewsletterForPost(slug, locale);
 
   const footerLinkClass =
-    "inline-flex min-h-9 items-center text-sm leading-6 text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)]";
+    "inline-block min-h-9 py-1.5 text-sm leading-6 wrap-anywhere text-[var(--ob-color-muted)] transition-colors hover:text-[var(--ob-color-text)] hover:underline";
 
   return (
     <footer id="footer">
       <div className="mx-auto max-w-[1440px]">
-        {showNewsletter && (
-          <div className="px-10 pt-12 pb-8 max-lg:px-5">
-            <NewsletterSubscribe copy={newsletterCopy} />
-          </div>
-        )}
+        {showNewsletter && <FooterNewsletter locale={locale} />}
 
         <div className="px-10 py-14 max-lg:px-5 sm:py-16">
-          <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))] lg:gap-8">
-            <div className="max-w-sm lg:pr-8">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-4 lg:grid-cols-[repeat(auto-fit,minmax(0,1fr))] lg:gap-8">
+            <div className="col-span-full max-w-sm lg:col-span-1">
               <a
                 className="inline-flex items-end gap-2"
                 aria-label="Floatboat"
@@ -197,16 +124,14 @@ export function SiteFooter({ showNewsletter = true }: { showNewsletter?: boolean
               </a>
             </div>
 
-            {FOOTER_GROUPS.map((group) => <nav key={group.en} aria-label={isZh ? group.zh : group.en}>
-              <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--ob-color-text)]">{isZh ? group.zh : group.en}</h2>
+            {groups.map((group) => <nav key={group.id} aria-label={group.label[locale]}>
+              <h2 className="text-sm font-semibold wrap-anywhere text-[var(--ob-color-text)]">{group.label[locale]}</h2>
               <ul className="mt-4 space-y-1">
-                {group.links.map((link) => {
-                  const href = footerHref(link, isZh);
-                  const label = isZh ? link.zh : link.en;
-                  return <li key={link.en}>
-                    {link.path ? <Link href={href} className={footerLinkClass}>{label}</Link> : <a href={href} className={footerLinkClass}>{label}</a>}
-                  </li>;
-                })}
+                {group.links.map((link) => (
+                  <li key={link.path}>
+                    <a href={`${FB_SITE}${footerHref(link, locale)}`} className={footerLinkClass}>{link.label[locale]}</a>
+                  </li>
+                ))}
               </ul>
             </nav>)}
           </div>
