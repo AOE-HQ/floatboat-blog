@@ -4,7 +4,10 @@ import { siteFooterSchema } from "./site-footer-contract";
 const defaultConfig = siteFooterSchema.parse(fallback);
 
 export async function loadSiteFooter() {
-  const origin = process.env.SITE_FOOTER_API_ORIGIN || "https://floatboat.ai";
+  const origin =
+    process.env.SITE_FOOTER_API_ORIGIN ||
+    process.env.MAIN_INTERNAL_URL ||
+    "https://floatboat.ai";
   try {
     const response = await fetch(new URL("/api/public/site-footer", origin), {
       next: { revalidate: 3600 },
