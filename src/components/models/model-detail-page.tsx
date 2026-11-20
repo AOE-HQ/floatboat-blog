@@ -36,6 +36,7 @@ export function ModelDetailPage({
       operatingSystem: "macOS, Windows",
       description: localize(model.hero.description, locale),
       url: `https://floatboat.ai${modelPath(locale, model.slug)}`,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     },
   ];
 
