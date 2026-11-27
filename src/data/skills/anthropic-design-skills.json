@@ -1662,5 +1662,969 @@
         "zh": "安装器提供当前项目或全局范围，并准备启动器与宿主配置。重新加载宿主；新项目先在 Agent 内运行 /impeccable init，建立 PRODUCT.md。已有项目先核对产品上下文及相关 Hook 信任要求，再继续操作。"
       }
     }
+  },
+  {
+    "slug": "figma-design-to-code",
+    "authorHandle": "openai",
+    "name": "Figma Design to Code",
+    "publisher": "OpenAI",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/openai/plugins/blob/main/plugins/figma/skills/figma-design-to-code/SKILL.md",
+    "repositoryUrl": "https://github.com/openai/plugins",
+    "seo": {
+      "title": {
+        "en": "Figma Design to Code: Implement selected Figma nodes in application code",
+        "zh": "Figma Design to Code：从 Figma 节点实现应用代码"
+      },
+      "description": {
+        "en": "Read the chosen Figma node through MCP, map its tokens and assets into the application, then compare the rendered screen with the design.",
+        "zh": "通过 MCP 读取指定 Figma 节点，将其中的设计变量和素材映射到应用，再用浏览器核对实现与原稿。"
+      },
+      "keywords": {
+        "en": [
+          "Figma Design to Code",
+          "figma-design-to-code"
+        ],
+        "zh": [
+          "Figma Design to Code",
+          "figma-design-to-code"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Figma Design to Code",
+        "zh": "Figma Design to Code"
+      },
+      "description": {
+        "en": "Turn a chosen Figma frame into a component in your application. Work from the node link, then compare the new screen against the source frame at the same width.",
+        "zh": "从选定的 Figma 画板实现应用组件。给出节点链接，完成后用相同宽度对比浏览器与原画板。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Figma Design to Code",
+        "paragraphs": [
+          "Figma Design to Code is the current implementation Skill in the Figma plugin distributed through the OpenAI plugin repository. It must be loaded before an agent calls get_design_context. The design node supplies layout, assets and semantic context, while the destination repository supplies the framework, component APIs and tokens. Compare rendered code against the selected frame at an equivalent width and use the design file to resolve disparities."
+        ]
+      },
+      "zh": {
+        "title": "关于 Figma Design to Code",
+        "paragraphs": [
+          "Figma Design to Code 是 OpenAI 插件仓库所发行 Figma 插件的当前实现指南。Agent 在调用 get_design_context 前须先加载它。设计节点提供版式、素材与语义上下文，目标仓库则决定框架、组件接口和变量。验收时用匹配的宽度对比浏览器渲染与所选画板，并回到设计文件解决偏差。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Implement selected Figma nodes in application code",
+      "zh": "从 Figma 节点实现应用代码"
+    },
+    "upstreamInstall": "Install the Figma plugin from the Codex plugin directory, then authorize its Figma connection.",
+    "sectionTitles": {
+      "how": {
+        "en": "How to implement a Figma frame",
+        "zh": "如何实现 Figma 设计稿"
+      },
+      "howDescription": {
+        "en": "Use the node link throughout the workflow so the visual reference stays stable while you map assets, components, and spacing into the repository.",
+        "zh": "实现和验收全过程使用同一个节点链接，映射素材、组件和间距时始终回到同一份视觉参照。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Use Cases for Figma Design to Code",
+        "zh": "Figma Design to Code 的使用场景"
+      },
+      "description": {
+        "en": "Choose an implementation scope based on what the designer handed off. A full frame calls for layout comparison, while a component variant can be checked against its existing API and behavior.",
+        "zh": "按设计交接物确定实现范围。整张画板需要对比布局，单个组件变体则要结合已有接口和交互行为验收。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Implement a checkout summary",
+            "zh": "实现结账摘要"
+          },
+          "description": {
+            "en": "Read the selected mobile checkout frame, reuse existing currency and price components, and compare spacing at the frame’s width. Return the changed files and identify any unprovided loading or error state.",
+            "zh": "读取指定的移动结账框架，复用已有币种和价格组件，在设计稿对应宽度下比较间距，列出变更文件和设计稿未给出的加载或错误状态。"
+          }
+        },
+        {
+          "title": {
+            "en": "Map a button variant",
+            "zh": "映射按钮样式"
+          },
+          "description": {
+            "en": "Compare the selected button node with the repository component API. Map the relevant variant and design tokens before writing code so the implementation inherits existing focus behavior.",
+            "zh": "对照指定按钮节点与代码库中的组件接口，先映射变体和设计变量，再实现按钮，让它沿用现有焦点行为。"
+          }
+        },
+        {
+          "title": {
+            "en": "Implement icons from the design",
+            "zh": "使用设计稿中的图标"
+          },
+          "description": {
+            "en": "Resolve the intended assets from the selected node and inspect how existing components handle icon sizing and accessible labels. Check that icons remain visible at the intended size.",
+            "zh": "解析所选节点的素材，查看现有组件如何处理图标尺寸和无障碍标签，并核对图标在目标尺寸下是否清晰可见。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check a responsive mismatch",
+            "zh": "检查响应式偏差"
+          },
+          "description": {
+            "en": "Use available mobile and desktop design frames as references. Capture the same sizes in the browser and record where unclear breakpoint behavior still needs a design decision.",
+            "zh": "用已有移动和桌面框架作参考，在浏览器中截取相同尺寸，标出仍需设计方决定的断点行为。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use Figma Design to Code. Give the Figma frame URL with its node ID and the target route or component. Deliver a code diff and a rendered comparison that names any remaining deviations.",
+        "zh": "使用 Figma Design to Code。提供含节点 ID 的 Figma 框架链接和目标路由或组件。交付一份代码差异及渲染对比，列出仍存在的偏差。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Choose the design node",
+          "zh": "选择设计节点"
+        },
+        "description": {
+          "en": "Provide the node link and the repository location that should own the component. Check that the authorized MCP session can read the file.",
+          "zh": "提供节点链接与应承载组件的仓库位置，确认已授权的 MCP 会话能读取该文件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Read context and map existing components",
+          "zh": "读取上下文并映射现有组件"
+        },
+        "description": {
+          "en": "Call get_design_context on the chosen node. Apply Code Connect mappings and component docs first, then map the remaining choices into the destination project’s styles and components.",
+          "zh": "对指定节点调用 get_design_context。优先应用 Code Connect 映射和组件文档，再将其余设计决策对应到项目的样式和组件。"
+        }
+      },
+      {
+        "title": {
+          "en": "Build and compare the rendered result",
+          "zh": "实现并对比渲染结果"
+        },
+        "description": {
+          "en": "Compare the rendered implementation at the target viewport. Store approved production assets at a durable location because temporary Figma asset URLs expire. Record remaining differences.",
+          "zh": "用目标视口比较渲染结果。Figma 临时素材链接会过期，生产环境中的已授权素材应存到持久位置。记录仍存在的差异。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What happened to figma-implement-design?",
+          "zh": "figma-implement-design 去哪里了？"
+        },
+        "answer": {
+          "en": "The older curated guide lives in the deprecated openai/skills repository. The current Figma plugin uses figma-design-to-code for the implementation workflow.",
+          "zh": "旧指南位于已弃用的 openai/skills 仓库。当前 Figma 插件用 figma-design-to-code 承载实现工作流。"
+        }
+      },
+      {
+        "question": {
+          "en": "What is the output?",
+          "zh": "输出是什么？"
+        },
+        "answer": {
+          "en": "Application code and verification evidence such as screenshots or a list of outstanding discrepancies.",
+          "zh": "应用代码，以及截图或待解决差异清单等验收材料。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it edit the design file?",
+          "zh": "它能修改设计稿吗？"
+        },
+        "answer": {
+          "en": "Use Figma Use when the deliverable is a change to Figma canvas objects.",
+          "zh": "若交付物是 Figma 画布对象的修改，应使用 Figma Use。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why specify a node ID?",
+          "zh": "为什么要指定节点 ID？"
+        },
+        "answer": {
+          "en": "It limits the context fetch to the intended component or frame and helps align the comparison.",
+          "zh": "它把上下文读取范围限定在目标组件或框架，也便于对齐验收。"
+        }
+      },
+      {
+        "question": {
+          "en": "How is MCP access controlled?",
+          "zh": "MCP 访问如何控制？"
+        },
+        "answer": {
+          "en": "The Figma session must be authorized and the account must have access to the source file. Tool quotas can depend on the plan and seat.",
+          "zh": "Figma 会话需要授权，账号须有源文件访问权限。工具额度取决于计划与席位。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which terms apply to the plugin?",
+          "zh": "插件适用什么条款？"
+        },
+        "answer": {
+          "en": "The plugin manifest points to the Figma Developer Terms. Check those terms alongside your team’s permissions for the design assets.",
+          "zh": "插件声明指向 Figma Developer Terms。使用设计素材时还应核对团队的授权范围。"
+        }
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Figma Developer Terms",
+          "zh": "Figma 开发者条款"
+        },
+        "href": "https://www.figma.com/developer-terms/"
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex-app"
+      ],
+      "note": {
+        "en": "The Figma connection must be authorized in the session.",
+        "zh": "需要在当前会话中授权 Figma 连接。"
+      },
+      "commands": {
+        "codex-app": "Open the plugin directory, install Figma, and authorize the connection."
+      },
+      "contexts": {
+        "codex-app": "app"
+      }
+    }
+  },
+  {
+    "slug": "figma-use",
+    "authorHandle": "openai",
+    "name": "Figma Use",
+    "publisher": "OpenAI",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/openai/plugins/blob/main/plugins/figma/skills/figma-use/SKILL.md",
+    "repositoryUrl": "https://github.com/openai/plugins",
+    "seo": {
+      "title": {
+        "en": "Figma Use: Use MCP to edit Figma nodes and verify the changes",
+        "zh": "Figma Use：用 MCP 更新 Figma 节点并回读验证"
+      },
+      "description": {
+        "en": "Use Figma’s Plugin API through MCP to update nodes, layout, variables, or variants in an authorized file. Verify the resulting nodes after each write.",
+        "zh": "通过 MCP 调用 Figma Plugin API，在有权限的文件中更新节点、布局、变量或变体。每次写入后读取节点进行核对。"
+      },
+      "keywords": {
+        "en": [
+          "Figma Use",
+          "figma-use"
+        ],
+        "zh": [
+          "Figma Use",
+          "figma-use"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Figma Use",
+        "zh": "Figma Use"
+      },
+      "description": {
+        "en": "Make a bounded change to native Figma objects and verify what was written. Start with an editable copy when testing a new operation.",
+        "zh": "对 Figma 原生对象做一项范围明确的修改，再回读核实写入结果。尝试新操作时可从可编辑副本开始。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Figma Use",
+        "paragraphs": [
+          "Figma Use is the companion guidance for the use_figma tool in the Figma plugin distributed through OpenAI’s plugin repository. It provides the reference and operating rules for code executed in a Figma document. Work in small calls, load fonts before text changes and preserve stable target IDs. Returning a value gives the agent an explicit receipt it can compare with a subsequent read or screenshot."
+        ]
+      },
+      "zh": {
+        "title": "关于 Figma Use",
+        "paragraphs": [
+          "Figma Use 是 OpenAI 插件仓库发行的 Figma 插件中，配合 use_figma 工具使用的指南。它描述 Figma 文档内运行代码所需的参考资料和操作规则。将改动分成小批次，修改文本前加载字体，保持目标节点 ID 明确。调用返回的结果可以与后续回读或截图对照。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Use MCP to edit Figma nodes and verify the changes",
+      "zh": "用 MCP 更新 Figma 节点并回读验证"
+    },
+    "upstreamInstall": "Install the Figma plugin from the Codex plugin directory and authorize Figma with edit access to a sandbox file.",
+    "sectionTitles": {
+      "how": {
+        "en": "How to edit an authorized Figma file",
+        "zh": "如何修改已授权的 Figma 文件"
+      },
+      "howDescription": {
+        "en": "Run one small write at a time. Record the node ID so subsequent reads can verify the change independently.",
+        "zh": "每次只运行一小批修改，记录节点 ID，便于后续独立回读并核实实际写入。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Use Cases for Figma Use",
+        "zh": "Figma Use 的使用场景"
+      },
+      "description": {
+        "en": "Canvas automation can inspect a component set, adjust layout, update text, or bind tokens. Each operation needs a different Figma property and a specific way to confirm the result.",
+        "zh": "画布自动化可以检查组件集合、调整布局、修改文本或绑定变量。每项操作需要定位不同的 Figma 属性，并采用相应的验证方式。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Convert a card to auto layout",
+            "zh": "将卡片改成自动布局"
+          },
+          "description": {
+            "en": "Use a duplicate card to verify padding, gap, and resizing. Re-read the node after applying layout properties and resize the parent to see whether the children follow the intended behavior.",
+            "zh": "复制卡片后检查内边距、间距和缩放规则。应用布局属性后重新读取节点，再改变父容器宽度，核对子元素行为。"
+          }
+        },
+        {
+          "title": {
+            "en": "Bind a semantic variable",
+            "zh": "绑定语义变量"
+          },
+          "description": {
+            "en": "Resolve the named local or library variable before touching the canvas. Bind it to one sample component and inspect the result under the modes relevant to the project.",
+            "zh": "先解析指定的本地或库变量，再绑定到一个示例组件，检查它在项目相关模式下的显示。"
+          }
+        },
+        {
+          "title": {
+            "en": "Update a component label",
+            "zh": "修改组件标签"
+          },
+          "description": {
+            "en": "Identify the text node and load its font before editing. Verify the changed string and check the instance visually for clipping or unintended resize.",
+            "zh": "识别文本节点并加载字体后再编辑，读取更新后的文本，再目视检查实例是否出现裁切或意外尺寸变化。"
+          }
+        },
+        {
+          "title": {
+            "en": "Inspect variant structure",
+            "zh": "检查变体结构"
+          },
+          "description": {
+            "en": "Read the selected component set programmatically and return its variant keys and node IDs. Use the inventory to choose a later change without editing the existing components.",
+            "zh": "用程序读取指定组件集合，返回变体键与节点 ID。用清单确定后续修改位置，在本次任务中保留组件现状。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use Figma Use. Supply a test file link, target node IDs, edit permission and named changes. Deliver updated canvas nodes with their IDs and verified properties or screenshots.",
+        "zh": "使用 Figma Use。提供测试文件链接、目标节点 ID、编辑权限及修改内容。交付画布上的更新节点，以及节点 ID、属性验证或截图。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Authorize a test file",
+          "zh": "授权测试文件"
+        },
+        "description": {
+          "en": "Use an editable scratch copy and provide the target node or page. Confirm whether the task may write or only inspect.",
+          "zh": "使用可编辑的测试副本并提供目标节点或页面，明确本次任务的写入范围。"
+        }
+      },
+      {
+        "title": {
+          "en": "Load the API guidance",
+          "zh": "加载 API 指南"
+        },
+        "description": {
+          "en": "Load figma-use before use_figma and inspect the relevant reference and existing node properties. Keep changes limited to the authorized subset.",
+          "zh": "先加载 figma-use，再调用 use_figma。检查相关参考和现有节点属性，限定操作范围。"
+        }
+      },
+      {
+        "title": {
+          "en": "Apply and re-read changes",
+          "zh": "应用并回读修改"
+        },
+        "description": {
+          "en": "Load Figma Use before each use_figma call. Apply one small change and return the affected node IDs, then read their properties back. If the write is denied, check the file and account permissions before retrying.",
+          "zh": "每次调用 use_figma 前加载 Figma Use。先做一项小改动并返回节点 ID，再读回属性。写入被拒绝时，先核对文件与账户权限，再决定是否重试。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does Figma Use return website code?",
+          "zh": "Figma Use 会返回网站代码吗？"
+        },
+        "answer": {
+          "en": "Its primary output is a canvas change or inspection result. Use Figma Design to Code for application implementation.",
+          "zh": "主要输出是画布变更或检查结果。实现应用代码时使用 Figma Design to Code。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which permissions are needed for edits?",
+          "zh": "修改需要哪些权限？"
+        },
+        "answer": {
+          "en": "Authorize the MCP connection and use a Figma account with edit access to the chosen file.",
+          "zh": "先授权 MCP 连接，并使用拥有目标文件编辑权限的 Figma 账号。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I work on a duplicate?",
+          "zh": "可以对副本操作吗？"
+        },
+        "answer": {
+          "en": "Yes. Provide the duplicate file URL and target IDs so the agent can confirm it is editing the intended copy.",
+          "zh": "可以。提供副本链接和目标节点 ID，便于确认操作对象。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why does a text operation need a font?",
+          "zh": "为何文本操作需要字体？"
+        },
+        "answer": {
+          "en": "The Plugin API requires the node’s font to be loaded before changes to the text can be applied.",
+          "zh": "Plugin API 要求先加载节点字体，再应用文本改动。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it build a full page in Figma?",
+          "zh": "可以用它在 Figma 里创建整页吗？"
+        },
+        "answer": {
+          "en": "The current source directs full screen workflows to the companion Figma Generate Design guidance in addition to Figma Use.",
+          "zh": "当前源码要求整屏任务同时加载配套的 Figma Generate Design 指南。"
+        }
+      },
+      {
+        "question": {
+          "en": "How should I verify a write?",
+          "zh": "如何核实写入结果？"
+        },
+        "answer": {
+          "en": "Re-read the affected node IDs and expected properties, then inspect the canvas when geometry, typography, or component behavior matters.",
+          "zh": "重新读取相关节点 ID 和预期属性。涉及几何、字体或组件行为时，再检查画布显示。"
+        }
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": {
+          "en": "Figma Developer Terms",
+          "zh": "Figma 开发者条款"
+        },
+        "href": "https://www.figma.com/developer-terms/"
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex-app"
+      ],
+      "note": {
+        "en": "The Figma connection must be authorized in the session.",
+        "zh": "需要在当前会话中授权 Figma 连接。"
+      },
+      "commands": {
+        "codex-app": "Open the plugin directory, install Figma, and authorize the connection."
+      },
+      "contexts": {
+        "codex-app": "app"
+      }
+    }
+  },
+  {
+    "slug": "design-md",
+    "authorHandle": "google-labs-code",
+    "name": "Stitch DESIGN.md",
+    "publisher": "Google Labs Code",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/google-labs-code/stitch-skills/blob/main/plugins/stitch-utilities/skills/design-md/SKILL.md",
+    "repositoryUrl": "https://github.com/google-labs-code/stitch-skills",
+    "seo": {
+      "title": {
+        "en": "Stitch DESIGN.md: Extract reusable design guidance from Stitch screens",
+        "zh": "Stitch DESIGN.md：从 Stitch 页面提取可复用的设计说明"
+      },
+      "description": {
+        "en": "Inspect representative Stitch screens and synthesize a DESIGN.md for future screens, with explicit color roles, typography, surface treatment, and layout patterns.",
+        "zh": "检查有代表性的 Stitch 页面，将颜色角色、字体、表面效果和布局模式写入 DESIGN.md，为后续生成页面提供依据。"
+      },
+      "keywords": {
+        "en": [
+          "Stitch DESIGN.md",
+          "design-md"
+        ],
+        "zh": [
+          "Stitch DESIGN.md",
+          "design-md"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Stitch DESIGN.md",
+        "zh": "Stitch DESIGN.md"
+      },
+      "description": {
+        "en": "Turn an existing set of Stitch screens into a DESIGN.md reference you can use when requesting another screen.",
+        "zh": "从已有 Stitch 页面生成 DESIGN.md，之后请求生成新页面时可以引用同一套设计规范。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Stitch DESIGN.md",
+        "paragraphs": [
+          "The design-md Skill ships in the stitch-utilities plugin from Google Labs Code. It turns screenshots, HTML and any available Stitch project metadata into a semantic description of the project’s design language. Give colors and surfaces explicit roles, describe the type hierarchy in terms useful to a designer, and retain layout patterns that appear across multiple screens. The resulting DESIGN.md can guide a later generation request."
+        ]
+      },
+      "zh": {
+        "title": "关于 Stitch DESIGN.md",
+        "paragraphs": [
+          "design-md 由 Google Labs Code 在 stitch-utilities 插件中维护。它根据截图、HTML 和可取得的 Stitch 项目元数据，归纳项目的视觉语言。需要解释颜色与表面的用途，用设计人员能理解的方式记录文字层级，并优先保留跨页面重复出现的布局特征。生成的 DESIGN.md 可供后续页面生成请求复用。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Extract reusable design guidance from Stitch screens",
+      "zh": "从 Stitch 页面提取可复用的设计说明"
+    },
+    "upstreamInstall": "Add google-labs-code/stitch-skills to the Codex plugin marketplace and install stitch-utilities.",
+    "sectionTitles": {
+      "how": {
+        "en": "How to derive a Stitch design reference",
+        "zh": "如何整理 Stitch 设计参考"
+      },
+      "howDescription": {
+        "en": "Gather evidence for repeating visual choices, then write a document whose descriptions and values can be checked against the source screens.",
+        "zh": "先收集反复出现的视觉选择，再用一份可回溯到原始页面的文档记录描述和数值。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Use Cases for Stitch DESIGN.md",
+        "zh": "Stitch DESIGN.md 的使用场景"
+      },
+      "description": {
+        "en": "Use representative screens to decide which patterns deserve a shared rule. Screenshots establish appearance, while available HTML helps explain color values and typography precisely.",
+        "zh": "结合代表页面判断哪些模式值得写成共享规则。用截图确认视觉效果，再用可用的 HTML 精确核对颜色值和排版。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Describe a settings interface",
+            "zh": "归纳设置界面"
+          },
+          "description": {
+            "en": "Compare the general settings and notifications screens to identify shared grouping, spacing, and navigation. Describe the recurring hierarchy in language useful when generating another settings screen.",
+            "zh": "对照常规设置和通知页面，归纳分组、间距与导航的共同做法，写出能指导后续设置页面生成的层次描述。"
+          }
+        },
+        {
+          "title": {
+            "en": "Record the meaning of colors",
+            "zh": "记录颜色语义"
+          },
+          "description": {
+            "en": "Inspect buttons, supporting text, and card surfaces in the HTML and screenshots. Record the color values with their respective roles so a later prompt can distinguish emphasis from background.",
+            "zh": "查看 HTML 和截图中的按钮、辅助文字和卡片表面，为每个颜色值记录用途，帮助后续提示区分强调色与背景色。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare typographic roles",
+            "zh": "对比排版角色"
+          },
+          "description": {
+            "en": "Pick screens with different content densities. Identify how page titles, section headings, and supporting copy differ, and flag roles seen in only one example.",
+            "zh": "选择内容密度不同的页面，辨别大标题、章节标题和辅助文案的排版差异，并标明仅在单个示例中出现的用法。"
+          }
+        },
+        {
+          "title": {
+            "en": "Prepare the next Stitch prompt",
+            "zh": "准备下一轮 Stitch 提示"
+          },
+          "description": {
+            "en": "Include the documented rules with a prompt for a related screen. Compare the generated layout against the source screens and identify deviations that require follow-up.",
+            "zh": "把规范与相关页面的生成请求一起交给 Stitch，再对照原页面检查生成结果，标出需要进一步处理的偏差。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Read the provided Stitch project and screen IDs through the authorized Stitch MCP connection. Produce DESIGN.md with typography, spacing and color choices tied to the screens.",
+        "zh": "通过已授权的 Stitch MCP 读取指定项目和页面 ID。生成 DESIGN.md，并将字体、间距和颜色选择对应到具体页面。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Select the screen evidence",
+          "zh": "选择页面证据"
+        },
+        "description": {
+          "en": "Connect and authorize Stitch MCP. Open the target project through MCP and retrieve metadata and assets for the representative screens.",
+          "zh": "连接并授权 Stitch MCP。通过 MCP 打开目标项目，读取代表性页面的元数据和设计素材。"
+        }
+      },
+      {
+        "title": {
+          "en": "Extract recurring design decisions",
+          "zh": "提取反复出现的设计决定"
+        },
+        "description": {
+          "en": "Compare the visual and technical evidence. Note named roles for colors and surfaces, the hierarchy of text, and how components fit into the overall layout.",
+          "zh": "结合截图与技术素材，记录颜色和表面元素的用途、文字层级以及组件如何嵌入整体布局。"
+        }
+      },
+      {
+        "title": {
+          "en": "Save and verify DESIGN.md",
+          "zh": "保存并核对 DESIGN.md"
+        },
+        "description": {
+          "en": "Write the file in the project and review example values against the sources. Mark decisions that lack enough evidence for reuse.",
+          "zh": "在项目中写入文件，对照来源核实示例值，并标明证据不足以复用的规则。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Which plugin contains design-md?",
+          "zh": "哪个插件包含 design-md？"
+        },
+        "answer": {
+          "en": "The current source is in the stitch-utilities plugin in Google Labs Code’s stitch-skills repository.",
+          "zh": "当前源码在 Google Labs Code 的 stitch-skills 仓库中，属于 stitch-utilities 插件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does this generate a new screen?",
+          "zh": "它会直接生成新页面吗？"
+        },
+        "answer": {
+          "en": "The output is the design reference file. Use the file in a separate Stitch request when you want a generated screen.",
+          "zh": "它输出设计参考文件。需要生成页面时，在另一次 Stitch 请求中使用该文件。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need Stitch MCP?",
+          "zh": "必须使用 Stitch MCP 吗？"
+        },
+        "answer": {
+          "en": "Yes. The documented workflow requires an authorized Stitch MCP connection and a Stitch project with at least one designed screen.",
+          "zh": "需要。官方流程要求已授权的 Stitch MCP 连接，以及至少有一个设计页面的 Stitch 项目。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is a screenshot sufficient?",
+          "zh": "只给截图够吗？"
+        },
+        "answer": {
+          "en": "Use screenshots to cross-check visual descriptions after retrieving screen metadata through Stitch MCP.",
+          "zh": "通过 Stitch MCP 读取页面元数据后，可以用截图复核视觉描述。截图只能作为辅助证据。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I treat one-off styles?",
+          "zh": "如何处理只出现一次的样式？"
+        },
+        "answer": {
+          "en": "Record them as screen-specific evidence and keep them out of shared rules unless further examples support the pattern.",
+          "zh": "把它记录为页面特例，待有更多示例支持后再纳入共享规则。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I compare when reviewing the file?",
+          "zh": "审阅文件要比较什么？"
+        },
+        "answer": {
+          "en": "Check whether colors have clear roles, recurring layout choices match the selected screens, and uncertain details are identified as such.",
+          "zh": "检查颜色用途是否明确，常见布局是否符合代表页面，缺少证据的细节是否已标出。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex-app"
+      ],
+      "commands": {
+        "codex-app": "Open Settings, add google-labs-code/stitch-skills under Plugin Marketplaces, then install stitch-utilities."
+      },
+      "contexts": {
+        "codex-app": "app"
+      },
+      "note": {
+        "en": "Authorize Stitch MCP and select a Stitch project with at least one designed screen.",
+        "zh": "授权 Stitch MCP，并选定至少有一个设计页面的 Stitch 项目。"
+      }
+    }
+  },
+  {
+    "slug": "shadcn",
+    "authorHandle": "shadcn-ui",
+    "name": "shadcn/ui Skill",
+    "publisher": "shadcn/ui",
+    "publisherType": "Organization",
+    "sourceUrl": "https://github.com/shadcn-ui/ui/blob/main/skills/shadcn/SKILL.md",
+    "repositoryUrl": "https://github.com/shadcn-ui/ui",
+    "seo": {
+      "title": {
+        "en": "shadcn/ui Skill: Select and compose compatible registry components",
+        "zh": "shadcn/ui Skill：选择并组合兼容的组件源码"
+      },
+      "description": {
+        "en": "Inspect the project configuration and registry, choose compatible component source, and compose it with existing variants and semantic tokens.",
+        "zh": "检查项目配置和组件注册表，选择兼容的组件源码，再结合项目现有变体与语义变量进行组合。"
+      },
+      "keywords": {
+        "en": [
+          "shadcn/ui Skill",
+          "shadcn"
+        ],
+        "zh": [
+          "shadcn/ui Skill",
+          "shadcn"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "shadcn/ui Skill",
+        "zh": "shadcn/ui Skill"
+      },
+      "description": {
+        "en": "Use the official shadcn/ui guidance to build a feature with the components and style conventions already present in your codebase.",
+        "zh": "用 shadcn/ui 官方指南实现功能，优先利用代码库中已有的组件与样式约定。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About shadcn/ui Skill",
+        "paragraphs": [
+          "The official shadcn/ui Skill helps coding agents work with a project’s components.json and registry items. The CLI exposes the project’s installed components and conventions, while the Skill guides the agent toward existing component APIs, semantic colors and appropriate composition. Registry additions put source files into the repository. Review the resulting diff against aliases, styles and dependencies before merging."
+        ]
+      },
+      "zh": {
+        "title": "关于 shadcn/ui Skill",
+        "paragraphs": [
+          "shadcn/ui 官方 Skill 指导代码 Agent 处理项目中的 components.json 和注册表条目。CLI 用于查看已装组件和项目约定，Skill 则帮助使用已有组件接口、语义颜色和恰当的组合方式。添加注册表条目会把源码写入仓库，合并前应检查差异里的导入别名、样式和依赖。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Select and compose compatible registry components",
+      "zh": "选择并组合兼容的组件源码"
+    },
+    "upstreamInstall": "pnpm dlx skills add shadcn/ui",
+    "sectionTitles": {
+      "how": {
+        "en": "How to use shadcn/ui in an existing project",
+        "zh": "如何在已有项目中使用 shadcn/ui"
+      },
+      "howDescription": {
+        "en": "Inspect package and component settings before consulting the registry. Validate changes in the running interface after reviewing any source added by the CLI.",
+        "zh": "查注册表前先检查包管理和组件设置，审查 CLI 加入的源码后，再在运行中的界面验证交互。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Use Cases for shadcn/ui Skill",
+        "zh": "shadcn/ui Skill 的使用场景"
+      },
+      "description": {
+        "en": "The right next step depends on the repository. A local component may already support the desired interaction, while a registry item needs compatibility and source review before adoption.",
+        "zh": "先根据仓库情况决定下一步。已有组件可能支持目标交互，准备引入注册表条目时则要先审查兼容性与写入的源码。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Build a settings form",
+            "zh": "实现设置表单"
+          },
+          "description": {
+            "en": "Inspect the existing field and input components, then compose the form with validation and keyboard focus behavior. Check the error state with the project’s current variants.",
+            "zh": "查看已有字段和输入组件，组合带校验和键盘焦点行为的表单，再用项目当前变体验证错误状态。"
+          }
+        },
+        {
+          "title": {
+            "en": "Choose a dialog primitive",
+            "zh": "选择弹窗组件方案"
+          },
+          "description": {
+            "en": "Identify which underlying component base the project uses before adding a registry item. Check that focus returns to the trigger when the dialog closes.",
+            "zh": "添加注册表组件前先识别项目使用的底层组件方案，再检查关闭弹窗后焦点是否回到触发元素。"
+          }
+        },
+        {
+          "title": {
+            "en": "Bring in a registry block",
+            "zh": "引入 registry 区块"
+          },
+          "description": {
+            "en": "Inspect the registry item and its dependencies before writing files. Compare generated paths with project aliases and review the complete diff for overwrites.",
+            "zh": "写文件前检查注册表条目及其依赖，将生成路径和项目别名对照，并在完整差异中检查是否覆盖现有文件。"
+          }
+        },
+        {
+          "title": {
+            "en": "Apply semantic colors",
+            "zh": "应用语义颜色"
+          },
+          "description": {
+            "en": "Inspect the project theme before translating design colors to component classes. Preview light and dark states to make sure surface and foreground relationships remain readable.",
+            "zh": "先看项目主题，再把设计颜色映射到组件类名。预览明暗两种模式，确认表面与前景的对比依旧清晰。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Use shadcn/ui Skill. Share the repository, package manager, components.json, and the interface state to build. Deliver a reviewable component diff and a preview covering the requested interactions and states.",
+        "zh": "使用 shadcn/ui Skill。提供代码库、包管理器、components.json 和需要实现的界面状态。交付一份可审查的组件差异，以及覆盖目标交互与状态的预览。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Read the project context",
+          "zh": "读取项目上下文"
+        },
+        "description": {
+          "en": "Use the project package runner to inspect shadcn info --json. Check components.json, import aliases, and the component base before choosing files to change.",
+          "zh": "用项目的包管理器查看 shadcn info --json，检查 components.json、导入别名和底层组件方案，再决定修改范围。"
+        }
+      },
+      {
+        "title": {
+          "en": "Search compatible component options",
+          "zh": "查找兼容组件"
+        },
+        "description": {
+          "en": "Inspect existing components and registry documentation. Read the usage examples and select the smallest set that supports the requested interaction.",
+          "zh": "检查现有组件与注册表文档，阅读使用示例，选择能支持指定交互的最小组件组合。"
+        }
+      },
+      {
+        "title": {
+          "en": "Compose and inspect the preview",
+          "zh": "组合组件并检查预览"
+        },
+        "description": {
+          "en": "Reuse project variants and semantic tokens, review any generated source, then run the project checks and preview keyboard, error, and responsive states.",
+          "zh": "复用项目变体和语义变量，审查生成的源码，再运行项目检查并预览键盘、错误与响应式状态。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Can I invoke the Skill directly by name?",
+          "zh": "可以直接按名称调用这个 Skill 吗？"
+        },
+        "answer": {
+          "en": "The manifest sets user-invocable to false. Give the agent a relevant project task so the host can load the guidance when applicable.",
+          "zh": "清单将 user-invocable 设为 false。给 Agent 一个相关项目任务，让宿主在适用时加载指南。"
+        }
+      },
+      {
+        "question": {
+          "en": "What does the CLI install?",
+          "zh": "CLI 会安装什么？"
+        },
+        "answer": {
+          "en": "Registry components are added as source files in your project. Review the files and any dependency changes with your ordinary code review.",
+          "zh": "注册表组件以源码形式加入项目。建议像普通代码变更一样检查新增文件及依赖变化。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which package runner should I use?",
+          "zh": "应使用哪个包管理器？"
+        },
+        "answer": {
+          "en": "Use the one declared by the project. The upstream guidance shows npx, pnpm dlx, and bunx variants.",
+          "zh": "使用项目声明的包管理器。上游指南给出了 npx、pnpm dlx 和 bunx 的写法。"
+        }
+      },
+      {
+        "question": {
+          "en": "Why check components.json first?",
+          "zh": "为什么先看 components.json？"
+        },
+        "answer": {
+          "en": "It captures project-specific choices including paths, aliases, and configuration that influence how components should be added.",
+          "zh": "它记录路径、别名和相关配置等项目选择，会影响添加组件的方式。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if a local component already fits?",
+          "zh": "已有本地组件能完成任务怎么办？"
+        },
+        "answer": {
+          "en": "Reuse it and check variants or composition options before introducing a new registry dependency.",
+          "zh": "优先复用并检查变体与组合方式，再考虑引入新的注册表依赖。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do I review a theme change?",
+          "zh": "如何审查主题变更？"
+        },
+        "answer": {
+          "en": "Compare computed colors and visible interaction states in each supported theme, including focus, disabled, and error states.",
+          "zh": "在各支持主题下对比实际颜色和交互状态，包括焦点、禁用和错误状态。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex"
+      ],
+      "commands": {
+        "codex": "pnpm dlx skills add shadcn/ui"
+      },
+      "note": {
+        "en": "Run the documented Skills CLI command, choose Codex if prompted, and reopen the project session.",
+        "zh": "运行官方安装命令，按提示选择 Codex，再重新打开项目会话。"
+      }
+    },
+    "sourceLinks": [
+      {
+        "href": "https://ui.shadcn.com/docs/skills#install",
+        "label": {
+          "en": "Official installation guide",
+          "zh": "官方安装说明"
+        }
+      }
+    ]
   }
 ]

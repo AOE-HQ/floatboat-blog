@@ -197,6 +197,54 @@
       "leonxlnx/taste-skill",
       "pbakaus/impeccable",
       "anthropics/frontend-design"
+    ],
+    "emilkowalski/animate": [
+      "emilkowalski/emil-design-eng",
+      "emilkowalski/review-animations",
+      "emilkowalski/apple-design",
+      "pbakaus/impeccable"
+    ],
+    "emilkowalski/emil-design-eng": [
+      "emilkowalski/animate",
+      "emilkowalski/review-animations",
+      "emilkowalski/apple-design",
+      "pbakaus/impeccable"
+    ],
+    "mengto/build-awwwards-quality-sites": [
+      "anthropics/frontend-design",
+      "pbakaus/impeccable",
+      "emilkowalski/review-animations",
+      "vercel-labs/web-design-guidelines"
+    ],
+    "jakubkrehel/interface-review": [
+      "emilkowalski/review-animations",
+      "vercel-labs/web-design-guidelines",
+      "pbakaus/impeccable",
+      "anthropics/frontend-design"
+    ],
+    "openai/figma-design-to-code": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "pbakaus/impeccable",
+      "openai/figma-use"
+    ],
+    "openai/figma-use": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "pbakaus/impeccable",
+      "openai/figma-design-to-code"
+    ],
+    "google-labs-code/design-md": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "pbakaus/impeccable",
+      "vercel-labs/vercel-composition-patterns"
+    ],
+    "shadcn-ui/shadcn": [
+      "anthropics/frontend-design",
+      "vercel-labs/web-design-guidelines",
+      "pbakaus/impeccable",
+      "vercel-labs/vercel-composition-patterns"
     ]
   },
   "publishers": {
@@ -547,6 +595,24 @@
       "vercel-labs",
       "browsermcp",
       "browseros-ai"
+    ],
+    "mengto": [
+      "emilkowalski",
+      "pbakaus",
+      "anthropics",
+      "vercel-labs"
+    ],
+    "jakubkrehel": [
+      "emilkowalski",
+      "pbakaus",
+      "vercel-labs",
+      "anthropics"
+    ],
+    "shadcn-ui": [
+      "vercel-labs",
+      "anthropics",
+      "emilkowalski",
+      "pbakaus"
     ]
   },
   "skill-categories": {

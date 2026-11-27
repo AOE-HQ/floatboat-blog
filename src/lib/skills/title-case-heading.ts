@@ -13,5 +13,5 @@ export function titleCaseHeading(value: string): string {
 }
 
 export function publisherHeading(locale: "en" | "zh", value: string): string {
-  return locale === "en" ? titleCaseHeading(value).replace(/\bZ\.Ai\b/g, "Z.ai") : value;
+  return locale === "en" ? titleCaseHeading(value).replace(/\bZ\.Ai\b/g, "Z.ai").replace(/\bShadcn\/Ui\b/g, "shadcn/ui") : value;
 }

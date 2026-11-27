@@ -50,7 +50,8 @@
       "repositories": [
         "anthropics/claude-code",
         "anthropics/claude-cookbooks",
-        "anthropics/skills"
+        "anthropics/skills",
+        "anthropics/knowledge-work-plugins"
       ]
     },
     "heygen-com": {
@@ -1300,6 +1301,44 @@
       "reason": "Official owner verified from GitHub API and project README; user requested this vertical browser project on 2026-11-09.",
       "repositories": [
         "ChromeDevTools/chrome-devtools-mcp"
+      ]
+    },
+    "mengto": {
+      "status": "approved",
+      "checkedAt": "2026-11-27",
+      "representativeRepository": "MengTo/Skills",
+      "stars": 8480,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-26T16:22:03Z",
+      "reason": "代表仓库超过 1000 stars，已核对上游归属及维护状态。",
+      "repositories": [
+        "MengTo/Skills"
+      ]
+    },
+    "jakubkrehel": {
+      "status": "approved",
+      "checkedAt": "2026-11-27",
+      "representativeRepository": "jakubkrehel/skills",
+      "stars": 12917,
+      "fork": false,
+      "archived": false,
+      "pushedAt": "2026-11-19T04:11:32Z",
+      "reason": "代表仓库超过 1000 stars，已核对上游归属及维护状态。",
+      "repositories": [
+        "jakubkrehel/skills"
+      ]
+    },
+    "shadcn-ui": {
+      "status": "approved",
+      "checkedAt": "2026-11-27",
+      "representativeRepository": "shadcn-ui/ui",
+      "stars": 129247,
+      "fork": false,
+      "archived": false,
+      "reason": "GitHub owner and organization website verified; the official repository contains the shadcn Skill and registry CLI.",
+      "repositories": [
+        "shadcn-ui/ui"
       ]
     }
   }

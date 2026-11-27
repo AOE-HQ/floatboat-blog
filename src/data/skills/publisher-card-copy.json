@@ -302,5 +302,17 @@
   "chromedevtools": {
     "en": "Publishes Chrome DevTools MCP and official debugging Skills for browser inspection, runtime evidence, and coding-agent workflows.",
     "zh": "发布 Chrome DevTools MCP 与官方调试 Skills，提供浏览器检查、运行证据及编码 Agent 工作流。"
+  },
+  "mengto": {
+    "en": "Meng To founded Design+Code and publishes web design and visual development workflows. His Skills collection includes art direction and motion-led site implementation.",
+    "zh": "Meng To 创办了 Design+Code，分享网页设计和视觉开发方法。其 Skills 合集包含视觉指导与动效网站实现。"
+  },
+  "jakubkrehel": {
+    "en": "Jakub Krehel is a founding design engineer at Interfere and runs Interfaces Magazine. His Skills split interface decisions into disciplines and bring them together for review.",
+    "zh": "设计工程师，维护 Interface Review 及界面设计工具，关注改动审查与交互细节。"
+  },
+  "shadcn-ui": {
+    "en": "Official shadcn/ui publisher for component registry, CLI, and project-aware agent guidance.",
+    "zh": "shadcn/ui 官方发布者，维护组件注册表、CLI 和面向项目的 Agent 指南。"
   }
 }

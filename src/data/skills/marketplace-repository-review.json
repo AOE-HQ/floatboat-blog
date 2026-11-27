@@ -777,6 +777,55 @@
           "codex"
         ]
       }
+    },
+    "mengto/skills": {
+      "stars": 8480,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "jakubkrehel/skills": {
+      "stars": 12917,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "openai/plugins": {
+      "stars": 8412,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "google-labs-code/stitch-skills": {
+      "stars": 13482,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "shadcn-ui/ui": {
+      "stars": 129247,
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    "anthropics/knowledge-work-plugins": {
+      "stars": 37169,
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "projectApproval": {
+        "scope": "vertical-agent-project",
+        "reviewedAt": "2026-11-27",
+        "reason": "Official design plugin packages executable design critique and handoff workflows for Claude Code.",
+        "userRequest": "2026-11-27: the owner selected the Anthropic Design Plugin and approved creating this batch.",
+        "evidence": [
+          "https://github.com/anthropics/knowledge-work-plugins",
+          "https://github.com/anthropics/knowledge-work-plugins/tree/main/design"
+        ],
+        "hosts": [
+          "claude-code"
+        ]
+      }
     }
   }
 }

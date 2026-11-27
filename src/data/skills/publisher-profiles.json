@@ -416,6 +416,18 @@
           "kind": "示例与教程",
           "description": "通过笔记本与实际示例学习 Claude 应用方法，为开发、实验和功能集成提供可改造的代码参考。"
         }
+      },
+      {
+        "name": "Anthropic Design Plugin",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "en": {
+          "kind": "Claude design plugin",
+          "description": "Use Claude to critique a selected design, surface accessibility issues, or prepare a developer handoff."
+        },
+        "zh": {
+          "kind": "Claude 设计插件",
+          "description": "用 Claude 评审指定设计、找出无障碍问题，或为开发交接整理设计说明。"
+        }
       }
     ],
     "en": {
@@ -4864,5 +4876,374 @@
       }
     },
     "logo": "/blog/brand/publishers/supabase.webp"
+  },
+  "mengto": {
+    "name": "Meng To",
+    "type": "Person",
+    "profileUrl": "https://github.com/mengto",
+    "links": [
+      {
+        "label": {
+          "en": "GitHub",
+          "zh": "GitHub"
+        },
+        "href": "https://github.com/mengto"
+      },
+      {
+        "label": {
+          "en": "Website",
+          "zh": "官网"
+        },
+        "href": "https://designcode.io/"
+      }
+    ],
+    "logo": "/blog/brand/publishers/mengto.webp",
+    "en": {
+      "seoTitle": "Meng To: Design Engineering and Agent Skills",
+      "seoDescription": "Meng To founded Design+Code and publishes web design and visual development workflows. His Skills collection includes art direction and motion-led site implementation.",
+      "heroTitle": "Meng To",
+      "heroDescription": "Explore Meng To’s agent workflows for visual direction and motion-led websites.",
+      "overview": {
+        "title": "Work and Publications",
+        "paragraphs": [
+          "Design+Code is Meng To’s teaching platform for interface design and implementation. His GitHub collection translates some of that work into agent-readable manifests, including a web-design workflow that joins art direction, imagery and scroll choreography."
+        ]
+      },
+      "skillsTitle": "Published Skills",
+      "skillsIntro": "Turn a site brief into an original visual direction and a runnable page with deliberate motion.",
+      "faq": [
+        {
+          "question": "Where can I find the official lessons or articles?",
+          "answer": "Design+Code publishes Meng To’s design and development teaching. The GitHub collection holds reusable Agent instructions."
+        },
+        {
+          "question": "Where is the collection maintained?",
+          "answer": "Follow the GitHub repository under mengto for manifest changes and issue discussion."
+        },
+        {
+          "question": "How are the Skills organized?",
+          "answer": "The repository groups workflows by discipline. The Awwwards-oriented site guide lives under web design."
+        },
+        {
+          "question": "What does the repository license cover?",
+          "answer": "The repository declares MIT. Check separate permissions for any media or third-party packages used in your own deliverable."
+        },
+        {
+          "question": "Is the collection an Awwwards publication?",
+          "answer": "Meng To maintains the collection. Awwwards appears in the title of one guide as a quality benchmark."
+        },
+        {
+          "question": "Which published Skill should I start with?",
+          "answer": "Use the site-building guide when you have a web brief and want to turn visual direction into a preview you can inspect."
+        }
+      ],
+      "ctaTitle": "Plan a motion-led site",
+      "ctaDescription": "Start from a project brief and the media you can actually ship.",
+      "aboutTitle": "Work and Publications",
+      "about": "Design+Code is Meng To’s teaching platform for interface design and implementation. His GitHub collection translates some of that work into agent-readable manifests, including a web-design workflow that joins art direction, imagery and scroll choreography.",
+      "projectsTitle": "Independent Projects",
+      "ctaPrimary": {
+        "href": "/skills-marketplace/mengto/build-awwwards-quality-sites",
+        "label": "Open the site-building guide"
+      }
+    },
+    "zh": {
+      "seoTitle": "Meng To：设计工程与 Agent Skills",
+      "seoDescription": "Meng To 创办了 Design+Code，分享网页设计和视觉开发方法。其 Skills 合集包含视觉指导与动效网站实现。",
+      "heroTitle": "Meng To",
+      "heroDescription": "查看 Meng To 用于视觉指导与动效网站的 Agent 工作流。",
+      "overview": {
+        "title": "作品与发布渠道",
+        "paragraphs": [
+          "Design+Code 是 Meng To 的界面设计与实现教学平台。他在 GitHub 上把部分方法整理为 Agent 清单，网页设计方向的作品把视觉主张、图像和滚动动效放在同一条制作流程里。"
+        ]
+      },
+      "skillsTitle": "已发布的 Skills",
+      "skillsIntro": "把网站需求转成原创视觉方案，再实现一套可以运行和检查的网页动效。",
+      "faq": [
+        {
+          "question": "在哪里看官方课程或文章？",
+          "answer": "Design+Code 发布 Meng To 的设计开发教学，GitHub 合集维护可复用的 Agent 指令。"
+        },
+        {
+          "question": "合集在哪里维护？",
+          "answer": "清单变更和问题讨论可在 mengto 名下的 GitHub 仓库查看。"
+        },
+        {
+          "question": "合集怎样组织？",
+          "answer": "仓库按领域组织工作流，Awwwards 方向的建站指南归在网页设计下。"
+        },
+        {
+          "question": "仓库许可覆盖什么？",
+          "answer": "仓库声明采用 MIT。交付物中使用的媒体和第三方包仍按各自许可核对。"
+        },
+        {
+          "question": "这套合集由 Awwwards 发布吗？",
+          "answer": "合集由 Meng To 维护。Awwwards 出现在一份指南的标题中，表示设计质量目标。"
+        },
+        {
+          "question": "适合从哪项作品开始？",
+          "answer": "手头已有网站简报，想把视觉方向做成可检查的预览时，可以从建站指南开始。"
+        }
+      ],
+      "ctaTitle": "规划动效网站",
+      "ctaDescription": "从项目简报与可以正式使用的素材开始。",
+      "aboutTitle": "作品与发布渠道",
+      "about": "Design+Code 是 Meng To 的界面设计与实现教学平台。他在 GitHub 上把部分方法整理为 Agent 清单，网页设计方向的作品把视觉主张、图像和滚动动效放在同一条制作流程里。",
+      "projectsTitle": "独立项目",
+      "ctaPrimary": {
+        "href": "/zh/skills-marketplace/mengto/build-awwwards-quality-sites",
+        "label": "阅读建站指南"
+      }
+    },
+    "projects": []
+  },
+  "jakubkrehel": {
+    "name": "Jakub Krehel",
+    "type": "Person",
+    "profileUrl": "https://github.com/jakubkrehel",
+    "links": [
+      {
+        "label": {
+          "en": "GitHub",
+          "zh": "GitHub"
+        },
+        "href": "https://github.com/jakubkrehel"
+      },
+      {
+        "label": {
+          "en": "Website",
+          "zh": "官网"
+        },
+        "href": "https://jakub.kr/"
+      }
+    ],
+    "logo": "/blog/brand/publishers/jakubkrehel.webp",
+    "en": {
+      "seoTitle": "Jakub Krehel: Design Engineering and Agent Skills",
+      "seoDescription": "Jakub Krehel is a founding design engineer at Interfere and runs Interfaces Magazine. His Skills split interface decisions into disciplines and bring them together for review.",
+      "heroTitle": "Jakub Krehel",
+      "heroDescription": "Explore Jakub Krehel’s interface design guidance and change-scoped review workflow.",
+      "overview": {
+        "title": "Work and Publications",
+        "paragraphs": [
+          "Jakub Krehel works in design engineering at Interfere and publishes interface writing through his own site and Interfaces Magazine. The Skills collection translates that focus into narrow design checks, then combines them when a team needs to judge what a code change did to an interface."
+        ]
+      },
+      "skillsTitle": "Published Skills",
+      "skillsIntro": "Review what a Git change introduces or regresses across the interface surfaces it touches.",
+      "faq": [
+        {
+          "question": "Where does Jakub publish design writing?",
+          "answer": "His personal site links to Interfaces Magazine and essays on interaction and design engineering."
+        },
+        {
+          "question": "Where is the collection maintained?",
+          "answer": "Follow the GitHub repository under jakubkrehel for manifest changes and issue discussion."
+        },
+        {
+          "question": "How are the Skills organized?",
+          "answer": "Domain skills cover individual concerns, while Interface Review applies those checks to a Git change."
+        },
+        {
+          "question": "What does the repository license cover?",
+          "answer": "The repository declares MIT. Check separate permissions for any media or third-party packages used in your own deliverable."
+        },
+        {
+          "question": "Does the collection belong to Interfere?",
+          "answer": "Jakub publishes it from his personal GitHub account. Interfere is listed on his personal site as his design-engineering role."
+        },
+        {
+          "question": "Which published Skill should I start with?",
+          "answer": "Choose Interface Review when you have a specific Git change. The standalone domain skills fit narrower questions about layout, color or typography."
+        }
+      ],
+      "ctaTitle": "Review an interface change",
+      "ctaDescription": "Bring one branch or PR and trace the affected screens.",
+      "aboutTitle": "Work and Publications",
+      "about": "Jakub Krehel works in design engineering at Interfere and publishes interface writing through his own site and Interfaces Magazine. The Skills collection translates that focus into narrow design checks, then combines them when a team needs to judge what a code change did to an interface.",
+      "projectsTitle": "Independent Projects",
+      "ctaPrimary": {
+        "href": "/skills-marketplace/jakubkrehel/interface-review",
+        "label": "Open the change review guide"
+      }
+    },
+    "zh": {
+      "seoTitle": "Jakub Krehel：设计工程与 Agent Skills",
+      "seoDescription": "Jakub Krehel 是 Interfere 的创始设计工程师，也维护 Interfaces Magazine。他将界面判断按领域拆成 Skills，再用审查流程串联。",
+      "heroTitle": "Jakub Krehel",
+      "heroDescription": "查看 Jakub Krehel 的界面设计指引，以及针对具体变更的审查方法。",
+      "overview": {
+        "title": "作品与发布渠道",
+        "paragraphs": [
+          "Jakub Krehel 在 Interfere 从事设计工程，同时通过个人网站和 Interfaces Magazine 发布界面文章。其 Skills 集合把界面判断拆成具体规则，评审改动时再把这些规则合起来。"
+        ]
+      },
+      "skillsTitle": "已发布的 Skills",
+      "skillsIntro": "沿 Git 变更追踪受影响界面，判断哪些问题由本次改动引入或加重。",
+      "faq": [
+        {
+          "question": "Jakub 在哪里发布设计文章？",
+          "answer": "其个人主页链接 Interfaces Magazine，也收录交互和设计工程文章。"
+        },
+        {
+          "question": "合集在哪里维护？",
+          "answer": "清单变更和问题讨论可在 jakubkrehel 名下的 GitHub 仓库查看。"
+        },
+        {
+          "question": "合集怎样组织？",
+          "answer": "领域 Skill 各自处理特定界面问题，Interface Review 把这些检查用于一次 Git 变更。"
+        },
+        {
+          "question": "仓库许可覆盖什么？",
+          "answer": "仓库声明采用 MIT。交付物中使用的媒体和第三方包仍按各自许可核对。"
+        },
+        {
+          "question": "合集属于 Interfere 吗？",
+          "answer": "合集由 Jakub 以个人 GitHub 账号发布。Interfere 是他在个人主页列出的设计工程任职经历。"
+        },
+        {
+          "question": "适合从哪项作品开始？",
+          "answer": "已有一段明确的 Git 变更时可用 Interface Review。布局、色彩或字体等单项问题适合对应领域 Skill。"
+        }
+      ],
+      "ctaTitle": "审查界面变更",
+      "ctaDescription": "从一个分支或 PR 开始，追踪受影响的界面。",
+      "aboutTitle": "作品与发布渠道",
+      "about": "Jakub Krehel 在 Interfere 从事设计工程，同时通过个人网站和 Interfaces Magazine 发布界面文章。其 Skills 集合把界面判断拆成具体规则，评审改动时再把这些规则合起来。",
+      "projectsTitle": "独立项目",
+      "ctaPrimary": {
+        "href": "/zh/skills-marketplace/jakubkrehel/interface-review",
+        "label": "阅读界面变更审查指南"
+      }
+    },
+    "projects": []
+  },
+  "shadcn-ui": {
+    "name": "shadcn/ui",
+    "type": "Organization",
+    "profileUrl": "https://github.com/shadcn-ui",
+    "projects": [],
+    "links": [
+      {
+        "href": "https://ui.shadcn.com",
+        "label": {
+          "en": "shadcn/ui documentation",
+          "zh": "shadcn/ui 官方文档"
+        }
+      },
+      {
+        "href": "https://github.com/shadcn-ui",
+        "label": {
+          "en": "GitHub organization",
+          "zh": "GitHub 组织"
+        }
+      }
+    ],
+    "en": {
+      "seoTitle": "shadcn/ui: Component Registry, CLI, and Agent Skill",
+      "seoDescription": "shadcn/ui maintains a component registry and a CLI for bringing component source into your project. Its Skill guides coding agents using project configuration and registry documentation.",
+      "heroTitle": "shadcn/ui",
+      "heroDescription": "Find the official component registry, the CLI that copies components into an app, and the Skill that guides agents through that workflow.",
+      "aboutTitle": "About shadcn/ui",
+      "about": "The shadcn-ui GitHub organization maintains the shadcn/ui registry, CLI and official Agent Skill. The registry distributes source code for components and blocks. The CLI searches and installs registry items into the paths configured by the project. The Skill provides rules for inspecting that configuration, selecting existing components, and composing them with semantic styling.",
+      "overview": {
+        "title": "About shadcn/ui",
+        "paragraphs": [
+          "The shadcn-ui GitHub organization maintains the shadcn/ui registry, CLI and official Agent Skill. The registry distributes source code for components and blocks. The CLI searches and installs registry items into the paths configured by the project. The Skill provides rules for inspecting that configuration, selecting existing components, and composing them with semantic styling.",
+          "The registry and CLI are the implementation tools. The Agent Skill is the guide that explains to compatible tools how to inspect the current project and use those interfaces.",
+          "The UI repository is published under MIT. Review the origin and terms of items from external registries separately."
+        ]
+      },
+      "skillsTitle": "Official component guidance",
+      "skillsIntro": "Use the component guide when you have an application repository or know the interface interaction you need to implement.",
+      "projectsTitle": "Projects",
+      "faqTitle": "Frequently asked questions",
+      "faq": [
+        {
+          "question": "Who owns the repository?",
+          "answer": "The GitHub organization shadcn-ui owns the ui repository and the official Skill under skills/shadcn."
+        },
+        {
+          "question": "What is a registry item?",
+          "answer": "It is an item such as a component or block that the CLI can bring into a compatible project as source."
+        },
+        {
+          "question": "Does the Skill install components by itself?",
+          "answer": "The Skill provides guidance. A compatible agent may use the CLI with the project’s runner and permissions when the task calls for it."
+        },
+        {
+          "question": "What should I review after an addition?",
+          "answer": "Check the file diff, dependency changes, aliases and preview of the interaction in your application."
+        },
+        {
+          "question": "Where should I report an issue with the official CLI?",
+          "answer": "Use the issue tracker on shadcn-ui/ui. Include the command, package manager, and relevant components.json settings so maintainers can reproduce it."
+        },
+        {
+          "question": "Where can I learn about external registries?",
+          "answer": "Use the registry docs on ui.shadcn.com for integration and the individual registry for its own licensing and contact details."
+        }
+      ],
+      "ctaTitle": "Choose a component task",
+      "ctaDescription": "Open the official Skill guide to check how to inspect project settings and review a registry addition.",
+      "ctaPrimary": {
+        "label": "View shadcn/ui Skill",
+        "href": "/skills-marketplace/shadcn-ui/shadcn"
+      }
+    },
+    "zh": {
+      "seoTitle": "shadcn/ui：组件注册表、CLI 与 Agent Skill",
+      "seoDescription": "shadcn/ui 维护组件注册表和 CLI，将组件源码引入项目。官方 Skill 帮助代码 Agent 根据项目配置和注册表文档开展工作。",
+      "heroTitle": "shadcn/ui",
+      "heroDescription": "查看官方组件注册表、将组件源码引入应用的 CLI，以及指导 Agent 完成这些操作的 Skill。",
+      "aboutTitle": "关于 shadcn/ui",
+      "about": "shadcn-ui GitHub 组织维护 shadcn/ui 注册表、CLI 和官方 Agent Skill。注册表分发组件和区块源码。CLI 根据项目配置搜索条目，并安装到对应目录。Skill 指导 Agent 检查这些配置，优先选择已有组件，并应用项目的语义样式。",
+      "overview": {
+        "title": "关于 shadcn/ui",
+        "paragraphs": [
+          "shadcn-ui GitHub 组织维护 shadcn/ui 注册表、CLI 和官方 Agent Skill。注册表分发组件和区块源码。CLI 根据项目配置搜索条目，并安装到对应目录。Skill 指导 Agent 检查这些配置，优先选择已有组件，并应用项目的语义样式。",
+          "注册表和 CLI 提供具体操作能力。Agent Skill 则教兼容的 Agent 如何查看项目上下文及调用这些入口。",
+          "UI 仓库采用 MIT 许可证。使用外部注册表条目时，要单独核对它的来源和许可。"
+        ]
+      },
+      "skillsTitle": "官方组件指南",
+      "skillsIntro": "已有应用仓库，或能说清这一轮要实现的交互时，可从组件指南开始。",
+      "projectsTitle": "代表项目",
+      "faqTitle": "常见问题",
+      "faq": [
+        {
+          "question": "谁维护这个仓库？",
+          "answer": "GitHub 组织 shadcn-ui 是 ui 仓库及其中 skills/shadcn 官方 Skill 的维护主体。"
+        },
+        {
+          "question": "什么是注册表条目？",
+          "answer": "它可以是组件或区块，CLI 能将其源码引入兼容项目。"
+        },
+        {
+          "question": "Skill 会自行安装组件吗？",
+          "answer": "Skill 提供操作指导。任务需要时，兼容 Agent 可在项目权限范围内通过包管理器调用 CLI。"
+        },
+        {
+          "question": "添加组件后要审查什么？",
+          "answer": "检查文件差异、依赖变更、导入别名及交互预览。"
+        },
+        {
+          "question": "在哪里报告官方 CLI 的问题？",
+          "answer": "到 shadcn-ui/ui 的 Issues 提交报告，并附上命令、包管理器和相关的 components.json 配置，便于维护者复现。"
+        },
+        {
+          "question": "从哪里了解第三方注册表？",
+          "answer": "接入方式见 ui.shadcn.com 的注册表文档。各注册表的许可与联系方式以各自说明为准。"
+        }
+      ],
+      "ctaTitle": "选择一个组件任务",
+      "ctaDescription": "打开官方 Skill 指南，查看如何检查项目配置并审查注册表添加的代码。",
+      "ctaPrimary": {
+        "label": "查看 shadcn/ui Skill",
+        "href": "/zh/skills-marketplace/shadcn-ui/shadcn"
+      }
+    },
+    "logo": "/blog/brand/publishers/shadcn-ui.webp"
   }
 }
