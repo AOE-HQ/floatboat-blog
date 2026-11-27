@@ -10181,5 +10181,211 @@
         ]
       }
     }
+  },
+  {
+    "author": "anthropics",
+    "slug": "design-plugin",
+    "name": "Anthropic Design Plugin",
+    "repository": "https://github.com/anthropics/knowledge-work-plugins",
+    "website": "https://claude.com/product/cowork",
+    "documentation": "https://github.com/anthropics/knowledge-work-plugins/tree/main/design",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/anthropics/knowledge-work-plugins/blob/main/LICENSE",
+    "classification": "agent-tool",
+    "reviewedAt": "2026-11-27",
+    "related": [
+      "openai/codex",
+      "firecrawl/firecrawl",
+      "vercel-labs/agent-browser",
+      "morluto/rea"
+    ],
+    "en": {
+      "seoTitle": "Anthropic Design Plugin: Design Critique, Handoff, and Research",
+      "seoDescription": "Use Anthropic’s design plugin in Claude Code to critique a screen, prepare a handoff, revise UX copy, or synthesize research.",
+      "description": "Run a design workflow in Claude Code or Cowork using the screenshots, copy or research notes relevant to the task.",
+      "kind": "Design workflow plugin",
+      "overviewTitle": "About Anthropic Design Plugin",
+      "overview": [
+        "Anthropic’s Design Plugin is a package in the knowledge-work-plugins repository. It pairs explicit commands such as /critique and /handoff with domain instructions that Claude can draw on when the task calls for them.",
+        "You can carry out an initial review from user-supplied material. A connector adds live context only if it is configured and authorized. The design review should attribute observations to the reviewed material so a reader can judge each recommendation.",
+        "For a first task, use a pricing-page screenshot and ask /critique to prioritize readability and plan comparison. Verify the findings against the image and collect keyboard or assistive-technology questions for a separate run in the rendered interface."
+      ],
+      "capabilitiesTitle": "Choose the workflow by deliverable",
+      "capabilitiesIntro": "A critique, a handoff document and a revised interface message have different acceptance criteria.",
+      "capabilities": [
+        {
+          "title": "Inspect a screen",
+          "description": "Use /critique to arrange feedback around hierarchy, usability and consistency. Ask for examples located on the screen."
+        },
+        {
+          "title": "Turn design context into a handoff",
+          "description": "Use /handoff to make states, token choices and open implementation questions explicit before development."
+        },
+        {
+          "title": "Review interaction copy",
+          "description": "Use /ux-copy to write or revise interface messages with the trigger, user objective and recovery path in view."
+        }
+      ],
+      "useCases": {
+        "title": "Use Cases for Anthropic Design Plugin",
+        "description": "The command choice depends on what you need to hand over. Compare review findings, engineering notes, revised microcopy and a synthesis of participant evidence.",
+        "items": [
+          {
+            "title": "Critique a pricing screen",
+            "description": "Give /critique a screenshot of the pricing page plus the decision users should make. Ask it to rank issues in the comparison hierarchy and cite the visible evidence for each concern."
+          },
+          {
+            "title": "Prepare a developer handoff",
+            "description": "Give /handoff the submitted checkout screens and the available token names. Ask for a state inventory and mark missing behavior for design confirmation before implementation."
+          },
+          {
+            "title": "Review payment error copy",
+            "description": "Give /ux-copy existing messages and the situations that produce them. Compare revised wording by whether it tells the user which payment step failed and how to recover."
+          },
+          {
+            "title": "Synthesize moderated usability sessions",
+            "description": "Give /research-synthesis anonymized notes from several participants completing the same task. Ask for observations grouped by issue and preserve evidence that conflicts with the dominant pattern."
+          }
+        ]
+      },
+      "howTo": {
+        "title": "How to run a focused design critique",
+        "description": "Use one screenshot and one decision to make the review easy to check against its source.",
+        "items": [
+          {
+            "title": "Install the package in Claude Code",
+            "description": "Run claude plugin marketplace add anthropics/knowledge-work-plugins, then claude plugin install design@knowledge-work-plugins. Confirm that the design commands are available."
+          },
+          {
+            "title": "Attach the design evidence",
+            "description": "Provide the pricing-page screenshot and explain the decision users need to make. Invoke /critique and request a prioritized list tied to visible elements."
+          },
+          {
+            "title": "Verify the findings",
+            "description": "Check each finding against the screenshot. Move keyboard, screen reader and responsive issues that need runtime evidence to a separate verification list."
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which hosts are documented?",
+          "answer": "Anthropic describes the plugin as primarily for Claude Cowork and also supports the Claude Code workflow."
+        },
+        {
+          "question": "Do I need Figma to begin?",
+          "answer": "You can give the workflow a screenshot or written context. Connect Figma only when the task needs it and the session can access the file."
+        },
+        {
+          "question": "What does installation add?",
+          "answer": "The design plugin adds design workflows and their associated Skills through Anthropic’s knowledge-work-plugins marketplace."
+        },
+        {
+          "question": "Can a screenshot establish accessibility compliance?",
+          "answer": "A screenshot can expose visible contrast or hierarchy issues. Keyboard navigation, focus, and assistive technology behavior need checks in a rendered implementation."
+        },
+        {
+          "question": "What makes a useful handoff?",
+          "answer": "Name the intended component, token choices, states and interaction rules. Mark any item whose behavior the source mockup does not establish."
+        },
+        {
+          "question": "Which license applies to the repository?",
+          "answer": "The source repository lists Apache-2.0. Check the separate host and connector terms and your permission to share design materials."
+        }
+      ]
+    },
+    "zh": {
+      "seoTitle": "Anthropic Design Plugin：设计评审、开发交接与调研归纳",
+      "seoDescription": "在 Claude Code 中使用 Anthropic 的设计插件评审界面、准备开发交接、修改 UX 文案或综合研究记录。",
+      "description": "在 Claude Code 或 Cowork 中开展设计任务，根据任务提供截图、界面文案或研究记录。",
+      "kind": "设计工作流插件",
+      "overviewTitle": "关于 Anthropic Design Plugin",
+      "overview": [
+        "Anthropic Design Plugin 是 knowledge-work-plugins 仓库中的一个插件包。它提供 /critique、/handoff 等显式命令，也有 Claude 在相应任务中可以使用的专业指引。",
+        "用户可以先用自己提供的材料完成初次评审。配置并授权连接器后才能读取额外的实时上下文。评审时应注明观察依据，让读者能够逐项判断建议是否成立。",
+        "第一次可以提供一张定价页截图，让 /critique 优先检查可读性和套餐对比。再回到截图核实发现，把需要实测的键盘或辅助技术问题带到渲染后的界面另行检查。"
+      ],
+      "capabilitiesTitle": "按交付物选择工作流",
+      "capabilitiesIntro": "界面评审、交接文档和修改后的提示文案，各有自己的验收依据。",
+      "capabilities": [
+        {
+          "title": "评审一个界面",
+          "description": "用 /critique 按层次、易用性和一致性整理反馈，要求指出问题所在的界面元素。"
+        },
+        {
+          "title": "把设计信息整理为交接文档",
+          "description": "用 /handoff 在开发前明确状态、变量选择及尚未解决的实现问题。"
+        },
+        {
+          "title": "评审交互文案",
+          "description": "用 /ux-copy 编写或修改界面提示，并对照触发条件、用户目的和恢复路径。"
+        }
+      ],
+      "useCases": {
+        "title": "Anthropic Design Plugin 的使用场景",
+        "description": "根据需要交付的成果选择命令。可以整理评审发现、为工程师补全交接信息、改写错误提示，或将参与者的观察证据归纳成结论。",
+        "items": [
+          {
+            "title": "评审定价界面",
+            "description": "向 /critique 提供定价页截图和用户需要做的决定。让它按优先级找出套餐对比层次中的问题，并指出截图中支持判断的证据。"
+          },
+          {
+            "title": "准备开发交接",
+            "description": "向 /handoff 提供已提交的结账界面和可用变量名称。要求梳理状态清单，把缺失的行为标记为实施前需要设计确认的事项。"
+          },
+          {
+            "title": "评审付款错误文案",
+            "description": "向 /ux-copy 提供现有错误文案和触发条件。对照修改前后，检查新文案是否交代失败环节以及用户可以采取的恢复措施。"
+          },
+          {
+            "title": "整理有主持人的可用性访谈",
+            "description": "将多位参与者完成同一任务的匿名记录交给 /research-synthesis。按问题归纳观察，并保留与主要模式不一致的证据。"
+          }
+        ]
+      },
+      "howTo": {
+        "title": "如何进行一次有范围的设计评审",
+        "description": "限定一张截图和一个用户决策，使评审结论能够回到原始材料核对。",
+        "items": [
+          {
+            "title": "在 Claude Code 中安装插件",
+            "description": "先运行 claude plugin marketplace add anthropics/knowledge-work-plugins，再运行 claude plugin install design@knowledge-work-plugins，确认设计命令可用。"
+          },
+          {
+            "title": "提供评审材料",
+            "description": "附上定价页截图，说明用户要做的决定。调用 /critique，并要求按优先级列出问题和对应元素。"
+          },
+          {
+            "title": "核实评审发现",
+            "description": "逐项对照截图。需要运行时证据的键盘、读屏和响应式问题，移入单独的验证清单。"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "上游说明支持哪些宿主？",
+          "answer": "Anthropic 将插件主要定位于 Claude Cowork，同时说明可在 Claude Code 使用。"
+        },
+        {
+          "question": "开始前必须连接 Figma 吗？",
+          "answer": "可直接提供截图或文字描述。任务需要读取设计文件且会话拥有访问权限时，再连接 Figma。"
+        },
+        {
+          "question": "安装会添加什么？",
+          "answer": "安装会通过 Anthropic 的 knowledge-work-plugins 市场加入设计工作流及其配套 Skills。"
+        },
+        {
+          "question": "截图能证明无障碍合规吗？",
+          "answer": "截图可发现部分对比度或层次问题。键盘导航、焦点和辅助技术行为需要在渲染后的实现里核查。"
+        },
+        {
+          "question": "怎样判断设计交接有用？",
+          "answer": "交接应列出目标组件、变量选择、状态和交互规则，并标明设计稿尚未说明的行为。"
+        },
+        {
+          "question": "仓库使用什么许可证？",
+          "answer": "源码仓库标注 Apache-2.0。宿主、连接器条款及设计资料共享权限需要分别核对。"
+        }
+      ]
+    }
   }
 ]

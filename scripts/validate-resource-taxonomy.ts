@@ -13,6 +13,15 @@ for (const repo of ["browserbase/stagehand", "BrowserMCP/mcp", "pinchtab/pinchta
 }
 assert(!isMarketplaceRepository("https://github.com/unreviewed-owner/unreviewed-project", "project"));
 
+const lowStarSkill = getCatalogInventory("en").find((entry) => entry.id === "jakubkrehel/interface-review");
+assert(lowStarSkill, "Reviewed Interface Review guide missing");
+assert(isMarketplaceRepository(lowStarSkill.sourceUrl, "skill", lowStarSkill.id), "Explicit public Skill approval was ignored");
+assert(!isMarketplaceRepository(lowStarSkill.sourceUrl, "skill"), "Public Skill approval leaked to the repository");
+assert(!isMarketplaceRepository(lowStarSkill.sourceUrl, "skill", "jakubkrehel/unreviewed"), "Public Skill approval leaked to another guide");
+assert(!isMarketplaceRepository(lowStarSkill.sourceUrl, "project", lowStarSkill.id), "Public Skill approval leaked to projects");
+assert(!isMarketplaceRepository(lowStarSkill.sourceUrl.replace("/SKILL.md", "/other.md"), "skill", lowStarSkill.id), "Public Skill approval accepted a different source");
+
+
 const paths = new Set([...buildCombinedSitemapXml().matchAll(/<loc>https:\/\/floatboat.ai([^<]*)<\/loc>/g)].map((match) => match[1]));
 const en = getStoreCatalog("en");
 const zh = getStoreCatalog("zh");

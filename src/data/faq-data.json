@@ -12007,6 +12007,38 @@
           "answer": "不会。Combo Skill 保存的是可复用的操作步骤。每周自动执行还需要创建重复的 Float Schedule 日程，指定空间和技能，并提前放好新的订单 CSV。"
         }
       ]
+    },
+    "/blog/best-agent-skills-for-design": {
+      "items": [
+        {
+          "question": "Can one design skill cover both Figma handoff and pull request review?",
+          "answer": "Use Figma Design to Code to retrieve the design and implement it, then use Interface Review to examine the scope and effects of the resulting change. Each takes a different input and produces a different result."
+        },
+        {
+          "question": "Do I need Figma or Stitch to use the whole list?",
+          "answer": "No. Figma and Stitch access are relevant to workflows that read those projects. Frontend Design can work from a brief, and the review skills can start from repository code or a preview."
+        },
+        {
+          "question": "What should I give an agent to test a design skill?",
+          "answer": "Provide one representative screen or interaction and a visible acceptance test. For a drawer, include the trigger, expected focus behavior, and what should happen if the user closes it before the opening animation completes."
+        }
+      ]
+    },
+    "/zh/blog/best-agent-skills-for-design": {
+      "items": [
+        {
+          "question": "只拿到一张设计截图，能开始用设计 Skill 吗？",
+          "answer": "可以先用截图做界面评审或梳理实现范围。若需要读取原始组件映射、设计变量和资产，向设计方索取带节点 ID 的 Figma 链接，并在可访问文件的宿主中授权 Figma MCP。"
+        },
+        {
+          "question": "做完界面后，该用 Vercel Guidelines 还是 Interface Review？",
+          "answer": "要统一检查一个页面的键盘、表单和交互规范时用 Vercel Guidelines。需要根据某次分支或 PR 的具体改动判断是否有界面回归时，选 Interface Review，并附上可访问的预览或复现步骤。"
+        },
+        {
+          "question": "在 Floatboat 复制请求后，Skill 和连接器会自动加载吗？",
+          "answer": "需要在执行任务的宿主中按各详情页的说明加载组件并授权连接器。复制请求只准备任务内容。若某一步只支持外部宿主，可先在那里获取设计资料或 diff，再把已核实的材料带回 Floatboat。"
+        }
+      ]
     }
   }
 }

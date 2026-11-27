@@ -1905,6 +1905,84 @@
         "testing",
         "debugging"
       ]
+    },
+    "emilkowalski/animate": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "animation",
+        "component-design",
+        "accessibility"
+      ]
+    },
+    "mengto/build-awwwards-quality-sites": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "animation"
+      ]
+    },
+    "jakubkrehel/interface-review": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "accessibility"
+      ]
+    },
+    "openai/figma-design-to-code": {
+      "categories": [
+        "design-interfaces",
+        "frontend-react"
+      ],
+      "tags": [
+        "interface-design",
+        "mcp"
+      ]
+    },
+    "openai/figma-use": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "mcp"
+      ]
+    },
+    "google-labs-code/design-md": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "component-design"
+      ]
+    },
+    "shadcn-ui/shadcn": {
+      "categories": [
+        "design-interfaces",
+        "frontend-react"
+      ],
+      "tags": [
+        "react",
+        "component-design",
+        "interface-design"
+      ]
+    },
+    "project:github.com/anthropics/knowledge-work-plugins": {
+      "categories": [
+        "design-interfaces"
+      ],
+      "tags": [
+        "interface-design",
+        "accessibility",
+        "handoffs",
+        "writing"
+      ]
     }
   }
 }

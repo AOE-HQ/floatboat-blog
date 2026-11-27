@@ -160,7 +160,7 @@ export function getCatalogInventory(locale: SkillLocale) {
 export function getStoreCatalog(locale: SkillLocale) {
   const entries = getCatalogInventory(locale).filter((entry) => (
     (entry.entryType === "project" || entry.hasLocalGuide)
-    && isMarketplaceRepository(entry.sourceUrl, entry.entryType)
+    && isMarketplaceRepository(entry.sourceUrl, entry.entryType, entry.id)
   ));
   const projectTargets = new Set(entries.filter((entry) => entry.entryType === "project").map((entry) => entry.href));
   return entries.filter((entry) => entry.entryType === "project" || !projectTargets.has(entry.href));

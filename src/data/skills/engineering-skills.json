@@ -6313,5 +6313,929 @@
         "zh": "提供一个网页交互和项目现有工具，让 Agent 能验证实际手势。"
       }
     }
+  },
+  {
+    "slug": "animate",
+    "authorHandle": "emilkowalski",
+    "name": "Animate",
+    "publisher": "Emil Kowalski",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/animate/SKILL.md",
+    "repositoryUrl": "https://github.com/emilkowalski/skills",
+    "seo": {
+      "title": {
+        "en": "Animate: Build Interruptible Web UI Motion",
+        "zh": "Animate：实现可打断的网页界面动效"
+      },
+      "description": {
+        "en": "Implement a web transition with interruption and reduced-motion paths.",
+        "zh": "实现支持打断与减少动效的网页过渡。"
+      },
+      "keywords": {
+        "en": [
+          "Animate",
+          "Build Interruptible Web UI Motion"
+        ],
+        "zh": [
+          "Animate",
+          "实现可打断的网页界面动效"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Animate",
+        "zh": "Animate"
+      },
+      "description": {
+        "en": "Build one web transition around its purpose, frequency and states. Define how it enters, exits and responds when the user changes direction mid-animation.",
+        "zh": "围绕目的、频率和状态实现一个网页过渡，明确入场、退场以及用户中途反向操作时的表现。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Animate",
+        "paragraphs": [
+          "Emil Kowalski’s Animate Skill sequences decisions before touching implementation. It can recommend an immediate state change for a frequently used control. For justified motion it chooses an implementation that fits the codebase, reuses existing duration and easing tokens and includes reduced-motion behavior."
+        ]
+      },
+      "zh": {
+        "title": "关于 Animate",
+        "paragraphs": [
+          "Emil Kowalski 的 Animate Skill 会先判断动作的频率和反馈价值，再决定是否动起来。高频控件可以立即切换状态。确有理由加入动效时，它会按代码现状选实现方式，复用时长和缓动变量，并处理减少动效设置。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Implement a web transition with interruption and reduced-motion paths.",
+      "zh": "实现支持打断与减少动效的网页过渡。"
+    },
+    "upstreamInstall": "npx skills add emilkowalski/skills --skill animate",
+    "sectionTitles": {
+      "how": {
+        "en": "How to implement a drawer transition",
+        "zh": "如何实现抽屉过渡"
+      },
+      "howDescription": {
+        "en": "Use the filter drawer to test the transition across ordinary dismissal, immediate re-entry and reduced motion.",
+        "zh": "用筛选抽屉复核三条路径：正常关闭、立刻重开，以及系统启用减少动效时的表现。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Animate Use Cases for Web Animation",
+        "zh": "Animate 的网页动效场景"
+      },
+      "description": {
+        "en": "A drawer, anchored popover and keyboard palette each have a different motion budget. Choose the user action first, then use the examples to decide what deserves a transition.",
+        "zh": "抽屉、锚定浮层和快捷键面板的动效需求各不相同。先弄清用户做什么、会做多频繁，再从下面的场景判断应当添加过渡、减少移动还是直接切换状态。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Build a drawer transition",
+            "zh": "实现抽屉过渡"
+          },
+          "description": {
+            "en": "Give the agent the drawer’s trigger, dismissal paths and current styling. Have it implement the opening and closing states, then test a close-and-reopen before the exit completes so the drawer stays continuous.",
+            "zh": "提供抽屉入口、关闭方式和现有样式。实现打开和关闭状态后，在退场尚未完成时重新打开，检查抽屉是否延续当前位置。"
+          }
+        },
+        {
+          "title": {
+            "en": "Add anchored popover motion",
+            "zh": "让浮层沿触发点展开"
+          },
+          "description": {
+            "en": "Provide a popover that can flip above and below a button. Use the positioning library’s origin value so each placement opens from the actual anchor, then compare both placements near the viewport edge.",
+            "zh": "给出能在按钮上下翻转的浮层。使用定位库提供的变换原点，使入场跟随真实触发位置，并在视口边缘检查两种放置位置。"
+          }
+        },
+        {
+          "title": {
+            "en": "Reconsider a keyboard palette transition",
+            "zh": "评估快捷键面板的过渡"
+          },
+          "description": {
+            "en": "Describe how often keyboard users toggle the palette and how soon the input receives focus. Animate can conclude that the state should change immediately. Check the resulting interaction with rapid repeated key presses.",
+            "zh": "说明快捷键面板每天打开的频率与输入框聚焦时机。Animate 可以判断应立即切换状态，用连续按键检查焦点是否及时可用。"
+          }
+        },
+        {
+          "title": {
+            "en": "Keep feedback in reduced motion",
+            "zh": "在减少动效模式保留反馈"
+          },
+          "description": {
+            "en": "Give the agent a confirmation state that currently moves the whole component. Implement a reduced-motion path that keeps the state change visible, then compare the same action with the system setting enabled or emulated in your browser.",
+            "zh": "给出一个会带动整个组件移动的确认状态。为减少动效模式保留可见的确认信号，切换系统减少动效偏好或在浏览器模拟后，对照同一操作。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Identify the action and frequency",
+          "zh": "确认动作与触发频率"
+        },
+        "description": {
+          "en": "Share the component path, trigger and expected state change. Decide whether motion improves that action before choosing a duration.",
+          "zh": "提供组件路径、触发方式和预期状态变化。先判断动效是否有益，再确定时长。"
+        }
+      },
+      {
+        "title": {
+          "en": "Implement entry and exit together",
+          "zh": "同时实现入场与退场"
+        },
+        "description": {
+          "en": "Use the project’s motion tokens and the smallest suitable tool. Handle rapid reversal and reduced motion in the same change.",
+          "zh": "复用项目的动效变量，选择满足需求的最轻量方式，在同次改动里处理快速反向触发和减少动效。"
+        }
+      },
+      {
+        "title": {
+          "en": "Exercise the interaction in the browser",
+          "zh": "在浏览器操作验证"
+        },
+        "description": {
+          "en": "Test the normal path, a rapid reversal and the reduced-motion preference. Compare the resulting states and keep any untested behavior explicit.",
+          "zh": "测试常规路径、快速反向操作和减少动效设置。对照实际状态，标出未能验证的行为。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "When can Animate produce no motion?",
+          "zh": "什么情况下可以省略动画？"
+        },
+        "answer": {
+          "en": "High-frequency shortcuts may benefit from immediate feedback. The Skill checks frequency and purpose before implementing a transition.",
+          "zh": "高频快捷键通常需要即时反馈。Skill 会先判断触发频率和目的，再决定是否写过渡。"
+        }
+      },
+      {
+        "question": {
+          "en": "Do I have to install a motion library?",
+          "zh": "需要安装动效库吗？"
+        },
+        "answer": {
+          "en": "A simple state change can use CSS transitions and the project’s existing timing tokens. A library is useful when the interaction actually needs its capabilities.",
+          "zh": "简单状态可以沿用 CSS 过渡与项目里的时序变量。交互确实需要额外能力时才考虑引入库。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can I use this on a React Native app?",
+          "zh": "可以用于 React Native 吗？"
+        },
+        "answer": {
+          "en": "The author provides a separate animate-expo Skill for that environment. Animate covers web interface motion.",
+          "zh": "作者为该环境提供了单独的 animate-expo。Animate 面向网页界面动效。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if the interface already has motion?",
+          "zh": "已有动效时怎么选？"
+        },
+        "answer": {
+          "en": "Use Review Animations to critique an existing change. Choose Animate when you want the agent to implement a transition.",
+          "zh": "已经有变更待评审时可用 Review Animations。希望 Agent 编写过渡实现时用 Animate。"
+        }
+      },
+      {
+        "question": {
+          "en": "What behavior should be tested first?",
+          "zh": "优先测试什么行为？"
+        },
+        "answer": {
+          "en": "Test the action users perform most often and repeat it quickly if it can interrupt the current animation.",
+          "zh": "先测试用户最常做的动作。如果它可能打断正在运行的动画，再快速重复触发。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does installing the Skill provide browser access?",
+          "zh": "安装 Skill 后能直接操作浏览器吗？"
+        },
+        "answer": {
+          "en": "Browser access depends on your agent session. If the agent cannot open the app, supply the preview steps for manual verification.",
+          "zh": "浏览器权限取决于 Agent 会话。如果 Agent 无法打开应用，交付应带上可手动执行的预览步骤。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Implement the filter drawer transition in the supplied component. Reuse our timing tokens, test rapid close and reopen, and confirm reduced-motion still conveys the open state.",
+        "zh": "为所给组件实现筛选抽屉过渡。复用现有时序变量，测试快速关闭再打开，并确认减少动效时仍能看出打开状态。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "Reload the host after installation and name the component to animate in your request.",
+        "zh": "安装后重新加载宿主，在请求中指明需要实现动效的组件。"
+      }
+    }
+  },
+  {
+    "slug": "emil-design-eng",
+    "authorHandle": "emilkowalski",
+    "name": "Emil Design Engineering",
+    "publisher": "Emil Kowalski",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/emil-design-eng/SKILL.md",
+    "repositoryUrl": "https://github.com/emilkowalski/skills",
+    "seo": {
+      "title": {
+        "en": "Emil Design Engineering: Polish Component States and Interactions",
+        "zh": "Emil Design Engineering：打磨组件状态与交互"
+      },
+      "description": {
+        "en": "Review press, focus, hover and gesture details in an existing component.",
+        "zh": "审查现有组件的按压、焦点、悬停与手势细节。"
+      },
+      "keywords": {
+        "en": [
+          "Emil Design Engineering",
+          "Polish Component States and Interactions"
+        ],
+        "zh": [
+          "Emil Design Engineering",
+          "打磨组件状态与交互"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Emil Design Engineering",
+        "zh": "Emil Design Engineering"
+      },
+      "description": {
+        "en": "Improve how a component behaves across press, hover, focus and dismissal. Compare concrete code and interaction changes with Emil Kowalski’s design engineering guidance.",
+        "zh": "用 Emil Kowalski 的设计工程方法打磨组件的按压、悬停、聚焦和关闭体验，对照具体代码与交互表现。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "About Emil Design Engineering",
+        "paragraphs": [
+          "This Skill covers component details such as pressed feedback, popover origins, tooltip timing and gestures. Give the agent a bounded UI change and the relevant touch, pointer or keyboard context. For a code review, the upstream guide asks for a table showing the current code, proposed change and reason."
+        ]
+      },
+      "zh": {
+        "title": "关于 Emil Design Engineering",
+        "paragraphs": [
+          "这项 Skill 关注按压反馈、浮层变换原点、提示框时序和手势等组件细节。给 Agent 一个范围明确的界面改动，并说明触屏、指针或键盘操作。审查代码时，上游要求用表格对照现状、改法与原因。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Review press, focus, hover and gesture details in an existing component.",
+      "zh": "审查现有组件的按压、焦点、悬停与手势细节。"
+    },
+    "upstreamInstall": "npx skills add emilkowalski/skills --skill emil-design-eng",
+    "sectionTitles": {
+      "how": {
+        "en": "How to review a toolbar interaction",
+        "zh": "如何审查工具栏交互"
+      },
+      "howDescription": {
+        "en": "Use a toolbar to trace changes in feedback as the pointer moves between icons or the keyboard moves focus.",
+        "zh": "用工具栏观察指针在图标间移动以及键盘切换焦点时，提示反馈怎样变化。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Emil Design Engineering Use Cases for Component Design",
+        "zh": "Emil Design Engineering 的组件设计场景"
+      },
+      "description": {
+        "en": "Small interaction defects are easiest to see with a narrow reproduction. Start with a single component and compare the states around a specific press, hover or gesture.",
+        "zh": "先从一个组件的一次操作入手，复现按压、悬停或手势前后的状态。下面的场景说明怎样把难以描述的体验问题定位到可以修改和验证的实现细节。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Make a button respond visibly",
+            "zh": "完善按钮的即时反馈"
+          },
+          "description": {
+            "en": "Provide a button and its current disabled and pending states. Ask for press feedback that preserves the visual distinction between an accepted action, an in-flight request and a control that cannot be activated.",
+            "zh": "提供按钮组件以及禁用和提交中状态。设计按压反馈时，保持操作已接受、请求进行中和按钮不可用三种状态一眼可分。"
+          }
+        },
+        {
+          "title": {
+            "en": "Refine a grouped tooltip interaction",
+            "zh": "调整成组提示框的时序"
+          },
+          "description": {
+            "en": "Give the agent a toolbar whose labels appear after a delay. Compare the first hover with movement to an adjacent icon and check whether delay and pointer handling make the second label hard to reach.",
+            "zh": "提供悬停后延迟显示标签的工具栏。对照第一次悬停与移到相邻图标时的表现，检查延迟和指针处理是否妨碍查看第二个提示。"
+          }
+        },
+        {
+          "title": {
+            "en": "Review a misplaced popover origin",
+            "zh": "审查浮层的变换原点"
+          },
+          "description": {
+            "en": "Share the popover markup and a recording from two placement positions. Request a before-and-after table that identifies the origin value and explains how to observe the difference while opening the popover.",
+            "zh": "给出浮层代码和两个位置的录屏。要求在改动前后对照表中指出变换原点，并说明打开浮层时该观察哪处差异。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check how a drag gesture settles",
+            "zh": "检查拖拽松手后的反馈"
+          },
+          "description": {
+            "en": "Provide a draggable sheet’s release behavior and the point at which dismissal commits. Review how it settles when the user releases on either side of that threshold and whether reversing direction is legible.",
+            "zh": "给出可拖拽面板的松手行为和提交关闭的阈值。检查阈值两侧松手后的归位情况，以及反向拖动时能否看清状态。"
+          }
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Choose a component and two states",
+          "zh": "选定组件和两种状态"
+        },
+        "description": {
+          "en": "Point to the component source and give the reproduction for both states, such as first tooltip hover and movement to an adjacent icon.",
+          "zh": "给出组件源码和两个状态的复现方法，例如首次悬停和移到相邻图标。"
+        }
+      },
+      {
+        "title": {
+          "en": "Request a component review",
+          "zh": "发起组件审查"
+        },
+        "description": {
+          "en": "Use the Skill to compare specific code before and after each proposed change. Ask for the observed effect and a check for keyboard or touch where relevant.",
+          "zh": "用 Skill 对照每项建议的改动前后代码，写出可观察的变化。涉及键盘或触屏时也列出验证办法。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify the highest-impact change",
+          "zh": "复验影响最大的改动"
+        },
+        "description": {
+          "en": "Preview the accepted edit and repeat both initial reproductions. Record which state improved and whether the other still works as expected.",
+          "zh": "预览采纳的改动，重跑两组复现。记录哪个状态改善，另一状态是否仍符合预期。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "What should a review deliver?",
+          "zh": "审查应该交付什么？"
+        },
+        "answer": {
+          "en": "The upstream format is a Markdown table with Before, After and Why. Add file references and a way to check each suggestion.",
+          "zh": "上游使用列出改动前、改动后和理由的 Markdown 表格。可以给每条建议附文件位置与检查方法。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I supply for tooltip work?",
+          "zh": "检查提示框时应提供什么？"
+        },
+        "answer": {
+          "en": "Include its trigger, current timing and pointer, keyboard or touch steps. A toolbar example can show what happens when moving between controls.",
+          "zh": "提供触发元素、当前时序及指针、键盘或触屏操作。工具栏示例尤其能还原相邻控件切换时的表现。"
+        }
+      },
+      {
+        "question": {
+          "en": "When should I choose Animate?",
+          "zh": "什么时候改用 Animate？"
+        },
+        "answer": {
+          "en": "Choose Animate when the deliverable is the implementation of one web animation with entry, exit and interruption behavior.",
+          "zh": "交付物是一段网页动效实现，且要处理入场、退场和打断时，可以用 Animate。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can an agent assess the visual result from code?",
+          "zh": "只看代码能判断视觉结果吗？"
+        },
+        "answer": {
+          "en": "Code can reveal an origin or timing rule. Use an interactive preview or a recording to verify how it feels in the target state.",
+          "zh": "代码能说明原点或时序规则。目标状态下的视觉与操作感受，需要交互预览或录屏来核对。"
+        }
+      },
+      {
+        "question": {
+          "en": "Can it review keyboard use?",
+          "zh": "能检查键盘操作吗？"
+        },
+        "answer": {
+          "en": "Supply the actual focus and activation sequence and give the agent a way to observe the result or ask for manual reproduction steps.",
+          "zh": "提供实际聚焦和激活顺序，并让 Agent 观察结果或输出人工复现步骤。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does a review require code edits?",
+          "zh": "审查需要修改代码吗？"
+        },
+        "answer": {
+          "en": "You can request the comparison and supporting rationale first. Instruct the agent to apply selected changes after reviewing the findings.",
+          "zh": "可以先要求输出改动对照与依据，再根据审查发现决定应用哪些建议。"
+        }
+      }
+    ],
+    "example": {
+      "prompt": {
+        "en": "Review the toolbar tooltip and popover interactions in the supplied files. Compare first hover, moving between icons and keyboard focus. Return a Before / After / Why table with reproducible checks.",
+        "zh": "审查所给文件中的工具栏提示框和浮层交互。比较首次悬停、图标间切换和键盘聚焦，用改动前／改动后／原因表格给出建议与复验方法。"
+      }
+    },
+    "installation": {
+      "supportedAgents": [
+        "claude-code",
+        "codex"
+      ],
+      "note": {
+        "en": "Open the project in your host and include the component to review and how to reproduce the interaction.",
+        "zh": "在宿主中打开项目，提供需要审查的组件和交互复现方法。"
+      }
+    }
+  },
+  {
+    "slug": "build-awwwards-quality-sites",
+    "authorHandle": "mengto",
+    "name": "Build Awwwards-Quality Sites",
+    "publisher": "Meng To",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/build-awwwards-quality-sites/SKILL.md",
+    "repositoryUrl": "https://github.com/MengTo/Skills",
+    "seo": {
+      "title": {
+        "en": "Build Awwwards-Quality Sites: Motion-Led Website Art Direction",
+        "zh": "Build Awwwards-Quality Sites：动效网站的视觉方向与实现"
+      },
+      "description": {
+        "en": "Turn a site brief into an original visual direction and a runnable page with deliberate motion.",
+        "zh": "把网站需求转成原创视觉方案，再实现一套可以运行和检查的网页动效。"
+      },
+      "keywords": {
+        "en": [
+          "Build Awwwards-Quality Sites",
+          "Motion-Led Website Art Direction"
+        ],
+        "zh": [
+          "Build Awwwards-Quality Sites",
+          "动效网站的视觉方向与实现"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Build Awwwards-Quality Sites",
+        "zh": "Build Awwwards-Quality Sites"
+      },
+      "description": {
+        "en": "Turn a site brief into an original visual direction and a runnable page with deliberate motion.",
+        "zh": "把网站需求转成原创视觉方案，再实现一套可以运行和检查的网页动效。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "How the Skill Works",
+        "paragraphs": [
+          "Use this Skill when the brief calls for a motion-led marketing, editorial or portfolio site. It asks the agent to extract broad principles from references, write an original art direction and coordinate the hero with GSAP. Choose one smooth-scroll engine and use Three.js only when its scene serves the design."
+        ]
+      },
+      "zh": {
+        "title": "Skill 如何工作",
+        "paragraphs": [
+          "当需求强调营销页、专题或作品集的动效表达时，可以使用这份 Skill。它先从参考中提取节奏、层级等原则，再拟定原创视觉方向，用 GSAP 编排首屏。仅在场景确有作用时加入 Three.js。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Build a GSAP launch page with a checked reduced-motion fallback.",
+      "zh": "用 GSAP 制作发布页，并检查减少动态效果时的降级表现。"
+    },
+    "upstreamInstall": "npx skills add MengTo/Skills --skill build-awwwards-quality-sites",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Build the Page",
+        "zh": "如何完成页面"
+      },
+      "howDescription": {
+        "en": "Work from the brief to the first usable render, then check motion across input modes.",
+        "zh": "从简报推进到可用预览，再对照不同输入方式核查动效。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Build Awwwards-Quality Sites Use Cases",
+        "zh": "Build Awwwards-Quality Sites 的使用场景"
+      },
+      "description": {
+        "en": "Apply the same art-direction process to different source material, page types and motion constraints.",
+        "zh": "根据不同内容素材、页面类型和动效限制调整视觉方向。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Launch a product",
+            "zh": "制作产品发布页"
+          },
+          "description": {
+            "en": "Use product positioning and approved imagery to choose a hero focal point and match its entrance sequence to the primary action. Review the loaded and pre-animation states on mobile.",
+            "zh": "从产品定位与已授权图片中选出首屏焦点，让入场节奏服务于主要操作。在手机端对比动效开始前和加载完成后的页面状态。"
+          }
+        },
+        {
+          "title": {
+            "en": "Build an editorial feature",
+            "zh": "制作编辑专题"
+          },
+          "description": {
+            "en": "Use an outline and image credits to establish the reading sequence. Let motion signal chapter changes, and check that headings and essential copy remain readable before assets arrive.",
+            "zh": "用文章提纲和图片署名确定阅读顺序。让动效提示章节切换，并验证素材到达前标题和正文仍可阅读。"
+          }
+        },
+        {
+          "title": {
+            "en": "Present portfolio work",
+            "zh": "搭建作品集"
+          },
+          "description": {
+            "en": "Pick one finished project as the homepage focus. Adapt crop and hover details to desktop and touch so the work stays legible and the case-study link remains easy to reach.",
+            "zh": "选择一个已完成项目作为主页重点。分别处理桌面悬停和触屏行为，确保作品在不同裁切下仍可辨认，案例入口容易操作。"
+          }
+        },
+        {
+          "title": {
+            "en": "Reduce the cost of a cinematic hero",
+            "zh": "控制首屏动效开销"
+          },
+          "description": {
+            "en": "Given a slow motion-heavy hero, decide which visual layers carry the message. Measure the revised version on the same device and check a static fallback for reduced-motion users.",
+            "zh": "对首屏动效较重的页面，先区分哪些视觉层直接传达主题。用同一设备复测改版结果，同时检查减少动态效果时的静态呈现。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Build a launch page from my product brief and approved photos. Define the visual direction before implementation, then deliver a runnable page and document checks for keyboard access, mobile and reduced motion.",
+        "zh": "用产品简报和已授权图片制作发布页。先定视觉方向，再交付可运行页面，并记录键盘访问、手机端和减少动态效果的验证结果。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Capture constraints and asset rights",
+          "zh": "确认内容与素材使用范围"
+        },
+        "description": {
+          "en": "Write down the audience, primary action, stack and media available to the project. Note which references supply abstract direction and which assets may actually ship.",
+          "zh": "记录受众、主要操作、技术栈和可用素材。分清只用于提炼风格的参考与可以正式使用的素材。"
+        }
+      },
+      {
+        "title": {
+          "en": "Choose the direction and implement it",
+          "zh": "确定视觉方向并实现"
+        },
+        "description": {
+          "en": "Write the visual thesis and select a compatible installed design Skill. Implement the hero hierarchy first, then choreograph GSAP motion around it and keep only the scroll behavior needed by the page. For standard motion, use either Lenis or Locomotive as the sole scroll engine. Bypass smooth scrolling when reduced motion is enabled.",
+          "zh": "写出设计主张，选定一项已安装且兼容的设计 Skill。先实现首屏层级，再围绕信息编排 GSAP 动效，只保留页面用得上的滚动行为。标准动效使用 Lenis 或 Locomotive，两者选一。启用减少动态效果时关闭平滑滚动。"
+        }
+      },
+      {
+        "title": {
+          "en": "Verify input modes and fallbacks",
+          "zh": "检查输入方式与降级"
+        },
+        "description": {
+          "en": "Open the running page at mobile and desktop widths. Exercise keyboard navigation and reduced motion, and confirm that touch input and slow media loading preserve access to the primary action.",
+          "zh": "以手机和桌面宽度打开成品，检查键盘导航和减少动态效果设置，再确认触屏操作与素材慢载时主要动作仍可用。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Does the Skill come from Awwwards?",
+          "zh": "这个 Skill 来自 Awwwards 吗？"
+        },
+        "answer": {
+          "en": "Meng To publishes it. The title describes a design target with no award or affiliation claim.",
+          "zh": "它由 Meng To 发布，标题表达设计目标。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which site types fit?",
+          "zh": "适用哪些网站？"
+        },
+        "answer": {
+          "en": "Marketing sites, editorial features, portfolios and landing pages benefit most when motion contributes to the story.",
+          "zh": "适合动效能帮助表达内容的营销站、编辑专题、作品集和落地页。"
+        }
+      },
+      {
+        "question": {
+          "en": "Is GSAP part of the approach?",
+          "zh": "需要 GSAP 吗？"
+        },
+        "answer": {
+          "en": "The upstream method uses GSAP to choreograph the hero. Check dependency compatibility and licensing for the actual site.",
+          "zh": "上游方法使用 GSAP 编排首屏。接入时按实际站点核对依赖兼容性及许可。"
+        }
+      },
+      {
+        "question": {
+          "en": "Should every site use Three.js?",
+          "zh": "每个页面都需要 Three.js 吗？"
+        },
+        "answer": {
+          "en": "Reserve it for a visual concept that benefits from a scene and has a workable fallback.",
+          "zh": "仅当视觉概念确实需要场景且能提供可用降级方案时采用。"
+        }
+      },
+      {
+        "question": {
+          "en": "What can I take from a reference?",
+          "zh": "可以借鉴参考页面的什么？"
+        },
+        "answer": {
+          "en": "Extract principles such as rhythm or contrast. Source original or licensed media and keep attribution in the project.",
+          "zh": "提取节奏、对比等原则。使用原创或获授权的素材，在项目中保留来源。"
+        }
+      },
+      {
+        "question": {
+          "en": "What should I check before delivery?",
+          "zh": "交付前重点看什么？"
+        },
+        "answer": {
+          "en": "Open the page on a phone, navigate by keyboard and enable reduced motion. The primary action should work throughout animation and loading.",
+          "zh": "用手机、键盘和减少动态效果设置分别走一遍交互，确认加载与动效过程中主要操作始终可用。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex"
+      ],
+      "commands": {
+        "codex": "npx skills add MengTo/Skills --skill build-awwwards-quality-sites"
+      },
+      "note": {
+        "en": "Select Codex when the Skills CLI asks for a host, then reopen the session in the repository to load the guide.",
+        "zh": "按 Skills CLI 提示选择 Codex，再从仓库重新打开会话以加载指南。"
+      }
+    }
+  },
+  {
+    "slug": "interface-review",
+    "authorHandle": "jakubkrehel",
+    "name": "Interface Review",
+    "publisher": "Jakub Krehel",
+    "publisherType": "Person",
+    "sourceUrl": "https://github.com/jakubkrehel/skills/blob/main/skills/interface-review/SKILL.md",
+    "repositoryUrl": "https://github.com/jakubkrehel/skills",
+    "seo": {
+      "title": {
+        "en": "Interface Review: UI Regression Checks for Branches and PRs",
+        "zh": "Interface Review：分支与 PR 的界面回归检查"
+      },
+      "description": {
+        "en": "Review what a Git change introduces or regresses across the interface surfaces it touches.",
+        "zh": "沿 Git 变更追踪受影响界面，判断哪些问题由本次改动引入或加重。"
+      },
+      "keywords": {
+        "en": [
+          "Interface Review",
+          "UI Regression Checks for Branches and PRs"
+        ],
+        "zh": [
+          "Interface Review",
+          "分支与 PR 的界面回归检查"
+        ]
+      }
+    },
+    "hero": {
+      "title": {
+        "en": "Interface Review",
+        "zh": "Interface Review"
+      },
+      "description": {
+        "en": "Review what a Git change introduces or regresses across the interface surfaces it touches.",
+        "zh": "沿 Git 变更追踪受影响界面，判断哪些问题由本次改动引入或加重。"
+      }
+    },
+    "overview": {
+      "en": {
+        "title": "How the Skill Works",
+        "paragraphs": [
+          "Give the agent a branch, pull request or uncommitted diff. Interface Review resolves the comparison, follows changed files into affected screens and classifies findings by their relationship to the change. It uses domain skills for checks such as layout and motion and delegates severity and verdict to better-interface."
+        ]
+      },
+      "zh": {
+        "title": "Skill 如何工作",
+        "paragraphs": [
+          "给 Agent 一个分支、PR 或未提交差异。Interface Review 确定对比范围，沿改动文件找到受影响的界面，再判断发现的问题与本次变更的关系。布局和动效等规则由配套 Skills 提供，严重程度和结论交给 better-interface。"
+        ]
+      }
+    },
+    "summary": {
+      "en": "Trace a branch or PR into affected screens and classify UI regressions.",
+      "zh": "追踪分支或 PR 影响的页面，归类界面回归。"
+    },
+    "upstreamInstall": "npx skills add jakubkrehel/skills",
+    "sectionTitles": {
+      "how": {
+        "en": "How to Review the Change",
+        "zh": "如何审查本次变更"
+      },
+      "howDescription": {
+        "en": "Establish the Git baseline and follow the diff into the interface before drawing a conclusion.",
+        "zh": "先确认 Git 基线，再沿差异查看实际界面并给出判断。"
+      }
+    },
+    "useCases": {
+      "title": {
+        "en": "Interface Review Use Cases",
+        "zh": "Interface Review 的使用场景"
+      },
+      "description": {
+        "en": "Review targeted changes where a diff alone cannot show the resulting user experience.",
+        "zh": "针对单看代码差异难以判断实际体验的变更开展审查。"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Review a shared component change",
+            "zh": "审查共享组件变更"
+          },
+          "description": {
+            "en": "Follow an altered filter component into the pages that render it. Compare both versions to see whether the change broke focus order or narrowed the usable space in an affected consumer.",
+            "zh": "从改过的筛选组件找到实际使用它的页面，对照改动前后，确认是否有页面失去原有焦点顺序，或在窄屏上挤压操作空间。"
+          }
+        },
+        {
+          "title": {
+            "en": "Catch a copy regression",
+            "zh": "找出界面文案回归"
+          },
+          "description": {
+            "en": "Read a button and error-copy change inside the complete form flow. Identify where the revised text obscures the next action, and report the view and state where it happens.",
+            "zh": "把按钮和错误提示的文案差异放回完整表单流程，找出新版文字让下一步变得不明确的位置，并标明界面及状态。"
+          }
+        },
+        {
+          "title": {
+            "en": "Compare an animation before merge",
+            "zh": "合并前比对动效"
+          },
+          "description": {
+            "en": "Inspect a drawer transition before and after a PR. If interruption behavior changed, describe the quickest open-close sequence that reveals it and separate any existing motion issue.",
+            "zh": "对照 PR 前后的抽屉动效。若关闭打断的表现有变化，给出最短的打开与关闭复现序列，区分原来就有的动效问题。"
+          }
+        },
+        {
+          "title": {
+            "en": "Check uncommitted design changes",
+            "zh": "检查尚未提交的界面改动"
+          },
+          "description": {
+            "en": "Run the review on an edited settings screen while the working tree is still dirty. Connect a changed token or layout rule to the exact viewport and state it affects before staging the patch.",
+            "zh": "设置页还在编辑时直接审查工作区差异。提交前把颜色变量或布局规则的改动对应到具体视口与状态。"
+          }
+        }
+      ]
+    },
+    "example": {
+      "prompt": {
+        "en": "Review my current branch against its merge base. Trace the edited filter component into its consumers and report introduced or regressed keyboard and layout issues with file references and reproduction steps.",
+        "zh": "以合并基点为基线审查当前分支，追踪改动的筛选组件影响哪些页面，给出本次新增或加重的键盘与布局问题，附文件位置和复现步骤。"
+      }
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Identify the right comparison",
+          "zh": "明确对比范围"
+        },
+        "description": {
+          "en": "Invoke the Skill explicitly and provide a branch, PR number or uncommitted work. Confirm which files and commits the agent used before interpreting its findings.",
+          "zh": "显式调用 Skill，传入分支、PR 编号或未提交工作。解读结果前，先核对它使用了哪些文件和提交。"
+        }
+      },
+      {
+        "title": {
+          "en": "Trace affected screens",
+          "zh": "追踪受影响界面"
+        },
+        "description": {
+          "en": "Read both sides of the whole diff and follow changed shared components into their rendered consumers. Use the relevant domain Skills to investigate visible issues in each state.",
+          "zh": "阅读完整的前后差异，将修改的共享组件追踪到调用页面，再用相关领域 Skill 检查各状态中的可见问题。"
+        }
+      },
+      {
+        "title": {
+          "en": "Validate the report against the baseline",
+          "zh": "回查报告与基线"
+        },
+        "description": {
+          "en": "Use both sides of the diff to distinguish new or worsened problems from existing ones. Include file and screen references, and label behavior that has not been observed. If rendered verification is requested and a preview is available, reproduce the relevant states there.",
+          "zh": "对照变更前后的代码，区分新增、加重和原有问题。写明文件和页面位置，注明哪些表现尚未实测。如果任务要求验证渲染结果且有预览环境，再复现相关状态。"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": {
+          "en": "Can I review a dirty working tree?",
+          "zh": "能审查未提交的变更吗？"
+        },
+        "answer": {
+          "en": "Yes. Specify uncommitted changes explicitly when you need that exact scope.",
+          "zh": "可以。只想看未提交变更时，请明确指定该范围。"
+        }
+      },
+      {
+        "question": {
+          "en": "What if I omit the target?",
+          "zh": "省略目标时会检查什么？"
+        },
+        "answer": {
+          "en": "The Skill first looks for commits ahead of the default-branch merge base and includes local edits in that case. Otherwise it uses uncommitted changes if they exist.",
+          "zh": "先检查是否存在领先默认分支合并基点的提交，有则连同本地未提交改动一起看。否则如有未提交改动，就使用这些差异。"
+        }
+      },
+      {
+        "question": {
+          "en": "How do PR references resolve?",
+          "zh": "PR 编号怎样解析？"
+        },
+        "answer": {
+          "en": "A PR review needs access to the PR and its base and head. Check local remote configuration and GitHub access before relying on the result.",
+          "zh": "审查 PR 需要访问 PR 及其基线和头提交。使用结果前，先核对远程仓库配置和 GitHub 访问权限。"
+        }
+      },
+      {
+        "question": {
+          "en": "How are existing issues handled?",
+          "zh": "原有问题怎么处理？"
+        },
+        "answer": {
+          "en": "The report focuses on issues introduced or worsened by the change. Existing issues are recorded separately when appropriate.",
+          "zh": "报告聚焦本次新增或加重的问题，合适时把已有问题单独标注。"
+        }
+      },
+      {
+        "question": {
+          "en": "Which companion Skills matter?",
+          "zh": "需要哪些配套 Skill？"
+        },
+        "answer": {
+          "en": "Install the related better-* skills and better-interface from the same collection so it can perform domain checks and produce the verdict. If better-interface is unavailable, the upstream workflow stops after resolving scope.",
+          "zh": "安装同一合集里的相关 better-* Skills 和 better-interface，以便调用领域规则并得出结论。 缺少 better-interface 时，上游流程在确认审查范围后停止。"
+        }
+      },
+      {
+        "question": {
+          "en": "Does it replace a code review?",
+          "zh": "这可以替代代码审查吗？"
+        },
+        "answer": {
+          "en": "Use it for the interface consequences of a change. General code review still owns correctness, testing, security and performance.",
+          "zh": "用它判断改动对界面造成的影响。正确性、测试、安全和性能仍交给通用代码审查。"
+        }
+      }
+    ],
+    "installation": {
+      "supportedAgents": [
+        "codex"
+      ],
+      "commands": {
+        "codex": "npx skills add jakubkrehel/skills"
+      },
+      "note": {
+        "en": "Select Codex when the Skills CLI asks for a host, then reopen the session in the repository to load the guide.",
+        "zh": "按 Skills CLI 提示选择 Codex，再从仓库重新打开会话以加载指南。"
+      }
+    }
   }
 ]

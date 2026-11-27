@@ -19,6 +19,7 @@ export const postFrontmatterBaseSchema = z.object({
   updated: z.string().optional(),
   author: z.string().min(1).optional(),
   category: z.string().min(1).optional(),
+  categories: z.array(z.string().min(1)).min(1).optional(),
   tags: z.array(z.string()).optional().default([]),
   draft: z.boolean().optional().default(false),
   /** Independent featured image URL (preferred for OG / list cards) */
@@ -35,6 +36,17 @@ export function createPostFrontmatterSchema(features: ResolvedFeatures) {
         message: "category is required when features.categories is enabled",
         path: ["category"],
       });
+    }
+
+    if (data.categories) {
+      const slugs = data.categories.map(categoryToSlug);
+      if (data.categories[0] !== data.category || slugs.some((slug) => !slug) || new Set(slugs).size !== slugs.length) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "categories must start with category and have unique, non-empty slugs",
+          path: ["categories"],
+        });
+      }
     }
 
     if (features.authors && !data.author) {
@@ -76,6 +88,7 @@ export interface PostMeta {
   author?: string;
   category?: string;
   categorySlug?: string;
+  categories?: string[];
   tags: string[];
   draft: boolean;
   readingMinutes: number;
@@ -114,6 +127,13 @@ export function categoryToSlug(category: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+export function getPostCategories(post: Pick<PostMeta, "category" | "categorySlug" | "categories">) {
+  if (post.categories) {
+    return post.categories.map((name) => ({ name, slug: categoryToSlug(name) }));
+  }
+  return post.categorySlug ? [{ name: post.category ?? post.categorySlug, slug: post.categorySlug }] : [];
 }
 
 export function tagToSlug(tag: string): string {

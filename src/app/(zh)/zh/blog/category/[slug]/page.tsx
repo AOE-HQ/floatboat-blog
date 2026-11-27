@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { CATEGORY_LABELS_ZH, CategoryArchive } from "@openblog/components";
-import { resolveFeatures } from "@openblog/core";
+import { getPostCategories, resolveFeatures } from "@openblog/core";
 
 import { config } from "@/lib/openblog-config";
 import { createLocaleSiteHelpers } from "@/lib/locale-site";
@@ -72,7 +72,7 @@ export default async function ZhCategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  const categoryName = CATEGORY_LABELS_ZH[slug] ?? posts[0]?.category ?? slug;
+  const categoryName = CATEGORY_LABELS_ZH[slug] ?? getPostCategories(posts[0]!).find((category) => category.slug === slug)?.name ?? slug;
 
   return (
     <>

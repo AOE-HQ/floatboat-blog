@@ -34,6 +34,8 @@ Anthropic's engineering guide describes agents in similarly concrete terms: mode
 
 This is the central job of a harness: not to make every task autonomous, but to operate the right loop for the job.
 
+To see how the instruction and tool boundary plays out in practice, compare the [agent skills for design](/blog/best-agent-skills-for-design) that work from a brief, an authorized Figma node, or an existing pull request.
+
 ## The architecture: control plane, execution plane, and state
 
 A useful harness architecture separates three concerns. The components may run in one application, but their responsibilities should remain distinguishable.

@@ -1496,5 +1496,151 @@
       "outcome": "请求与控制台时间线、有证据的原因及验证计划。证据不足时列出失败步骤与未解决问题。",
       "example": "用 Chrome DevTools MCP 复现测试页面保存失败，检查相关请求与控制台错误，区分客户端和服务端问题，先报告证据再建议代码修改。"
     }
+  },
+  "emilkowalski/animate": {
+    "en": {
+      "title": "Implement a drawer transition",
+      "description": "Decide whether the drawer needs motion, then exercise dismissal and re-entry before using the transition elsewhere.",
+      "inputLabel": "Drawer and dismissal path",
+      "inputHint": "Component file, preview URL and supported ways to open or dismiss the drawer.",
+      "outcome": "A component diff and observations for normal, interrupted and reduced-motion paths."
+    },
+    "zh": {
+      "title": "实现抽屉过渡",
+      "description": "先判断抽屉是否需要动效，再验证关闭与重新打开，确认能否复用这段过渡。",
+      "inputLabel": "抽屉与关闭方式",
+      "inputHint": "组件文件、预览地址以及打开和关闭抽屉的方式。",
+      "outcome": "组件改动以及正常、打断和减少动效三种路径的观察记录。"
+    }
+  },
+  "emilkowalski/emil-design-eng": {
+    "en": {
+      "title": "Review a toolbar interaction",
+      "description": "Compare adjacent tooltips and focus behavior before accepting changes to a commonly used toolbar.",
+      "inputLabel": "Toolbar and interaction states",
+      "inputHint": "Source files or component URL, first-hover and adjacent-hover steps, and expected keyboard focus.",
+      "outcome": "A before-and-after comparison linked to code, observed effects and repeatable checks."
+    },
+    "zh": {
+      "title": "审查工具栏交互",
+      "description": "在采纳工具栏改动前，比较相邻提示框和键盘聚焦的表现。",
+      "inputLabel": "工具栏与交互状态",
+      "inputHint": "源码文件或组件地址、首次悬停与相邻切换步骤，以及预期焦点表现。",
+      "outcome": "一份包含代码、可见变化和复验方法的改动对照。"
+    }
+  },
+  "mengto/build-awwwards-quality-sites": {
+    "en": {
+      "title": "Prepare a Motion-Led Site Brief",
+      "description": "Give the agent enough product and media context to decide how the hero should work before writing the page.",
+      "inputLabel": "Source material",
+      "inputHint": "Share the brief, target audience, stack and approved reference assets.",
+      "outcome": "A runnable page and documented checks across viewport and input modes."
+    },
+    "zh": {
+      "title": "准备动效网站简报",
+      "description": "提供足够的产品和素材背景，让 Agent 在实现前确定首屏表达。",
+      "inputLabel": "输入材料",
+      "inputHint": "提供简报、受众、技术栈和可用素材。",
+      "outcome": "可运行页面，以及不同视口和输入模式的检查结果。"
+    }
+  },
+  "jakubkrehel/interface-review": {
+    "en": {
+      "title": "Prepare a UI Change Review",
+      "description": "Scope the review to a concrete Git comparison so the findings can be assigned to the change.",
+      "inputLabel": "Source material",
+      "inputHint": "Provide the branch, PR or working tree and name the changed flows.",
+      "outcome": "A scoped report with reproducible findings and affected file references."
+    },
+    "zh": {
+      "title": "准备界面变更审查",
+      "description": "通过具体 Git 差异限定范围，让每条界面发现都能追溯到本次变更。",
+      "inputLabel": "输入材料",
+      "inputHint": "给出分支、PR 或工作区，并指出改动的流程。",
+      "outcome": "有明确范围的报告，包含复现条件及涉及文件。"
+    }
+  },
+  "openai/figma-design-to-code": {
+    "en": {
+      "title": "Build repository code from a Figma frame",
+      "description": "A component implementation needs a specific frame and a destination so the agent can decide which parts of the existing interface to reuse.",
+      "inputLabel": "Frame and destination component",
+      "inputHint": "Give the Figma frame URL with its node ID and the target route or component.",
+      "outcome": "A code diff and a rendered comparison that names any remaining deviations."
+    },
+    "zh": {
+      "title": "将 Figma 设计稿实现为仓库代码",
+      "description": "限定源画板与目标组件后，Agent 才能判断哪些已有界面元素可以直接复用。",
+      "inputLabel": "画板与目标组件",
+      "inputHint": "提供含节点 ID 的 Figma 框架链接和目标路由或组件。",
+      "outcome": "一份代码差异及渲染对比，列出仍存在的偏差。"
+    }
+  },
+  "openai/figma-use": {
+    "en": {
+      "title": "Edit selected objects on the Figma canvas",
+      "description": "Use an editable copy for the first test so you can compare node properties before and after without affecting a shared design.",
+      "inputLabel": "Figma file and objects to edit",
+      "inputHint": "Supply a test file link, target node IDs, edit permission and named changes.",
+      "outcome": "Updated canvas nodes with their IDs and verified properties or screenshots."
+    },
+    "zh": {
+      "title": "修改 Figma 画布中的指定对象",
+      "description": "第一次验证可使用可编辑副本，便于比较节点属性前后的变化，同时避免影响共享设计稿。",
+      "inputLabel": "Figma 文件与编辑对象",
+      "inputHint": "提供测试文件链接、目标节点 ID、编辑权限及修改内容。",
+      "outcome": "画布上的更新节点，以及节点 ID、属性验证或截图。"
+    }
+  },
+  "google-labs-code/design-md": {
+    "en": {
+      "title": "Document the visual language of a Stitch project",
+      "description": "Documenting one defined group of screens first keeps page-specific patterns from becoming requirements for the entire product.",
+      "inputLabel": "Representative Stitch screens",
+      "inputHint": "Provide the Stitch project and representative screen IDs. Confirm that Stitch MCP is connected and authorized.",
+      "outcome": "A DESIGN.md whose descriptions and color values can be traced back to the supplied screens."
+    },
+    "zh": {
+      "title": "沉淀 Stitch 项目的视觉语言",
+      "description": "先限定一组页面，能减少把单个页面的特例写成全产品设计规范的机会。",
+      "inputLabel": "Stitch 代表页面",
+      "inputHint": "提供 Stitch 项目及有代表性的页面 ID，并确认 Stitch MCP 已连接和授权。",
+      "outcome": "一份 DESIGN.md，其中的设计描述和颜色值能回溯到所提供的页面。"
+    }
+  },
+  "shadcn-ui/shadcn": {
+    "en": {
+      "title": "Compose interfaces with shadcn/ui components",
+      "description": "Choose one interface behavior first so the agent can compare local components and registry options against the same objective.",
+      "inputLabel": "Component task and project setup",
+      "inputHint": "Share the repository, package manager, components.json, and the interface state to build.",
+      "outcome": "A reviewable component diff and a preview covering the requested interactions and states."
+    },
+    "zh": {
+      "title": "用 shadcn/ui 组件实现界面",
+      "description": "先明确一项要实现的交互，Agent 就能用同一目标比较本地组件与注册表选项。",
+      "inputLabel": "组件任务与项目配置",
+      "inputHint": "提供代码库、包管理器、components.json 和需要实现的界面状态。",
+      "outcome": "一份可审查的组件差异，以及覆盖目标交互与状态的预览。"
+    }
+  },
+  "anthropics/design-plugin": {
+    "en": {
+      "title": "Critique a pricing page from a screenshot",
+      "description": "Pick one user decision to make the proposed interface changes easier to discuss with the team.",
+      "inputLabel": "Pricing page and the decision it supports",
+      "inputHint": "Attach the screenshot and explain how a visitor should compare the plans.",
+      "outcome": "Prioritized findings mapped to visible elements, with checks requiring a live interface called out separately.",
+      "example": "Use Anthropic Design Plugin’s /critique to inspect this pricing screenshot for plan comparison. Rank visible problems and identify verification that needs the running interface."
+    },
+    "zh": {
+      "title": "根据截图评审定价页",
+      "description": "先选出一个用户必须做出的决定，方便与团队一起讨论有针对性的界面调整。",
+      "inputLabel": "定价页和用户需要做的决定",
+      "inputHint": "附上截图，并说明访客应该怎样比较各个套餐。",
+      "outcome": "按优先级排列、回指界面元素的发现，以及单列的运行时验证项。",
+      "example": "用 Anthropic Design Plugin 的 /critique 检查这张定价页的套餐对比。对能在截图验证的问题排序，另外列出必须在运行界面检查的项目。"
+    }
   }
 }

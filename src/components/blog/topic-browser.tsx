@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { PostMeta } from "@openblog/core";
 import { formatPostDate } from "@openblog/core";
+import { getPostCategories } from "@openblog/core";
 import { categoryLabel } from "@openblog/components";
 import { BLOG_PAGE_SIZE as PAGE_SIZE, filterBlogPosts } from "@/lib/blog-pagination";
 
@@ -16,7 +17,7 @@ export function TopicBrowser({ posts, initialPage = 1, locale = "en", localePref
   const [filteredPage, setFilteredPage] = useState(1);
   const zh = locale === "zh";
   const browsingAll = !query.trim() && category === "all" && contentType === "all" && order === "newest";
-  const categories = useMemo(() => [...new Map(posts.filter(p => p.categorySlug).map(p => [p.categorySlug!, p.category ?? p.categorySlug!])).entries()].sort((a, b) => a[1].localeCompare(b[1])), [posts]);
+  const categories = useMemo(() => [...new Map(posts.flatMap(p => getPostCategories(p).map(({slug, name}) => [slug, name] as const))).entries()].sort((a, b) => a[1].localeCompare(b[1])), [posts]);
   const filtered = useMemo(() => filterBlogPosts(posts, query, category, order, contentType), [posts, query, category, order, contentType]);
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const page = Math.min(browsingAll ? initialPage : filteredPage, totalPages);

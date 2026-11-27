@@ -54,6 +54,8 @@ export const CATEGORY_LABELS_ZH: Record<string, string> = {
   "product-updates": "产品动态",
   "solo-operators": "一人公司",
   "tool-comparisons": "工具对比",
+  "skills": "Skills",
+  "design": "设计",
 };
 
 export function categoryLabel(

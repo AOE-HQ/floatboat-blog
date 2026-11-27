@@ -16,6 +16,8 @@ export const BLOG_COLLECTIONS = [
   { slug: "tool-comparisons", en: { title: "Compare tools and formats", description: "Choose editors, document formats, agent tools, and automation systems by the work you need to finish." }, zh: { title: "比较工具与文档方案", description: "从要完成的工作出发，比较编辑器、文档格式、Agent 工具和自动化方案，而不是只看功能清单。" } },
   { slug: "solo-operators", en: { title: "Run a small business", description: "Read practical systems for solo founders: customers, pricing, recurring work, and deciding what to automate." }, zh: { title: "经营一人公司", description: "围绕客户、定价、重复工作和自动化取舍，查找适合单人创始人及小团队的经营实践。" } },
   { slug: "product-updates", en: { title: "Explore Floatboat workflows", description: "See how Floatboat and FloatIM features fit concrete tasks, including their setup and operating boundaries." }, zh: { title: "了解 Floatboat 的具体用法", description: "结合实际任务了解 Floatboat 与 FloatIM 功能的使用方式、接入条件和工作边界。" } },
+  { slug: "skills", en: { title: "Choose and load Agent Skills", description: "Find reusable instructions for specific tasks and check what each skill needs to run." }, zh: { title: "选择和加载 Agent Skills", description: "按具体任务选择可复用指令，并核对运行它所需的宿主和工具。" } },
+  { slug: "design", en: { title: "Prototype and review interfaces", description: "Trace the work from a design brief or existing mockup to implemented and reviewed interface states." }, zh: { title: "制作原型与审查界面", description: "从设计需求或现有设计稿出发，完成界面实现、动效和上线前评审。" } },
 ] as const;
 
 export function blogPageCount(locale: BlogLocale) {

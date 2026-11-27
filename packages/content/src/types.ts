@@ -1,5 +1,5 @@
 import type { AdjacentPosts, BlogIndexData, Post, PostMeta } from "@openblog/core";
-import { tagToSlug } from "@openblog/core";
+import { getPostCategories, tagToSlug } from "@openblog/core";
 
 export interface ContentAdapter {
   listPosts(includeDrafts?: boolean): Post[];
@@ -19,19 +19,15 @@ export function getBlogIndexData(adapter: ContentAdapter): BlogIndexData {
   const byCategory: Record<string, PostMeta[]> = {};
 
   for (const post of posts) {
-    if (!post.categorySlug) {
-      continue;
+    for (const { slug } of getPostCategories(post)) {
+      (byCategory[slug] ??= []).push(post);
     }
-    if (!byCategory[post.categorySlug]) {
-      byCategory[post.categorySlug] = [];
-    }
-    byCategory[post.categorySlug]!.push(post);
   }
 
   const categories = Object.entries(byCategory)
     .map(([slug, items]) => ({
       slug,
-      name: items[0]?.category ?? slug,
+      name: getPostCategories(items[0]!).find((category) => category.slug === slug)?.name ?? slug,
       count: items.length,
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -52,7 +48,7 @@ export function getPostsByCategory(
   return adapter
     .listPosts()
     .map(toMeta)
-    .filter((post) => post.categorySlug === categorySlug);
+    .filter((post) => getPostCategories(post).some(({ slug }) => slug === categorySlug));
 }
 
 export function getPostsByTag(

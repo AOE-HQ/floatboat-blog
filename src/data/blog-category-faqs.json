@@ -376,5 +376,113 @@
         "answer": "提供相同资料、交付要求、权限和审阅标准，把失败与修复过程也记入比较，而不是只挑各自最好的一次演示。"
       }
     ]
+  },
+  "skills": {
+    "en": [
+      {
+        "question": "What is an Agent Skill?",
+        "answer": "An Agent Skill packages reusable instructions and can include supporting files such as scripts, references, or assets."
+      },
+      {
+        "question": "How should I choose a skill?",
+        "answer": "Identify the input you can provide and the result you need. Then check the supported agent host and any tool or account requirements."
+      },
+      {
+        "question": "Does installing a skill also grant tool access?",
+        "answer": "A tool or service can still require its own connection, permissions, and authorization. Check what the active session can actually access."
+      },
+      {
+        "question": "Where should I look for installation steps?",
+        "answer": "Use the linked resource guide to find the upstream instructions for your particular host. The setup can differ between a CLI and a desktop plugin."
+      },
+      {
+        "question": "How can I check whether a skill helped?",
+        "answer": "Try one bounded task and compare the delivered files, findings, or preview against a specific acceptance check."
+      },
+      {
+        "question": "Where can I browse individual resources?",
+        "answer": "The [Skills Marketplace](/skills-marketplace) lists individual resources and their publishers."
+      }
+    ],
+    "zh": [
+      {
+        "question": "什么是 Agent Skill？",
+        "answer": "Agent Skill 是一组可复用的任务指令，也可以附带参考资料、脚本或素材。"
+      },
+      {
+        "question": "选 Skill 时先看什么？",
+        "answer": "先确定可以提供的输入和需要交付的结果，再检查当前 Agent 宿主、工具与账号要求。"
+      },
+      {
+        "question": "装好 Skill 就能访问外部工具吗？",
+        "answer": "外部工具和服务仍可能需要单独连接和授权。使用前确认当前会话实际能访问哪些材料。"
+      },
+      {
+        "question": "到哪里找加载步骤？",
+        "answer": "从资源指南进入对应宿主的上游说明。CLI、桌面插件和项目配置的操作可能不同。"
+      },
+      {
+        "question": "怎么验证这个 Skill 有帮助？",
+        "answer": "先用一个范围小、验收条件明确的任务，检查交付的文件、问题清单或预览。"
+      },
+      {
+        "question": "在哪里浏览单项资源？",
+        "answer": "可在 [Skills Marketplace](/zh/skills-marketplace) 查看具体资源和发布者。"
+      }
+    ]
+  },
+  "design": {
+    "en": [
+      {
+        "question": "What does this design archive cover?",
+        "answer": "It collects articles on interface design work, from prototyping and component implementation to motion and review."
+      },
+      {
+        "question": "Where should I begin with a written brief?",
+        "answer": "Start with the intended audience, primary action, and viewport. Ask for a preview that lets you check whether the flow is understandable."
+      },
+      {
+        "question": "What do I need to implement an existing design?",
+        "answer": "Share the relevant design frame or node, the destination repository, and the component or route to change."
+      },
+      {
+        "question": "How do I review animation changes?",
+        "answer": "Check entry, exit, interruptions, and reduced-motion behavior using the real interaction. A still screenshot cannot capture those transitions."
+      },
+      {
+        "question": "How can I tell which interface changes matter in a PR?",
+        "answer": "Start from the diff and identify affected components, screens, and interaction states before running focused checks."
+      },
+      {
+        "question": "Where are design resources listed by task?",
+        "answer": "The [Design & Interfaces category](/skills-marketplace/categories/design-interfaces) groups Marketplace resources around interface design work."
+      }
+    ],
+    "zh": [
+      {
+        "question": "设计分类收录哪些文章？",
+        "answer": "这里收录界面设计相关实践，覆盖原型、组件实现、交互动效和界面评审。"
+      },
+      {
+        "question": "只有文字需求时怎么开始？",
+        "answer": "先明确用户、主要操作和预览尺寸，再用可预览的原型检查流程是否清楚。"
+      },
+      {
+        "question": "实现已有设计稿需要哪些材料？",
+        "answer": "提供对应画板或节点、目标仓库，以及要改动的组件或路由。"
+      },
+      {
+        "question": "交互动效该怎么检查？",
+        "answer": "在实际界面里检查进入、退出、操作打断和减少动态效果模式。静态截图无法呈现这些变化。"
+      },
+      {
+        "question": "如何确定 PR 中值得审查的界面改动？",
+        "answer": "从代码差异识别受影响的组件、页面和交互状态，再针对这些位置做检查。"
+      },
+      {
+        "question": "在哪里按任务找设计工具？",
+        "answer": "[设计与界面分类](/zh/skills-marketplace/categories/design-interfaces) 汇集了适用于界面工作任务的 Marketplace 资源。"
+      }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 import type { Post, PostMeta } from "../types/post";
-import { tagToSlug } from "../types/post";
+import { getPostCategories, tagToSlug } from "../types/post";
 import { resolvePostImageUrl } from "../utils/index";
 import type { SiteHelpers } from "../site/context";
 
@@ -191,12 +191,11 @@ export function buildSitemapXml(posts: PostMeta[], site: SiteHelpers): string {
     const categorySlugs = [
       ...new Set(
         posts
-          .map((post) => post.categorySlug)
-          .filter((slug): slug is string => Boolean(slug)),
+          .flatMap((post) => getPostCategories(post).map(({ slug }) => slug)),
       ),
     ];
     for (const slug of categorySlugs) {
-      const categoryPosts = posts.filter((post) => post.categorySlug === slug);
+      const categoryPosts = posts.filter((post) => getPostCategories(post).some((category) => category.slug === slug));
       const lastmod = latestDateFromPosts(categoryPosts);
       entries.push({
         loc: site.absoluteUrl(site.categoryPath(slug)),
