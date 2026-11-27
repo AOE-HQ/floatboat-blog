@@ -1739,6 +1739,16 @@
         "title": "从一份订单 CSV 开始制作销售周报",
         "body": "把订单文件放进 Floatboat，核对生成的收入与订单量，再将已确认的方法保存为可复用流程。"
       }
+    },
+    "best-agent-skills-for-design": {
+      "en": {
+        "title": "Turn one design handoff into a verifiable task",
+        "body": "Bring a frame, component, or pull request to Floatboat. Define what should change and what the preview or review needs to prove."
+      },
+      "zh": {
+        "title": "先验证一个设计交付",
+        "body": "带上设计节点、目标组件和验收条件，把第一轮任务缩到能用截图、键盘操作和一份 diff 核对的范围。"
+      }
     }
   }
 }

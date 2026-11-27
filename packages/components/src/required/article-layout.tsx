@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 
 import {
   extractToc,
+  getPostCategories,
   normalizeFinalCta,
   splitArticleContent,
   type AdjacentPosts,
@@ -103,7 +104,9 @@ export function ArticleLayout({
         description={required.postDek ? post.description : ""}
         metadata={<>
           {post.contentType === "guide" ? <span>{locale === "zh" ? "操作指南" : "Guide"}</span> : null}
-          {features.categories && post.category ? <CategoryBadge category={categoryLabel(post.categorySlug, post.category, locale)} categorySlug={post.categorySlug} /> : null}
+          {features.categories && getPostCategories(post).map(({ slug, name }) => (
+            <CategoryBadge key={slug} category={categoryLabel(slug, name, locale)} categorySlug={slug} />
+          ))}
           {required.postMeta ? <PostMetaRow author={post.author} showAuthor={features.authors} date={post.date} updated={post.updated} readingMinutes={post.readingMinutes} /> : null}
         </>}
       />

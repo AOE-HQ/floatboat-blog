@@ -56,6 +56,7 @@ function parseFile(filePath: string, features: ResolvedFeatures): Post {
     updated: parsed.updated,
     author: parsed.author,
     category: parsed.category,
+    ...(parsed.categories ? { categories: parsed.categories } : {}),
     categorySlug: parsed.category ? categoryToSlug(parsed.category) : undefined,
     tags: parsed.tags ?? [],
     draft: parsed.draft ?? false,

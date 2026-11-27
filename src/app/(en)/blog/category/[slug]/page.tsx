@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { CategoryArchive } from "@openblog/components";
-import { resolveFeatures } from "@openblog/core";
+import { getPostCategories, resolveFeatures } from "@openblog/core";
 
 import { absoluteUrl, categoryPath } from "@/config/site";
 import { getBlogIndexData, getPostsByCategory } from "@/lib/posts";
@@ -69,7 +69,7 @@ export default async function CategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  const categoryName = posts[0]?.category ?? slug;
+  const categoryName = getPostCategories(posts[0]!).find((category) => category.slug === slug)?.name ?? slug;
 
   return (
     <>

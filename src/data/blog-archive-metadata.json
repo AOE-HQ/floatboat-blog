@@ -69,6 +69,26 @@
         "title": "AI 文件管理：整理、命名、归档与隐私指南",
         "description": "阅读 AI 文件整理、命名、归档与本地文件处理指南，比较工具和检查方法，处理收据、项目文档及日常文件夹中的具体问题。"
       }
+    },
+    "skills": {
+      "en": {
+        "title": "Agent Skills: Selection, Setup, and Practical Workflows",
+        "description": "Choose skills for specific agent tasks, understand the tools and permissions they require, and verify the results in your own workflow."
+      },
+      "zh": {
+        "title": "Agent Skills：选型、加载与任务实践",
+        "description": "从具体任务出发选择 Agent Skill，核对宿主、依赖与权限，并用实际交付物检验工作结果。"
+      }
+    },
+    "design": {
+      "en": {
+        "title": "Design Guides: Prototyping, Implementation, and UI Review",
+        "description": "Read practical design guides for creating prototypes, implementing designs in a codebase, and reviewing interactions and interface changes."
+      },
+      "zh": {
+        "title": "设计指南：原型、界面实现与评审",
+        "description": "查找从需求制作原型、把设计稿实现到现有代码库，以及审查动效和界面改动的实践文章。"
+      }
     }
   },
   "author": {

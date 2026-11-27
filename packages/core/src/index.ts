@@ -5,7 +5,7 @@ export type {
   BlogIndexData,
   AdjacentPosts,
 } from "./types/post";
-export { postFrontmatterSchema, postFrontmatterBaseSchema, categoryToSlug, tagToSlug, authorToSlug, createPostFrontmatterSchema, validatePostFrontmatter } from "./types/post";
+export { postFrontmatterSchema, postFrontmatterBaseSchema, categoryToSlug, getPostCategories, tagToSlug, authorToSlug, createPostFrontmatterSchema, validatePostFrontmatter } from "./types/post";
 
 export type {
   OpenBlogConfig,
